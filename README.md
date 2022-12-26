@@ -1,38 +1,8 @@
-# create-svelte
+# Workflow
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+1. Register Page sets up data in the database,
+2. user is then redirected to /pg/{rid}/pay, where the payment info is located and setup for payment, once its done the call back is to either redirect to pg/{rid}/success or pg/{rid}/error.
+3. In success, the receipt page is shown and a button to print the receipt is shown, printing will create a new full page receipt containing all the data as a HTML page, and when printed will include some QR that can be used to verify the receipt later.
 
-## Creating a project
+Keeping it this way will allow us to get registrations done fast and quick, without any fuss about accounts, anytime a person wants to view previous registration he/she can check email or enter his email and phone number to check for previous registrations
 
-If you're seeing this, you've probably already done this step. Congrats!
-
-```bash
-# create a new project in the current directory
-npm create svelte@latest
-
-# create a new project in my-app
-npm create svelte@latest my-app
-```
-
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
-
-## Building
-
-To create a production version of your app:
-
-```bash
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
