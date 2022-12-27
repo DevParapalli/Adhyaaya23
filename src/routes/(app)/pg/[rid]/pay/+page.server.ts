@@ -4,14 +4,16 @@ import { error } from "@sveltejs/kit";
 import { supabase } from "$lib/supabaseClient";
 import { RZP_SECRET } from "$env/static/private";
 import { PUBLIC_RZP_KEY } from "$env/static/public";
+import type { DBRegistration, PGPOSTResponse } from "$lib/types";
 
 
-export const load: PageServerLoad = async (event) => {
+export const load: PageServerLoad = async ({params, fetch}) => {
     let { data } = await supabase
       .from("registrations")
       .select("*")
-      .eq("id", event.params.rid)
+      .eq("id", params.rid)
       .single();
+    if (!data) throw error(404, "Registration ID not found");
     // POST TO RZP
     const _req = await fetch("https://api.razorpay.com/v1/orders", {
       method: "POST",
@@ -32,21 +34,6 @@ export const load: PageServerLoad = async (event) => {
       .eq("id", data.id)
       .select()
       .single());
-    if (data && _data) return { db: data, pg: _data };
-    else throw error(404, "Registration ID not found");
-  };
-
-export const sample = {
-    id: "order_KUnUYh5c6C9Nvb",
-    entity: "order",
-    amount: 10400,
-    amount_paid: 0,
-    amount_due: 10400,
-    currency: "INR",
-    receipt: null,
-    offer_id: null,
-    status: "created",
-    attempts: 0,
-    notes: [],
-    created_at: 1666000629,
+    if (data && _data) return { db: data as DBRegistration, pg: _data as PGPOSTResponse };
+    else throw error(404, "Error while creating order");
   };
