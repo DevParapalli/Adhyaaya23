@@ -1,13 +1,15 @@
-import type {PageLoad} from './$types';
+import type { PageLoad } from './$types';
 import { error } from '@sveltejs/kit';
+import { EVENTS } from '$lib/data/events';
 
 export const load: PageLoad = async ({ fetch, url }) => {
-    const event_id = url.searchParams.get('event');
-    if (!event_id) throw error(400, 'Missing parameter: event');
+	const event_id = url.searchParams.get('event');
+	if (!event_id) throw error(400, 'Missing parameter: event');
 
-
-}
-
+	const event = EVENTS.find((e) => e.id === event_id);
+	if (event) return { event };
+	else throw error(404, 'Event not found');
+};
 
 /*
 	<div class="relative z-0 mb-6 w-full group">

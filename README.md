@@ -5,4 +5,3 @@
 3. In success, the receipt page is shown and a button to print the receipt is shown, printing will create a new full page receipt containing all the data as a HTML page, and when printed will include some QR that can be used to verify the receipt later.
 
 Keeping it this way will allow us to get registrations done fast and quick, without any fuss about accounts, anytime a person wants to view previous registration he/she can check email or enter his email and phone number to check for previous registrations
-

@@ -3,7 +3,7 @@
 	import { goto } from '$app/navigation';
 	import { PUBLIC_RZP_KEY } from '$env/static/public';
 	import type { PGHandlerErrorResponse, PGHandlerSuccessResponse } from '$lib/types';
-	import { onMount } from 'svelte/types/runtime/internal/lifecycle';
+	import { onMount } from 'svelte';
 	import type { PageData } from './$types';
 
 	export let data: PageData;
@@ -14,7 +14,7 @@
 			amount: data.db.amount, // Amount is in currency subunits. Default currency is INR. Hence, 50000 refers to 50000 paise
 			currency: 'INR',
 			name: "Adhyaaya'23 | GCOEN",
-			description: `Payment for ${data.db.name} for ${data.db.event_id}`,
+			description: `Payment by ${data.db.name} for ${data.db.event_id}, of amount ${data.db.amount/100}`,
 			image: 'https://adhyaaya.org/favicon.png',
 			order_id: data.pg.id, //This is a sample Order ID. Pass the `id` obtained in the response of Step 1
 			// "callback_url": "https://eneqd3r9zrjok.x.pipedream.net/",

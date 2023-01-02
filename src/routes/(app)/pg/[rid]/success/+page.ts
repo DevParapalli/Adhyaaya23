@@ -4,13 +4,9 @@ import { error } from '@sveltejs/kit';
 import type { PageLoad } from './$types';
 
 export const load = (async ({ params, fetch }) => {
-const { data } = await supabase
-    .from("registrations")
-    .select("*")
-    .eq("id", params.rid)
-    .single();
-    
-    if (!data) throw error(404, "Registration ID not found");
+	const { data } = await supabase.from('registrations').select('*').eq('id', params.rid).single();
 
-    return { db: data as DBRegistration };
+	if (!data) throw error(404, 'Registration ID not found');
+
+	return { db: data as DBRegistration };
 }) satisfies PageLoad;
