@@ -62,7 +62,7 @@ export const actions: Actions = {
 			return fail(400,{data, errors});
 		}
 
-		
+		const amount_to_pay = event_data?.amount[event_data?.team_members.indexOf(number_of_additional_members+1)] || 0
 
 		const _push_to_db: DBRegistration = {
 			created_at: new Date().toISOString(),
@@ -74,10 +74,10 @@ export const actions: Actions = {
 			edu_spl: String(data['branch_specialization']),
 			team,
 			event_id: String(data['event_id']),
-			amount: event_data?.amount[event_data?.team_members.indexOf(number_of_additional_members+1)] || 0,
+			amount: amount_to_pay,
 			used: false,
 			status: false,
-			rzp_status: "NO_ORDER_CREATED",
+			rzp_status: (amount_to_pay === 0) ? 'PAID' : 'NO_ORDER_CREATED',
 			custom: {}
 		}
 

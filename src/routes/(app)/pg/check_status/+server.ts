@@ -3,6 +3,7 @@ import { error, redirect } from '@sveltejs/kit';
 import { sha256 } from 'js-sha256';
 import { RZP_SECRET } from '$env/static/private';
 import type { RequestHandler } from './$types';
+import { sendEmail } from '$lib/email';
 
 // alert(e.razorpay_payment_id);
 // alert(e.razorpay_order_id);
@@ -36,7 +37,7 @@ export const GET: RequestHandler = async ({ url }) => {
 				.select()
 				.single();
 			// return json({data: _data});
-			// TODO: Include the email sending logic here...
+			console.log(await sendEmail(data.id))
 			throw redirect(307, `/pg/${_data.id}/success`);
 		} else {
 			throw error(400, 'Invalid signature');
