@@ -43,8 +43,8 @@
 	 <span class="hidden">{toasting()}</span>
 {/if}
 
-<div class="bg h-full w-full " style="--bg:url({bg});--opacity:0.75">
-	<form use:enhance use:autoanimate class="registration-form container max-w-3xl mx-auto px-10 py-20 bg-black/50" method="POST">
+<div class="bg h-full w-full pt-20" style="--bg:url({bg});--opacity:0.75">
+	<form use:enhance use:autoanimate class="registration-form container max-w-3xl mx-auto px-10 py-10 bg-black/50" method="POST">
 		<input type="hidden" name="event_id" value={data.event.id} />
 		<div class="grid md:grid-cols-2 md:gap-6">
 			<div class="relative z-0 mb-6 w-full group">
