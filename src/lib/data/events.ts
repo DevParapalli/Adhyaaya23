@@ -95,7 +95,7 @@ export const EVENTS: AdhyaayaEvent[] = [
 		id: 'codeventure',
 		mode: 'offline',
 		category: 'technical',
-		name: 'Codeventure',
+		name: 'CodeVenture',
 		description: 'blah blah blah', //Avishkar is a technical event that tests your knowledge in the field of computer science and technology. It is a 24-hour event that will test your skills in programming, debugging, and logical thinking. It is a team event with a maximum of 3 members per team. The event will be held on 27th and 28th February 2021.
 		amount: [50_00],
 		team_members: [1],
@@ -116,7 +116,7 @@ export const EVENTS: AdhyaayaEvent[] = [
 		id: 'bridge-o-craft',
 		mode: 'offline',
 		category: 'technical',
-		name: 'CodeVenture',
+		name: 'Bridge-O-Craft',
 		description: 'blah blah blah', //Avishkar is a technical event that tests your knowledge in the field of computer science and technology. It is a 24-hour event that will test your skills in programming, debugging, and logical thinking. It is a team event with a maximum of 3 members per team. The event will be held on 27th and 28th February 2021.
 		amount: [250_00, 250_00, 250_00, 250_00],
 		team_members: [1, 2, 3, 4],
@@ -141,27 +141,6 @@ export const EVENTS: AdhyaayaEvent[] = [
 		description: 'blah blah blah', //Avishkar is a technical event that tests your knowledge in the field of computer science and technology. It is a 24-hour event that will test your skills in programming, debugging, and logical thinking. It is a team event with a maximum of 3 members per team. The event will be held on 27th and 28th February 2021.
 		amount: [100_00], //TODO: Confirm the details for this event
 		team_members: [4],
-		start_date: new Date('28 Feb 2023'),
-		end_date: new Date('28 Feb 2023'),
-		small_image: 'https://placeimg.com/360/360/tech',
-		icon: 'carbon:code',
-		poster: 'http://placeimg.com/540/540/tech',
-		contact: [
-			{
-				name: 'Devansh Parapalli',
-				phone: '1234567890'
-			}
-		],
-		is_active: true
-	},
-	{
-		id: 'vaad-vivad',
-		mode: 'offline',
-		category: 'non-technical',
-		name: 'Vaad Vivad',
-		description: 'blah blah blah', //Avishkar is a technical event that tests your knowledge in the field of computer science and technology. It is a 24-hour event that will test your skills in programming, debugging, and logical thinking. It is a team event with a maximum of 3 members per team. The event will be held on 27th and 28th February 2021.
-		amount: [50_00],
-		team_members: [1],
 		start_date: new Date('28 Feb 2023'),
 		end_date: new Date('28 Feb 2023'),
 		small_image: 'https://placeimg.com/360/360/tech',
@@ -390,6 +369,27 @@ export const EVENTS: AdhyaayaEvent[] = [
 	{
 		id: 'aeromodelling-workshop',
 		mode: 'offline', 
+		category: 'workshops',
+		name: 'airplane go brrrrrrr',
+		description: 'blah blah blah', //Avishkar is a technical event that tests your knowledge in the field of computer science and technology. It is a 24-hour event that will test your skills in programming, debugging, and logical thinking. It is a team event with a maximum of 3 members per team. The event will be held on 27th and 28th February 2021.
+		amount: [1600_00],
+		team_members: [1],
+		start_date: new Date('28 Feb 2023'),
+		end_date: new Date('28 Feb 2023'),
+		small_image: 'https://placeimg.com/360/360/tech',
+		icon: 'carbon:code',
+		poster: 'http://placeimg.com/540/540/tech',
+		contact: [
+			{
+				name: 'Devansh Parapalli',
+				phone: '1234567890'
+			}
+		],
+		is_active: true
+	},
+	{
+		id: 'aeromodelling-workshop',
+		mode: 'online', 
 		category: 'workshops',
 		name: 'airplane go brrrrrrr',
 		description: 'blah blah blah', //Avishkar is a technical event that tests your knowledge in the field of computer science and technology. It is a 24-hour event that will test your skills in programming, debugging, and logical thinking. It is a team event with a maximum of 3 members per team. The event will be held on 27th and 28th February 2021.

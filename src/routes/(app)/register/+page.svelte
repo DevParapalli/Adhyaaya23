@@ -1,44 +1,330 @@
 <script lang="ts">
+	import { afterUpdate, onMount } from 'svelte';
+	import bg from '$lib/assets/registration.png';
+	import { enhance } from '$app/forms';
+	import autoanimate from '@formkit/auto-animate';
+	// import {}
+	import type { PageData, ActionData } from './$types';
+	import { toastError } from '$lib/util';
+	import { openModal } from 'svelte-modals';
+	import EventChangeModal from '$lib/components/EventChangeModal.svelte';
+	import { afterNavigate } from '$app/navigation';
+	export let data: PageData;
+	export let form: ActionData;
+
+	let teamMemberSelected: number = 0;
+	function onMemberSelect(event: Event & { currentTarget: EventTarget & HTMLInputElement }) {
+		const target = event.target as HTMLInputElement;
+		teamMemberSelected = parseInt(target.value.replace('additional-', ''));
+	}
+
+	// function toasting() {
+	// 	if (form?.errors) {
+	// 		form.errors.forEach((error) => {
+	// 			toastError(`Incorrect Field: ${error}`);
+	// 		});
+	// 		form.errors = [];
+	// 	}
+	// }
+	function setDefaultTeamMember() {
+		if (data.event.team_members.length === 1) {
+			teamMemberSelected = data.event.team_members[0] - 1;
+			const radio: HTMLInputElement | null = document.querySelector(
+				`#additional-${teamMemberSelected}`
+			);
+			if (radio) {
+				radio.checked = true;
+			}
+
+		}
+		else {
+			teamMemberSelected = 0;
+			const radioList = document.querySelectorAll<HTMLInputElement>("[id^='additional-']");
+			radioList.forEach((radio) => {
+				radio.checked = false;
+			});
+		}
+	}
+	afterNavigate(() => {
+		// this auto-selects the team members if there is only one option
+		setDefaultTeamMember();
+	});
+	onMount(() => {
+		// this auto-selects the team members if there is only one option
+		setDefaultTeamMember();
+	});
 </script>
 
-<div class="registration-form">
-	<label for="input-group-1" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
-		>Your Email</label
+
+
+<div class="bg h-full w-full pt-20" style="--bg:url({bg});--opacity:0.75">
+	<div class="header mx-auto text-4xl text-center mb-8 text-white font-bold uppercase font-mono TODO:FONTS ">Registration Form</div>
+	{#if form?.errors}
+	<!-- <span class="hidden">{toasting()}</span> -->
+	Please correct the following errors: 
+	<ol>
+		{#each form.errors as error}
+			<li>{error}</li>
+		{/each}
+	</ol>
+	{/if}
+	<form
+		use:enhance
+		use:autoanimate
+		class="registration-form container max-w-3xl mx-auto px-10 py-10 bg-black/50"
+		method="POST"
 	>
-	<div class="relative mb-6">
-		<div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
-			<svg
-				aria-hidden="true"
-				class="w-5 h-5 text-gray-500 dark:text-gray-400"
-				fill="currentColor"
-				viewBox="0 0 20 20"
-				xmlns="http://www.w3.org/2000/svg"
-				><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" /><path
-					d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"
-				/></svg
-			>
+		<div class="details-container w-full flex flex-row mb-4">
+			<div class="event-details grid grid-cols-2">
+				<span>Event Name:</span>
+				<span>{data.event.name}</span>
+				<span>Event Date:</span>
+				<span>{data.event.start_date.toLocaleDateString('en-IN')}</span>
+				<span>Event Fees:</span>
+				<span
+					>{#each data.event.amount.map((e, i) => `₹${e / 100} for ${data.event.team_members[i]} member${data.event.team_members[i] > 1 ? 's' : ''}`) as fee}
+						{fee}
+						<br />
+					{/each}</span
+				>
+				<button
+					on:click|preventDefault={(e) => {
+						openModal(EventChangeModal);
+						// teamMemberSelected = 0;
+						// setDefaultTeamMember();
+					}}
+					type="button"
+					class="text-left col-span-2 hover:text-white uppercase font-mono underline px-2">Click here to change event</button
+				>
+			</div>
+			<div class="ml-auto">
+				<div class="bg-white h-20 w-20"></div>
+			</div>
 		</div>
-		<input
-			type="text"
-			id="input-group-1"
-			class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-			placeholder="name@flowbite.com"
-		/>
-	</div>
-	<label for="website-admin" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
-		>Username</label
-	>
-	<div class="flex">
-		<span
-			class="inline-flex items-center px-3 text-sm text-gray-900 bg-gray-200 border border-r-0 border-gray-300 rounded-l-md dark:bg-gray-600 dark:text-gray-400 dark:border-gray-600"
+		<input type="hidden" name="event_id" value={data.event.id} />
+		<div class="grid md:grid-cols-2 md:gap-6">
+			<div class="relative z-0 mb-6 w-full group">
+				<input
+					type="text"
+					name="first_name"
+					id="first_name"
+					class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-400 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+					placeholder=" "
+					required
+					value={form?.data?.first_name ?? ''}
+				/>
+				<label
+					for="first_name"
+					class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-200 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+					>First name</label
+				>
+			</div>
+			<div class="relative z-0 mb-6 w-full group">
+				<input
+					type="text"
+					name="last_name"
+					id="last_name"
+					class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-400 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+					placeholder=" "
+					required
+					value={form?.data?.last_name ?? ''}
+				/>
+				<label
+					for="last_name"
+					class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-200 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+					>Last name</label
+				>
+			</div>
+		</div>
+		<div class="grid md:grid-cols-2 md:gap-6">
+			<div class="relative z-0 mb-6 w-full group">
+				<input
+					type="tel"
+					minlength="10"
+					maxlength="10"
+					name="phone"
+					id="phone"
+					class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-400 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+					placeholder=" "
+					required
+					value={form?.data?.phone ?? ''}
+				/>
+				<label
+					for="phone"
+					class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-200 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+					>Phone number (10-digits)</label
+				>
+			</div>
+			<div class="relative z-0 mb-6 w-full group">
+				<input
+					type="email"
+					name="email"
+					id="email"
+					class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-400 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+					placeholder=" "
+					required
+					value={form?.data?.email ?? ''}
+				/>
+				<label
+					for="email"
+					class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-200 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+					>Email address</label
+				>
+			</div>
+		</div>
+		<div class="grid md:grid-cols-3 md:gap-4">
+			<div class="relative z-0 mb-6 w-full group">
+				<input
+					type="text"
+					name="institute"
+					id="institute"
+					class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-400 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+					placeholder=" "
+					required
+					value={form?.data?.institute ?? ''}
+				/>
+				<label
+					for="institute"
+					class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-200 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+					>College/School</label
+				>
+			</div>
+			<div class="relative z-0 mb-6 w-full group">
+				<input
+					type="text"
+					name="year_grade"
+					id="year_grade"
+					class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-400 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+					placeholder=" "
+					required
+					value={form?.data?.year_grade ?? ''}
+				/>
+				<label
+					for="year_grade"
+					class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-200 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+					>Year/Grade</label
+				>
+			</div>
+			<div class="relative z-0 mb-6 w-full group">
+				<input
+					type="text"
+					name="branch_specialization"
+					id="branch_specialization"
+					class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-400 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+					placeholder=" "
+					value={form?.data?.branch_specialization ?? ''}
+				/>
+				<label
+					for="branch_specialization"
+					class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-200 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+					>Branch / Specialization</label
+				>
+			</div>
+		</div>
+
+		{#if data.event.team_members.length > 1 || !data.event.team_members.includes(1)}
+			<h3 class="mb-6 text-base font-medium text-gray-900 dark:text-gray-200">
+				How many additional members are in your team? (ie. excluding you)
+			</h3>
+
+			<ul class="flex flex-row justify-between gap-6 w-full mb-6 flex-wrap">
+				{#each data.event.team_members as item}
+					{#if data.event.team_members.includes(item)}
+						<li class="w-full max-w-[5rem]">
+							<input
+								type="radio"
+								id="additional-{item - 1}"
+								name="members"
+								value="additional-{item - 1}"
+								class="hidden peer"
+								required
+								on:click={onMemberSelect}
+							/>
+							<label
+								for="additional-{item - 1}"
+								class="inline-flex justify-center items-center p-2 w-full text-gray-500 bg-white rounded-lg border border-gray-200 cursor-pointer dark:hover:text-gray-300 dark:border-gray-700 dark:peer-checked:text-blue-500 peer-checked:border-blue-600 peer-checked:text-blue-600 hover:text-gray-600 hover:bg-gray-100 dark:text-gray-200 dark:bg-gray-800 dark:hover:bg-gray-700"
+							>
+								<div class="block">
+									<div class="w-full text-sm font-bold">{item - 1}</div>
+								</div>
+							</label>
+						</li>
+					{/if}
+				{/each}
+			</ul>
+		{/if}
+
+		{#if teamMemberSelected > 0}
+			<h4 class="mb-2 text-base font-medium text-gray-900 dark:text-gray-200">
+				Please enter their details below.
+			</h4>
+			{#each Array.from(Array(teamMemberSelected).keys(), (_, index) => index + 1) as item}
+				<div class="grid md:grid-cols-3 md:gap-4">
+					<div class="relative z-0 mb-6 w-full group">
+						<input
+							type="text"
+							name="member-{item}-name"
+							id="member-{item}-name"
+							class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-400 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+							placeholder=" "
+							required
+							value={form?.data?.[`member-${item}-name`] ?? ''}
+						/>
+						<label
+							for="member-{item}-name"
+							class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-200 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+							>Member {item} Name</label
+						>
+					</div>
+					<div class="relative z-0 mb-6 w-full group">
+						<input
+							type="email"
+							name="member-{item}-email"
+							id="member-{item}-email"
+							class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-400 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+							placeholder=" "
+							required
+							value={form?.data?.[`member-${item}-email`] ?? ''}
+						/>
+						<label
+							for="member-{item}-email"
+							class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-200 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+							>Member {item} Email</label
+						>
+					</div>
+					<div class="relative z-0 mb-6 w-full group">
+						<input
+							type="tel"
+							minlength="10"
+							maxlength="10"
+							name="member-{item}-phone"
+							id="member-{item}-phone"
+							class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-400 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+							placeholder=" "
+							required
+							value={form?.data?.[`member-${item}-phone`] ?? ''}
+						/>
+						<label
+							for="member-{item}-phone"
+							class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-200 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+							>Member {item} Phone</label
+						>
+					</div>
+				</div>
+			{/each}
+		{/if}
+		<button
+			type="submit"
+			class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg uppercase w-full px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+			>Submit</button
 		>
-			@
-		</span>
-		<input
-			type="text"
-			id="website-admin"
-			class="rounded-none rounded-r-lg bg-gray-50 border text-gray-900 focus:ring-blue-500 focus:border-blue-500 block flex-1 min-w-0 w-full text-sm border-gray-300 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-			placeholder="elonmusk"
-		/>
-	</div>
+	</form>
 </div>
+
+<style>
+	.bg {
+		background: linear-gradient(0deg, rgba(0, 0, 0, var(--opacity)), rgba(0, 0, 0, var(--opacity)))
+				center fixed no-repeat,
+			var(--bg) center fixed no-repeat;
+	}
+</style>

@@ -177,7 +177,12 @@ export const template = `
           <!-- start copy -->
           <tr>
             <td align="left" bgcolor="#ffffff" style="padding: 24px; font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; font-size: 16px; line-height: 24px;">
-              <p style="margin: 0;">Here is a summary of your recent order. If you have any questions or concerns about your order, please <a href="https://adhyaaya.org/contact">contact us here</a>, or <a href="tel:{{contact}}">call us</a></p>
+              <p style="margin: 0;">Here is a summary of your recent registration. If you have any questions or concerns about your registration, please <a href="https://adhyaaya.org/contact">message us</a>, or <a href="tel:{{contact}}">give us a call.</a></p>
+            </td>
+          </tr>
+          <tr>
+            <td align="center" bgcolor="#ffffff" style="padding: 24px; font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; font-size: 16px; line-height: 24px;">
+              <img src="{{qr}}" alt="Logo" border="0" width="48" style="display: block; width: 48px; max-width: 48px; min-width: 48px;">
             </td>
           </tr>
           <!-- end copy -->
@@ -333,6 +338,7 @@ export const template = `
 </body>
 </html>
 
+
 `;
 
 export interface EmailData {
@@ -346,6 +352,7 @@ export interface EmailData {
     date: string;
     ec: string;
     contact: string;
+    qr:string;
 }
 
 export function getEmailHTML(data: EmailData) {

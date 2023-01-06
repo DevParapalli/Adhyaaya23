@@ -25,7 +25,7 @@
 		hSwiper = swiper;
 	}
 
-    function onHorizontalProgress(e: CustomEvent<[swiper: import("C:/DevParapalli/Projects/Adhyaaya23/node_modules/.pnpm/swiper@8.4.5/node_modules/swiper/svelte/swiper-svelte").default, progress: number]>){
+    function onHorizontalProgress(e: CustomEvent<[swiper: import("swiper/svelte/swiper-svelte").default, progress: number]>){
         const [swiper, progress] = e.detail;
         // update state
         state.lastH = state.currentH;
@@ -50,7 +50,7 @@
 		vSwiper = swiper;
 	}
 
-    function onVerticalProgress(e: CustomEvent<[swiper: import("C:/DevParapalli/Projects/Adhyaaya23/node_modules/.pnpm/swiper@8.4.5/node_modules/swiper/svelte/swiper-svelte").default, progress: number]>){
+    function onVerticalProgress(e: CustomEvent<[swiper: import("swiper/svelte/swiper-svelte").default, progress: number]>){
         const [swiper, progress] = e.detail;
         // update state
         state.lastV = state.currentV;

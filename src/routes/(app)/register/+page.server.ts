@@ -5,11 +5,13 @@ import { supabase } from '$lib/supabaseClient';
 import type { Actions } from './$types';
 import validator from 'validator';
 import type { DBRegistration } from '$lib/types';
+import { dev } from '$app/environment';
 
 
 export const actions: Actions = {
 	default: async (event) => {
 		const data = convertToJSON(await event.request.formData());
+		// console.log(data);
 		const event_id = data['event_id'];
 		const event_data = EVENTS.find((e: AdhyaayaEvent) => e.id === event_id);
 		const errors =[];
@@ -25,14 +27,14 @@ export const actions: Actions = {
 		if(!validator.isAlpha(String(data['last_name']))){
 			errors.push('last_name');
 		}
-		if(!validator.isAlpha(String(data['institute']))){
+		// if(!validator.isAlphanumeric(String(data['year_grade']))){
+		// 	errors.push('year_grade');
+		// }
+		// if(!validator.isAlphanumeric(String(data['branch_specialization']))){
+		// 	errors.push('branch_specialization');
+		// }
+		if(!validator.isAlphanumeric(String(data['institute']))){
 			errors.push('institute');
-		}
-		if(!validator.isAlpha(String(data['year_grade']))){
-			errors.push('year_grade');
-		}
-		if(!validator.isAlpha(String(data['branch_specialization']))){
-			errors.push('branch_specialization');
 		}
 		const number_of_additional_members = Number(String(data['members']).split('-')[1]) ?? 0;
 		const team = [];
@@ -58,11 +60,16 @@ export const actions: Actions = {
 		}
 
 		if(errors.length>0){
-			console.log('Validation failed', errors);
+			dev  ? console.log('Validation failed', errors): null;
 			return fail(400,{data, errors});
 		}
-
-		const amount_to_pay = event_data?.amount[event_data?.team_members.indexOf(number_of_additional_members+1)] || 0
+		let amount_to_pay = 0;
+		if (isNaN(number_of_additional_members)) {
+			amount_to_pay = event_data?.amount[0] || 0
+		} else {
+			amount_to_pay = event_data?.amount[event_data?.team_members.indexOf(number_of_additional_members+1)] || 0
+		}
+		
 
 		const _push_to_db: DBRegistration = {
 			created_at: new Date().toISOString(),
@@ -86,7 +93,7 @@ export const actions: Actions = {
 		}).select().single();
 
 		if(error){
-			console.log('Error while inserting into db', error);
+			dev ? console.log('Error while inserting into db', error):null;
 			return fail(500,{error});
 		}
 

@@ -63,8 +63,10 @@
 						<span class="text-lg font-bold text-black">Phone:</span>
 						<span class="text-lg text-gray-700">{data.db.phone}</span>
 
+						{#if data.db.team.length > 0}
 						<span class="text-lg font-bold text-black">Team:</span>
 						<span class="text-lg text-gray-700">{data.db.team.map((m) => m.name).join(', ')}</span>
+						{/if}
 
 						<span class="text-lg font-bold text-black">Cost:</span>
 						<span class="text-lg text-gray-700">₹{data.db.amount / 100}</span>
