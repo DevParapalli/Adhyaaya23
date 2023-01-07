@@ -50,10 +50,13 @@
 	afterNavigate(() => {
 		// this auto-selects the team members if there is only one option
 		setDefaultTeamMember();
+		// if (data.select) openModal(EventChangeModal);
 	});
 	onMount(() => {
 		// this auto-selects the team members if there is only one option
 		setDefaultTeamMember();
+		// opens the selection dialog if the user has not selected any event
+		if (data.select) openModal(EventChangeModal);
 	});
 </script>
 
