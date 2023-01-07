@@ -47,3 +47,5 @@ export const GET: RequestHandler = async ({ url }) => {
 		throw error(400, 'Invalid Credentials');
 	}
 };
+
+export const POST = GET;

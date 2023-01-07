@@ -4,6 +4,7 @@ import { supabase } from '$lib/supabaseClient';
 import type { DBRegistration } from '$lib/types';
 import { EVENTS } from '$lib/data/events';
 import {SMTP_USER, SMTP_PASS} from '$env/static/private'
+import { dev } from '$app/environment';
 
 export async function _sendEmail(
 	to: string,
@@ -61,7 +62,9 @@ export async function sendEmail(registration_id: string) {
 			}) ?? 'Pending',
 		ec: event?.contact.map((e) => `${e.name}<br />${e.phone}<br />`).join('') ?? 'Pending',
 		contact: '+919876543210',
-		qr: "data:image/png;base64,"+((await import('qr-image')).image(registration.id ?? 'Pending', { type: 'svg' }).toString('base64'))
+		qr: registration.id ?? 'Pending',
+		// TODO: change link to prod
+		receipt: `${dev ? 'http://localhost:5173/' : 'https://adhyaaya.devparapalli.in/'}/pg/${registration.id}/success`
 	})
 	const text = `Hi ${registration.name},\n\nThank you for registering for Adhyaaya'23. We are glad to have you on board. We will be sending you more details about the event soon.\n\nRegards,\nTeam Adhyaaya'23`;
 

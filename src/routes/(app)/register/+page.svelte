@@ -12,6 +12,8 @@
 	export let data: PageData;
 	export let form: ActionData;
 
+	let loading = false;
+
 	let teamMemberSelected: number = 0;
 	function onMemberSelect(event: Event & { currentTarget: EventTarget & HTMLInputElement }) {
 		const target = event.target as HTMLInputElement;
@@ -315,7 +317,7 @@
 		{/if}
 		<button
 			type="submit"
-			class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg uppercase w-full px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+			class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg uppercase w-full px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 {loading ? 'opacity-50 cursor-not-allowed' : ''}}"
 			>Submit</button
 		>
 	</form>
