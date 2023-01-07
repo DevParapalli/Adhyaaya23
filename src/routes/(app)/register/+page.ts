@@ -4,10 +4,7 @@ import { EVENTS } from '$lib/data/events';
 
 export const load: PageLoad = async ({ fetch, url }) => {
 	const event_id = url.searchParams.get('event');
-	const select = url.searchParams.get('select');
-	if (select) return { event: EVENTS[0], select: true };
-	if (!event_id) throw redirect(307, '/register?select=true');
-
+	if (!event_id) return { event: EVENTS[0], select: true };
 	const event = EVENTS.find((e) => e.id === event_id);
 	if (event) return { event, select: false };
 	else throw error(404, 'Event not found');
