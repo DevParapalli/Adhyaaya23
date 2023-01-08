@@ -5,107 +5,105 @@
 	import 'swiper/css';
 
 	import 'swiper/css/pagination';
+	// import 'swiper/css/mousewheel';
 
 	// import required modules
-	import { Pagination, Mousewheel } from 'swiper';
-	import { dev } from '$app/environment';
+	import { Pagination, Mousewheel, Keyboard, EffectCoverflow, EffectCreative } from 'swiper';
+	import type { PaginationOptions } from 'swiper/types';
+	import EventChangeModal from '$lib/components/EventChangeModal.svelte';
+	import { onMount, SvelteComponent } from 'svelte';
+	import { tweened } from 'svelte/motion';
+	import type Sketch from '$lib/components/DNA/Sketch';
 
-	let vSwiper: Swiper;
-	let hSwiper: Swiper;
 
-	let state = {
-		lastH: 0,
-		currentH: 0,
-		lastV: 0,
-		currentV: 0
+	let sketch: Sketch;
+	const duration = tweened(0, { duration: 1000 });
+	
+	let slide_index = 0;
+	let _Swiper: Swiper;
+
+
+	function onProgress(e: CustomEvent<[swiper: any, progress: number]>) {
+		const [_, progress] = e.detail;
+		slide_index = Math.trunc(progress * PAGES.length - 0.001);
+		duration.set(progress + 0.5);
+		setTimeout(() => {
+			duration.set(0);
+		}, 2000)
+	}
+	function changePage(index: number) {
+		if (_Swiper) _Swiper.slideTo(index, 1000, true);
+	}
+	function onSwiper(e: any) {
+		const [swiper] = e.detail as any as [Swiper];
+		_Swiper = swiper;
+	}
+
+	const PAGES = [
+		{ name: 'Home', component: "Home" },
+		{ name: 'About', component: 'About' },
+		{ name: 'Contact', component: 'Contact' },
+		{ name: 'Services', component: 'Services' }
+	];
+
+	let pagination: PaginationOptions = {
+		type: 'progressbar',
+		progressbarOpposite: true
 	};
-
-	function onHorizontalSwiper(e: CustomEvent<void>) {
-		const [swiper] = e.detail as any as [Swiper];
-		hSwiper = swiper;
-	}
-
-    function onHorizontalProgress(e: CustomEvent<[swiper: import("swiper/svelte/swiper-svelte").default, progress: number]>){
-        const [swiper, progress] = e.detail;
-        // update state
-        state.lastH = state.currentH;
-		state.currentH = progress;
-        dev ? console.log(state) : null;
-
-        // if slide moves from 0 to 0.3333, then disable horizontal scroll
-        if (state.lastH == 0 && state.currentH == 1/3) {
-            hSwiper.mousewheel.disable();
-            vSwiper.mousewheel.enable();
-        }
-        // if slide moves from 0.6666 to 0.3333, then disable horizontal scroll
-        if (state.lastH == 2/3 && state.currentH == 1/3) {
-            hSwiper.mousewheel.disable();
-            vSwiper.mousewheel.enable();
-        }
-    }
-
-
-	function onVerticalSwiper(e: CustomEvent<void>) {
-		const [swiper] = e.detail as any as [Swiper];
-		vSwiper = swiper;
-	}
-
-    function onVerticalProgress(e: CustomEvent<[swiper: import("swiper/svelte/swiper-svelte").default, progress: number]>){
-        const [swiper, progress] = e.detail;
-        // update state
-        state.lastV = state.currentV;
-		state.currentV = progress;
-        dev ? console.log(state) : null;
-
-        if (state.lastV == 3/4 && state.currentV == 1) {
-            setTimeout(() => {
-                hSwiper.mousewheel.enable();
-                vSwiper.mousewheel.disable();
-            }, 250);
-        }
-
-        if (state.lastV == 1/4 && state.currentV == 0) {
-            setTimeout(() => {
-                hSwiper.mousewheel.enable();
-                vSwiper.mousewheel.disable();
-            }, 250);
-        }
-    }
+	onMount(async () => {
+		const bg = await import('$lib/components/DNA/Sketch');
+		const canvas = document.getElementById('dna-bg');
+		sketch = new bg.default(canvas);
+		sketch.loadObjects();
+		duration.set(2);
+		function animate() {
+			if (sketch) {
+				sketch.duration += $duration
+			}
+			requestAnimationFrame(animate);
+		}
+		animate();
+	});
 </script>
 
+<div id="dna-bg" class="fixed h-screen w-screen -z-50 bg-white" />
 
 <Swiper
-	class="mySwiper swiper-h"
+	class="swiper-v"
+	direction={'vertical'}
 	spaceBetween={50}
-	pagination={{
-		clickable: true
+	effect={'coverflow'}
+	{pagination}
+	mousewheel={{ forceToAxis: true }}
+	modules={[Pagination, Mousewheel, Keyboard, EffectCoverflow]}
+	coverflowEffect={{
+		rotate: 10,
+		stretch: 0,
+		depth: 10,
+		modifier: 1,
+		slideShadows: false
 	}}
-    mousewheel={{forceToAxis: false}}
-	modules={[Pagination, Mousewheel]}
-	on:swiper={onHorizontalSwiper}
-	on:progress={onHorizontalProgress}
+	on:progress={onProgress}
+	on:swiper={onSwiper}
 >
-	<SwiperSlide>Horizontal Slide 1</SwiperSlide>
-	<SwiperSlide>
-		<Swiper
-			class="mySwiper2 swiper-v"
-			direction={'vertical'}
-			spaceBetween={50}
-			pagination={{
-				clickable: true
-			}}
-            mousewheel={{forceToAxis: false}}
-			modules={[Pagination, Mousewheel]}
-			on:swiper={onVerticalSwiper}
-            on:progress={onVerticalProgress}
-		>
-			<SwiperSlide>Vertical Slide 1</SwiperSlide>
-			<SwiperSlide>Vertical Slide 2</SwiperSlide>
-			<SwiperSlide>Vertical Slide 3</SwiperSlide>
-			<SwiperSlide>Vertical Slide 4</SwiperSlide>
-			<SwiperSlide>Vertical Slide 5</SwiperSlide>
-		</Swiper>
-	</SwiperSlide>
-	<SwiperSlide>Horizontal Slide 3</SwiperSlide>
-	<SwiperSlide>Horizontal Slide 4</SwiperSlide>
+	{#each PAGES as page}
+		<SwiperSlide>
+			{#if typeof page.component === 'string'}
+				{page.component}
+			{:else}
+				<svelte:component this={page.component} />
+			{/if}
+		</SwiperSlide>
+	{/each}
 </Swiper>
+
+<div class="pagination-container absolute md:visible left-10 top-1/2 flex flex-col gap-4 z-50">
+	{#each PAGES as page, i}
+		<span
+			on:click={() => {
+				changePage(i);
+			}}
+			class="uppercase mono cursor-pointer {i == slide_index ? 'text-white' : ''}">{page.name}</span
+		>
+	{/each}
+</div>
