@@ -39,7 +39,7 @@
 		_Swiper = swiper;
 	}
 
-	const PAGES = [
+	const PAGES: {name: string, component: string | typeof SvelteComponent}[] = [
 		{ name: 'Home', component: "Home" },
 		{ name: 'About', component: 'About' },
 		{ name: 'Contact', component: 'Contact' },
