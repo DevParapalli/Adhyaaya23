@@ -8,7 +8,7 @@
 	// import 'swiper/css/mousewheel';
 
 	// import required modules
-	import { Pagination, Mousewheel, Keyboard, EffectCoverflow, EffectCreative } from 'swiper';
+	import { Pagination, Mousewheel, Keyboard } from 'swiper';
 	import type { PaginationOptions } from 'swiper/types';
 	import EventChangeModal from '$lib/components/EventChangeModal.svelte';
 	import { onMount, SvelteComponent } from 'svelte';
@@ -75,14 +75,7 @@
 	effect={'coverflow'}
 	{pagination}
 	mousewheel={{ forceToAxis: true }}
-	modules={[Pagination, Mousewheel, Keyboard, EffectCoverflow]}
-	coverflowEffect={{
-		rotate: 10,
-		stretch: 0,
-		depth: 10,
-		modifier: 1,
-		slideShadows: false
-	}}
+	modules={[Pagination, Mousewheel, Keyboard]}
 	on:progress={onProgress}
 	on:swiper={onSwiper}
 >
