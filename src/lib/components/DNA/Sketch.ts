@@ -21,9 +21,14 @@ export default class Sketch {
 		this.height = this.container.offsetHeight;
 		//renderer
 		this.renderer = new THREE.WebGLRenderer();
-		this.renderer.setPixelRatio(window.devicePixelRatio);
-		this.renderer.setSize(this.width, this.height);
-		this.renderer.setClearColor(0x551a8b, 0.5);
+		if (window.innerWidth < 600) {
+			this.renderer.setPixelRatio(window.devicePixelRatio * 0.35);
+		} else {
+			this.renderer.setPixelRatio(window.devicePixelRatio * 0.8);
+		}
+
+		this.renderer.setSize(this.width, this.height, false);
+		this.renderer.setClearColor(0x551a8b, 0.2);
 		this.renderer.physicallyCorrectLights = true;
 		this.renderer.outputEncoding = THREE.sRGBEncoding;
 		//model loaders
@@ -37,7 +42,7 @@ export default class Sketch {
 		this.container.appendChild(this.renderer.domElement);
 		//camera
 		this.camera = new THREE.PerspectiveCamera(
-			70,
+			50,
 			window.innerWidth / window.innerHeight,
 			0.001,
 			1000
@@ -45,7 +50,7 @@ export default class Sketch {
 		if (window.innerWidth < 600) {
 			this.camera.position.set(-1, 1, 6);
 		} else {
-			this.camera.position.set(-2, 1, 4);
+			this.camera.position.set(-2, 1, 5);
 		}
 		//orbit controls
 		// const orbitControls = new toc(THREE);
@@ -77,7 +82,7 @@ export default class Sketch {
 		this.settings = {
 			progress: 9,
 			bloomThreshold: 0.5,
-			bloomStrength: 0.3,
+			bloomStrength: 0.6,
 			bloomRadius: 0.01
 		};
 		// this.gui = new dat.GUI();
