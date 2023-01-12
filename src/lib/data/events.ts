@@ -40,7 +40,7 @@ export const EVENTS: AdhyaayaEvent[] = [
 		end_date: new Date('28 Feb 2023'),
 		small_image: 'https://placeimg.com/360/360/tech',
 		icon: 'carbon:code',
-		poster: 'http://placeimg.com/540/540/tech',
+		poster: 'http://placeimg.com/1280/720/tech',
 		contact: [
 			{
 				name: 'Devansh Parapalli',
@@ -61,7 +61,7 @@ export const EVENTS: AdhyaayaEvent[] = [
 		end_date: new Date('28 Feb 2023'),
 		small_image: 'https://placeimg.com/360/360/tech',
 		icon: 'carbon:code',
-		poster: 'http://placeimg.com/540/540/tech',
+		poster: 'http://placeimg.com/1280/720/tech',
 		contact: [
 			{
 				name: 'Devansh Parapalli',
@@ -82,7 +82,7 @@ export const EVENTS: AdhyaayaEvent[] = [
 		end_date: new Date('28 Feb 2023'),
 		small_image: 'https://placeimg.com/360/360/tech',
 		icon: 'carbon:code',
-		poster: 'http://placeimg.com/540/540/tech',
+		poster: 'http://placeimg.com/1280/720/tech',
 		contact: [
 			{
 				name: 'Devansh Parapalli',
@@ -103,7 +103,7 @@ export const EVENTS: AdhyaayaEvent[] = [
 		end_date: new Date('28 Feb 2023'),
 		small_image: 'https://placeimg.com/360/360/tech',
 		icon: 'carbon:code',
-		poster: 'http://placeimg.com/540/540/tech',
+		poster: 'http://placeimg.com/1280/720/tech',
 		contact: [
 			{
 				name: 'Devansh Parapalli',
@@ -124,7 +124,7 @@ export const EVENTS: AdhyaayaEvent[] = [
 		end_date: new Date('28 Feb 2023'),
 		small_image: 'https://placeimg.com/360/360/tech',
 		icon: 'carbon:code',
-		poster: 'http://placeimg.com/540/540/tech',
+		poster: 'http://placeimg.com/1280/720/tech',
 		contact: [
 			{
 				name: 'Devansh Parapalli',
@@ -145,7 +145,7 @@ export const EVENTS: AdhyaayaEvent[] = [
 		end_date: new Date('28 Feb 2023'),
 		small_image: 'https://placeimg.com/360/360/tech',
 		icon: 'carbon:code',
-		poster: 'http://placeimg.com/540/540/tech',
+		poster: 'http://placeimg.com/1280/720/tech',
 		contact: [
 			{
 				name: 'Devansh Parapalli',
@@ -166,7 +166,7 @@ export const EVENTS: AdhyaayaEvent[] = [
 		end_date: new Date('28 Feb 2023'),
 		small_image: 'https://placeimg.com/360/360/tech',
 		icon: 'carbon:code',
-		poster: 'http://placeimg.com/540/540/tech',
+		poster: 'http://placeimg.com/1280/720/tech',
 		contact: [
 			{
 				name: 'Devansh Parapalli',
@@ -188,7 +188,7 @@ export const EVENTS: AdhyaayaEvent[] = [
 		end_date: new Date('28 Feb 2023'),
 		small_image: 'https://placeimg.com/360/360/tech',
 		icon: 'carbon:code',
-		poster: 'http://placeimg.com/540/540/tech',
+		poster: 'http://placeimg.com/1280/720/tech',
 		contact: [
 			{
 				name: 'Devansh Parapalli',
@@ -209,7 +209,7 @@ export const EVENTS: AdhyaayaEvent[] = [
 		end_date: new Date('28 Feb 2023'),
 		small_image: 'https://placeimg.com/360/360/tech',
 		icon: 'carbon:code',
-		poster: 'http://placeimg.com/540/540/tech',
+		poster: 'http://placeimg.com/1280/720/tech',
 		contact: [
 			{
 				name: 'Devansh Parapalli',
@@ -230,7 +230,7 @@ export const EVENTS: AdhyaayaEvent[] = [
 		end_date: new Date('28 Feb 2023'),
 		small_image: 'https://placeimg.com/360/360/tech',
 		icon: 'carbon:code',
-		poster: 'http://placeimg.com/540/540/tech',
+		poster: 'http://placeimg.com/1280/720/tech',
 		contact: [
 			{
 				name: 'Devansh Parapalli',
@@ -252,7 +252,7 @@ export const EVENTS: AdhyaayaEvent[] = [
 		end_date: new Date('28 Feb 2023'),
 		small_image: 'https://placeimg.com/360/360/tech',
 		icon: 'carbon:code',
-		poster: 'http://placeimg.com/540/540/tech',
+		poster: 'http://placeimg.com/1280/720/tech',
 		contact: [
 			{
 				name: 'Devansh Parapalli',
@@ -273,7 +273,7 @@ export const EVENTS: AdhyaayaEvent[] = [
 		end_date: new Date('28 Feb 2023'),
 		small_image: 'https://placeimg.com/360/360/tech',
 		icon: 'carbon:code',
-		poster: 'http://placeimg.com/540/540/tech',
+		poster: 'http://placeimg.com/1280/720/tech',
 		contact: [
 			{
 				name: 'Devansh Parapalli',
@@ -294,7 +294,7 @@ export const EVENTS: AdhyaayaEvent[] = [
 		end_date: new Date('28 Feb 2023'),
 		small_image: 'https://placeimg.com/360/360/tech',
 		icon: 'carbon:code',
-		poster: 'http://placeimg.com/540/540/tech',
+		poster: 'http://placeimg.com/1280/720/tech',
 		contact: [
 			{
 				name: 'Devansh Parapalli',
@@ -315,7 +315,7 @@ export const EVENTS: AdhyaayaEvent[] = [
 		end_date: new Date('28 Feb 2023'),
 		small_image: 'https://placeimg.com/360/360/tech',
 		icon: 'carbon:code',
-		poster: 'http://placeimg.com/540/540/tech',
+		poster: 'http://placeimg.com/1280/720/tech',
 		contact: [
 			{
 				name: 'Devansh Parapalli',
@@ -336,7 +336,7 @@ export const EVENTS: AdhyaayaEvent[] = [
 		end_date: new Date('28 Feb 2023'),
 		small_image: 'https://placeimg.com/360/360/tech',
 		icon: 'carbon:code',
-		poster: 'http://placeimg.com/540/540/tech',
+		poster: 'http://placeimg.com/1280/720/tech',
 		contact: [
 			{
 				name: 'Devansh Parapalli',
@@ -357,7 +357,7 @@ export const EVENTS: AdhyaayaEvent[] = [
 		end_date: new Date('28 Feb 2023'),
 		small_image: 'https://placeimg.com/360/360/tech',
 		icon: 'carbon:code',
-		poster: 'http://placeimg.com/540/540/tech',
+		poster: 'http://placeimg.com/1280/720/tech',
 		contact: [
 			{
 				name: 'Devansh Parapalli',
@@ -378,7 +378,7 @@ export const EVENTS: AdhyaayaEvent[] = [
 		end_date: new Date('28 Feb 2023'),
 		small_image: 'https://placeimg.com/360/360/tech',
 		icon: 'carbon:code',
-		poster: 'http://placeimg.com/540/540/tech',
+		poster: 'http://placeimg.com/1280/720/tech',
 		contact: [
 			{
 				name: 'Devansh Parapalli',
@@ -399,7 +399,7 @@ export const EVENTS: AdhyaayaEvent[] = [
 		end_date: new Date('28 Feb 2023'),
 		small_image: 'https://placeimg.com/360/360/tech',
 		icon: 'carbon:code',
-		poster: 'http://placeimg.com/540/540/tech',
+		poster: 'http://placeimg.com/1280/720/tech',
 		contact: [
 			{
 				name: 'Devansh Parapalli',

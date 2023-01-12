@@ -1,3 +1,4 @@
+
 import * as THREE from 'three';
 import fragment from '$lib/components/DNA/shaders/fragment.glsl?raw';
 import vertex from '$lib/components/DNA/shaders/vertexParticles.glsl?raw';
@@ -11,10 +12,41 @@ import { UnrealBloomPass } from 'three/examples/jsm/postprocessing/UnrealBloomPa
 // import * as dat from "dat.gui";
 import { AberrationShader } from '$lib/components/DNA/shaders/CustomPass';
 
-export default class Sketch {
-	constructor(container) {
+
+
+export default class Sketch { 
+	scene: THREE.Scene;
+	container: HTMLElement;
+	width: number;
+	height: number;
+	renderer: THREE.WebGLRenderer;
+	loader: GLTFLoader;
+	dracoLoader: DRACOLoader;
+	camera: THREE.PerspectiveCamera;
+	// controls: any;
+	clock: THREE.Clock;
+	duration: number;
+	geometry: THREE.BufferGeometry;
+	// gui: dat.GUI;
+	settings: {
+		progress: number;
+		bloomThreshold: number;
+		bloomStrength: number;
+		bloomRadius: number;
+	};
+	renderScene: RenderPass;
+	bloomPass: UnrealBloomPass;
+	composer: EffectComposer;
+	aberrationPass: ShaderPass;
+	effect1: ShaderPass;
+
+	material: THREE.ShaderMaterial;
+
+	
+	constructor(container: HTMLDivElement) {
 		//scene
 		this.scene = new THREE.Scene();
+		// this.scene.background = new THREE.Color(0x000000, 0.0);
 		//container - width & height
 		this.container = container;
 		this.width = this.container.offsetWidth;
@@ -28,14 +60,14 @@ export default class Sketch {
 		}
 
 		this.renderer.setSize(this.width, this.height, false);
-		this.renderer.setClearColor(0x551a8b, 0.2);
+		this.renderer.setClearColor(0x551a8b, 0.20);
 		this.renderer.physicallyCorrectLights = true;
 		this.renderer.outputEncoding = THREE.sRGBEncoding;
 		//model loaders
 		this.loader = new GLTFLoader();
 		this.dracoLoader = new DRACOLoader();
 		this.dracoLoader.setDecoderPath(
-			'https://raw.githubusercontent.com/mrdoob/three.js/dev/examples/jsm/libs/draco/'
+			'/draco/'
 		);
 		this.loader.setDRACOLoader(this.dracoLoader);
 		//add canvas
@@ -58,9 +90,16 @@ export default class Sketch {
 		//clock
 		this.clock = new THREE.Clock();
 		this.duration = 0;
+		this.settings = {
+			progress: 9,
+			bloomThreshold: 0.5,
+			bloomStrength: 0.6,
+			bloomRadius: 0.01
+		};
 	}
 	loadObjects = () => {
 		this.loader.load(dna, (gltf) => {
+			// @ts-expect-error custom geometery.
 			this.geometry = gltf.scene.children[0].geometry;
 			this.geometry.center();
 			//run after load
@@ -75,22 +114,9 @@ export default class Sketch {
 			//start render
 			this.render();
 			//add dat.gui settings
-			this.settings();
+			// this.settings();
 		});
 	};
-	settings() {
-		this.settings = {
-			progress: 9,
-			bloomThreshold: 0.5,
-			bloomStrength: 0.6,
-			bloomRadius: 0.01
-		};
-		// this.gui = new dat.GUI();
-		// this.gui.add(this.settings, "progress", 0, 1, 0.01);
-		// this.gui.add(this.settings, "bloomThreshold", 0, 1, 0.01);
-		// this.gui.add(this.settings, "bloomStrength", 0, 10, 0.01);
-		// this.gui.add(this.settings, "bloomRadius", 0, 10, 0.01);
-	}
 	initPost() {
 		this.renderScene = new RenderPass(this.scene, this.camera);
 
@@ -109,6 +135,7 @@ export default class Sketch {
 		this.composer.addPass(this.effect1);
 	}
 	addObjects() {
+		
 		this.material = new THREE.ShaderMaterial({
 			extensions: {
 				derivatives: '#extension GL_OES_standard_derivatives : enable'

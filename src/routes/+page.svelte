@@ -14,7 +14,7 @@
 	import { onMount, SvelteComponent } from 'svelte';
 	import { tweened } from 'svelte/motion';
 	import type Sketch from '$lib/components/DNA/Sketch';
-
+	import Nav from '$lib/components/index/Nav.svelte';
 
 	let sketch: Sketch;
 	const duration = tweened(0, { duration: 1000 });
@@ -26,10 +26,10 @@
 	function onProgress(e: CustomEvent<[swiper: any, progress: number]>) {
 		const [_, progress] = e.detail;
 		slide_index = Math.trunc(progress * PAGES.length - 0.001);
-		duration.set(progress + 0.5);
+		duration.set(0.50);
 		setTimeout(() => {
 			duration.set(0);
-		}, 2000)
+		}, 1000)
 	}
 	function changePage(index: number) {
 		if (_Swiper) _Swiper.slideTo(index, 1000, true);
@@ -41,9 +41,11 @@
 
 	const PAGES: {name: string, component: string | typeof SvelteComponent}[] = [
 		{ name: 'Home', component: "Home" },
-		{ name: 'About', component: 'About' },
-		{ name: 'Contact', component: 'Contact' },
-		{ name: 'Services', component: 'Services' }
+		{ name: 'Events', component: "Mini Events"},
+		{ name: 'About Us', component:"About Us"},
+		{ name: 'Sponsors', component: "Sponsors"},
+		{ name: 'Contact Us', component: "Contact Us"},
+		{ name: 'Sitemap', component: "Footer"},
 	];
 
 	let pagination: PaginationOptions = {
@@ -52,10 +54,13 @@
 	};
 	onMount(async () => {
 		const bg = await import('$lib/components/DNA/Sketch');
-		const canvas = document.getElementById('dna-bg');
+		const canvas = document.getElementById('dna-bg') ?? document.createElement('canvas');
 		sketch = new bg.default(canvas);
 		sketch.loadObjects();
 		duration.set(2);
+		setTimeout(() => {
+			duration.set(0);
+		}, 2000)
 		function animate() {
 			if (sketch) {
 				sketch.duration += $duration
@@ -67,12 +72,11 @@
 </script>
 
 <div id="dna-bg" class="fixed h-screen w-screen -z-50 bg-white" />
-
+<Nav />
 <Swiper
 	class="swiper-v"
 	direction={'vertical'}
-	spaceBetween={50}
-	effect={'coverflow'}
+	spaceBetween={0}
 	{pagination}
 	mousewheel={{ forceToAxis: true }}
 	modules={[Pagination, Mousewheel, Keyboard]}
