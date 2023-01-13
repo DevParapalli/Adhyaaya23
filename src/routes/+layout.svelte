@@ -5,8 +5,8 @@
 	import { onMount } from 'svelte';
 	import { Toaster } from 'svelte-french-toast';
 	import { Modals, closeModal } from 'svelte-modals'
-
-
+	import Loader from '$lib/components/Loader.svelte'
+	let loaded = false;
 	onMount(() => {
 		const {
 			data: { subscription }
@@ -32,7 +32,7 @@
 	  on:click={closeModal}
 	/>
   </Modals>
-  
+
   <style>
 	.backdrop {
 	  position: fixed;
@@ -43,3 +43,4 @@
 	  background: rgba(0,0,0,0.50)
 	}
   </style>
+

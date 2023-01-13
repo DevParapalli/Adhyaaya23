@@ -21,20 +21,23 @@
     }
 </script>
 
-<div class="fixed top-0 w-full min-h-16 bg-transparent z-[999] pointer-events-none flex flex-row px-4 md:px-10  items-center pt-[4vh]">
+<div class="fixed top-0 w-full min-h-16 bg-transparent z-[9999] pointer-events-none flex flex-row px-4 md:px-10  items-center pt-[4vh]">
     <div on:click={() => {
         goto("/");
     }} class="logo bg-transparent w-20 md:w-36 pointer-events-auto py-1 px-2  rounded-lg transition-all duration-250 hover:scale-105 active:scale-95 cursor-pointer mr-auto"><img src="{AdhyaayaLogoSolid}" alt=""></div>
-    
+     
+    <div on:click={() => {goto("/register?select=true")}} on:keypress={() => {goto("/register?select=true")}} class="register text-white pointer-events-auto bg-transparent ml-auto md:mr-10 mr-4 py-2 px-4 rounded-full border {isMenuOpen ? 'border-white':'border-white/60'} text-lg hover:scale-110 active:scale-90 cursor-pointer transition-all duration-250 ease-in-out">
+        Register
+    </div>
     <input id="menu-toggle" bind:checked={isMenuOpen} type="checkbox" class="hidden" >
-    <label for="menu-toggle" class="menu-icon h-12 w-12 rounded-full pointer-events-auto relative transition-all duration-500 ease-in-out border  {isMenuOpen ? 'border-white':'border-white/60'}"><div class="absolute w-[18px] h-[2px] origin-center bg-white transition-all ease-in-out duration-500 " style="{isMenuOpen ? 'top: 50%;':'top: calc(50% - 4px);'} left: 50%; transform: translateX(-50%) translateY(-50%) {isMenuOpen ? 'rotate(-45deg)':'rotate(0deg)'} translateZ(0px);"></div><div class="absolute w-[18px] h-[2px] origin-center bg-white transition-all ease-in-out duration-500" style="{isMenuOpen ? 'top: 50%;':'top: calc(50% + 4px);'} left: 50%; transform: translateX(-50%) translateY(-50%) {isMenuOpen ? 'rotate(45deg)':'rotate(0deg)'} translateZ(0px);"></div></label>
+    <label for="menu-toggle" class="menu-icon  cursor-pointer h-12 w-12 rounded-full pointer-events-auto relative transition-all duration-500 ease-in-out hover:scale-105 active:scale-95 border  {isMenuOpen ? 'border-white':'border-white/60'}"><div class="absolute w-[18px] h-[2px] origin-center bg-white transition-all ease-in-out duration-500 " style="{isMenuOpen ? 'top: 50%;':'top: calc(50% - 4px);'} left: 50%; transform: translateX(-50%) translateY(-50%) {isMenuOpen ? 'rotate(-45deg)':'rotate(0deg)'} translateZ(0px);"></div><div class="absolute w-[18px] h-[2px] origin-center bg-white transition-all ease-in-out duration-500" style="{isMenuOpen ? 'top: 50%;':'top: calc(50% + 4px);'} left: 50%; transform: translateX(-50%) translateY(-50%) {isMenuOpen ? 'rotate(45deg)':'rotate(0deg)'} translateZ(0px);"></div></label>
 </div>
 
-<div class="menu-container {isMenuOpen} h-screen bg-[#190829] rounded-none  z-[120] absolute right-0 top-0 flex flex-col">
+<div class="menu-container {isMenuOpen} h-screen bg-[#190829] rounded-none z-[120] absolute right-0 top-0 flex flex-col">
     {#if isMenuOpen}
     <div class="{isMenuOpen} header h-16 md:h-24 lg:h-36 w-full"></div>
     <div class=" {isMenuOpen} menu flex flex-col w-full h-full">
-        <div class="menu-items w-fit flex flex-col justify-evenly h-full z-[150]">
+        <div class="menu-items w-fit flex flex-col justify-evenly h-full z-[150] scale-90 md:scale-100">
             <div on:focus={()=>{setBackgroundPosition(bgX, 0)}} on:mouseover={()=>{setBackgroundPosition(bgX, 0)}} class="menu-item">Home</div>
             <div on:focus={()=>{setBackgroundPosition(bgX, -25)}} on:mouseover={()=>{setBackgroundPosition(bgX, -25)}} class="menu-item">Events</div>
             <div on:focus={()=>{setBackgroundPosition(bgX, -50)}} on:mouseover={()=>{setBackgroundPosition(bgX, -50)}} class="menu-item">Team</div>
