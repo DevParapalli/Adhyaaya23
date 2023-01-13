@@ -16,16 +16,20 @@
 	import type Sketch from '$lib/components/DNA/Sketch';
 	import Nav from '$lib/components/Nav.svelte';
 	import Home from '$lib/components/index/Home.svelte';
-
+	import {hasScrolled} from '$lib/stores/UI';
 	let sketch: Sketch;
 	const duration = tweened(0, { duration: 1000 });
 
 	let slide_index = 0;
 	let _Swiper: Swiper;
 
+
 	function onProgress(e: CustomEvent<[swiper: any, progress: number]>) {
 		const [_, progress] = e.detail;
-		slide_index = Math.trunc(progress * PAGES.length - 0.001);
+		slide_index = Math.trunc(progress * PAGES.length - 0.001); 
+		if (slide_index >= 1) {
+			hasScrolled.set(true);
+		}
 		duration.set(0.5);
 		setTimeout(() => {
 			duration.set(0);
@@ -59,7 +63,7 @@
 		const canvas = document.getElementById('dna-bg') ?? document.createElement('canvas');
 		sketch = new bg.default(canvas);
 		sketch.loadObjects();
-		duration.set(2);
+		duration.set(2.5);
 		setTimeout(() => {
 			duration.set(0);
 		}, 2000);
@@ -75,6 +79,9 @@
 			loaded = true;
 		}, 500);
 	});
+
+	
+
 </script>
 
 {#if !loaded}
@@ -88,7 +95,7 @@
 				on:click={() => {
 					changePage(i);
 				}}
-				class="uppercase mono cursor-pointer text-xs px-2 py-0 max-w-xs w-full md:text-base relative after:absolute after:w-0 after:h-full after:bg-white after:mix-blend-difference after:top-0 after:left-0 after:rounded-lg after:transition-all after:duration-500 after:ease-in-out {i == slide_index
+				class="uppercase mono cursor-pointer text-xs px-2 py-0 max-w-xs w-full md:text-base relative after:absolute after:w-0 after:h-full after:bg-white after:mix-blend-difference after:top-0 after:left-0  after:transition-all after:duration-300 after:ease-in-out {i == slide_index
 					? 'text-white after:w-full'
 					: ''}">{page.name}</span
 			>
@@ -113,7 +120,7 @@
 			{#if typeof page.component === 'string'}
 				{page.component}
 			{:else}
-				<svelte:component this={page.component} />
+			<svelte:component this={page.component} {hasScrolled} />
 			{/if}
 		</SwiperSlide>
 	{/each}

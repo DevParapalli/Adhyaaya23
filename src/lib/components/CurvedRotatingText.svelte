@@ -5,6 +5,7 @@
 	export let text = 'Hello World';
 	export let repeat = 3;
 	export let separator = ' • ';
+	export let classes = '';
 
 	let array: string[] = [];
 	$: array = [...Array(repeat)].map(_ => [...text].concat([...separator])).flat();
@@ -19,7 +20,7 @@
 	<p><span>Animation duration</span><input type="number" bind:value={speed} min="10" step="10" /></p>
 </div>
 
-<div class="seal" style="--size: {size}px; --speed: {speed * 1000}ms; --font: {font}em">
+<div class="seal {classes}" style="--size: {size}px; --speed: {speed * 1000}ms; --font: {font}em">
 	{#each array as char, index}
 		<div class="char" style="--angle: {`${1 / array.length * index}turn`}">{char}</div>
 	{/each}

@@ -92,7 +92,7 @@
 					{#if EVENT?.mode === 'online'}
 						<li>
 							Adhyaaya <span class="text-bold uppercase text-white underline">will not</span> be help
-							responsible for any network lag, disconnectivity issues during the event, participants
+							responsible for any network lag, connectivity issues during the event, participants
 							are expected to have a stable internet connection.
 						</li>
 					{/if}

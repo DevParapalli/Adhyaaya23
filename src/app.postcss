@@ -7,6 +7,8 @@
 	box-sizing: border-box;
 	padding: 0;
 	margin: 0;
+	-webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 html {
@@ -54,6 +56,15 @@ input:-webkit-autofill {
 	background: transparent;
 }
 
+.swiper-pagination-progressbar {
+	@apply transition-opacity duration-300 ease-in-out
+}
+
+.swiper-pagination.swiper-pagination-progressbar.swiper-pagination-vertical .swiper-pagination-progressbar-fill {
+	/* TODO: Get colors for this... */
+	@apply bg-white text-white;
+}
+
 .swiper-pagination.swiper-pagination-progressbar.swiper-pagination-vertical {
-	@apply h-[14rem] absolute left-4 top-1/2 md:hidden -translate-y-1/2;
+	@apply h-[14rem] absolute left-4 top-1/2 md:hidden -translate-y-1/2 ;
 }
