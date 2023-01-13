@@ -46,11 +46,12 @@
                 <div on:mouseover={()=>{setBackgroundPosition(-50, bgY)}} class="submenu-item text-base">Contact Info</div>
             </div>
         </div>
+        <div style="--bgX: {bgX}%;--bgY: {bgY}%" class="menu-background-pattern z-[133]"></div>
         <div style="--bgX: {bgX}%;--bgY: {bgY}%" class="menu-background-pattern mbp-0 z-[130]"></div>
         <div style="--bgX: {bgX}%;--bgY: {bgY}%" class="menu-background-pattern mbp-1 z-[131]"></div>
         <div style="--bgX: {bgX}%;--bgY: {bgY}%" class="menu-background-pattern mbp-2 z-[132]"></div>
     </div>
-    <div class=" {isMenuOpen} social w-full flex items-center self-end justify-end py-6 pb-32 md:pb-6 mt-auto">
+    <div class=" {isMenuOpen} social w-full flex items-center self-end justify-end py-6 pb-32 md:pb-6 mt-auto z-[140]">
     {#each SOCIALS as social}
         <div class="h-10 w-10 md:h-12 md:w-12 rounded-full border border-white mx-auto md:ml-0 md:mr-10 inline-flex items-center justify-center text-2xl md:text-3xl cursor-pointer {social.text} {social.bg} hover:scale-105 active:scale-95 active:opacity-90 transition-all duration-200 ease-in-out"><iconify-icon icon="{social.icon}" /></div>
     {/each}</div>
@@ -108,7 +109,7 @@
         width: 100vw;
 
         background-image: radial-gradient(
-            rgba(255, 255, 255, 0.1) 9%,
+            rgba(255, 255, 255, 0.25) 9%,
             transparent 9%
         );
         background-position: var(--bgX, 0%) var(--bgY, 0%);
@@ -124,7 +125,7 @@
             rgba(255, 0, 0, 0.25) 9%,
             transparent 9%
         );
-        background-position: var(--bgX, 0%) calc(var(--bgY, 0%) + .1%);
+        background-position: var(--bgX, 0%) calc(var(--bgY, 0%) + .15%);
     }
 
     .menu-background-pattern.mbp-1 {
@@ -132,7 +133,7 @@
             rgba(0, 255, 0, 0.25) 9%,
             transparent 9%
         );
-        background-position: var(--bgX, 0%) calc(var(--bgY, 0%) - .1%);
+        background-position: var(--bgX, 0%) calc(var(--bgY, 0%) - .15%);
     }
 
     .menu-background-pattern.mbp-2 {
@@ -140,7 +141,7 @@
             rgba(0, 0, 255, 0.25) 9%,
             transparent 9%
         );
-        background-position: calc(var(--bgX, 0%) - .1%) var(--bgY, 0%);
+        background-position: calc(var(--bgX, 0%) - .15%) var(--bgY, 0%);
     }
 
     .menu-items:hover ~ .menu-background-pattern {
