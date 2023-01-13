@@ -6,7 +6,7 @@
     // export let isMenuOpen = true;
     export let nav_cb = () => {};
     afterNavigate(() => {
-		// isMenuOpen=false;
+		isMenuOpen=false;
 	})
     function goto(path: string) {
         isMenuOpen = false;
