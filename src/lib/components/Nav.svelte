@@ -35,15 +35,15 @@
     <div class="{isMenuOpen} header h-16 md:h-24 lg:h-36 w-full"></div>
     <div class=" {isMenuOpen} menu flex flex-col w-full h-full">
         <div class="menu-items w-fit flex flex-col justify-evenly h-full z-[150]">
-            <div on:mouseover={()=>{setBackgroundPosition(bgX, 0)}} class="menu-item">Home</div>
-            <div on:mouseover={()=>{setBackgroundPosition(bgX, -25)}} class="menu-item">Events</div>
-            <div on:mouseover={()=>{setBackgroundPosition(bgX, -50)}} class="menu-item">Team</div>
-            <div on:mouseover={()=>{setBackgroundPosition(bgX, -75)}} class="menu-item">Sponsors</div>
-            <div on:mouseover={()=>{setBackgroundPosition(bgX, -100)}} class="menu-item">Gallery</div>
-            <div on:mouseover={()=>{setBackgroundPosition(bgX, -125)}} class="menu-item-container flex flex-col md:flex-row gap-4 md:gap-16">
-                <div on:mouseover={()=>{setBackgroundPosition(0, bgY)}} class="submenu-item text-base ">Privacy Policy</div>
-                <div on:mouseover={()=>{setBackgroundPosition(-25, bgY)}} class="submenu-item text-base">Terms and Conditions</div>
-                <div on:mouseover={()=>{setBackgroundPosition(-50, bgY)}} class="submenu-item text-base">Contact Info</div>
+            <div on:focus={()=>{setBackgroundPosition(bgX, 0)}} on:mouseover={()=>{setBackgroundPosition(bgX, 0)}} class="menu-item">Home</div>
+            <div on:focus={()=>{setBackgroundPosition(bgX, -25)}} on:mouseover={()=>{setBackgroundPosition(bgX, -25)}} class="menu-item">Events</div>
+            <div on:focus={()=>{setBackgroundPosition(bgX, -50)}} on:mouseover={()=>{setBackgroundPosition(bgX, -50)}} class="menu-item">Team</div>
+            <div on:focus={()=>{setBackgroundPosition(bgX, -75)}} on:mouseover={()=>{setBackgroundPosition(bgX, -75)}} class="menu-item">Sponsors</div>
+            <div on:focus={()=>{setBackgroundPosition(bgX, -100)}} on:mouseover={()=>{setBackgroundPosition(bgX, -100)}} class="menu-item">Gallery</div>
+            <div on:focus={()=>{setBackgroundPosition(bgX, -125)}} on:mouseover={()=>{setBackgroundPosition(bgX, -125)}} class="menu-item-container flex flex-col md:flex-row gap-4 md:gap-16">
+                <div on:focus={()=>{setBackgroundPosition(0, bgY)}} on:mouseover={()=>{setBackgroundPosition(0, bgY)}} class="submenu-item text-base ">Privacy Policy</div>
+                <div on:focus={()=>{setBackgroundPosition(-25, bgY)}} on:mouseover={()=>{setBackgroundPosition(-25, bgY)}} class="submenu-item text-base">Terms and Conditions</div>
+                <div on:focus={()=>{setBackgroundPosition(-50, bgY)}} on:mouseover={()=>{setBackgroundPosition(-50, bgY)}} class="submenu-item text-base">Contact Info</div>
             </div>
         </div>
         <div style="--bgX: {bgX}%;--bgY: {bgY}%" class="menu-background-pattern z-[133]"></div>
