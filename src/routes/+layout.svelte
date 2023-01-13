@@ -6,6 +6,7 @@
 	import { Toaster } from 'svelte-french-toast';
 	import { Modals, closeModal } from 'svelte-modals'
 
+
 	onMount(() => {
 		const {
 			data: { subscription }

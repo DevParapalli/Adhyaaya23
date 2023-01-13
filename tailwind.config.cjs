@@ -1,6 +1,8 @@
 const daisyui = require('daisyui');
 const typography = require('@tailwindcss/typography');
 const forms = require('@tailwindcss/forms');
+const lineClamp = require('@tailwindcss/line-clamp');
+const aspectRatio = require('@tailwindcss/aspect-ratio');
 
 const config = {
 	content: ['./src/**/*.{html,js,svelte,ts}'],
@@ -25,7 +27,7 @@ const config = {
 			}
 		]
 	},
-	plugins: [forms, typography, daisyui]
+	plugins: [forms, typography, lineClamp, aspectRatio, daisyui]
 };
 
 module.exports = config;

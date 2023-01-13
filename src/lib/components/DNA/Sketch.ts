@@ -60,7 +60,7 @@ export default class Sketch {
 		}
 
 		this.renderer.setSize(this.width, this.height, false);
-		this.renderer.setClearColor(0x551a8b, 0.20);
+		this.renderer.setClearColor(0x1b092c, 1);
 		this.renderer.physicallyCorrectLights = true;
 		this.renderer.outputEncoding = THREE.sRGBEncoding;
 		//model loaders

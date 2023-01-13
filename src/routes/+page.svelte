@@ -14,7 +14,7 @@
 	import { onMount, SvelteComponent } from 'svelte';
 	import { tweened } from 'svelte/motion';
 	import type Sketch from '$lib/components/DNA/Sketch';
-	import Nav from '$lib/components/index/Nav.svelte';
+	import Nav from '$lib/components/Nav.svelte'
 
 	let sketch: Sketch;
 	const duration = tweened(0, { duration: 1000 });
@@ -71,8 +71,8 @@
 	});
 </script>
 
-<div id="dna-bg" class="fixed h-screen w-screen -z-50 bg-white" />
-<Nav />
+<div id="dna-bg" class="fixed h-screen w-screen -z-50 bg-black" />
+<Nav/>
 <Swiper
 	class="swiper-v"
 	direction={'vertical'}
@@ -94,13 +94,13 @@
 	{/each}
 </Swiper>
 
-<div class="pagination-container absolute md:visible left-10 top-1/2 flex flex-col gap-4 z-50">
+<div class="pagination-container absolute md:visible left-4 md:left-10 top-1/2 flex flex-col gap-1 md:gap-4 z-50">
 	{#each PAGES as page, i}
 		<span
 			on:click={() => {
 				changePage(i);
 			}}
-			class="uppercase mono cursor-pointer {i == slide_index ? 'text-white' : ''}">{page.name}</span
+			class="uppercase mono cursor-pointer text-xs md:text-base {i == slide_index ? 'text-white' : ''}">{page.name}</span
 		>
 	{/each}
 </div>
