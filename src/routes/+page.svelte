@@ -15,6 +15,7 @@
 	import { tweened } from 'svelte/motion';
 	import type Sketch from '$lib/components/DNA/Sketch';
 	import Nav from '$lib/components/Nav.svelte';
+	import Home from '$lib/components/index/Home.svelte';
 
 	let sketch: Sketch;
 	const duration = tweened(0, { duration: 1000 });
@@ -39,7 +40,7 @@
 	}
 
 	const PAGES: { name: string; component: string | typeof SvelteComponent }[] = [
-		{ name: 'Home', component: 'Home' },
+		{ name: 'Home', component: Home },
 		{ name: 'Events', component: 'Mini Events' },
 		{ name: 'About Us', component: 'About Us' },
 		{ name: 'Sponsors', component: 'Sponsors' },
@@ -49,7 +50,7 @@
 
 	let pagination: PaginationOptions = {
 		type: 'progressbar',
-		progressbarOpposite: true
+		progressbarOpposite: false
 	};
 
 	let loaded = false;
@@ -80,15 +81,15 @@
 	<Loader />
 {:else}
 	<div
-		class="pagination-container absolute md:visible left-4 md:left-10 top-1/2 flex flex-col gap-1 md:gap-4 z-50"
+		class="pagination-container absolute invisible md:visible left-4 md:left-10 top-1/2 flex flex-col gap-1 md:gap-2 z-50 -translate-y-1/2"
 	>
 		{#each PAGES as page, i}
 			<span
 				on:click={() => {
 					changePage(i);
 				}}
-				class="uppercase mono cursor-pointer text-xs md:text-base {i == slide_index
-					? 'text-white'
+				class="uppercase mono cursor-pointer text-xs px-2 py-0 max-w-xs w-full md:text-base relative after:absolute after:w-0 after:h-full after:bg-white after:mix-blend-difference after:top-0 after:left-0 after:rounded-lg after:transition-all after:duration-500 after:ease-in-out {i == slide_index
+					? 'text-white after:w-full'
 					: ''}">{page.name}</span
 			>
 		{/each}

@@ -26,9 +26,9 @@
         goto("/");
     }} class="logo bg-transparent w-20 md:w-36 pointer-events-auto py-1 px-2  rounded-lg transition-all duration-250 hover:scale-105 active:scale-95 cursor-pointer mr-auto"><img src="{AdhyaayaLogoSolid}" alt=""></div>
      
-    <div on:click={() => {goto("/register?select=true")}} on:keypress={() => {goto("/register?select=true")}} class="register text-white pointer-events-auto bg-transparent ml-auto md:mr-10 mr-4 py-2 px-4 rounded-full border {isMenuOpen ? 'border-white':'border-white/60'} text-lg hover:scale-110 active:scale-90 cursor-pointer transition-all duration-250 ease-in-out">
+    <a href="/register?select=true" class="register text-white pointer-events-auto bg-transparent ml-auto md:mr-10 mr-4 py-2 px-4 rounded-full border {isMenuOpen ? 'border-white':'border-white/60'} text-lg hover:scale-110 active:scale-90 cursor-pointer transition-all duration-250 ease-in-out">
         Register
-    </div>
+    </a>
     <input id="menu-toggle" bind:checked={isMenuOpen} type="checkbox" class="hidden" >
     <label for="menu-toggle" class="menu-icon  cursor-pointer h-12 w-12 rounded-full pointer-events-auto relative transition-all duration-500 ease-in-out hover:scale-105 active:scale-95 border  {isMenuOpen ? 'border-white':'border-white/60'}"><div class="absolute w-[18px] h-[2px] origin-center bg-white transition-all ease-in-out duration-500 " style="{isMenuOpen ? 'top: 50%;':'top: calc(50% - 4px);'} left: 50%; transform: translateX(-50%) translateY(-50%) {isMenuOpen ? 'rotate(-45deg)':'rotate(0deg)'} translateZ(0px);"></div><div class="absolute w-[18px] h-[2px] origin-center bg-white transition-all ease-in-out duration-500" style="{isMenuOpen ? 'top: 50%;':'top: calc(50% + 4px);'} left: 50%; transform: translateX(-50%) translateY(-50%) {isMenuOpen ? 'rotate(45deg)':'rotate(0deg)'} translateZ(0px);"></div></label>
 </div>
@@ -38,15 +38,15 @@
     <div class="{isMenuOpen} header h-16 md:h-24 lg:h-36 w-full"></div>
     <div class=" {isMenuOpen} menu flex flex-col w-full h-full">
         <div class="menu-items w-fit flex flex-col justify-evenly h-full z-[150] scale-90 md:scale-100">
-            <div on:focus={()=>{setBackgroundPosition(bgX, 0)}} on:mouseover={()=>{setBackgroundPosition(bgX, 0)}} class="menu-item">Home</div>
-            <div on:focus={()=>{setBackgroundPosition(bgX, -25)}} on:mouseover={()=>{setBackgroundPosition(bgX, -25)}} class="menu-item">Events</div>
-            <div on:focus={()=>{setBackgroundPosition(bgX, -50)}} on:mouseover={()=>{setBackgroundPosition(bgX, -50)}} class="menu-item">Team</div>
-            <div on:focus={()=>{setBackgroundPosition(bgX, -75)}} on:mouseover={()=>{setBackgroundPosition(bgX, -75)}} class="menu-item">Sponsors</div>
-            <div on:focus={()=>{setBackgroundPosition(bgX, -100)}} on:mouseover={()=>{setBackgroundPosition(bgX, -100)}} class="menu-item">Gallery</div>
+            <a href="/" on:focus={()=>{setBackgroundPosition(bgX, 0)}} on:mouseover={()=>{setBackgroundPosition(bgX, 0)}} class="menu-item">Home</a>
+            <a href="/events" on:focus={()=>{setBackgroundPosition(bgX, -25)}} on:mouseover={()=>{setBackgroundPosition(bgX, -25)}} class="menu-item">Events</a>
+            <a href="/team" on:focus={()=>{setBackgroundPosition(bgX, -50)}} on:mouseover={()=>{setBackgroundPosition(bgX, -50)}} class="menu-item">Team</a>
+            <a href="/sponsors" on:focus={()=>{setBackgroundPosition(bgX, -75)}} on:mouseover={()=>{setBackgroundPosition(bgX, -75)}} class="menu-item">Sponsors</a>
+            <a href="/gallery" on:focus={()=>{setBackgroundPosition(bgX, -100)}} on:mouseover={()=>{setBackgroundPosition(bgX, -100)}} class="menu-item">Gallery</a>
             <div on:focus={()=>{setBackgroundPosition(bgX, -125)}} on:mouseover={()=>{setBackgroundPosition(bgX, -125)}} class="menu-item-container flex flex-col md:flex-row gap-4 md:gap-16">
-                <div on:focus={()=>{setBackgroundPosition(0, bgY)}} on:mouseover={()=>{setBackgroundPosition(0, bgY)}} class="submenu-item text-base ">Privacy Policy</div>
-                <div on:focus={()=>{setBackgroundPosition(-25, bgY)}} on:mouseover={()=>{setBackgroundPosition(-25, bgY)}} class="submenu-item text-base">Terms and Conditions</div>
-                <div on:focus={()=>{setBackgroundPosition(-50, bgY)}} on:mouseover={()=>{setBackgroundPosition(-50, bgY)}} class="submenu-item text-base">Contact Info</div>
+                <a href="/legal/privacy_policy" on:focus={()=>{setBackgroundPosition(0, bgY)}} on:mouseover={()=>{setBackgroundPosition(0, bgY)}} class="submenu-item text-base ">Privacy Policy</a>
+                <a href="/legal/terms_and_conditions" on:focus={()=>{setBackgroundPosition(-25, bgY)}} on:mouseover={()=>{setBackgroundPosition(-25, bgY)}} class="submenu-item text-base">Terms and Conditions</a>
+                <a href="/legal/contact_info" on:focus={()=>{setBackgroundPosition(-50, bgY)}} on:mouseover={()=>{setBackgroundPosition(-50, bgY)}} class="submenu-item text-base">Contact Info</a>
             </div>
         </div>
         <div style="--bgX: {bgX}%;--bgY: {bgY}%" class="menu-background-pattern z-[133]"></div>

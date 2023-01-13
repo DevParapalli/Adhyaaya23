@@ -86,8 +86,9 @@
 				<span>Event Date:</span>
 				<span>{data.event.start_date.toLocaleDateString('en-IN')}</span>
 				<span>Event Fees:</span>
+				<!-- ${data.event.team_members[i] > 1 ? 's' : ''} -->
 				<span
-					>{#each data.event.amount.map((e, i) => `₹${e / 100} for ${data.event.team_members[i]} member${data.event.team_members[i] > 1 ? 's' : ''}`) as fee}
+					>{#each data.event.amount.map((e, i) => `₹${e / 100} - ${data.event.team_members[i]} ${data.event.team_members[i] > 1 ? 'ppl.' : 'pers.'}`) as fee}
 						{fee}
 						<br />
 					{/each}</span
@@ -99,7 +100,7 @@
 						// setDefaultTeamMember();
 					}}
 					type="button"
-					class="text-left col-span-2 hover:text-white uppercase font-mono underline px-2">Click here to change event</button
+					class="text-left col-span-2 hover:text-white uppercase font-mono underline px-2">Change Event</button
 				>
 			</div>
 			<div class="ml-auto">
@@ -321,7 +322,7 @@
 		<button
 			type="submit"
 			class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg uppercase w-full px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 {loading ? 'opacity-50 cursor-not-allowed' : ''}}"
-			>Submit</button
+			>Register (₹{data.event.amount[data.event.team_members.find(e=>{e == teamMemberSelected+1}) ?? 0]/100})</button
 		>
 	</form>
 </div>

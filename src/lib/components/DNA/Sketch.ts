@@ -43,7 +43,7 @@ export default class Sketch {
 	material: THREE.ShaderMaterial;
 
 	
-	constructor(container: HTMLDivElement) {
+	constructor(container: HTMLElement) {
 		//scene
 		this.scene = new THREE.Scene();
 		// this.scene.background = new THREE.Color(0x000000, 0.0);
