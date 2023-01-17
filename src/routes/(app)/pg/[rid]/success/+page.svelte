@@ -8,6 +8,7 @@
 	import { EVENTS } from '$lib/data/events';
 	import 'iconify-icon';
 	import CurvedRotatingText from '$lib/components/CurvedRotatingText.svelte';
+	import MouseTrailer from '$lib/components/MouseTrailer.svelte';
 	export let data: PageData;
 	// TODO: Change this to the actual URL
 	const url_start = dev ? 'http://localhost:5173' : 'https://adhyaaya.devparapalli.in';

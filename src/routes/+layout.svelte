@@ -5,7 +5,8 @@
 	import { onMount } from 'svelte';
 	import { Toaster } from 'svelte-french-toast';
 	import { Modals, closeModal } from 'svelte-modals'
-	import Loader from '$lib/components/Loader.svelte'
+	// import Loader from '$lib/components/Loader.svelte'
+	// import MouseTrailer from '$lib/components/MouseTrailer.svelte';
 	let loaded = false;
 	onMount(() => {
 		const {
@@ -13,6 +14,8 @@
 		} = supabase.auth.onAuthStateChange(() => {
 			invalidate('supabase:auth');
 		});
+
+		
 
 		return () => {
 			subscription.unsubscribe();
@@ -23,7 +26,8 @@
 <slot />
 
 <Toaster />
-
+<!-- Using this causes massive lag spikes, maybe use it where needed such as receipt -->
+<!-- <MouseTrailer /> -->
   
   <Modals>
 	<button

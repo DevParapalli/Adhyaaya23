@@ -7,9 +7,9 @@
 	import type { PageData } from './$types';
 
 	export let data: PageData;
+	let rzp1 : Razorpay;
 
-	onMount(() => {
-		const options = {
+	const options = {
 			key: PUBLIC_RZP_KEY, // Enter the Key ID generated from the Dashboard
 			amount: data.db.amount, // Amount is in currency subunits. Default currency is INR. Hence, 50000 refers to 50000 paise
 			currency: 'INR',
@@ -36,10 +36,35 @@
 				);
 			}
 		};
-		const rzp1 = new Razorpay(options);
+
+	onMount(() => {
+		try {
+			rzp1 = new Razorpay(options);
+		} catch (error) {
+			alert(error);
+			rzp1 = new Razorpay(options);
+		}
 		rzp1.on('payment.failed', function (e: PGHandlerErrorResponse) {
 			alert(e.error.description);
 		});
 		rzp1.open();
 	});
 </script>
+
+
+<div class="h-full-w-full flex items-center justify-center">
+	<div class="flex flex-col items-center justify-center">
+		<div class="text-2xl font-bold">Redirecting to payment gateway...</div>
+		<div class="text-xl font-bold">Please do not close this tab.</div>
+		<div class="text-2xl font-bold">Incase it does not redirect, please <a href="" on:click|preventDefault={() => {
+			try {
+			rzp1 = new Razorpay(options)
+			rzp1.on('payment.failed', function (e: PGHandlerErrorResponse) {
+				alert(e.error.description);
+			});
+			rzp1.open();
+		} catch (error) {
+			alert(error);
+		}}} class="uppercase font-bold">click here</a></div>
+	</div>
+</div>

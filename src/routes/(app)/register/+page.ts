@@ -4,9 +4,10 @@ import { EVENTS } from '$lib/data/events';
 
 export const load: PageLoad = async ({ fetch, url }) => {
 	const event_id = url.searchParams.get('event');
-	if (!event_id) return { event: EVENTS[0], select: true };
+	const members = url.searchParams.get('members');
+	if (!event_id) return { event: EVENTS[0], select: true, members };
 	const event = EVENTS.find((e) => e.id === event_id);
-	if (event) return { event, select: false };
+	if (event) return { event, select: false, members };
 	else throw error(404, 'Event not found');
 };
 

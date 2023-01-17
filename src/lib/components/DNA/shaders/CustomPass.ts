@@ -1,4 +1,4 @@
-export let AberrationShader = {
+export const AberrationShader = {
     uniforms: {
         "tDiffuse": { value: null },
         "distort": { value: 0.5 },
@@ -22,7 +22,7 @@ export let AberrationShader = {
 
         float sat( float t )
         {
-            return clamp( t, 0.0, 1.0 );
+            return clamp( t, 0.0, 1.0);
         }
 
         float linterp( float t ) {

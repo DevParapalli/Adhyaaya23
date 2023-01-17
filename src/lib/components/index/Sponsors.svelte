@@ -1,0 +1,3 @@
+Over the past years Adhyaaya has had the privilege to have hosted a number of sponsors which provided a very entertaining experience to our visitors as well as the brand. The crowd engagement, media exposure, sampling and brand building opportunities offered at Adhyaaya are unparalleled. The fest has always been a platform for several brands to engage in unique crowd engaging activations which has proved to deliver a strong sponsor take back value.
+
+button to view our sponsors

@@ -11,6 +11,7 @@ import { ShaderPass } from 'three/examples/jsm/postprocessing/ShaderPass.js';
 import { UnrealBloomPass } from 'three/examples/jsm/postprocessing/UnrealBloomPass.js';
 // import * as dat from "dat.gui";
 import { AberrationShader } from '$lib/components/DNA/shaders/CustomPass';
+// import type { Vector3 } from 'three';
 
 
 
@@ -43,7 +44,7 @@ export default class Sketch {
 	material: THREE.ShaderMaterial;
 
 	
-	constructor(container: HTMLElement) {
+	constructor(container: HTMLElement, alternate = false) {
 		//scene
 		this.scene = new THREE.Scene();
 		// this.scene.background = new THREE.Color(0x000000, 0.0);
@@ -53,7 +54,7 @@ export default class Sketch {
 		this.height = this.container.offsetHeight;
 		//renderer
 		this.renderer = new THREE.WebGLRenderer();
-		if (window.innerWidth < 600) {
+		if (window?.innerWidth < 600) {
 			this.renderer.setPixelRatio(window.devicePixelRatio * 0.35);
 		} else {
 			this.renderer.setPixelRatio(window.devicePixelRatio * 0.8);
@@ -79,11 +80,9 @@ export default class Sketch {
 			0.001,
 			1000
 		);
-		if (window.innerWidth < 600) {
-			this.camera.position.set(-1, 1, 6);
-		} else {
-			this.camera.position.set(-2, 1, 5);
-		}
+		
+		this.camera.position.set(-2, 1, 5);
+		
 		//orbit controls
 		// const orbitControls = new toc(THREE);
 		// this.controls = new orbitControls(this.camera, this.renderer.domElement);

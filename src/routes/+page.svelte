@@ -8,7 +8,7 @@
 	// import 'swiper/css/mousewheel';
 
 	// import required modules
-	import { Pagination, Mousewheel, Keyboard } from 'swiper';
+	import { Pagination, Mousewheel, Keyboard, FreeMode } from 'swiper';
 	import type { PaginationOptions } from 'swiper/types';
 	import Loader from '$lib/components/Loader.svelte';
 	import { onMount, SvelteComponent } from 'svelte';
@@ -16,6 +16,7 @@
 	import type Sketch from '$lib/components/DNA/Sketch';
 	import Nav from '$lib/components/Nav.svelte';
 	import Home from '$lib/components/index/Home.svelte';
+	import Events from '$lib/components/index/Events.svelte';
 	import {hasScrolled} from '$lib/stores/UI';
 	let sketch: Sketch;
 	const duration = tweened(0, { duration: 1000 });
@@ -45,7 +46,7 @@
 
 	const PAGES: { name: string; component: string | typeof SvelteComponent }[] = [
 		{ name: 'Home', component: Home },
-		{ name: 'Events', component: 'Mini Events' },
+		{ name: 'Events', component: Events },
 		{ name: 'About Us', component: 'About Us' },
 		{ name: 'Sponsors', component: 'Sponsors' },
 		{ name: 'Contact Us', component: 'Contact Us' },
@@ -125,3 +126,9 @@
 		</SwiperSlide>
 	{/each}
 </Swiper>
+
+<style>
+	#dna-bg {
+		filter: saturate(1.2) brightness(1.1) contrast(1.2);
+	}
+</style>

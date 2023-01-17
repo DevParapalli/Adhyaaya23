@@ -46,6 +46,16 @@
 				radio.checked = false;
 			});
 		}
+		if (data.members) {
+			const sel = Number(data.members) - 1
+			const radio: HTMLInputElement | null = document.querySelector(
+				`#additional-${sel}`
+			);
+			teamMemberSelected = sel;
+			if (radio) {
+				radio.checked = true;
+			}
+		}
 	}
 	afterNavigate(() => {
 		// this auto-selects the team members if there is only one option
