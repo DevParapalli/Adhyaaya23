@@ -3,7 +3,7 @@
 
 	import { EVENTS } from '$lib/data/events';
 	export let alt = false;
-	function shuffle(array: (T)[]) {
+	function shuffle(array: any[]) {
 		for (let i = array.length - 1; i > 0; i--) {
 			let j = Math.floor(Math.random() * (i + 1));
 			[array[i], array[j]] = [array[j], array[i]];
@@ -44,7 +44,7 @@
 			transform: translateX(0);
 		}
 		100% {
-			transform: translateX(calc(-250px * calc(var(--width, 18) / 2)));
+			transform: translateX(calc(-250px * 6));
 		}
 	}
 
@@ -53,7 +53,7 @@
 			transform: translateX(0);
 		}
 		100% {
-			transform: translateX(calc(-250px * calc(var(--width, 18) / 2)));
+			transform: translateX(calc(-250px * 6));
 		}
 	}
 
@@ -62,7 +62,7 @@
 			transform: translateX(0);
 		}
 		100% {
-			transform: translateX(calc(250px * calc(var(--width, 18) / 2)));
+			transform: translateX(calc(250px * 6));
 		}
 	}
 
@@ -71,7 +71,7 @@
 			transform: translateX(0);
 		}
 		100% {
-			transform: translateX(calc(250px * calc(var(--width, 18) / 2)));
+			transform: translateX(calc(250px * 6));
 		}
 	}
 
@@ -106,17 +106,17 @@
 		top: 0;
 	}
 	.slider .slide-track {
-		-webkit-animation: scroll 40s linear infinite;
-		animation: scroll 40s linear infinite;
+		-webkit-animation: scroll 40s linear infinite forwards;
+		animation: scroll 40s linear infinite forwards;
 		display: flex;
-		width: calc(250px * var(--width));
+		width: calc(250px * var(--width, 18));
 	}
 
 	.slider .slide-track.true {
-		-webkit-animation: scroll-alt 40s linear infinite;
-		animation: scroll-alt 40s linear infinite;
+		-webkit-animation: scroll-alt 40s linear infinite forwards;
+		animation: scroll-alt 40s linear infinite forwards;
 		display: flex;
-		width: calc(250px * var(--width));
+		width: calc(250px * var(--width, 18));
 	}
 
 	.slider .slide {
