@@ -1,0 +1,126 @@
+<script lang="ts">
+	import { goto } from '$app/navigation';
+
+	import { EVENTS } from '$lib/data/events';
+	export let alt = false;
+	function shuffle(array: (T)[]) {
+		for (let i = array.length - 1; i > 0; i--) {
+			let j = Math.floor(Math.random() * (i + 1));
+			[array[i], array[j]] = [array[j], array[i]];
+		}
+        return array;
+	}
+</script>
+
+<div class="slider">
+	<div style="--width: {EVENTS.length}" class="slide-track {alt}">
+		{#each shuffle(EVENTS) as event}
+			<div class="slide inline-flex items-center justify-center">
+				<button
+					on:click={() => {
+						goto(`/events?view=${event.id}`);
+					}}
+					class="flex flex-col items-center justify-center h-full text-xl"
+				>
+					<iconify-icon class="text-4xl" icon={event.icon} />
+					<p>{event.name}</p>
+				</button>
+			</div>
+		{/each}
+	</div>
+</div>
+
+<style lang="postcss">
+	/* body {
+  align-items: center;
+  background: #E3E3E3;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+} */
+
+	@-webkit-keyframes scroll {
+		0% {
+			transform: translateX(0);
+		}
+		100% {
+			transform: translateX(calc(-250px * calc(var(--width, 18) / 2)));
+		}
+	}
+
+	@keyframes scroll {
+		0% {
+			transform: translateX(0);
+		}
+		100% {
+			transform: translateX(calc(-250px * calc(var(--width, 18) / 2)));
+		}
+	}
+
+	@-webkit-keyframes scroll-alt {
+		0% {
+			transform: translateX(0);
+		}
+		100% {
+			transform: translateX(calc(250px * calc(var(--width, 18) / 2)));
+		}
+	}
+
+	@keyframes scroll-alt {
+		0% {
+			transform: translateX(0);
+		}
+		100% {
+			transform: translateX(calc(250px * calc(var(--width, 18) / 2)));
+		}
+	}
+
+	.slider {
+		/* background: white; */
+		box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
+		height: 100px;
+		/* margin: auto; */
+		overflow: hidden;
+		position: relative;
+		/* width: 960px; */
+        /* Change here to change the color of the background */
+		@apply bg-purple-500/20 w-full h-40 shadow-2xl rounded-2xl flex items-center justify-center;
+	}
+	.slider::before,
+	.slider::after {
+		/* background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%); */
+		content: '';
+		height: 100px;
+		position: absolute;
+		width: 200px;
+		z-index: 2;
+		@apply bg-transparent;
+	}
+	.slider::after {
+		right: 0;
+		top: 0;
+		transform: rotateZ(180deg);
+	}
+	.slider::before {
+		left: 0;
+		top: 0;
+	}
+	.slider .slide-track {
+		-webkit-animation: scroll 40s linear infinite;
+		animation: scroll 40s linear infinite;
+		display: flex;
+		width: calc(250px * var(--width));
+	}
+
+	.slider .slide-track.true {
+		-webkit-animation: scroll-alt 40s linear infinite;
+		animation: scroll-alt 40s linear infinite;
+		display: flex;
+		width: calc(250px * var(--width));
+	}
+
+	.slider .slide {
+		height: 100px;
+		width: 250px;
+	}
+</style>
