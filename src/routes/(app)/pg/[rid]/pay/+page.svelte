@@ -59,7 +59,7 @@
 		<div class="text-2xl font-bold">Incase it does not redirect, please <a href="" on:click|preventDefault={() => {
 			try {
 			rzp1 = new Razorpay(options)
-			rzp1.on('payment.failed', function (e: PGHandlerErrorResponse) {
+			rzp1.on('payment.failed', function (e) {
 				alert(e.error.description);
 			});
 			rzp1.open();
