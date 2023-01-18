@@ -4,6 +4,9 @@
 	import { closeModal } from 'svelte-modals';
 	import { fade } from 'svelte/transition';
 	export let isOpen: boolean;
+    export let event_id: string;
+
+    let event = EVENTS.find((event) => event.id === event_id) ?? EVENTS[0];
 	// export let reset_func: () => void;
 	let value: string;
 	import "iconify-icon";
@@ -26,8 +29,9 @@
 							><iconify-icon icon="eva:close-fill" /></button
 						>
 					</div>
-					<h2 class="card-title hidden">Card title!</h2>
-					<p>Please select the event you would like to register for.</p>
+					{#if event && event.custom_properties}
+                    <h2 class="card-title hidden">Card title!</h2>
+					<p>{event.custom_properties[0].label ?? 'Select option below...'}</p>
 					<div class="card-actions justify-center">
 						<select
 							bind:value
@@ -37,12 +41,13 @@
 							}}
 							class="select select-bordered w-full max-w-xs">
 							<option class="invisible hidden" disabled selected>Select Here</option>
-							{#each EVENTS.filter(e=>e.is_active) as event}
-								<option class="font-mono" value={event.id}
-									>{event.name}</option>
+							{#each event.custom_properties[0].options ?? [] as option, i}
+								<option class="font-mono" value={event.custom_properties[0].redirect[i] ?? ''}
+									>{option}</option>
 							{/each}
 						</select>
 					</div>
+                    {/if}
 				</div>
 			</div>
 		</div>
@@ -62,7 +67,7 @@
 
 		/* allow click-through to backdrop */
 		pointer-events: none;
-		@apply z-[200];
+		@apply z-[200] bg-black/20;
 	}
 	.card-container {
 		@apply pointer-events-auto;

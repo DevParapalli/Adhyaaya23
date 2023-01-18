@@ -5,6 +5,7 @@
 	import { onMount } from 'svelte';
 	import { Toaster } from 'svelte-french-toast';
 	import { Modals, closeModal } from 'svelte-modals'
+	import Nav from '$lib/components/Nav.svelte';
 	// import Loader from '$lib/components/Loader.svelte'
 	// import MouseTrailer from '$lib/components/MouseTrailer.svelte';
 	let loaded = false;
@@ -22,6 +23,8 @@
 		};
 	});
 </script>
+
+<Nav />
 
 <slot />
 

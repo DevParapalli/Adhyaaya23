@@ -103,7 +103,7 @@
                 You can play as:
                 {#each Array(6) as _, i}
                 {#if event.team_members.includes(i+1)}
-                <button on:click={() => {members_selected = i+1}} class="badge {members_selected == i+1 ? 'border-green-500 text-green-500':''} badge-outline md:badge-lg hover:scale-110 active:scale-90 active:opacity-90">{getMemberText(i+1)} ({i+1})</button>
+                <button on:click={() => {members_selected = i+1}} class="badge {members_selected == i+1 ? 'border-green-500 text-green-500':''} badge-outline badge-sm md:badge-lg hover:scale-110 active:scale-90 active:opacity-90">{getMemberText(i+1)} ({i+1})</button>
                 {/if}
                 {/each}
                 <!-- {#if event.team_members.includes(1)}

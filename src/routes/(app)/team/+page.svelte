@@ -48,7 +48,7 @@
 
 <svelte:window bind:scrollY  />
 
-<Nav />
+<!-- <Nav /> -->
 
 <div id="dna-bg" class="fixed h-screen w-screen -z-50 bg-black blur-[2px]"></div>
 

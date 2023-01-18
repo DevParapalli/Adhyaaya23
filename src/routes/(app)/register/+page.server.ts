@@ -14,6 +14,7 @@ export const actions: Actions = {
 		// console.log(data);
 		const event_id = data['event_id'];
 		const event_data = EVENTS.find((e: AdhyaayaEvent) => e.id === event_id);
+
 		const errors =[];
 		if(!validator.isEmail(String(data['email']))){
 			errors.push('email');
@@ -70,6 +71,8 @@ export const actions: Actions = {
 			amount_to_pay = event_data?.amount[event_data?.team_members.indexOf(number_of_additional_members+1)] || 0
 		}
 		
+		// const custom_data = 
+
 
 		const _push_to_db: DBRegistration = {
 			created_at: new Date().toISOString(),

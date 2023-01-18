@@ -120,7 +120,7 @@
 {/if}
 
 <div id="dna-bg" class="fixed h-screen w-screen -z-50 bg-black" />
-<Nav />
+<!-- <Nav /> -->
 <Swiper
 	class="swiper-v"
 	direction={'vertical'}

@@ -3,18 +3,19 @@
 	import bg from '$lib/assets/registration.png';
 	import { enhance } from '$app/forms';
 	import autoanimate from '@formkit/auto-animate';
-	// import {}
+	import "iconify-icon"
 	import type { PageData, ActionData } from './$types';
 	import { toastError } from '$lib/util';
-	import { openModal } from 'svelte-modals';
+	import { openModal, closeModals, closeAllModals } from 'svelte-modals';
 	import EventChangeModal from '$lib/components/EventChangeModal.svelte';
 	import { afterNavigate } from '$app/navigation';
+	import EventCustomPropModal from '$lib/components/EventCustomPropModal.svelte';
 	export let data: PageData;
 	export let form: ActionData;
 
 	let loading = false;
 
-	let teamMemberSelected: number = 0;
+	let teamMemberSelected: number = -1;
 	function onMemberSelect(event: Event & { currentTarget: EventTarget & HTMLInputElement }) {
 		const target = event.target as HTMLInputElement;
 		teamMemberSelected = parseInt(target.value.replace('additional-', ''));
@@ -37,20 +38,16 @@
 			if (radio) {
 				radio.checked = true;
 			}
-
-		}
-		else {
-			teamMemberSelected = 0;
+		} else {
+			teamMemberSelected = -1;
 			const radioList = document.querySelectorAll<HTMLInputElement>("[id^='additional-']");
 			radioList.forEach((radio) => {
 				radio.checked = false;
 			});
 		}
 		if (data.members) {
-			const sel = Number(data.members) - 1
-			const radio: HTMLInputElement | null = document.querySelector(
-				`#additional-${sel}`
-			);
+			const sel = Number(data.members) - 1;
+			const radio: HTMLInputElement | null = document.querySelector(`#additional-${sel}`);
 			teamMemberSelected = sel;
 			if (radio) {
 				radio.checked = true;
@@ -58,30 +55,41 @@
 		}
 	}
 	afterNavigate(() => {
+		if (data.select) openModal(EventChangeModal);
 		// this auto-selects the team members if there is only one option
 		setDefaultTeamMember();
 		// if (data.select) openModal(EventChangeModal);
+		// if (data.custom) openModal(EventCustomPropModal, { event_id: data.event.id})
+		// else if (data.select) openModal(EventChangeModal);
 	});
+	afterUpdate(() => {
+		// if the component requires a redirect to correct event, then we use 
+		if (data.custom) {
+			closeAllModals();
+			openModal(EventCustomPropModal, { event_id: data.event.id });
+		};
+	})
 	onMount(() => {
-		// this auto-selects the team members if there is only one option
 		setDefaultTeamMember();
-		// opens the selection dialog if the user has not selected any event
-		if (data.select) openModal(EventChangeModal);
 	});
 </script>
 
-
-
 <div class="bg h-full w-full pt-20" style="--bg:url({bg});--opacity:0.75">
-	<div class="header mx-auto text-4xl text-center mb-8 text-white font-bold uppercase font-mono TODO:FONTS ">Registration Form</div>
+	<div
+		class="header mx-auto text-4xl text-center mb-8 text-white font-bold uppercase font-mono TODO:FONTS "
+	>
+		Registration Form
+	</div>
 	{#if form?.errors}
-	<!-- <span class="hidden">{toasting()}</span> -->
-	Please correct the following errors: 
-	<ol>
-		{#each form.errors as error}
-			<li>{error}</li>
-		{/each}
-	</ol>
+		<div class="mx-auto w-full flex flex-col">
+			<!-- <span class="hidden">{toasting()}</span> -->
+		<span class="mx-auto">Please correct the following errors:</span>
+		<ol class="mx-auto">
+			{#each form.errors as error}
+				<li>{error}</li>
+			{/each}
+		</ol>
+		</div>
 	{/if}
 	<form
 		use:enhance
@@ -110,11 +118,18 @@
 						// setDefaultTeamMember();
 					}}
 					type="button"
-					class="text-left col-span-2 hover:text-white uppercase font-mono underline px-2">Change Event</button
+					class="text-left col-span-2 hover:text-white uppercase font-mono underline px-2"
+					>Change Event</button
 				>
 			</div>
 			<div class="ml-auto">
-				<div class="bg-white h-20 w-20"></div>
+				<div class="text-8xl flex items-center justify-center h-full w-full">
+					{#if data.event.icon.includes('url::')}
+						<img class="h-9 w-9" src={data.event.icon.replace('url::', '')} alt="" />
+					{:else}
+						<iconify-icon class="text-8xl" icon={data.event.icon} />
+					{/if}
+				</div>
 			</div>
 		</div>
 		<input type="hidden" name="event_id" value={data.event.id} />
@@ -329,11 +344,21 @@
 				</div>
 			{/each}
 		{/if}
-		<button
-			type="submit"
-			class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg uppercase w-full px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 {loading ? 'opacity-50 cursor-not-allowed' : ''}}"
-			>Register (₹{data.event.amount[data.event.team_members.find(e=>{e == teamMemberSelected+1}) ?? 0]/100})</button
-		>
+		{#if teamMemberSelected > -1}
+			<button
+				type="submit"
+				class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg uppercase w-full px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 {loading
+					? 'opacity-50 cursor-not-allowed'
+					: ''}}"
+				>Register (₹{data.event.amount[
+					data.event.team_members.find((e) => {
+						e == teamMemberSelected + 1;
+					}) ?? 0
+				] / 100})</button
+			>
+		{:else}
+			<button disabled>Please select a choice above</button>
+		{/if}
 	</form>
 </div>
 
@@ -342,5 +367,9 @@
 		background: linear-gradient(0deg, rgba(0, 0, 0, var(--opacity)), rgba(0, 0, 0, var(--opacity)))
 				center fixed no-repeat,
 			var(--bg) center fixed no-repeat;
+	}
+
+	ol {
+		@apply mx-auto;
 	}
 </style>

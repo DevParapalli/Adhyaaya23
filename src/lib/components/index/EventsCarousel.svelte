@@ -3,7 +3,7 @@
 
 	import { EVENTS } from '$lib/data/events';
 	export let alt = false;
-	function shuffle(array: any[]) {
+	function shuffle(array: typeof EVENTS) {
 		array = array.slice();
 		for (let i = array.length - 1; i > 0; i--) {
 			let j = Math.floor(Math.random() * (i + 1));
@@ -15,7 +15,7 @@
 
 <div class="slider">
 	<div style="--width: {EVENTS.length}" class="slide-track {alt}">
-		{#each shuffle(EVENTS) as event}
+		{#each shuffle(EVENTS.filter(e=>e.is_active)) as event}
 			<div class="slide inline-flex items-center justify-center">
 				<button
 					on:click={() => {
@@ -23,7 +23,11 @@
 					}}
 					class="flex flex-col items-center justify-center h-full text-xl"
 				>
-					<iconify-icon class="text-4xl" icon={event.icon} />
+					{#if event.icon.includes('url::')}
+						 <img class="h-9 w-9" src="{event.icon.replace('url::', '')}" alt="">
+					{:else}
+						<iconify-icon class="text-4xl" icon={event.icon} />
+					{/if}
 					<p>{event.name}</p>
 				</button>
 			</div>

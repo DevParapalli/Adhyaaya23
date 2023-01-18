@@ -23,7 +23,7 @@
 </script>
 
 <div
-	class="fixed top-0 w-full min-h-16 bg-transparent z-[9999] pointer-events-none flex flex-row px-4 md:px-10  items-center pt-[4vh]"
+	class="fixed top-0 w-full min-h-16 bg-transparent z-[9999] pointer-events-none flex flex-row px-4 md:px-10  items-center pt-[4vh] print:hidden"
 >
 	<div
 		on:click={() => {
@@ -69,7 +69,7 @@
 </div>
 
 <div
-	class="menu-container {isMenuOpen} h-screen bg-[#190829] rounded-none z-[120] fixed right-0 top-0 flex flex-col"
+	class="menu-container {isMenuOpen} h-screen bg-[#190829] rounded-none z-[120] fixed right-0 top-0 flex flex-col print:hidden"
 >
 	{#if isMenuOpen}
 		<div class="{isMenuOpen} header h-16 md:h-24 lg:h-36 w-full" />
