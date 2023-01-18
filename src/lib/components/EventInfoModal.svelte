@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { goto } from "$app/navigation";
+	import { goto, preloadCode } from "$app/navigation";
 	import type { AdhyaayaEvent } from "$lib/data/events";
 	import { clickOutside } from "$lib/util";
 
@@ -8,6 +8,7 @@
     export let isOpen: boolean;
 
     import {closeModal} from 'svelte-modals';
+	import { onMount } from "svelte";
 
     export let date_options: Intl.DateTimeFormatOptions = {
         weekday: 'long',
@@ -51,6 +52,10 @@
                 return 'Team';
         }
     }
+
+    onMount(() => {
+        preloadCode('/register');
+    })
 </script>
 
 <style>

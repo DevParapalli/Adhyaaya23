@@ -1,6 +1,6 @@
 export const AberrationShader = {
     uniforms: {
-        "tDiffuse": { value: null },
+        "tDiffuse": { value: 0.1 },
         "distort": { value: 0.5 },
         "time": { value: 0 }
     },

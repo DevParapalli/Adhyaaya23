@@ -8,7 +8,7 @@
 	// import 'swiper/css/mousewheel';
 
 	// import required modules
-	import { Pagination, Mousewheel, Keyboard, FreeMode } from 'swiper';
+	import { Pagination, Mousewheel, Keyboard } from 'swiper';
 	import type { PaginationOptions } from 'swiper/types';
 	import Loader from '$lib/components/Loader.svelte';
 	import { onMount, SvelteComponent } from 'svelte';
@@ -17,13 +17,15 @@
 	import Nav from '$lib/components/Nav.svelte';
 	import Home from '$lib/components/index/Home.svelte';
 	import Events from '$lib/components/index/Events.svelte';
+	import {cubicInOut} from 'svelte/easing';
 	import {hasScrolled} from '$lib/stores/UI';
 	let sketch: Sketch;
-	const duration = tweened(0, { duration: 1000 });
+	const duration = tweened(0, { duration: 1500});
 
 	let slide_index = 0;
 	let _Swiper: Swiper;
 
+	const scrollPosition = tweened(0.25, { duration: 1500, easing: cubicInOut });
 
 	function onProgress(e: CustomEvent<[swiper: any, progress: number]>) {
 		const [_, progress] = e.detail;
@@ -35,6 +37,7 @@
 		setTimeout(() => {
 			duration.set(0);
 		}, 1000);
+		scrollPosition.set(scrollMapping(progress));
 	}
 	function changePage(index: number) {
 		if (_Swiper) _Swiper.slideTo(index, 1000, true);
@@ -58,7 +61,19 @@
 		progressbarOpposite: false
 	};
 
+	function scrollMapping(percentScroll: number) {
+    const positionRange = (6 - (-1));
+    return (percentScroll * positionRange) + (-1);
+  	}
+  	
 	let loaded = false;
+
+	$: {
+		if (sketch) {
+			sketch.camera.position.set(-2, $scrollPosition, 5);
+		}
+	}
+
 	onMount(async () => {
 		const bg = await import('$lib/components/DNA/Sketch');
 		const canvas = document.getElementById('dna-bg') ?? document.createElement('canvas');

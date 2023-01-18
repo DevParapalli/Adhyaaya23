@@ -69,7 +69,7 @@
 </div>
 
 <div
-	class="menu-container {isMenuOpen} h-screen bg-[#190829] rounded-none z-[120] absolute right-0 top-0 flex flex-col"
+	class="menu-container {isMenuOpen} h-screen bg-[#190829] rounded-none z-[120] fixed right-0 top-0 flex flex-col"
 >
 	{#if isMenuOpen}
 		<div class="{isMenuOpen} header h-16 md:h-24 lg:h-36 w-full" />

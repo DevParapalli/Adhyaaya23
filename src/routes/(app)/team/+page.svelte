@@ -1,0 +1,412 @@
+<script lang="ts">
+	import Nav from "$lib/components/Nav.svelte";
+  import type Sketch from '$lib/components/DNA/Sketch';
+  import {tweened} from 'svelte/motion';
+	import { onMount } from "svelte";
+
+  const duration = tweened(0, {duration: 1000});
+
+  let sketch: Sketch;
+  let scrollY: number, headingHeight: number, containerHeight: number, scrollHeight: number;
+  $: {
+    scrollHeight = containerHeight * 18 + headingHeight * 10;
+    console.log(scrollY, scrollHeight);
+  }
+  let container: HTMLDivElement, heading: HTMLDivElement;
+  function scrollMapping(percentScroll: number) {
+    const positionRange = (8 - (-1));
+    return (percentScroll * positionRange) + (-1);
+  }
+  $: {
+    if (sketch) {
+      sketch.camera.position.set(-2, scrollMapping(scrollY / scrollHeight), 5);
+      sketch.duration += 0.17;
+    }
+  }
+  onMount(async () => {
+    const bg = await import('$lib/components/DNA/Sketch');
+		const canvas = document.getElementById('dna-bg') ?? document.createElement('canvas');
+		sketch = new bg.default(canvas);
+    sketch.camera.position.set(-2, -1, 5);
+		sketch.loadObjects();
+		// duration.set(2.5);
+		// setTimeout(() => {
+		// 	duration.set(0);
+		// }, 2000);
+		// function animate() {
+		// 	if (sketch) {
+		// 		sketch.duration += $duration;
+		// 	}
+		// 	requestAnimationFrame(animate);
+		// }
+		// animate();
+    // calculate scroll height :
+    containerHeight = container.scrollHeight;
+    headingHeight = heading.scrollHeight;
+  })
+</script>
+
+<svelte:window bind:scrollY  />
+
+<Nav />
+
+<div id="dna-bg" class="fixed h-screen w-screen -z-50 bg-black blur-[2px]"></div>
+
+<div bind:this={heading} class="flex_title pt-20">Advisors</div>
+<div bind:this={container} class="my-cont_flex">
+<article class="my-cont"><div class="thumb"></div><div class="infos"><h2 class="title">Nikhil Deshpande<span class="flag"></span></h2><h3 class="date">Advisor</h3><h3 class="seats"><!--status--></h3><p class="txt"><!-- data-->  </p><div class="details"><i class="fa fa-envelope-o" style="color:#EA4335"></i><i class="fa fa-instagram" style="margin-left:60px;background: linear-gradient(0deg,#4c68d7 0%, #bc2a8d 100%);-webkit-background-clip: text;-webkit-text-fill-color: transparent;"></i><i class="fa fa-linkedin" style="margin-left:60px;color:#006192"></i></div></div></article>
+<article class="my-cont"><div class="thumb"></div><div class="infos"><h2 class="title">Ujjwal Gupta<span class="flag"></span></h2><h3 class="date">Advisor</h3><h3 class="seats"><!--status--></h3><p class="txt"><!-- data-->  </p><div class="details"><i class="fa fa-envelope-o" style="color:#EA4335"></i><i class="fa fa-instagram" style="margin-left:60px;background: linear-gradient(0deg,#4c68d7 0%, #bc2a8d 100%);-webkit-background-clip: text;-webkit-text-fill-color: transparent;"></i><i class="fa fa-linkedin" style="margin-left:60px;color:#006192"></i></div></div></article>
+<article class="my-cont"><div class="thumb"></div><div class="infos"><h2 class="title">Laksh Bahl<span class="flag"></span></h2><h3 class="date">Advisor</h3><h3 class="seats"><!--status--></h3><p class="txt"><!-- data-->  </p><div class="details"><i class="fa fa-envelope-o" style="color:#EA4335"></i><i class="fa fa-instagram" style="margin-left:60px;background: linear-gradient(0deg,#4c68d7 0%, #bc2a8d 100%);-webkit-background-clip: text;-webkit-text-fill-color: transparent;"></i><i class="fa fa-linkedin" style="margin-left:60px;color:#006192"></i></div></div></article>
+<article class="my-cont"><div class="thumb"></div><div class="infos"><h2 class="title">Yash Bhagat<span class="flag"></span></h2><h3 class="date">Advisor</h3><h3 class="seats"><!--status--></h3><p class="txt"><!-- data-->  </p><div class="details"><i class="fa fa-envelope-o" style="color:#EA4335"></i><i class="fa fa-instagram" style="margin-left:60px;background: linear-gradient(0deg,#4c68d7 0%, #bc2a8d 100%);-webkit-background-clip: text;-webkit-text-fill-color: transparent;"></i><i class="fa fa-linkedin" style="margin-left:60px;color:#006192"></i></div></div></article>
+<article class="my-cont"><div class="thumb"></div><div class="infos"><h2 class="title">Arya Mahashabde<span class="flag"></span></h2><h3 class="date">Advisor</h3><h3 class="seats"><!--status--></h3><p class="txt"><!-- data-->  </p><div class="details"><i class="fa fa-envelope-o" style="color:#EA4335"></i><i class="fa fa-instagram" style="margin-left:60px;background: linear-gradient(0deg,#4c68d7 0%, #bc2a8d 100%);-webkit-background-clip: text;-webkit-text-fill-color: transparent;"></i><i class="fa fa-linkedin" style="margin-left:60px;color:#006192"></i></div></div></article>
+</div>
+
+<div class="flex_title">Coordinators</div>
+<div class="my-cont_flex">
+  <article class="my-cont"><div class="thumb"></div><div class="infos"><h2 class="title">Shlok Tajne<span class="flag"></span></h2><h3 class="date">Coordinator</h3><h3 class="seats"><!--status--></h3><p class="txt"><!-- data-->  </p><div class="details"><i class="fa fa-envelope-o" style="color:#EA4335"></i><i class="fa fa-instagram" style="margin-left:60px;background: linear-gradient(0deg,#4c68d7 0%, #bc2a8d 100%);-webkit-background-clip: text;-webkit-text-fill-color: transparent;"></i><i class="fa fa-linkedin" style="margin-left:60px;color:#006192"></i></div></div></article>
+  <article class="my-cont"><div class="thumb"></div><div class="infos"><h2 class="title">Swarali Prayagi<span class="flag"></span></h2><h3 class="date">Coordinator</h3><h3 class="seats"><!--status--></h3><p class="txt"><!-- data-->  </p><div class="details"><i class="fa fa-envelope-o" style="color:#EA4335"></i><i class="fa fa-instagram" style="margin-left:60px;background: linear-gradient(0deg,#4c68d7 0%, #bc2a8d 100%);-webkit-background-clip: text;-webkit-text-fill-color: transparent;"></i><i class="fa fa-linkedin" style="margin-left:60px;color:#006192"></i></div></div></article>
+  <article class="my-cont"><div class="thumb"></div><div class="infos"><h2 class="title">Mayank Masram<span class="flag"></span></h2><h3 class="date">Coordinator</h3><h3 class="seats"><!--status--></h3><p class="txt"><!-- data-->  </p><div class="details"><i class="fa fa-envelope-o" style="color:#EA4335"></i><i class="fa fa-instagram" style="margin-left:60px;background: linear-gradient(0deg,#4c68d7 0%, #bc2a8d 100%);-webkit-background-clip: text;-webkit-text-fill-color: transparent;"></i><i class="fa fa-linkedin" style="margin-left:60px;color:#006192"></i></div></div></article>
+  <article class="my-cont"><div class="thumb"></div><div class="infos"><h2 class="title">Aditya Tete<span class="flag"></span></h2><h3 class="date">Coordinator</h3><h3 class="seats"><!--status--></h3><p class="txt"><!-- data-->  </p><div class="details"><i class="fa fa-envelope-o" style="color:#EA4335"></i><i class="fa fa-instagram" style="margin-left:60px;background: linear-gradient(0deg,#4c68d7 0%, #bc2a8d 100%);-webkit-background-clip: text;-webkit-text-fill-color: transparent;"></i><i class="fa fa-linkedin" style="margin-left:60px;color:#006192"></i></div></div></article>
+  <article class="my-cont"><div class="thumb"></div><div class="infos"><h2 class="title">Malhar Paradkar<span class="flag"></span></h2><h3 class="date">Coordinator</h3><h3 class="seats"><!--status--></h3><p class="txt"><!-- data-->  </p><div class="details"><i class="fa fa-envelope-o" style="color:#EA4335"></i><i class="fa fa-instagram" style="margin-left:60px;background: linear-gradient(0deg,#4c68d7 0%, #bc2a8d 100%);-webkit-background-clip: text;-webkit-text-fill-color: transparent;"></i><i class="fa fa-linkedin" style="margin-left:60px;color:#006192"></i></div></div></article>
+</div>
+
+  <div class="flex_title">Technical Team</div>
+  <div class="my-cont_flex">
+  <article class="my-cont"><div class="thumb"></div><div class="infos"><h2 class="title">Dev Parapalli<span class="flag"></span></h2><h3 class="date">Head</h3><h3 class="seats"><!--status--></h3><p class="txt"><!-- data-->  </p><div class="details"><i class="fa fa-envelope-o" style="color:#EA4335"></i><i class="fa fa-instagram" style="margin-left:60px;background: linear-gradient(0deg,#4c68d7 0%, #bc2a8d 100%);-webkit-background-clip: text;-webkit-text-fill-color: transparent;"></i><i class="fa fa-linkedin" style="margin-left:60px;color:#006192"></i></div></div></article>
+  <article class="my-cont"><div class="thumb"></div><div class="infos"><h2 class="title">Dovesh Aglawe<span class="flag"></span></h2><h3 class="date">Head</h3><h3 class="seats"><!--status--></h3><p class="txt"><!-- data-->  </p><div class="details"><i class="fa fa-envelope-o" style="color:#EA4335"></i><i class="fa fa-instagram" style="margin-left:60px;background: linear-gradient(0deg,#4c68d7 0%, #bc2a8d 100%);-webkit-background-clip: text;-webkit-text-fill-color: transparent;"></i><i class="fa fa-linkedin" style="margin-left:60px;color:#006192"></i></div></div></article>
+  <article class="my-cont"><div class="thumb"></div><div class="infos"><h2 class="title">Aditya Deshmukh<span class="flag"></span></h2><h3 class="date">Head</h3><h3 class="seats"><!--status--></h3><p class="txt"><!-- data-->  </p><div class="details"><i class="fa fa-envelope-o" style="color:#EA4335"></i><i class="fa fa-instagram" style="margin-left:60px;background: linear-gradient(0deg,#4c68d7 0%, #bc2a8d 100%);-webkit-background-clip: text;-webkit-text-fill-color: transparent;"></i><i class="fa fa-linkedin" style="margin-left:60px;color:#006192"></i></div></div></article>
+  
+  </div>
+  <div class="my-cont_flex">
+    <article class="my-cont"><div class="thumb"></div><div class="infos"><h2 class="title">Shiwang Pandey<span class="flag"></span></h2><h3 class="date">Co Head</h3><h3 class="seats"><!--status--></h3><p class="txt"><!-- data-->  </p><div class="details"><i class="fa fa-envelope-o" style="color:#EA4335"></i><i class="fa fa-instagram" style="margin-left:60px;background: linear-gradient(0deg,#4c68d7 0%, #bc2a8d 100%);-webkit-background-clip: text;-webkit-text-fill-color: transparent;"></i><i class="fa fa-linkedin" style="margin-left:60px;color:#006192"></i></div></div></article>
+    <article class="my-cont"><div class="thumb"></div><div class="infos"><h2 class="title">Tushar Meshram<span class="flag"></span></h2><h3 class="date">Co Head</h3><h3 class="seats"><!--status--></h3><p class="txt"><!-- data-->  </p><div class="details"><i class="fa fa-envelope-o" style="color:#EA4335"></i><i class="fa fa-instagram" style="margin-left:60px;background: linear-gradient(0deg,#4c68d7 0%, #bc2a8d 100%);-webkit-background-clip: text;-webkit-text-fill-color: transparent;"></i><i class="fa fa-linkedin" style="margin-left:60px;color:#006192"></i></div></div></article>
+    <article class="my-cont"><div class="thumb"></div><div class="infos"><h2 class="title">Hrsh Bangre<span class="flag"></span></h2><h3 class="date">Co Head</h3><h3 class="seats"><!--status--></h3><p class="txt"><!-- data-->  </p><div class="details"><i class="fa fa-envelope-o" style="color:#EA4335"></i><i class="fa fa-instagram" style="margin-left:60px;background: linear-gradient(0deg,#4c68d7 0%, #bc2a8d 100%);-webkit-background-clip: text;-webkit-text-fill-color: transparent;"></i><i class="fa fa-linkedin" style="margin-left:60px;color:#006192"></i></div></div></article>
+    <article class="my-cont"><div class="thumb"></div><div class="infos"><h2 class="title">Kaustubh Warade<span class="flag"></span></h2><h3 class="date">Co Head</h3><h3 class="seats"><!--status--></h3><p class="txt"><!-- data-->  </p><div class="details"><i class="fa fa-envelope-o" style="color:#EA4335"></i><i class="fa fa-instagram" style="margin-left:60px;background: linear-gradient(0deg,#4c68d7 0%, #bc2a8d 100%);-webkit-background-clip: text;-webkit-text-fill-color: transparent;"></i><i class="fa fa-linkedin" style="margin-left:60px;color:#006192"></i></div></div></article>
+
+  </div>
+  <div class="flex_title">Organisation Team</div>
+  <div class="my-cont_flex">
+  <article class="my-cont"><div class="thumb"></div><div class="infos"><h2 class="title">Sahil Brahme<span class="flag"></span></h2><h3 class="date">Head</h3><h3 class="seats"><!--status--></h3><p class="txt"><!-- data-->  </p><div class="details"><i class="fa fa-envelope-o" style="color:#EA4335"></i><i class="fa fa-instagram" style="margin-left:60px;background: linear-gradient(0deg,#4c68d7 0%, #bc2a8d 100%);-webkit-background-clip: text;-webkit-text-fill-color: transparent;"></i><i class="fa fa-linkedin" style="margin-left:60px;color:#006192"></i></div></div></article>
+  <article class="my-cont"><div class="thumb"></div><div class="infos"><h2 class="title">Parth Trimare<span class="flag"></span></h2><h3 class="date">Head</h3><h3 class="seats"><!--status--></h3><p class="txt"><!-- data-->  </p><div class="details"><i class="fa fa-envelope-o" style="color:#EA4335"></i><i class="fa fa-instagram" style="margin-left:60px;background: linear-gradient(0deg,#4c68d7 0%, #bc2a8d 100%);-webkit-background-clip: text;-webkit-text-fill-color: transparent;"></i><i class="fa fa-linkedin" style="margin-left:60px;color:#006192"></i></div></div></article>
+  <article class="my-cont"><div class="thumb"></div><div class="infos"><h2 class="title">Shubhlak Kanpate<span class="flag"></span></h2><h3 class="date">Head</h3><h3 class="seats"><!--status--></h3><p class="txt"><!-- data-->  </p><div class="details"><i class="fa fa-envelope-o" style="color:#EA4335"></i><i class="fa fa-instagram" style="margin-left:60px;background: linear-gradient(0deg,#4c68d7 0%, #bc2a8d 100%);-webkit-background-clip: text;-webkit-text-fill-color: transparent;"></i><i class="fa fa-linkedin" style="margin-left:60px;color:#006192"></i></div></div></article>
+  
+  </div>
+  <div class="my-cont_flex">
+    <article class="my-cont"><div class="thumb"></div><div class="infos"><h2 class="title">Yash Raut<span class="flag"></span></h2><h3 class="date">Co Head</h3><h3 class="seats"><!--status--></h3><p class="txt"><!-- data-->  </p><div class="details"><i class="fa fa-envelope-o" style="color:#EA4335"></i><i class="fa fa-instagram" style="margin-left:60px;background: linear-gradient(0deg,#4c68d7 0%, #bc2a8d 100%);-webkit-background-clip: text;-webkit-text-fill-color: transparent;"></i><i class="fa fa-linkedin" style="margin-left:60px;color:#006192"></i></div></div></article>
+    <article class="my-cont"><div class="thumb"></div><div class="infos"><h2 class="title">Nandini Thaware<span class="flag"></span></h2><h3 class="date">Co Head</h3><h3 class="seats"><!--status--></h3><p class="txt"><!-- data-->  </p><div class="details"><i class="fa fa-envelope-o" style="color:#EA4335"></i><i class="fa fa-instagram" style="margin-left:60px;background: linear-gradient(0deg,#4c68d7 0%, #bc2a8d 100%);-webkit-background-clip: text;-webkit-text-fill-color: transparent;"></i><i class="fa fa-linkedin" style="margin-left:60px;color:#006192"></i></div></div></article>
+    <article class="my-cont"><div class="thumb"></div><div class="infos"><h2 class="title">Aastha Dongare<span class="flag"></span></h2><h3 class="date">Co Head</h3><h3 class="seats"><!--status--></h3><p class="txt"><!-- data-->  </p><div class="details"><i class="fa fa-envelope-o" style="color:#EA4335"></i><i class="fa fa-instagram" style="margin-left:60px;background: linear-gradient(0deg,#4c68d7 0%, #bc2a8d 100%);-webkit-background-clip: text;-webkit-text-fill-color: transparent;"></i><i class="fa fa-linkedin" style="margin-left:60px;color:#006192"></i></div></div></article>
+    <article class="my-cont"><div class="thumb"></div><div class="infos"><h2 class="title">Urvashi Gour<span class="flag"></span></h2><h3 class="date">Co Head</h3><h3 class="seats"><!--status--></h3><p class="txt"><!-- data-->  </p><div class="details"><i class="fa fa-envelope-o" style="color:#EA4335"></i><i class="fa fa-instagram" style="margin-left:60px;background: linear-gradient(0deg,#4c68d7 0%, #bc2a8d 100%);-webkit-background-clip: text;-webkit-text-fill-color: transparent;"></i><i class="fa fa-linkedin" style="margin-left:60px;color:#006192"></i></div></div></article>
+
+  </div>    
+  <div class="flex_title">Sponsorship Team</div>
+<div class="my-cont_flex">
+<article class="my-cont"><div class="thumb"></div><div class="infos"><h2 class="title">Nihal Gaikwad<span class="flag"></span></h2><h3 class="date">Head</h3><h3 class="seats"><!--status--></h3><p class="txt"><!-- data-->  </p><div class="details"><i class="fa fa-envelope-o" style="color:#EA4335"></i><i class="fa fa-instagram" style="margin-left:60px;background: linear-gradient(0deg,#4c68d7 0%, #bc2a8d 100%);-webkit-background-clip: text;-webkit-text-fill-color: transparent;"></i><i class="fa fa-linkedin" style="margin-left:60px;color:#006192"></i></div></div></article>
+<article class="my-cont"><div class="thumb"></div><div class="infos"><h2 class="title">Atharva Mande<span class="flag"></span></h2><h3 class="date">Head</h3><h3 class="seats"><!--status--></h3><p class="txt"><!-- data-->  </p><div class="details"><i class="fa fa-envelope-o" style="color:#EA4335"></i><i class="fa fa-instagram" style="margin-left:60px;background: linear-gradient(0deg,#4c68d7 0%, #bc2a8d 100%);-webkit-background-clip: text;-webkit-text-fill-color: transparent;"></i><i class="fa fa-linkedin" style="margin-left:60px;color:#006192"></i></div></div></article>
+<article class="my-cont"><div class="thumb"></div><div class="infos"><h2 class="title">Divija Pawar<span class="flag"></span></h2><h3 class="date">Head</h3><h3 class="seats"><!--status--></h3><p class="txt"><!-- data-->  </p><div class="details"><i class="fa fa-envelope-o" style="color:#EA4335"></i><i class="fa fa-instagram" style="margin-left:60px;background: linear-gradient(0deg,#4c68d7 0%, #bc2a8d 100%);-webkit-background-clip: text;-webkit-text-fill-color: transparent;"></i><i class="fa fa-linkedin" style="margin-left:60px;color:#006192"></i></div></div></article>
+
+</div>
+<div class="my-cont_flex">
+  <article class="my-cont"><div class="thumb"></div><div class="infos"><h2 class="title">Anish Behere<span class="flag"></span></h2><h3 class="date">Co Head</h3><h3 class="seats"><!--status--></h3><p class="txt"><!-- data-->  </p><div class="details"><i class="fa fa-envelope-o" style="color:#EA4335"></i><i class="fa fa-instagram" style="margin-left:60px;background: linear-gradient(0deg,#4c68d7 0%, #bc2a8d 100%);-webkit-background-clip: text;-webkit-text-fill-color: transparent;"></i><i class="fa fa-linkedin" style="margin-left:60px;color:#006192"></i></div></div></article>
+  <article class="my-cont"><div class="thumb"></div><div class="infos"><h2 class="title">Yash Khandelwal<span class="flag"></span></h2><h3 class="date">Co Head</h3><h3 class="seats"><!--status--></h3><p class="txt"><!-- data-->  </p><div class="details"><i class="fa fa-envelope-o" style="color:#EA4335"></i><i class="fa fa-instagram" style="margin-left:60px;background: linear-gradient(0deg,#4c68d7 0%, #bc2a8d 100%);-webkit-background-clip: text;-webkit-text-fill-color: transparent;"></i><i class="fa fa-linkedin" style="margin-left:60px;color:#006192"></i></div></div></article>
+   
+  </div>
+  <div class="flex_title">Publicity Team</div>
+<div class="my-cont_flex">
+<article class="my-cont"><div class="thumb"></div><div class="infos"><h2 class="title">Pranav Patle<span class="flag"></span></h2><h3 class="date">Head</h3><h3 class="seats"><!--status--></h3><p class="txt"><!-- data-->  </p><div class="details"><i class="fa fa-envelope-o" style="color:#EA4335"></i><i class="fa fa-instagram" style="margin-left:60px;background: linear-gradient(0deg,#4c68d7 0%, #bc2a8d 100%);-webkit-background-clip: text;-webkit-text-fill-color: transparent;"></i><i class="fa fa-linkedin" style="margin-left:60px;color:#006192"></i></div></div></article>
+<article class="my-cont"><div class="thumb"></div><div class="infos"><h2 class="title">Pranav Supare<span class="flag"></span></h2><h3 class="date">Head</h3><h3 class="seats"><!--status--></h3><p class="txt"><!-- data-->  </p><div class="details"><i class="fa fa-envelope-o" style="color:#EA4335"></i><i class="fa fa-instagram" style="margin-left:60px;background: linear-gradient(0deg,#4c68d7 0%, #bc2a8d 100%);-webkit-background-clip: text;-webkit-text-fill-color: transparent;"></i><i class="fa fa-linkedin" style="margin-left:60px;color:#006192"></i></div></div></article>
+<article class="my-cont"><div class="thumb"></div><div class="infos"><h2 class="title">Vedant Gotmare<span class="flag"></span></h2><h3 class="date">Head</h3><h3 class="seats"><!--status--></h3><p class="txt"><!-- data-->  </p><div class="details"><i class="fa fa-envelope-o" style="color:#EA4335"></i><i class="fa fa-instagram" style="margin-left:60px;background: linear-gradient(0deg,#4c68d7 0%, #bc2a8d 100%);-webkit-background-clip: text;-webkit-text-fill-color: transparent;"></i><i class="fa fa-linkedin" style="margin-left:60px;color:#006192"></i></div></div></article>
+
+</div>
+<div class="my-cont_flex">
+  <article class="my-cont"><div class="thumb"></div><div class="infos"><h2 class="title">Vedant Nimgade<span class="flag"></span></h2><h3 class="date">Co Head</h3><h3 class="seats"><!--status--></h3><p class="txt"><!-- data-->  </p><div class="details"><i class="fa fa-envelope-o" style="color:#EA4335"></i><i class="fa fa-instagram" style="margin-left:60px;background: linear-gradient(0deg,#4c68d7 0%, #bc2a8d 100%);-webkit-background-clip: text;-webkit-text-fill-color: transparent;"></i><i class="fa fa-linkedin" style="margin-left:60px;color:#006192"></i></div></div></article>
+  <article class="my-cont"><div class="thumb"></div><div class="infos"><h2 class="title">Rugved Yadalwar<span class="flag"></span></h2><h3 class="date">Co Head</h3><h3 class="seats"><!--status--></h3><p class="txt"><!-- data-->  </p><div class="details"><i class="fa fa-envelope-o" style="color:#EA4335"></i><i class="fa fa-instagram" style="margin-left:60px;background: linear-gradient(0deg,#4c68d7 0%, #bc2a8d 100%);-webkit-background-clip: text;-webkit-text-fill-color: transparent;"></i><i class="fa fa-linkedin" style="margin-left:60px;color:#006192"></i></div></div></article>
+  <article class="my-cont"><div class="thumb"></div><div class="infos"><h2 class="title">Aadil Burani<span class="flag"></span></h2><h3 class="date">Co Head</h3><h3 class="seats"><!--status--></h3><p class="txt"><!-- data-->  </p><div class="details"><i class="fa fa-envelope-o" style="color:#EA4335"></i><i class="fa fa-instagram" style="margin-left:60px;background: linear-gradient(0deg,#4c68d7 0%, #bc2a8d 100%);-webkit-background-clip: text;-webkit-text-fill-color: transparent;"></i><i class="fa fa-linkedin" style="margin-left:60px;color:#006192"></i></div></div></article>
+  
+  </div>
+  <div class="flex_title">Accounting Team</div>
+<div class="my-cont_flex">
+<article class="my-cont"><div class="thumb"></div><div class="infos"><h2 class="title">Priya Nandanwar<span class="flag"></span></h2><h3 class="date">Head</h3><h3 class="seats"><!--status--></h3><p class="txt"><!-- data-->  </p><div class="details"><i class="fa fa-envelope-o" style="color:#EA4335"></i><i class="fa fa-instagram" style="margin-left:60px;background: linear-gradient(0deg,#4c68d7 0%, #bc2a8d 100%);-webkit-background-clip: text;-webkit-text-fill-color: transparent;"></i><i class="fa fa-linkedin" style="margin-left:60px;color:#006192"></i></div></div></article>
+<article class="my-cont"><div class="thumb"></div><div class="infos"><h2 class="title">Ninad Burande<span class="flag"></span></h2><h3 class="date">Head</h3><h3 class="seats"><!--status--></h3><p class="txt"><!-- data-->  </p><div class="details"><i class="fa fa-envelope-o" style="color:#EA4335"></i><i class="fa fa-instagram" style="margin-left:60px;background: linear-gradient(0deg,#4c68d7 0%, #bc2a8d 100%);-webkit-background-clip: text;-webkit-text-fill-color: transparent;"></i><i class="fa fa-linkedin" style="margin-left:60px;color:#006192"></i></div></div></article>
+<article class="my-cont"><div class="thumb"></div><div class="infos"><h2 class="title">Kashish Budhwani<span class="flag"></span></h2><h3 class="date">Head</h3><h3 class="seats"><!--status--></h3><p class="txt"><!-- data-->  </p><div class="details"><i class="fa fa-envelope-o" style="color:#EA4335"></i><i class="fa fa-instagram" style="margin-left:60px;background: linear-gradient(0deg,#4c68d7 0%, #bc2a8d 100%);-webkit-background-clip: text;-webkit-text-fill-color: transparent;"></i><i class="fa fa-linkedin" style="margin-left:60px;color:#006192"></i></div></div></article>
+
+</div>
+<div class="my-cont_flex">
+  <article class="my-cont"><div class="thumb"></div><div class="infos"><h2 class="title">Vidhan Singh Rajput<span class="flag"></span></h2><h3 class="date">Co Head</h3><h3 class="seats"><!--status--></h3><p class="txt"><!-- data-->  </p><div class="details"><i class="fa fa-envelope-o" style="color:#EA4335"></i><i class="fa fa-instagram" style="margin-left:60px;background: linear-gradient(0deg,#4c68d7 0%, #bc2a8d 100%);-webkit-background-clip: text;-webkit-text-fill-color: transparent;"></i><i class="fa fa-linkedin" style="margin-left:60px;color:#006192"></i></div></div></article>
+  <article class="my-cont"><div class="thumb"></div><div class="infos"><h2 class="title">Rushikesh Potpite<span class="flag"></span></h2><h3 class="date">Co Head</h3><h3 class="seats"><!--status--></h3><p class="txt"><!-- data-->  </p><div class="details"><i class="fa fa-envelope-o" style="color:#EA4335"></i><i class="fa fa-instagram" style="margin-left:60px;background: linear-gradient(0deg,#4c68d7 0%, #bc2a8d 100%);-webkit-background-clip: text;-webkit-text-fill-color: transparent;"></i><i class="fa fa-linkedin" style="margin-left:60px;color:#006192"></i></div></div></article>
+  <article class="my-cont"><div class="thumb"></div><div class="infos"><h2 class="title">Aishwarya Dongare<span class="flag"></span></h2><h3 class="date">Co Head</h3><h3 class="seats"><!--status--></h3><p class="txt"><!-- data-->  </p><div class="details"><i class="fa fa-envelope-o" style="color:#EA4335"></i><i class="fa fa-instagram" style="margin-left:60px;background: linear-gradient(0deg,#4c68d7 0%, #bc2a8d 100%);-webkit-background-clip: text;-webkit-text-fill-color: transparent;"></i><i class="fa fa-linkedin" style="margin-left:60px;color:#006192"></i></div></div></article>
+  <article class="my-cont"><div class="thumb"></div><div class="infos"><h2 class="title">Vikas Yadav<span class="flag"></span></h2><h3 class="date">Co Head</h3><h3 class="seats"><!--status--></h3><p class="txt"><!-- data-->  </p><div class="details"><i class="fa fa-envelope-o" style="color:#EA4335"></i><i class="fa fa-instagram" style="margin-left:60px;background: linear-gradient(0deg,#4c68d7 0%, #bc2a8d 100%);-webkit-background-clip: text;-webkit-text-fill-color: transparent;"></i><i class="fa fa-linkedin" style="margin-left:60px;color:#006192"></i></div></div></article>
+  
+  
+  </div>
+  <div class="flex_title">Content Writing Team</div>
+  <div class="my-cont_flex">
+  <article class="my-cont"><div class="thumb"></div><div class="infos"><h2 class="title">Kashish Budwani<span class="flag"></span></h2><h3 class="date">Head</h3><h3 class="seats"><!--status--></h3><p class="txt"><!-- data-->  </p><div class="details"><i class="fa fa-envelope-o" style="color:#EA4335"></i><i class="fa fa-instagram" style="margin-left:60px;background: linear-gradient(0deg,#4c68d7 0%, #bc2a8d 100%);-webkit-background-clip: text;-webkit-text-fill-color: transparent;"></i><i class="fa fa-linkedin" style="margin-left:60px;color:#006192"></i></div></div></article>
+  <article class="my-cont"><div class="thumb"></div><div class="infos"><h2 class="title">Vikas Yadav<span class="flag"></span></h2><h3 class="date">Head</h3><h3 class="seats"><!--status--></h3><p class="txt"><!-- data-->  </p><div class="details"><i class="fa fa-envelope-o" style="color:#EA4335"></i><i class="fa fa-instagram" style="margin-left:60px;background: linear-gradient(0deg,#4c68d7 0%, #bc2a8d 100%);-webkit-background-clip: text;-webkit-text-fill-color: transparent;"></i><i class="fa fa-linkedin" style="margin-left:60px;color:#006192"></i></div></div></article>
+  
+  </div>
+  <div class="my-cont_flex">
+    <article class="my-cont"><div class="thumb"></div><div class="infos"><h2 class="title">Divija Pawar<span class="flag"></span></h2><h3 class="date">Co Head</h3><h3 class="seats"><!--status--></h3><p class="txt"><!-- data-->  </p><div class="details"><i class="fa fa-envelope-o" style="color:#EA4335"></i><i class="fa fa-instagram" style="margin-left:60px;background: linear-gradient(0deg,#4c68d7 0%, #bc2a8d 100%);-webkit-background-clip: text;-webkit-text-fill-color: transparent;"></i><i class="fa fa-linkedin" style="margin-left:60px;color:#006192"></i></div></div></article>
+    <article class="my-cont"><div class="thumb"></div><div class="infos"><h2 class="title">Nandini Thaware<span class="flag"></span></h2><h3 class="date">Co Head</h3><h3 class="seats"><!--status--></h3><p class="txt"><!-- data-->  </p><div class="details"><i class="fa fa-envelope-o" style="color:#EA4335"></i><i class="fa fa-instagram" style="margin-left:60px;background: linear-gradient(0deg,#4c68d7 0%, #bc2a8d 100%);-webkit-background-clip: text;-webkit-text-fill-color: transparent;"></i><i class="fa fa-linkedin" style="margin-left:60px;color:#006192"></i></div></div></article> 
+    
+    </div>
+
+    <div class="flex_title">Creativity and Decoration team</div>
+<div class="my-cont_flex">
+<article class="my-cont"><div class="thumb"></div><div class="infos"><h2 class="title">Akanksh Bodakhe<span class="flag"></span></h2><h3 class="date">Head</h3><h3 class="seats"><!--status--></h3><p class="txt"><!-- data-->  </p><div class="details"><i class="fa fa-envelope-o" style="color:#EA4335"></i><i class="fa fa-instagram" style="margin-left:60px;background: linear-gradient(0deg,#4c68d7 0%, #bc2a8d 100%);-webkit-background-clip: text;-webkit-text-fill-color: transparent;"></i><i class="fa fa-linkedin" style="margin-left:60px;color:#006192"></i></div></div></article>
+<article class="my-cont"><div class="thumb"></div><div class="infos"><h2 class="title">Bhumika Hedaoo<span class="flag"></span></h2><h3 class="date">Head</h3><h3 class="seats"><!--status--></h3><p class="txt"><!-- data-->  </p><div class="details"><i class="fa fa-envelope-o" style="color:#EA4335"></i><i class="fa fa-instagram" style="margin-left:60px;background: linear-gradient(0deg,#4c68d7 0%, #bc2a8d 100%);-webkit-background-clip: text;-webkit-text-fill-color: transparent;"></i><i class="fa fa-linkedin" style="margin-left:60px;color:#006192"></i></div></div></article>
+<article class="my-cont"><div class="thumb"></div><div class="infos"><h2 class="title">Ketaki Mahalle<span class="flag"></span></h2><h3 class="date">Head</h3><h3 class="seats"><!--status--></h3><p class="txt"><!-- data-->  </p><div class="details"><i class="fa fa-envelope-o" style="color:#EA4335"></i><i class="fa fa-instagram" style="margin-left:60px;background: linear-gradient(0deg,#4c68d7 0%, #bc2a8d 100%);-webkit-background-clip: text;-webkit-text-fill-color: transparent;"></i><i class="fa fa-linkedin" style="margin-left:60px;color:#006192"></i></div></div></article>
+<article class="my-cont"><div class="thumb"></div><div class="infos"><h2 class="title">Siddhi Barde<span class="flag"></span></h2><h3 class="date">Head</h3><h3 class="seats"><!--status--></h3><p class="txt"><!-- data-->  </p><div class="details"><i class="fa fa-envelope-o" style="color:#EA4335"></i><i class="fa fa-instagram" style="margin-left:60px;background: linear-gradient(0deg,#4c68d7 0%, #bc2a8d 100%);-webkit-background-clip: text;-webkit-text-fill-color: transparent;"></i><i class="fa fa-linkedin" style="margin-left:60px;color:#006192"></i></div></div></article>
+
+
+</div>
+<div class="my-cont_flex">
+  <article class="my-cont"><div class="thumb"></div><div class="infos"><h2 class="title">Pratik Bagdi<span class="flag"></span></h2><h3 class="date">Co Head</h3><h3 class="seats"><!--status--></h3><p class="txt"><!-- data-->  </p><div class="details"><i class="fa fa-envelope-o" style="color:#EA4335"></i><i class="fa fa-instagram" style="margin-left:60px;background: linear-gradient(0deg,#4c68d7 0%, #bc2a8d 100%);-webkit-background-clip: text;-webkit-text-fill-color: transparent;"></i><i class="fa fa-linkedin" style="margin-left:60px;color:#006192"></i></div></div></article>
+  <article class="my-cont"><div class="thumb"></div><div class="infos"><h2 class="title">Jay Bele<span class="flag"></span></h2><h3 class="date">Co Head</h3><h3 class="seats"><!--status--></h3><p class="txt"><!-- data-->  </p><div class="details"><i class="fa fa-envelope-o" style="color:#EA4335"></i><i class="fa fa-instagram" style="margin-left:60px;background: linear-gradient(0deg,#4c68d7 0%, #bc2a8d 100%);-webkit-background-clip: text;-webkit-text-fill-color: transparent;"></i><i class="fa fa-linkedin" style="margin-left:60px;color:#006192"></i></div></div></article>
+  <article class="my-cont"><div class="thumb"></div><div class="infos"><h2 class="title">Aditya Bangar<span class="flag"></span></h2><h3 class="date">Co Head</h3><h3 class="seats"><!--status--></h3><p class="txt"><!-- data-->  </p><div class="details"><i class="fa fa-envelope-o" style="color:#EA4335"></i><i class="fa fa-instagram" style="margin-left:60px;background: linear-gradient(0deg,#4c68d7 0%, #bc2a8d 100%);-webkit-background-clip: text;-webkit-text-fill-color: transparent;"></i><i class="fa fa-linkedin" style="margin-left:60px;color:#006192"></i></div></div></article>
+   
+  </div>
+  
+  
+  <div class="flex_title">Hospitality And Discipline team</div>
+  <div class="my-cont_flex">
+  <article class="my-cont"><div class="thumb"></div><div class="infos"><h2 class="title">Sai Deodhe<span class="flag"></span></h2><h3 class="date">Head</h3><h3 class="seats"><!--status--></h3><p class="txt"><!-- data-->  </p><div class="details"><i class="fa fa-envelope-o" style="color:#EA4335"></i><i class="fa fa-instagram" style="margin-left:60px;background: linear-gradient(0deg,#4c68d7 0%, #bc2a8d 100%);-webkit-background-clip: text;-webkit-text-fill-color: transparent;"></i><i class="fa fa-linkedin" style="margin-left:60px;color:#006192"></i></div></div></article>
+  <article class="my-cont"><div class="thumb"></div><div class="infos"><h2 class="title">Chetna Salve<span class="flag"></span></h2><h3 class="date">Head</h3><h3 class="seats"><!--status--></h3><p class="txt"><!-- data-->  </p><div class="details"><i class="fa fa-envelope-o" style="color:#EA4335"></i><i class="fa fa-instagram" style="margin-left:60px;background: linear-gradient(0deg,#4c68d7 0%, #bc2a8d 100%);-webkit-background-clip: text;-webkit-text-fill-color: transparent;"></i><i class="fa fa-linkedin" style="margin-left:60px;color:#006192"></i></div></div></article>
+  <article class="my-cont"><div class="thumb"></div><div class="infos"><h2 class="title">Manjeet Naik<span class="flag"></span></h2><h3 class="date">Head</h3><h3 class="seats"><!--status--></h3><p class="txt"><!-- data-->  </p><div class="details"><i class="fa fa-envelope-o" style="color:#EA4335"></i><i class="fa fa-instagram" style="margin-left:60px;background: linear-gradient(0deg,#4c68d7 0%, #bc2a8d 100%);-webkit-background-clip: text;-webkit-text-fill-color: transparent;"></i><i class="fa fa-linkedin" style="margin-left:60px;color:#006192"></i></div></div></article>
+ 
+  
+  </div>
+  <div class="my-cont_flex">
+    <article class="my-cont"><div class="thumb"></div><div class="infos"><h2 class="title">Sahil Marbate<span class="flag"></span></h2><h3 class="date">Co Head</h3><h3 class="seats"><!--status--></h3><p class="txt"><!-- data-->  </p><div class="details"><i class="fa fa-envelope-o" style="color:#EA4335"></i><i class="fa fa-instagram" style="margin-left:60px;background: linear-gradient(0deg,#4c68d7 0%, #bc2a8d 100%);-webkit-background-clip: text;-webkit-text-fill-color: transparent;"></i><i class="fa fa-linkedin" style="margin-left:60px;color:#006192"></i></div></div></article>
+    <article class="my-cont"><div class="thumb"></div><div class="infos"><h2 class="title">Shardul Rathod<span class="flag"></span></h2><h3 class="date">Co Head</h3><h3 class="seats"><!--status--></h3><p class="txt"><!-- data-->  </p><div class="details"><i class="fa fa-envelope-o" style="color:#EA4335"></i><i class="fa fa-instagram" style="margin-left:60px;background: linear-gradient(0deg,#4c68d7 0%, #bc2a8d 100%);-webkit-background-clip: text;-webkit-text-fill-color: transparent;"></i><i class="fa fa-linkedin" style="margin-left:60px;color:#006192"></i></div></div></article>
+    <article class="my-cont"><div class="thumb"></div><div class="infos"><h2 class="title">Mukti Purohit<span class="flag"></span></h2><h3 class="date">Co Head</h3><h3 class="seats"><!--status--></h3><p class="txt"><!-- data-->  </p><div class="details"><i class="fa fa-envelope-o" style="color:#EA4335"></i><i class="fa fa-instagram" style="margin-left:60px;background: linear-gradient(0deg,#4c68d7 0%, #bc2a8d 100%);-webkit-background-clip: text;-webkit-text-fill-color: transparent;"></i><i class="fa fa-linkedin" style="margin-left:60px;color:#006192"></i></div></div></article>
+    <article class="my-cont"><div class="thumb"></div><div class="infos"><h2 class="title">Lokesh Shelke<span class="flag"></span></h2><h3 class="date">Co Head</h3><h3 class="seats"><!--status--></h3><p class="txt"><!-- data-->  </p><div class="details"><i class="fa fa-envelope-o" style="color:#EA4335"></i><i class="fa fa-instagram" style="margin-left:60px;background: linear-gradient(0deg,#4c68d7 0%, #bc2a8d 100%);-webkit-background-clip: text;-webkit-text-fill-color: transparent;"></i><i class="fa fa-linkedin" style="margin-left:60px;color:#006192"></i></div></div></article>
+  
+    
+    </div>
+
+<style>
+	/* @font-face {
+		font-family: 'Grotesque';
+		src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/397014/BrandonGrotesque-Regular.eot'),
+			url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/397014/BrandonGrotesque-Regular.ttf'),
+			url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/397014/BrandonGrotesque-Regular.woff');
+		font-weight: normal;
+	}
+	@font-face {
+		font-family: 'Grotesque Black';
+		src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/397014/BrandonGrotesque-Black.eot'),
+			url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/397014/BrandonGrotesque-Black.ttf'),
+			url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/397014/BrandonGrotesque-Black.woff');
+		font-weight: bold;
+	}
+	@font-face {
+		font-family: 'title';
+		src: url(Sofia\ Pro\ SemiBold.ttf);
+	}
+	* {
+		box-sizing: border-box;
+	}
+
+	html,
+	body {
+		font-size: 100%;
+	}
+
+	body::-webkit-scrollbar {
+		display: none;
+	}
+
+	body {
+		padding: 0;
+		margin: 0;
+		background: #152536;
+	} */
+
+	.flex_title {
+		font-family: title, sans-serif;
+		font-size: 4rem;
+		color: rgb(255, 255, 255);
+		text-shadow: 4px 1px 10px #000e23ea;
+		text-align: center;
+		margin-bottom: 6vh;
+	}
+	.my-cont_flex {
+		max-width: 2000vw;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-evenly;
+	}
+
+	/* a[href] {
+		position: relative;
+	}
+	a[href],
+	a[href]:link,
+	a[href]:visited,
+	a[href]:active {
+		text-decoration: none;
+		color: #d8276c;
+		text-shadow: 2px 2px 2px #070c11;
+		padding-bottom: 3px;
+		font-weight: bold;
+	}
+	a[href]::after {
+		content: '';
+		position: absolute;
+		left: 0;
+		left: 0;
+		bottom: 0;
+		background: #fff;
+		width: 0;
+		height: 1px;
+		transition: 0.35s cubic-bezier(0.17, 0.67, 0.5, 1.03);
+	}
+	a[href]:hover::after {
+		width: 100%;
+		box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+	}
+
+	.note {
+		margin-top: 30px;
+		color: #fff;
+		font-size: 1rem;
+		font-family: 'Merriweather', sans-serif;
+		line-height: 1.5;
+		text-align: center;
+	} */
+
+	article.my-cont {
+		margin-bottom: 4vw;
+		margin-left: 0.8vw;
+		margin-right: 0.8vw;
+		width: 280px;
+		height: 350px;
+		border-radius: 3px;
+		box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+		overflow: hidden;
+	}
+	article.my-cont:hover {
+		box-shadow: 1px 1px 10px 5px rgba(177, 177, 177, 0.803);
+		transition: all 0.5s;
+	}
+
+	article.my-cont .thumb {
+		width: auto;
+		height: 260px;
+		background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/397014/new-york-city.png')
+			no-repeat center;
+
+		border-radius: 3px;
+	}
+	article.my-cont .infos {
+		width: auto;
+		height: 350px;
+		position: relative;
+		padding: 14px 24px;
+		background: rgb(255, 255, 255);
+		transition: all 0.5s;
+	}
+	article.my-cont .infos .title {
+		position: relative;
+		margin: 10px 0;
+		letter-spacing: 1px;
+		color: #152536;
+		font-family: 'Grotesque Black', sans-serif;
+		font-size: 1.2rem;
+		text-transform: uppercase;
+		text-shadow: 0 0 0px #2b2b2b8e;
+	}
+	article.my-cont .infos .flag {
+		position: absolute;
+		top: 50%;
+		right: 0;
+		transform: translateY(-50%);
+		width: 35px;
+		height: 23px;
+		background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/397014/flag.pngss') no-repeat top
+			right;
+		background-size: 100% auto;
+		display: inline-block;
+	}
+	article.my-cont .infos .date,
+	article.my-cont .infos .seats {
+		margin-bottom: 10px;
+		text-transform: uppercase;
+		font-size: 0.85rem;
+		color: rgba(21, 37, 54, 0.7);
+		font-family: 'Grotesque', sans-serif;
+	}
+
+	article.my-cont .infos .seats {
+		display: inline-block;
+		margin-bottom: 24px;
+		padding-bottom: 24px;
+		border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+		opacity: 0;
+		transition: 0.5s 0.25s cubic-bezier(0.17, 0.67, 0.5, 1.03);
+	}
+	article.my-cont .infos .txt {
+		font-family: 'Merriweather', sans-serif;
+		line-height: 2;
+		font-size: 0.95rem;
+		color: rgba(21, 37, 54, 0.7);
+		opacity: 0;
+		transition: 0.5s 0.25s cubic-bezier(0.17, 0.67, 0.5, 1.03);
+	}
+	article.my-cont .infos i {
+		cursor: pointer;
+	}
+	article.my-cont .infos .details {
+		position: absolute;
+		left: 20px;
+		bottom: 20px;
+		font-size: 2.5rem;
+
+		opacity: 0;
+		transition: 0.5s 0.25s cubic-bezier(0.17, 0.67, 0.5, 1.03);
+	}
+	article.my-cont:hover .infos {
+		transform: translateY(-260px);
+		/* background: linear-gradient(0deg,white 30%,rgba(255, 255, 255, 0) 100%); 
+  glowing effect
+  */
+	}
+	article.my-cont:hover .infos .seats,
+	article.my-cont:hover .infos .txt,
+	article.my-cont:hover .infos .details {
+		opacity: 1;
+	}
+	@media only screen and (max-width: 1200px) {
+		.flex_title {
+			margin-top: 7vw;
+			font-size: 12vw;
+		}
+		article.my-cont {
+			width: 66vw;
+			height: 70vw;
+		}
+		article.my-cont .infos .title {
+			font-size: 3rem;
+		}
+
+		article.my-cont .thumb {
+			height: 50vw;
+		}
+		article.my-cont .infos {
+			width: 70vw;
+			height: 70vw;
+		}
+		article.my-cont:hover .infos {
+			transform: translateY(-50vw);
+		}
+		article.my-cont .infos .date {
+			font-size: 2.2rem;
+			margin-top: 20px;
+		}
+		i {
+			font-size: 6rem !important;
+			margin-left: 9vw !important;
+			margin-bottom: 1rem;
+		}
+	}
+</style>

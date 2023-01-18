@@ -121,9 +121,9 @@ export default class Sketch {
 
 		this.bloomPass = new UnrealBloomPass(
 			new THREE.Vector2(window.innerWidth, window.innerHeight),
-			1.4,
-			0.87,
-			0.01
+			3,
+			1,
+			0
 		);
 
 		this.composer = new EffectComposer(this.renderer);
