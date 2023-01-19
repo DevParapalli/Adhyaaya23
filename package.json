@@ -63,6 +63,7 @@
 	"type": "module",
 	"dependencies": {
 		"@formkit/auto-animate": "1.0.0-beta.5",
+		"@sendgrid/mail": "^7.7.0",
 		"@supabase/auth-helpers-sveltekit": "^0.8.6",
 		"@supabase/supabase-js": "^2.2.0",
 		"@sveltejs/adapter-vercel": "^1.0.1"

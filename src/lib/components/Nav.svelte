@@ -23,7 +23,7 @@
 </script>
 
 <div
-	class="fixed top-0 w-full min-h-16 bg-transparent z-[9999] pointer-events-none flex flex-row px-4 md:px-10  items-center pt-[4vh] print:hidden"
+	class="fixed top-0 w-full min-h-16 bg-transparent z-[200] pointer-events-none flex flex-row px-4 md:px-10  items-center pt-[4vh] print:hidden"
 >
 	<div
 		on:click={() => {

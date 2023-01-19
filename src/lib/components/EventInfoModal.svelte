@@ -74,17 +74,18 @@
 </style>
 
 {#if isOpen}
-<button class="h-10 w-10 md:h-12 md:w-12 rounded-full border border-white right-6 top-6 absolute transition-all duration-500 ease-in-out hover:scale-105 active:scale-95 z-50">
+
+<div class="modal-wrapper relative h-full w-full z-[210] bg-black/50">
+    <button class="h-10 w-10 md:h-12 md:w-12 rounded-full border border-white right-10 top-8 absolute transition-all duration-500 ease-in-out hover:scale-105 active:scale-95 z-50 mix-blend-difference">
+        <div
+        class="absolute w-[18px] h-[2px] origin-center bg-white transition-all ease-in-out duration-500"
+        style="top: 50%; top: calc(50%); left: 50%; transform: translateX(-50%) translateY(-50%) rotate(-45deg) translateZ(0px);"
+    />
     <div
-    class="absolute w-[18px] h-[2px] origin-center bg-white transition-all ease-in-out duration-500"
-    style="top: 50%; top: calc(50%); left: 50%; transform: translateX(-50%) translateY(-50%) rotate(-45deg) translateZ(0px);"
-/>
-<div
-    class="absolute w-[18px] h-[2px] origin-center bg-white transition-all ease-in-out duration-500 "
-    style="top: 50%; top: calc(50%); left: 50%; transform: translateX(-50%) translateY(-50%) rotate(45deg) translateZ(0px);"
-/>
-</button>
-<div class="modal-wrapper relative h-full w-full">
+        class="absolute w-[18px] h-[2px] origin-center bg-white transition-all ease-in-out duration-500 "
+        style="top: 50%; top: calc(50%); left: 50%; transform: translateX(-50%) translateY(-50%) rotate(45deg) translateZ(0px);"
+    />
+    </button>
     <div use:clickOutside on:click_outside={closeModal} class="modal-container container flex justify-between flex-col lg:flex-row rounded-lg">
         <div class="image-container">
             <img src="{event.poster}" alt="{event.name} poster" class="rounded-lg lg:rounded-r-none">
@@ -100,7 +101,9 @@
                 {/each}
             </p>
             <div class="player-indicator flex flex-row justify-evenly items-center mt-auto w-full">
-                You can play as:
+                {#if event.team_members.filter(i => i != 0).length > 1 }
+                    You can play as:
+                {/if}
                 {#each Array(6) as _, i}
                 {#if event.team_members.includes(i+1)}
                 <button on:click={() => {members_selected = i+1}} class="badge {members_selected == i+1 ? 'border-green-500 text-green-500':''} badge-outline badge-sm md:badge-lg hover:scale-110 active:scale-90 active:opacity-90">{getMemberText(i+1)} ({i+1})</button>

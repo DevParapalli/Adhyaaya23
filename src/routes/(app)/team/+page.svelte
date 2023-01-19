@@ -658,7 +658,7 @@
 	<article class="my-cont">
 		<div class="thumb" />
 		<div class="infos">
-			<h2 class="title">Vidhan Singh Rajput<span class="flag" /></h2>
+			<h2 class="title">Vidhan Rajput<span class="flag" /></h2>
 			<h3 class="date">Co Head</h3>
 			<h3 class="seats"><!--status--></h3>
 			<p class="txt"><!-- data--></p>
