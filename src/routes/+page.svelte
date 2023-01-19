@@ -14,11 +14,18 @@
 	import { onMount, SvelteComponent } from 'svelte';
 	import { tweened } from 'svelte/motion';
 	import type Sketch from '$lib/components/DNA/Sketch';
-	import Nav from '$lib/components/Nav.svelte';
+	// import Nav from '$lib/components/Nav.svelte';
+
 	import Home from '$lib/components/index/Home.svelte';
 	import Events from '$lib/components/index/Events.svelte';
+	import ContactUs from '$lib/components/index/ContactUs.svelte';
+	import AboutUs from '$lib/components/index/AboutUs.svelte';
+	import Sponsors from '$lib/components/index/Sponsors.svelte';
+	import Footer from '$lib/components/index/Footer.svelte';
+
 	import {cubicInOut} from 'svelte/easing';
 	import {hasScrolled} from '$lib/stores/UI';
+	
 	let sketch: Sketch;
 	const duration = tweened(0, { duration: 1500});
 
@@ -50,10 +57,10 @@
 	const PAGES: { name: string; component: string | typeof SvelteComponent }[] = [
 		{ name: 'Home', component: Home },
 		{ name: 'Events', component: Events },
-		{ name: 'About Us', component: 'About Us' },
-		{ name: 'Sponsors', component: 'Sponsors' },
-		{ name: 'Contact Us', component: 'Contact Us' },
-		{ name: 'Sitemap', component: 'Footer' }
+		{ name: 'About Us', component: AboutUs },
+		{ name: 'Sponsors', component: Sponsors },
+		{ name: 'Contact Us', component: ContactUs },
+		{ name: 'Sitemap', component: Footer }
 	];
 
 	let pagination: PaginationOptions = {
