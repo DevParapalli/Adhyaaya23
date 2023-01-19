@@ -3,18 +3,18 @@
 	import { enhance } from "$app/forms";
     let submit = false;
 </script>
-<div class="md:h-full h-5/6  w-5/6 flex flex-col md:flex-row justify-center items-center m-auto pt-24 ">
+<div class="md:h-full h-5/6  w-5/6 flex flex-col md:flex-row justify-center items-center m-auto pt-12 2xl:pt-24 ">
     <div class="section md:w-1/3 w-5/6 hidden md:block h-5/6 bg-black/20 py-8 md:py-0 rounded-lg border border-white">
         <form on:submit={() => {
             submit = true;
         }} 
         class="p-10" method="POST" use:enhance action="/forms/contact_us">
-            <div class="relative z-0 mb-6 w-full group">
+            <div class="relative z-0 mb-3 w-full group">
 				<input
 					type="text"
 					name="name"
 					id="name"
-					class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-400 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+					class="block py-2 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-400 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
 					placeholder=" "
 					required
 				/>
@@ -24,12 +24,12 @@
 					>Name</label
 				>
 			</div>
-            <div class="relative z-0 mb-6 w-full group">
+            <div class="relative z-0 mb-3 w-full group">
 				<input
 					type="email"
 					name="email"
 					id="email"
-					class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-400 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+					class="block py-2 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-400 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
 					placeholder=" "
 					required
 				/>
@@ -39,11 +39,11 @@
 					>Email</label
 				>
 			</div>
-            <div class="relative z-0 mb-6 w-full group">
+            <div class="relative z-0 mb-2 w-full group">
 				<textarea
 					name="message"
 					id="message"
-					class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-400 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+					class="block py-2 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-400 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
 					placeholder=" "
 					required
 				/>
@@ -55,22 +55,34 @@
 			</div>
             <button disabled={submit} class="btn btn-outline btn-block" type="submit">Submit</button>
         </form>
-        
+        <div class="info-container w-full flex flex-col items-center justify-center px-4 lg:px-10">
+			<div class="card card-compact mx-auto bg-white/20 shadow-xl">
+            <div class="card-body">
+                <h2 class="card-title">For Technical Queries, </h2>
+                <p>Devansh Parapalli</p>
+				<a href="https://api.whatsapp.com/send?phone=+918793150182&text=[AdhyaayaWebsite]%20Hello!" class="inline-flex items-center gap-2"><iconify-icon icon="mdi:whatsapp"/> 8793150182</a>
+                <a href="mailto:parapallidev@gmail.com" class="inline-flex items-center gap-2"><iconify-icon icon="mdi:email-outline"/>parapallidev@gmail.com</a>
+              </div>
+          </div>
+		</div>
     </div>
     <div id="center-console" class="section md:w-1/3 w-5/6 h-5/6  flex flex-col items-center justify-between py-8 md:py-0 rounded-lg border border-black bg-white/20">
-    <h3 class="text-2xl md:text-6xl pt-0 md:pt-10">Contact Us</h3>
-    <div class="contact-info px-4 pt-4 flex flex-col gap-8 items-start">
-        <div class="card mx-auto bg-black/50 shadow-xl">
+    <h3 class="text-lg md:text-2xl lg:text-4xl xl:text-6xl pt-0 md:pt-10">Contact Us</h3>
+    <div class="contact-info px-4 md:px-10 pt-4 flex flex-col gap-4 md:gap-8 items-start">
+        <div class="card card-compact mx-auto bg-black/50 shadow-xl w-full">
             <div class="card-body">
-                <h2 class="card-title">M. Parmesan</h2>
+                <h2 class="card-title">For Event-Related Queries,</h2>
+				<p>Malhar Paradkar</p>
                 <a href="tel:+918793150182" class="inline-flex items-center gap-2"><iconify-icon icon="mdi:phone-outline"/> 8793150182</a>
                 <a href="mailto:parapallidev@gmail.com" class="inline-flex items-center gap-2"><iconify-icon icon="mdi:email-outline"/>parapallidev@gmail.com</a>
               </div>
           </div>
-          <div class="card mx-auto bg-black/50 shadow-xl">
+		  <!-- <div class="text-6xl mx-auto">OR</div> -->
+          <div class="card card-compact mx-auto bg-black/50 shadow-xl">
             <div class="card-body">
-              <h2 class="card-title">P. Parmesan</h2>
-              <a href="tel:+918793150182" class="inline-flex items-center gap-2"><iconify-icon icon="mdi:phone-outline"/> 8793150182</a>
+              <h2 class="card-title">For Other/General Queries,</h2>
+			<p>Shlok Suraj Tajne</p>
+			  <a href="tel:+918793150182" class="inline-flex items-center gap-2"><iconify-icon icon="mdi:phone-outline"/> 8793150182</a>
               <a href="mailto:parapallidev@gmail.com" class="inline-flex items-center gap-2"><iconify-icon icon="mdi:email-outline"/>parapallidev@gmail.com</a>
             </div>
           </div>
@@ -86,5 +98,9 @@
     .section {
         backdrop-filter: blur(2px);
     }
+
+	.card-title {
+		@apply line-clamp-1
+	}
 </style>
 

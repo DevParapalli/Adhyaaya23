@@ -46,7 +46,7 @@
 
 <!-- <Nav /> -->
 
-<div id="dna-bg" class="fixed h-screen w-screen -z-50 bg-black" />
+<div id="dna-bg" class="fixed h-screen w-screen -z-50 bg-black opacity-75" />
 
 <div bind:this={heading} class="flex_title !mt-0 pt-20">Advisors</div>
 <div bind:this={container} class="my-cont_flex">
@@ -59,13 +59,22 @@
 			<p class="txt"><!-- data--></p>
 			<div class="details">
 				<a href="">
-					<iconify-icon class="text-3xl lg:text-5xl text-[#EA4335] bg-clip-text" icon="mdi:email-outline"/>
+					<iconify-icon
+						class="text-3xl lg:text-5xl text-[#EA4335] bg-clip-text"
+						icon="mdi:email-outline"
+					/>
 				</a>
 				<a href="">
-					<iconify-icon class="text-3xl lg:text-5xl text-[#4c68d7] bg-clip-text" icon="mdi:instagram"/>
+					<iconify-icon
+						class="text-3xl lg:text-5xl text-[#4c68d7] bg-clip-text"
+						icon="mdi:instagram"
+					/>
 				</a>
 				<a href="">
-					<iconify-icon class="text-3xl lg:text-5xl text-[#006192] bg-clip-text" icon="mdi:linkedin"/>
+					<iconify-icon
+						class="text-3xl lg:text-5xl text-[#006192] bg-clip-text"
+						icon="mdi:linkedin"
+					/>
 				</a>
 			</div>
 		</div>
@@ -78,10 +87,24 @@
 			<h3 class="seats"><!--status--></h3>
 			<p class="txt"><!-- data--></p>
 			<div class="details">
-				<i class="fa fa-envelope-o" style="color:#EA4335" /><i
-					class="fa fa-instagram"
-					style="margin-left:60px;background: linear-gradient(0deg,#4c68d7 0%, #bc2a8d 100%);-webkit-background-clip: text;-webkit-text-fill-color: transparent;"
-				/><i class="fa fa-linkedin" style="margin-left:60px;color:#006192" />
+				<a href="">
+					<iconify-icon
+						class="text-3xl lg:text-5xl text-[#EA4335] bg-clip-text"
+						icon="mdi:email-outline"
+					/>
+				</a>
+				<a href="">
+					<iconify-icon
+						class="text-3xl lg:text-5xl text-[#4c68d7] bg-clip-text"
+						icon="mdi:instagram"
+					/>
+				</a>
+				<a href="">
+					<iconify-icon
+						class="text-3xl lg:text-5xl text-[#006192] bg-clip-text"
+						icon="mdi:linkedin"
+					/>
+				</a>
 			</div>
 		</div>
 	</article>
@@ -93,10 +116,24 @@
 			<h3 class="seats"><!--status--></h3>
 			<p class="txt"><!-- data--></p>
 			<div class="details">
-				<i class="fa fa-envelope-o" style="color:#EA4335" /><i
-					class="fa fa-instagram"
-					style="margin-left:60px;background: linear-gradient(0deg,#4c68d7 0%, #bc2a8d 100%);-webkit-background-clip: text;-webkit-text-fill-color: transparent;"
-				/><i class="fa fa-linkedin" style="margin-left:60px;color:#006192" />
+				<a href="">
+					<iconify-icon
+						class="text-3xl lg:text-5xl text-[#EA4335] bg-clip-text"
+						icon="mdi:email-outline"
+					/>
+				</a>
+				<a href="">
+					<iconify-icon
+						class="text-3xl lg:text-5xl text-[#4c68d7] bg-clip-text"
+						icon="mdi:instagram"
+					/>
+				</a>
+				<a href="">
+					<iconify-icon
+						class="text-3xl lg:text-5xl text-[#006192] bg-clip-text"
+						icon="mdi:linkedin"
+					/>
+				</a>
 			</div>
 		</div>
 	</article>
@@ -108,10 +145,24 @@
 			<h3 class="seats"><!--status--></h3>
 			<p class="txt"><!-- data--></p>
 			<div class="details">
-				<i class="fa fa-envelope-o" style="color:#EA4335" /><i
-					class="fa fa-instagram"
-					style="margin-left:60px;background: linear-gradient(0deg,#4c68d7 0%, #bc2a8d 100%);-webkit-background-clip: text;-webkit-text-fill-color: transparent;"
-				/><i class="fa fa-linkedin" style="margin-left:60px;color:#006192" />
+				<a href="">
+					<iconify-icon
+						class="text-3xl lg:text-5xl text-[#EA4335] bg-clip-text"
+						icon="mdi:email-outline"
+					/>
+				</a>
+				<a href="">
+					<iconify-icon
+						class="text-3xl lg:text-5xl text-[#4c68d7] bg-clip-text"
+						icon="mdi:instagram"
+					/>
+				</a>
+				<a href="">
+					<iconify-icon
+						class="text-3xl lg:text-5xl text-[#006192] bg-clip-text"
+						icon="mdi:linkedin"
+					/>
+				</a>
 			</div>
 		</div>
 	</article>
@@ -123,10 +174,24 @@
 			<h3 class="seats"><!--status--></h3>
 			<p class="txt"><!-- data--></p>
 			<div class="details">
-				<i class="fa fa-envelope-o" style="color:#EA4335" /><i
-					class="fa fa-instagram"
-					style="margin-left:60px;background: linear-gradient(0deg,#4c68d7 0%, #bc2a8d 100%);-webkit-background-clip: text;-webkit-text-fill-color: transparent;"
-				/><i class="fa fa-linkedin" style="margin-left:60px;color:#006192" />
+				<a href="">
+					<iconify-icon
+						class="text-3xl lg:text-5xl text-[#EA4335] bg-clip-text"
+						icon="mdi:email-outline"
+					/>
+				</a>
+				<a href="">
+					<iconify-icon
+						class="text-3xl lg:text-5xl text-[#4c68d7] bg-clip-text"
+						icon="mdi:instagram"
+					/>
+				</a>
+				<a href="">
+					<iconify-icon
+						class="text-3xl lg:text-5xl text-[#006192] bg-clip-text"
+						icon="mdi:linkedin"
+					/>
+				</a>
 			</div>
 		</div>
 	</article>
@@ -142,10 +207,24 @@
 			<h3 class="seats"><!--status--></h3>
 			<p class="txt"><!-- data--></p>
 			<div class="details">
-				<i class="fa fa-envelope-o" style="color:#EA4335" /><i
-					class="fa fa-instagram"
-					style="margin-left:60px;background: linear-gradient(0deg,#4c68d7 0%, #bc2a8d 100%);-webkit-background-clip: text;-webkit-text-fill-color: transparent;"
-				/><i class="fa fa-linkedin" style="margin-left:60px;color:#006192" />
+				<a href="">
+					<iconify-icon
+						class="text-3xl lg:text-5xl text-[#EA4335] bg-clip-text"
+						icon="mdi:email-outline"
+					/>
+				</a>
+				<a href="">
+					<iconify-icon
+						class="text-3xl lg:text-5xl text-[#4c68d7] bg-clip-text"
+						icon="mdi:instagram"
+					/>
+				</a>
+				<a href="">
+					<iconify-icon
+						class="text-3xl lg:text-5xl text-[#006192] bg-clip-text"
+						icon="mdi:linkedin"
+					/>
+				</a>
 			</div>
 		</div>
 	</article>
@@ -157,10 +236,24 @@
 			<h3 class="seats"><!--status--></h3>
 			<p class="txt"><!-- data--></p>
 			<div class="details">
-				<i class="fa fa-envelope-o" style="color:#EA4335" /><i
-					class="fa fa-instagram"
-					style="margin-left:60px;background: linear-gradient(0deg,#4c68d7 0%, #bc2a8d 100%);-webkit-background-clip: text;-webkit-text-fill-color: transparent;"
-				/><i class="fa fa-linkedin" style="margin-left:60px;color:#006192" />
+				<a href="">
+					<iconify-icon
+						class="text-3xl lg:text-5xl text-[#EA4335] bg-clip-text"
+						icon="mdi:email-outline"
+					/>
+				</a>
+				<a href="">
+					<iconify-icon
+						class="text-3xl lg:text-5xl text-[#4c68d7] bg-clip-text"
+						icon="mdi:instagram"
+					/>
+				</a>
+				<a href="">
+					<iconify-icon
+						class="text-3xl lg:text-5xl text-[#006192] bg-clip-text"
+						icon="mdi:linkedin"
+					/>
+				</a>
 			</div>
 		</div>
 	</article>
@@ -172,10 +265,24 @@
 			<h3 class="seats"><!--status--></h3>
 			<p class="txt"><!-- data--></p>
 			<div class="details">
-				<i class="fa fa-envelope-o" style="color:#EA4335" /><i
-					class="fa fa-instagram"
-					style="margin-left:60px;background: linear-gradient(0deg,#4c68d7 0%, #bc2a8d 100%);-webkit-background-clip: text;-webkit-text-fill-color: transparent;"
-				/><i class="fa fa-linkedin" style="margin-left:60px;color:#006192" />
+				<a href="">
+					<iconify-icon
+						class="text-3xl lg:text-5xl text-[#EA4335] bg-clip-text"
+						icon="mdi:email-outline"
+					/>
+				</a>
+				<a href="">
+					<iconify-icon
+						class="text-3xl lg:text-5xl text-[#4c68d7] bg-clip-text"
+						icon="mdi:instagram"
+					/>
+				</a>
+				<a href="">
+					<iconify-icon
+						class="text-3xl lg:text-5xl text-[#006192] bg-clip-text"
+						icon="mdi:linkedin"
+					/>
+				</a>
 			</div>
 		</div>
 	</article>
@@ -187,10 +294,24 @@
 			<h3 class="seats"><!--status--></h3>
 			<p class="txt"><!-- data--></p>
 			<div class="details">
-				<i class="fa fa-envelope-o" style="color:#EA4335" /><i
-					class="fa fa-instagram"
-					style="margin-left:60px;background: linear-gradient(0deg,#4c68d7 0%, #bc2a8d 100%);-webkit-background-clip: text;-webkit-text-fill-color: transparent;"
-				/><i class="fa fa-linkedin" style="margin-left:60px;color:#006192" />
+				<a href="">
+					<iconify-icon
+						class="text-3xl lg:text-5xl text-[#EA4335] bg-clip-text"
+						icon="mdi:email-outline"
+					/>
+				</a>
+				<a href="">
+					<iconify-icon
+						class="text-3xl lg:text-5xl text-[#4c68d7] bg-clip-text"
+						icon="mdi:instagram"
+					/>
+				</a>
+				<a href="">
+					<iconify-icon
+						class="text-3xl lg:text-5xl text-[#006192] bg-clip-text"
+						icon="mdi:linkedin"
+					/>
+				</a>
 			</div>
 		</div>
 	</article>
@@ -202,10 +323,24 @@
 			<h3 class="seats"><!--status--></h3>
 			<p class="txt"><!-- data--></p>
 			<div class="details">
-				<i class="fa fa-envelope-o" style="color:#EA4335" /><i
-					class="fa fa-instagram"
-					style="margin-left:60px;background: linear-gradient(0deg,#4c68d7 0%, #bc2a8d 100%);-webkit-background-clip: text;-webkit-text-fill-color: transparent;"
-				/><i class="fa fa-linkedin" style="margin-left:60px;color:#006192" />
+				<a href="">
+					<iconify-icon
+						class="text-3xl lg:text-5xl text-[#EA4335] bg-clip-text"
+						icon="mdi:email-outline"
+					/>
+				</a>
+				<a href="">
+					<iconify-icon
+						class="text-3xl lg:text-5xl text-[#4c68d7] bg-clip-text"
+						icon="mdi:instagram"
+					/>
+				</a>
+				<a href="">
+					<iconify-icon
+						class="text-3xl lg:text-5xl text-[#006192] bg-clip-text"
+						icon="mdi:linkedin"
+					/>
+				</a>
 			</div>
 		</div>
 	</article>
@@ -221,10 +356,24 @@
 			<h3 class="seats"><!--status--></h3>
 			<p class="txt"><!-- data--></p>
 			<div class="details">
-				<i class="fa fa-envelope-o" style="color:#EA4335" /><i
-					class="fa fa-instagram"
-					style="margin-left:60px;background: linear-gradient(0deg,#4c68d7 0%, #bc2a8d 100%);-webkit-background-clip: text;-webkit-text-fill-color: transparent;"
-				/><i class="fa fa-linkedin" style="margin-left:60px;color:#006192" />
+				<a href="">
+					<iconify-icon
+						class="text-3xl lg:text-5xl text-[#EA4335] bg-clip-text"
+						icon="mdi:email-outline"
+					/>
+				</a>
+				<a href="">
+					<iconify-icon
+						class="text-3xl lg:text-5xl text-[#4c68d7] bg-clip-text"
+						icon="mdi:instagram"
+					/>
+				</a>
+				<a href="">
+					<iconify-icon
+						class="text-3xl lg:text-5xl text-[#006192] bg-clip-text"
+						icon="mdi:linkedin"
+					/>
+				</a>
 			</div>
 		</div>
 	</article>
@@ -236,10 +385,24 @@
 			<h3 class="seats"><!--status--></h3>
 			<p class="txt"><!-- data--></p>
 			<div class="details">
-				<i class="fa fa-envelope-o" style="color:#EA4335" /><i
-					class="fa fa-instagram"
-					style="margin-left:60px;background: linear-gradient(0deg,#4c68d7 0%, #bc2a8d 100%);-webkit-background-clip: text;-webkit-text-fill-color: transparent;"
-				/><i class="fa fa-linkedin" style="margin-left:60px;color:#006192" />
+				<a href="">
+					<iconify-icon
+						class="text-3xl lg:text-5xl text-[#EA4335] bg-clip-text"
+						icon="mdi:email-outline"
+					/>
+				</a>
+				<a href="">
+					<iconify-icon
+						class="text-3xl lg:text-5xl text-[#4c68d7] bg-clip-text"
+						icon="mdi:instagram"
+					/>
+				</a>
+				<a href="">
+					<iconify-icon
+						class="text-3xl lg:text-5xl text-[#006192] bg-clip-text"
+						icon="mdi:linkedin"
+					/>
+				</a>
 			</div>
 		</div>
 	</article>
@@ -251,10 +414,24 @@
 			<h3 class="seats"><!--status--></h3>
 			<p class="txt"><!-- data--></p>
 			<div class="details">
-				<i class="fa fa-envelope-o" style="color:#EA4335" /><i
-					class="fa fa-instagram"
-					style="margin-left:60px;background: linear-gradient(0deg,#4c68d7 0%, #bc2a8d 100%);-webkit-background-clip: text;-webkit-text-fill-color: transparent;"
-				/><i class="fa fa-linkedin" style="margin-left:60px;color:#006192" />
+				<a href="">
+					<iconify-icon
+						class="text-3xl lg:text-5xl text-[#EA4335] bg-clip-text"
+						icon="mdi:email-outline"
+					/>
+				</a>
+				<a href="">
+					<iconify-icon
+						class="text-3xl lg:text-5xl text-[#4c68d7] bg-clip-text"
+						icon="mdi:instagram"
+					/>
+				</a>
+				<a href="">
+					<iconify-icon
+						class="text-3xl lg:text-5xl text-[#006192] bg-clip-text"
+						icon="mdi:linkedin"
+					/>
+				</a>
 			</div>
 		</div>
 	</article>
@@ -268,10 +445,24 @@
 			<h3 class="seats"><!--status--></h3>
 			<p class="txt"><!-- data--></p>
 			<div class="details">
-				<i class="fa fa-envelope-o" style="color:#EA4335" /><i
-					class="fa fa-instagram"
-					style="margin-left:60px;background: linear-gradient(0deg,#4c68d7 0%, #bc2a8d 100%);-webkit-background-clip: text;-webkit-text-fill-color: transparent;"
-				/><i class="fa fa-linkedin" style="margin-left:60px;color:#006192" />
+				<a href="">
+					<iconify-icon
+						class="text-3xl lg:text-5xl text-[#EA4335] bg-clip-text"
+						icon="mdi:email-outline"
+					/>
+				</a>
+				<a href="">
+					<iconify-icon
+						class="text-3xl lg:text-5xl text-[#4c68d7] bg-clip-text"
+						icon="mdi:instagram"
+					/>
+				</a>
+				<a href="">
+					<iconify-icon
+						class="text-3xl lg:text-5xl text-[#006192] bg-clip-text"
+						icon="mdi:linkedin"
+					/>
+				</a>
 			</div>
 		</div>
 	</article>
@@ -283,10 +474,24 @@
 			<h3 class="seats"><!--status--></h3>
 			<p class="txt"><!-- data--></p>
 			<div class="details">
-				<i class="fa fa-envelope-o" style="color:#EA4335" /><i
-					class="fa fa-instagram"
-					style="margin-left:60px;background: linear-gradient(0deg,#4c68d7 0%, #bc2a8d 100%);-webkit-background-clip: text;-webkit-text-fill-color: transparent;"
-				/><i class="fa fa-linkedin" style="margin-left:60px;color:#006192" />
+				<a href="">
+					<iconify-icon
+						class="text-3xl lg:text-5xl text-[#EA4335] bg-clip-text"
+						icon="mdi:email-outline"
+					/>
+				</a>
+				<a href="">
+					<iconify-icon
+						class="text-3xl lg:text-5xl text-[#4c68d7] bg-clip-text"
+						icon="mdi:instagram"
+					/>
+				</a>
+				<a href="">
+					<iconify-icon
+						class="text-3xl lg:text-5xl text-[#006192] bg-clip-text"
+						icon="mdi:linkedin"
+					/>
+				</a>
 			</div>
 		</div>
 	</article>
@@ -298,10 +503,24 @@
 			<h3 class="seats"><!--status--></h3>
 			<p class="txt"><!-- data--></p>
 			<div class="details">
-				<i class="fa fa-envelope-o" style="color:#EA4335" /><i
-					class="fa fa-instagram"
-					style="margin-left:60px;background: linear-gradient(0deg,#4c68d7 0%, #bc2a8d 100%);-webkit-background-clip: text;-webkit-text-fill-color: transparent;"
-				/><i class="fa fa-linkedin" style="margin-left:60px;color:#006192" />
+				<a href="">
+					<iconify-icon
+						class="text-3xl lg:text-5xl text-[#EA4335] bg-clip-text"
+						icon="mdi:email-outline"
+					/>
+				</a>
+				<a href="">
+					<iconify-icon
+						class="text-3xl lg:text-5xl text-[#4c68d7] bg-clip-text"
+						icon="mdi:instagram"
+					/>
+				</a>
+				<a href="">
+					<iconify-icon
+						class="text-3xl lg:text-5xl text-[#006192] bg-clip-text"
+						icon="mdi:linkedin"
+					/>
+				</a>
 			</div>
 		</div>
 	</article>
@@ -313,10 +532,24 @@
 			<h3 class="seats"><!--status--></h3>
 			<p class="txt"><!-- data--></p>
 			<div class="details">
-				<i class="fa fa-envelope-o" style="color:#EA4335" /><i
-					class="fa fa-instagram"
-					style="margin-left:60px;background: linear-gradient(0deg,#4c68d7 0%, #bc2a8d 100%);-webkit-background-clip: text;-webkit-text-fill-color: transparent;"
-				/><i class="fa fa-linkedin" style="margin-left:60px;color:#006192" />
+				<a href="">
+					<iconify-icon
+						class="text-3xl lg:text-5xl text-[#EA4335] bg-clip-text"
+						icon="mdi:email-outline"
+					/>
+				</a>
+				<a href="">
+					<iconify-icon
+						class="text-3xl lg:text-5xl text-[#4c68d7] bg-clip-text"
+						icon="mdi:instagram"
+					/>
+				</a>
+				<a href="">
+					<iconify-icon
+						class="text-3xl lg:text-5xl text-[#006192] bg-clip-text"
+						icon="mdi:linkedin"
+					/>
+				</a>
 			</div>
 		</div>
 	</article>
@@ -331,10 +564,24 @@
 			<h3 class="seats"><!--status--></h3>
 			<p class="txt"><!-- data--></p>
 			<div class="details">
-				<i class="fa fa-envelope-o" style="color:#EA4335" /><i
-					class="fa fa-instagram"
-					style="margin-left:60px;background: linear-gradient(0deg,#4c68d7 0%, #bc2a8d 100%);-webkit-background-clip: text;-webkit-text-fill-color: transparent;"
-				/><i class="fa fa-linkedin" style="margin-left:60px;color:#006192" />
+				<a href="">
+					<iconify-icon
+						class="text-3xl lg:text-5xl text-[#EA4335] bg-clip-text"
+						icon="mdi:email-outline"
+					/>
+				</a>
+				<a href="">
+					<iconify-icon
+						class="text-3xl lg:text-5xl text-[#4c68d7] bg-clip-text"
+						icon="mdi:instagram"
+					/>
+				</a>
+				<a href="">
+					<iconify-icon
+						class="text-3xl lg:text-5xl text-[#006192] bg-clip-text"
+						icon="mdi:linkedin"
+					/>
+				</a>
 			</div>
 		</div>
 	</article>
@@ -346,10 +593,24 @@
 			<h3 class="seats"><!--status--></h3>
 			<p class="txt"><!-- data--></p>
 			<div class="details">
-				<i class="fa fa-envelope-o" style="color:#EA4335" /><i
-					class="fa fa-instagram"
-					style="margin-left:60px;background: linear-gradient(0deg,#4c68d7 0%, #bc2a8d 100%);-webkit-background-clip: text;-webkit-text-fill-color: transparent;"
-				/><i class="fa fa-linkedin" style="margin-left:60px;color:#006192" />
+				<a href="">
+					<iconify-icon
+						class="text-3xl lg:text-5xl text-[#EA4335] bg-clip-text"
+						icon="mdi:email-outline"
+					/>
+				</a>
+				<a href="">
+					<iconify-icon
+						class="text-3xl lg:text-5xl text-[#4c68d7] bg-clip-text"
+						icon="mdi:instagram"
+					/>
+				</a>
+				<a href="">
+					<iconify-icon
+						class="text-3xl lg:text-5xl text-[#006192] bg-clip-text"
+						icon="mdi:linkedin"
+					/>
+				</a>
 			</div>
 		</div>
 	</article>
@@ -361,10 +622,24 @@
 			<h3 class="seats"><!--status--></h3>
 			<p class="txt"><!-- data--></p>
 			<div class="details">
-				<i class="fa fa-envelope-o" style="color:#EA4335" /><i
-					class="fa fa-instagram"
-					style="margin-left:60px;background: linear-gradient(0deg,#4c68d7 0%, #bc2a8d 100%);-webkit-background-clip: text;-webkit-text-fill-color: transparent;"
-				/><i class="fa fa-linkedin" style="margin-left:60px;color:#006192" />
+				<a href="">
+					<iconify-icon
+						class="text-3xl lg:text-5xl text-[#EA4335] bg-clip-text"
+						icon="mdi:email-outline"
+					/>
+				</a>
+				<a href="">
+					<iconify-icon
+						class="text-3xl lg:text-5xl text-[#4c68d7] bg-clip-text"
+						icon="mdi:instagram"
+					/>
+				</a>
+				<a href="">
+					<iconify-icon
+						class="text-3xl lg:text-5xl text-[#006192] bg-clip-text"
+						icon="mdi:linkedin"
+					/>
+				</a>
 			</div>
 		</div>
 	</article>
@@ -378,10 +653,24 @@
 			<h3 class="seats"><!--status--></h3>
 			<p class="txt"><!-- data--></p>
 			<div class="details">
-				<i class="fa fa-envelope-o" style="color:#EA4335" /><i
-					class="fa fa-instagram"
-					style="margin-left:60px;background: linear-gradient(0deg,#4c68d7 0%, #bc2a8d 100%);-webkit-background-clip: text;-webkit-text-fill-color: transparent;"
-				/><i class="fa fa-linkedin" style="margin-left:60px;color:#006192" />
+				<a href="">
+					<iconify-icon
+						class="text-3xl lg:text-5xl text-[#EA4335] bg-clip-text"
+						icon="mdi:email-outline"
+					/>
+				</a>
+				<a href="">
+					<iconify-icon
+						class="text-3xl lg:text-5xl text-[#4c68d7] bg-clip-text"
+						icon="mdi:instagram"
+					/>
+				</a>
+				<a href="">
+					<iconify-icon
+						class="text-3xl lg:text-5xl text-[#006192] bg-clip-text"
+						icon="mdi:linkedin"
+					/>
+				</a>
 			</div>
 		</div>
 	</article>
@@ -393,10 +682,24 @@
 			<h3 class="seats"><!--status--></h3>
 			<p class="txt"><!-- data--></p>
 			<div class="details">
-				<i class="fa fa-envelope-o" style="color:#EA4335" /><i
-					class="fa fa-instagram"
-					style="margin-left:60px;background: linear-gradient(0deg,#4c68d7 0%, #bc2a8d 100%);-webkit-background-clip: text;-webkit-text-fill-color: transparent;"
-				/><i class="fa fa-linkedin" style="margin-left:60px;color:#006192" />
+				<a href="">
+					<iconify-icon
+						class="text-3xl lg:text-5xl text-[#EA4335] bg-clip-text"
+						icon="mdi:email-outline"
+					/>
+				</a>
+				<a href="">
+					<iconify-icon
+						class="text-3xl lg:text-5xl text-[#4c68d7] bg-clip-text"
+						icon="mdi:instagram"
+					/>
+				</a>
+				<a href="">
+					<iconify-icon
+						class="text-3xl lg:text-5xl text-[#006192] bg-clip-text"
+						icon="mdi:linkedin"
+					/>
+				</a>
 			</div>
 		</div>
 	</article>
@@ -408,10 +711,24 @@
 			<h3 class="seats"><!--status--></h3>
 			<p class="txt"><!-- data--></p>
 			<div class="details">
-				<i class="fa fa-envelope-o" style="color:#EA4335" /><i
-					class="fa fa-instagram"
-					style="margin-left:60px;background: linear-gradient(0deg,#4c68d7 0%, #bc2a8d 100%);-webkit-background-clip: text;-webkit-text-fill-color: transparent;"
-				/><i class="fa fa-linkedin" style="margin-left:60px;color:#006192" />
+				<a href="">
+					<iconify-icon
+						class="text-3xl lg:text-5xl text-[#EA4335] bg-clip-text"
+						icon="mdi:email-outline"
+					/>
+				</a>
+				<a href="">
+					<iconify-icon
+						class="text-3xl lg:text-5xl text-[#4c68d7] bg-clip-text"
+						icon="mdi:instagram"
+					/>
+				</a>
+				<a href="">
+					<iconify-icon
+						class="text-3xl lg:text-5xl text-[#006192] bg-clip-text"
+						icon="mdi:linkedin"
+					/>
+				</a>
 			</div>
 		</div>
 	</article>
@@ -423,10 +740,24 @@
 			<h3 class="seats"><!--status--></h3>
 			<p class="txt"><!-- data--></p>
 			<div class="details">
-				<i class="fa fa-envelope-o" style="color:#EA4335" /><i
-					class="fa fa-instagram"
-					style="margin-left:60px;background: linear-gradient(0deg,#4c68d7 0%, #bc2a8d 100%);-webkit-background-clip: text;-webkit-text-fill-color: transparent;"
-				/><i class="fa fa-linkedin" style="margin-left:60px;color:#006192" />
+				<a href="">
+					<iconify-icon
+						class="text-3xl lg:text-5xl text-[#EA4335] bg-clip-text"
+						icon="mdi:email-outline"
+					/>
+				</a>
+				<a href="">
+					<iconify-icon
+						class="text-3xl lg:text-5xl text-[#4c68d7] bg-clip-text"
+						icon="mdi:instagram"
+					/>
+				</a>
+				<a href="">
+					<iconify-icon
+						class="text-3xl lg:text-5xl text-[#006192] bg-clip-text"
+						icon="mdi:linkedin"
+					/>
+				</a>
 			</div>
 		</div>
 	</article>
@@ -441,10 +772,24 @@
 			<h3 class="seats"><!--status--></h3>
 			<p class="txt"><!-- data--></p>
 			<div class="details">
-				<i class="fa fa-envelope-o" style="color:#EA4335" /><i
-					class="fa fa-instagram"
-					style="margin-left:60px;background: linear-gradient(0deg,#4c68d7 0%, #bc2a8d 100%);-webkit-background-clip: text;-webkit-text-fill-color: transparent;"
-				/><i class="fa fa-linkedin" style="margin-left:60px;color:#006192" />
+				<a href="">
+					<iconify-icon
+						class="text-3xl lg:text-5xl text-[#EA4335] bg-clip-text"
+						icon="mdi:email-outline"
+					/>
+				</a>
+				<a href="">
+					<iconify-icon
+						class="text-3xl lg:text-5xl text-[#4c68d7] bg-clip-text"
+						icon="mdi:instagram"
+					/>
+				</a>
+				<a href="">
+					<iconify-icon
+						class="text-3xl lg:text-5xl text-[#006192] bg-clip-text"
+						icon="mdi:linkedin"
+					/>
+				</a>
 			</div>
 		</div>
 	</article>
@@ -456,10 +801,24 @@
 			<h3 class="seats"><!--status--></h3>
 			<p class="txt"><!-- data--></p>
 			<div class="details">
-				<i class="fa fa-envelope-o" style="color:#EA4335" /><i
-					class="fa fa-instagram"
-					style="margin-left:60px;background: linear-gradient(0deg,#4c68d7 0%, #bc2a8d 100%);-webkit-background-clip: text;-webkit-text-fill-color: transparent;"
-				/><i class="fa fa-linkedin" style="margin-left:60px;color:#006192" />
+				<a href="">
+					<iconify-icon
+						class="text-3xl lg:text-5xl text-[#EA4335] bg-clip-text"
+						icon="mdi:email-outline"
+					/>
+				</a>
+				<a href="">
+					<iconify-icon
+						class="text-3xl lg:text-5xl text-[#4c68d7] bg-clip-text"
+						icon="mdi:instagram"
+					/>
+				</a>
+				<a href="">
+					<iconify-icon
+						class="text-3xl lg:text-5xl text-[#006192] bg-clip-text"
+						icon="mdi:linkedin"
+					/>
+				</a>
 			</div>
 		</div>
 	</article>
@@ -471,10 +830,24 @@
 			<h3 class="seats"><!--status--></h3>
 			<p class="txt"><!-- data--></p>
 			<div class="details">
-				<i class="fa fa-envelope-o" style="color:#EA4335" /><i
-					class="fa fa-instagram"
-					style="margin-left:60px;background: linear-gradient(0deg,#4c68d7 0%, #bc2a8d 100%);-webkit-background-clip: text;-webkit-text-fill-color: transparent;"
-				/><i class="fa fa-linkedin" style="margin-left:60px;color:#006192" />
+				<a href="">
+					<iconify-icon
+						class="text-3xl lg:text-5xl text-[#EA4335] bg-clip-text"
+						icon="mdi:email-outline"
+					/>
+				</a>
+				<a href="">
+					<iconify-icon
+						class="text-3xl lg:text-5xl text-[#4c68d7] bg-clip-text"
+						icon="mdi:instagram"
+					/>
+				</a>
+				<a href="">
+					<iconify-icon
+						class="text-3xl lg:text-5xl text-[#006192] bg-clip-text"
+						icon="mdi:linkedin"
+					/>
+				</a>
 			</div>
 		</div>
 	</article>
@@ -488,10 +861,24 @@
 			<h3 class="seats"><!--status--></h3>
 			<p class="txt"><!-- data--></p>
 			<div class="details">
-				<i class="fa fa-envelope-o" style="color:#EA4335" /><i
-					class="fa fa-instagram"
-					style="margin-left:60px;background: linear-gradient(0deg,#4c68d7 0%, #bc2a8d 100%);-webkit-background-clip: text;-webkit-text-fill-color: transparent;"
-				/><i class="fa fa-linkedin" style="margin-left:60px;color:#006192" />
+				<a href="">
+					<iconify-icon
+						class="text-3xl lg:text-5xl text-[#EA4335] bg-clip-text"
+						icon="mdi:email-outline"
+					/>
+				</a>
+				<a href="">
+					<iconify-icon
+						class="text-3xl lg:text-5xl text-[#4c68d7] bg-clip-text"
+						icon="mdi:instagram"
+					/>
+				</a>
+				<a href="">
+					<iconify-icon
+						class="text-3xl lg:text-5xl text-[#006192] bg-clip-text"
+						icon="mdi:linkedin"
+					/>
+				</a>
 			</div>
 		</div>
 	</article>
@@ -503,10 +890,24 @@
 			<h3 class="seats"><!--status--></h3>
 			<p class="txt"><!-- data--></p>
 			<div class="details">
-				<i class="fa fa-envelope-o" style="color:#EA4335" /><i
-					class="fa fa-instagram"
-					style="margin-left:60px;background: linear-gradient(0deg,#4c68d7 0%, #bc2a8d 100%);-webkit-background-clip: text;-webkit-text-fill-color: transparent;"
-				/><i class="fa fa-linkedin" style="margin-left:60px;color:#006192" />
+				<a href="">
+					<iconify-icon
+						class="text-3xl lg:text-5xl text-[#EA4335] bg-clip-text"
+						icon="mdi:email-outline"
+					/>
+				</a>
+				<a href="">
+					<iconify-icon
+						class="text-3xl lg:text-5xl text-[#4c68d7] bg-clip-text"
+						icon="mdi:instagram"
+					/>
+				</a>
+				<a href="">
+					<iconify-icon
+						class="text-3xl lg:text-5xl text-[#006192] bg-clip-text"
+						icon="mdi:linkedin"
+					/>
+				</a>
 			</div>
 		</div>
 	</article>
@@ -521,10 +922,24 @@
 			<h3 class="seats"><!--status--></h3>
 			<p class="txt"><!-- data--></p>
 			<div class="details">
-				<i class="fa fa-envelope-o" style="color:#EA4335" /><i
-					class="fa fa-instagram"
-					style="margin-left:60px;background: linear-gradient(0deg,#4c68d7 0%, #bc2a8d 100%);-webkit-background-clip: text;-webkit-text-fill-color: transparent;"
-				/><i class="fa fa-linkedin" style="margin-left:60px;color:#006192" />
+				<a href="">
+					<iconify-icon
+						class="text-3xl lg:text-5xl text-[#EA4335] bg-clip-text"
+						icon="mdi:email-outline"
+					/>
+				</a>
+				<a href="">
+					<iconify-icon
+						class="text-3xl lg:text-5xl text-[#4c68d7] bg-clip-text"
+						icon="mdi:instagram"
+					/>
+				</a>
+				<a href="">
+					<iconify-icon
+						class="text-3xl lg:text-5xl text-[#006192] bg-clip-text"
+						icon="mdi:linkedin"
+					/>
+				</a>
 			</div>
 		</div>
 	</article>
@@ -536,10 +951,24 @@
 			<h3 class="seats"><!--status--></h3>
 			<p class="txt"><!-- data--></p>
 			<div class="details">
-				<i class="fa fa-envelope-o" style="color:#EA4335" /><i
-					class="fa fa-instagram"
-					style="margin-left:60px;background: linear-gradient(0deg,#4c68d7 0%, #bc2a8d 100%);-webkit-background-clip: text;-webkit-text-fill-color: transparent;"
-				/><i class="fa fa-linkedin" style="margin-left:60px;color:#006192" />
+				<a href="">
+					<iconify-icon
+						class="text-3xl lg:text-5xl text-[#EA4335] bg-clip-text"
+						icon="mdi:email-outline"
+					/>
+				</a>
+				<a href="">
+					<iconify-icon
+						class="text-3xl lg:text-5xl text-[#4c68d7] bg-clip-text"
+						icon="mdi:instagram"
+					/>
+				</a>
+				<a href="">
+					<iconify-icon
+						class="text-3xl lg:text-5xl text-[#006192] bg-clip-text"
+						icon="mdi:linkedin"
+					/>
+				</a>
 			</div>
 		</div>
 	</article>
@@ -551,10 +980,24 @@
 			<h3 class="seats"><!--status--></h3>
 			<p class="txt"><!-- data--></p>
 			<div class="details">
-				<i class="fa fa-envelope-o" style="color:#EA4335" /><i
-					class="fa fa-instagram"
-					style="margin-left:60px;background: linear-gradient(0deg,#4c68d7 0%, #bc2a8d 100%);-webkit-background-clip: text;-webkit-text-fill-color: transparent;"
-				/><i class="fa fa-linkedin" style="margin-left:60px;color:#006192" />
+				<a href="">
+					<iconify-icon
+						class="text-3xl lg:text-5xl text-[#EA4335] bg-clip-text"
+						icon="mdi:email-outline"
+					/>
+				</a>
+				<a href="">
+					<iconify-icon
+						class="text-3xl lg:text-5xl text-[#4c68d7] bg-clip-text"
+						icon="mdi:instagram"
+					/>
+				</a>
+				<a href="">
+					<iconify-icon
+						class="text-3xl lg:text-5xl text-[#006192] bg-clip-text"
+						icon="mdi:linkedin"
+					/>
+				</a>
 			</div>
 		</div>
 	</article>
@@ -568,10 +1011,24 @@
 			<h3 class="seats"><!--status--></h3>
 			<p class="txt"><!-- data--></p>
 			<div class="details">
-				<i class="fa fa-envelope-o" style="color:#EA4335" /><i
-					class="fa fa-instagram"
-					style="margin-left:60px;background: linear-gradient(0deg,#4c68d7 0%, #bc2a8d 100%);-webkit-background-clip: text;-webkit-text-fill-color: transparent;"
-				/><i class="fa fa-linkedin" style="margin-left:60px;color:#006192" />
+				<a href="">
+					<iconify-icon
+						class="text-3xl lg:text-5xl text-[#EA4335] bg-clip-text"
+						icon="mdi:email-outline"
+					/>
+				</a>
+				<a href="">
+					<iconify-icon
+						class="text-3xl lg:text-5xl text-[#4c68d7] bg-clip-text"
+						icon="mdi:instagram"
+					/>
+				</a>
+				<a href="">
+					<iconify-icon
+						class="text-3xl lg:text-5xl text-[#006192] bg-clip-text"
+						icon="mdi:linkedin"
+					/>
+				</a>
 			</div>
 		</div>
 	</article>
@@ -583,10 +1040,24 @@
 			<h3 class="seats"><!--status--></h3>
 			<p class="txt"><!-- data--></p>
 			<div class="details">
-				<i class="fa fa-envelope-o" style="color:#EA4335" /><i
-					class="fa fa-instagram"
-					style="margin-left:60px;background: linear-gradient(0deg,#4c68d7 0%, #bc2a8d 100%);-webkit-background-clip: text;-webkit-text-fill-color: transparent;"
-				/><i class="fa fa-linkedin" style="margin-left:60px;color:#006192" />
+				<a href="">
+					<iconify-icon
+						class="text-3xl lg:text-5xl text-[#EA4335] bg-clip-text"
+						icon="mdi:email-outline"
+					/>
+				</a>
+				<a href="">
+					<iconify-icon
+						class="text-3xl lg:text-5xl text-[#4c68d7] bg-clip-text"
+						icon="mdi:instagram"
+					/>
+				</a>
+				<a href="">
+					<iconify-icon
+						class="text-3xl lg:text-5xl text-[#006192] bg-clip-text"
+						icon="mdi:linkedin"
+					/>
+				</a>
 			</div>
 		</div>
 	</article>
@@ -598,10 +1069,24 @@
 			<h3 class="seats"><!--status--></h3>
 			<p class="txt"><!-- data--></p>
 			<div class="details">
-				<i class="fa fa-envelope-o" style="color:#EA4335" /><i
-					class="fa fa-instagram"
-					style="margin-left:60px;background: linear-gradient(0deg,#4c68d7 0%, #bc2a8d 100%);-webkit-background-clip: text;-webkit-text-fill-color: transparent;"
-				/><i class="fa fa-linkedin" style="margin-left:60px;color:#006192" />
+				<a href="">
+					<iconify-icon
+						class="text-3xl lg:text-5xl text-[#EA4335] bg-clip-text"
+						icon="mdi:email-outline"
+					/>
+				</a>
+				<a href="">
+					<iconify-icon
+						class="text-3xl lg:text-5xl text-[#4c68d7] bg-clip-text"
+						icon="mdi:instagram"
+					/>
+				</a>
+				<a href="">
+					<iconify-icon
+						class="text-3xl lg:text-5xl text-[#006192] bg-clip-text"
+						icon="mdi:linkedin"
+					/>
+				</a>
 			</div>
 		</div>
 	</article>
@@ -616,10 +1101,24 @@
 			<h3 class="seats"><!--status--></h3>
 			<p class="txt"><!-- data--></p>
 			<div class="details">
-				<i class="fa fa-envelope-o" style="color:#EA4335" /><i
-					class="fa fa-instagram"
-					style="margin-left:60px;background: linear-gradient(0deg,#4c68d7 0%, #bc2a8d 100%);-webkit-background-clip: text;-webkit-text-fill-color: transparent;"
-				/><i class="fa fa-linkedin" style="margin-left:60px;color:#006192" />
+				<a href="">
+					<iconify-icon
+						class="text-3xl lg:text-5xl text-[#EA4335] bg-clip-text"
+						icon="mdi:email-outline"
+					/>
+				</a>
+				<a href="">
+					<iconify-icon
+						class="text-3xl lg:text-5xl text-[#4c68d7] bg-clip-text"
+						icon="mdi:instagram"
+					/>
+				</a>
+				<a href="">
+					<iconify-icon
+						class="text-3xl lg:text-5xl text-[#006192] bg-clip-text"
+						icon="mdi:linkedin"
+					/>
+				</a>
 			</div>
 		</div>
 	</article>
@@ -631,10 +1130,24 @@
 			<h3 class="seats"><!--status--></h3>
 			<p class="txt"><!-- data--></p>
 			<div class="details">
-				<i class="fa fa-envelope-o" style="color:#EA4335" /><i
-					class="fa fa-instagram"
-					style="margin-left:60px;background: linear-gradient(0deg,#4c68d7 0%, #bc2a8d 100%);-webkit-background-clip: text;-webkit-text-fill-color: transparent;"
-				/><i class="fa fa-linkedin" style="margin-left:60px;color:#006192" />
+				<a href="">
+					<iconify-icon
+						class="text-3xl lg:text-5xl text-[#EA4335] bg-clip-text"
+						icon="mdi:email-outline"
+					/>
+				</a>
+				<a href="">
+					<iconify-icon
+						class="text-3xl lg:text-5xl text-[#4c68d7] bg-clip-text"
+						icon="mdi:instagram"
+					/>
+				</a>
+				<a href="">
+					<iconify-icon
+						class="text-3xl lg:text-5xl text-[#006192] bg-clip-text"
+						icon="mdi:linkedin"
+					/>
+				</a>
 			</div>
 		</div>
 	</article>
@@ -646,10 +1159,24 @@
 			<h3 class="seats"><!--status--></h3>
 			<p class="txt"><!-- data--></p>
 			<div class="details">
-				<i class="fa fa-envelope-o" style="color:#EA4335" /><i
-					class="fa fa-instagram"
-					style="margin-left:60px;background: linear-gradient(0deg,#4c68d7 0%, #bc2a8d 100%);-webkit-background-clip: text;-webkit-text-fill-color: transparent;"
-				/><i class="fa fa-linkedin" style="margin-left:60px;color:#006192" />
+				<a href="">
+					<iconify-icon
+						class="text-3xl lg:text-5xl text-[#EA4335] bg-clip-text"
+						icon="mdi:email-outline"
+					/>
+				</a>
+				<a href="">
+					<iconify-icon
+						class="text-3xl lg:text-5xl text-[#4c68d7] bg-clip-text"
+						icon="mdi:instagram"
+					/>
+				</a>
+				<a href="">
+					<iconify-icon
+						class="text-3xl lg:text-5xl text-[#006192] bg-clip-text"
+						icon="mdi:linkedin"
+					/>
+				</a>
 			</div>
 		</div>
 	</article>
@@ -663,10 +1190,24 @@
 			<h3 class="seats"><!--status--></h3>
 			<p class="txt"><!-- data--></p>
 			<div class="details">
-				<i class="fa fa-envelope-o" style="color:#EA4335" /><i
-					class="fa fa-instagram"
-					style="margin-left:60px;background: linear-gradient(0deg,#4c68d7 0%, #bc2a8d 100%);-webkit-background-clip: text;-webkit-text-fill-color: transparent;"
-				/><i class="fa fa-linkedin" style="margin-left:60px;color:#006192" />
+				<a href="">
+					<iconify-icon
+						class="text-3xl lg:text-5xl text-[#EA4335] bg-clip-text"
+						icon="mdi:email-outline"
+					/>
+				</a>
+				<a href="">
+					<iconify-icon
+						class="text-3xl lg:text-5xl text-[#4c68d7] bg-clip-text"
+						icon="mdi:instagram"
+					/>
+				</a>
+				<a href="">
+					<iconify-icon
+						class="text-3xl lg:text-5xl text-[#006192] bg-clip-text"
+						icon="mdi:linkedin"
+					/>
+				</a>
 			</div>
 		</div>
 	</article>
@@ -678,10 +1219,24 @@
 			<h3 class="seats"><!--status--></h3>
 			<p class="txt"><!-- data--></p>
 			<div class="details">
-				<i class="fa fa-envelope-o" style="color:#EA4335" /><i
-					class="fa fa-instagram"
-					style="margin-left:60px;background: linear-gradient(0deg,#4c68d7 0%, #bc2a8d 100%);-webkit-background-clip: text;-webkit-text-fill-color: transparent;"
-				/><i class="fa fa-linkedin" style="margin-left:60px;color:#006192" />
+				<a href="">
+					<iconify-icon
+						class="text-3xl lg:text-5xl text-[#EA4335] bg-clip-text"
+						icon="mdi:email-outline"
+					/>
+				</a>
+				<a href="">
+					<iconify-icon
+						class="text-3xl lg:text-5xl text-[#4c68d7] bg-clip-text"
+						icon="mdi:instagram"
+					/>
+				</a>
+				<a href="">
+					<iconify-icon
+						class="text-3xl lg:text-5xl text-[#006192] bg-clip-text"
+						icon="mdi:linkedin"
+					/>
+				</a>
 			</div>
 		</div>
 	</article>
@@ -693,10 +1248,24 @@
 			<h3 class="seats"><!--status--></h3>
 			<p class="txt"><!-- data--></p>
 			<div class="details">
-				<i class="fa fa-envelope-o" style="color:#EA4335" /><i
-					class="fa fa-instagram"
-					style="margin-left:60px;background: linear-gradient(0deg,#4c68d7 0%, #bc2a8d 100%);-webkit-background-clip: text;-webkit-text-fill-color: transparent;"
-				/><i class="fa fa-linkedin" style="margin-left:60px;color:#006192" />
+				<a href="">
+					<iconify-icon
+						class="text-3xl lg:text-5xl text-[#EA4335] bg-clip-text"
+						icon="mdi:email-outline"
+					/>
+				</a>
+				<a href="">
+					<iconify-icon
+						class="text-3xl lg:text-5xl text-[#4c68d7] bg-clip-text"
+						icon="mdi:instagram"
+					/>
+				</a>
+				<a href="">
+					<iconify-icon
+						class="text-3xl lg:text-5xl text-[#006192] bg-clip-text"
+						icon="mdi:linkedin"
+					/>
+				</a>
 			</div>
 		</div>
 	</article>
@@ -708,10 +1277,24 @@
 			<h3 class="seats"><!--status--></h3>
 			<p class="txt"><!-- data--></p>
 			<div class="details">
-				<i class="fa fa-envelope-o" style="color:#EA4335" /><i
-					class="fa fa-instagram"
-					style="margin-left:60px;background: linear-gradient(0deg,#4c68d7 0%, #bc2a8d 100%);-webkit-background-clip: text;-webkit-text-fill-color: transparent;"
-				/><i class="fa fa-linkedin" style="margin-left:60px;color:#006192" />
+				<a href="">
+					<iconify-icon
+						class="text-3xl lg:text-5xl text-[#EA4335] bg-clip-text"
+						icon="mdi:email-outline"
+					/>
+				</a>
+				<a href="">
+					<iconify-icon
+						class="text-3xl lg:text-5xl text-[#4c68d7] bg-clip-text"
+						icon="mdi:instagram"
+					/>
+				</a>
+				<a href="">
+					<iconify-icon
+						class="text-3xl lg:text-5xl text-[#006192] bg-clip-text"
+						icon="mdi:linkedin"
+					/>
+				</a>
 			</div>
 		</div>
 	</article>
@@ -726,10 +1309,24 @@
 			<h3 class="seats"><!--status--></h3>
 			<p class="txt"><!-- data--></p>
 			<div class="details">
-				<i class="fa fa-envelope-o" style="color:#EA4335" /><i
-					class="fa fa-instagram"
-					style="margin-left:60px;background: linear-gradient(0deg,#4c68d7 0%, #bc2a8d 100%);-webkit-background-clip: text;-webkit-text-fill-color: transparent;"
-				/><i class="fa fa-linkedin" style="margin-left:60px;color:#006192" />
+				<a href="">
+					<iconify-icon
+						class="text-3xl lg:text-5xl text-[#EA4335] bg-clip-text"
+						icon="mdi:email-outline"
+					/>
+				</a>
+				<a href="">
+					<iconify-icon
+						class="text-3xl lg:text-5xl text-[#4c68d7] bg-clip-text"
+						icon="mdi:instagram"
+					/>
+				</a>
+				<a href="">
+					<iconify-icon
+						class="text-3xl lg:text-5xl text-[#006192] bg-clip-text"
+						icon="mdi:linkedin"
+					/>
+				</a>
 			</div>
 		</div>
 	</article>
@@ -741,10 +1338,24 @@
 			<h3 class="seats"><!--status--></h3>
 			<p class="txt"><!-- data--></p>
 			<div class="details">
-				<i class="fa fa-envelope-o" style="color:#EA4335" /><i
-					class="fa fa-instagram"
-					style="margin-left:60px;background: linear-gradient(0deg,#4c68d7 0%, #bc2a8d 100%);-webkit-background-clip: text;-webkit-text-fill-color: transparent;"
-				/><i class="fa fa-linkedin" style="margin-left:60px;color:#006192" />
+				<a href="">
+					<iconify-icon
+						class="text-3xl lg:text-5xl text-[#EA4335] bg-clip-text"
+						icon="mdi:email-outline"
+					/>
+				</a>
+				<a href="">
+					<iconify-icon
+						class="text-3xl lg:text-5xl text-[#4c68d7] bg-clip-text"
+						icon="mdi:instagram"
+					/>
+				</a>
+				<a href="">
+					<iconify-icon
+						class="text-3xl lg:text-5xl text-[#006192] bg-clip-text"
+						icon="mdi:linkedin"
+					/>
+				</a>
 			</div>
 		</div>
 	</article>
@@ -758,10 +1369,24 @@
 			<h3 class="seats"><!--status--></h3>
 			<p class="txt"><!-- data--></p>
 			<div class="details">
-				<i class="fa fa-envelope-o" style="color:#EA4335" /><i
-					class="fa fa-instagram"
-					style="margin-left:60px;background: linear-gradient(0deg,#4c68d7 0%, #bc2a8d 100%);-webkit-background-clip: text;-webkit-text-fill-color: transparent;"
-				/><i class="fa fa-linkedin" style="margin-left:60px;color:#006192" />
+				<a href="">
+					<iconify-icon
+						class="text-3xl lg:text-5xl text-[#EA4335] bg-clip-text"
+						icon="mdi:email-outline"
+					/>
+				</a>
+				<a href="">
+					<iconify-icon
+						class="text-3xl lg:text-5xl text-[#4c68d7] bg-clip-text"
+						icon="mdi:instagram"
+					/>
+				</a>
+				<a href="">
+					<iconify-icon
+						class="text-3xl lg:text-5xl text-[#006192] bg-clip-text"
+						icon="mdi:linkedin"
+					/>
+				</a>
 			</div>
 		</div>
 	</article>
@@ -773,10 +1398,24 @@
 			<h3 class="seats"><!--status--></h3>
 			<p class="txt"><!-- data--></p>
 			<div class="details">
-				<i class="fa fa-envelope-o" style="color:#EA4335" /><i
-					class="fa fa-instagram"
-					style="margin-left:60px;background: linear-gradient(0deg,#4c68d7 0%, #bc2a8d 100%);-webkit-background-clip: text;-webkit-text-fill-color: transparent;"
-				/><i class="fa fa-linkedin" style="margin-left:60px;color:#006192" />
+				<a href="">
+					<iconify-icon
+						class="text-3xl lg:text-5xl text-[#EA4335] bg-clip-text"
+						icon="mdi:email-outline"
+					/>
+				</a>
+				<a href="">
+					<iconify-icon
+						class="text-3xl lg:text-5xl text-[#4c68d7] bg-clip-text"
+						icon="mdi:instagram"
+					/>
+				</a>
+				<a href="">
+					<iconify-icon
+						class="text-3xl lg:text-5xl text-[#006192] bg-clip-text"
+						icon="mdi:linkedin"
+					/>
+				</a>
 			</div>
 		</div>
 	</article>
@@ -792,10 +1431,24 @@
 			<h3 class="seats"><!--status--></h3>
 			<p class="txt"><!-- data--></p>
 			<div class="details">
-				<i class="fa fa-envelope-o" style="color:#EA4335" /><i
-					class="fa fa-instagram"
-					style="margin-left:60px;background: linear-gradient(0deg,#4c68d7 0%, #bc2a8d 100%);-webkit-background-clip: text;-webkit-text-fill-color: transparent;"
-				/><i class="fa fa-linkedin" style="margin-left:60px;color:#006192" />
+				<a href="">
+					<iconify-icon
+						class="text-3xl lg:text-5xl text-[#EA4335] bg-clip-text"
+						icon="mdi:email-outline"
+					/>
+				</a>
+				<a href="">
+					<iconify-icon
+						class="text-3xl lg:text-5xl text-[#4c68d7] bg-clip-text"
+						icon="mdi:instagram"
+					/>
+				</a>
+				<a href="">
+					<iconify-icon
+						class="text-3xl lg:text-5xl text-[#006192] bg-clip-text"
+						icon="mdi:linkedin"
+					/>
+				</a>
 			</div>
 		</div>
 	</article>
@@ -807,10 +1460,24 @@
 			<h3 class="seats"><!--status--></h3>
 			<p class="txt"><!-- data--></p>
 			<div class="details">
-				<i class="fa fa-envelope-o" style="color:#EA4335" /><i
-					class="fa fa-instagram"
-					style="margin-left:60px;background: linear-gradient(0deg,#4c68d7 0%, #bc2a8d 100%);-webkit-background-clip: text;-webkit-text-fill-color: transparent;"
-				/><i class="fa fa-linkedin" style="margin-left:60px;color:#006192" />
+				<a href="">
+					<iconify-icon
+						class="text-3xl lg:text-5xl text-[#EA4335] bg-clip-text"
+						icon="mdi:email-outline"
+					/>
+				</a>
+				<a href="">
+					<iconify-icon
+						class="text-3xl lg:text-5xl text-[#4c68d7] bg-clip-text"
+						icon="mdi:instagram"
+					/>
+				</a>
+				<a href="">
+					<iconify-icon
+						class="text-3xl lg:text-5xl text-[#006192] bg-clip-text"
+						icon="mdi:linkedin"
+					/>
+				</a>
 			</div>
 		</div>
 	</article>
@@ -822,10 +1489,24 @@
 			<h3 class="seats"><!--status--></h3>
 			<p class="txt"><!-- data--></p>
 			<div class="details">
-				<i class="fa fa-envelope-o" style="color:#EA4335" /><i
-					class="fa fa-instagram"
-					style="margin-left:60px;background: linear-gradient(0deg,#4c68d7 0%, #bc2a8d 100%);-webkit-background-clip: text;-webkit-text-fill-color: transparent;"
-				/><i class="fa fa-linkedin" style="margin-left:60px;color:#006192" />
+				<a href="">
+					<iconify-icon
+						class="text-3xl lg:text-5xl text-[#EA4335] bg-clip-text"
+						icon="mdi:email-outline"
+					/>
+				</a>
+				<a href="">
+					<iconify-icon
+						class="text-3xl lg:text-5xl text-[#4c68d7] bg-clip-text"
+						icon="mdi:instagram"
+					/>
+				</a>
+				<a href="">
+					<iconify-icon
+						class="text-3xl lg:text-5xl text-[#006192] bg-clip-text"
+						icon="mdi:linkedin"
+					/>
+				</a>
 			</div>
 		</div>
 	</article>
@@ -837,10 +1518,24 @@
 			<h3 class="seats"><!--status--></h3>
 			<p class="txt"><!-- data--></p>
 			<div class="details">
-				<i class="fa fa-envelope-o" style="color:#EA4335" /><i
-					class="fa fa-instagram"
-					style="margin-left:60px;background: linear-gradient(0deg,#4c68d7 0%, #bc2a8d 100%);-webkit-background-clip: text;-webkit-text-fill-color: transparent;"
-				/><i class="fa fa-linkedin" style="margin-left:60px;color:#006192" />
+				<a href="">
+					<iconify-icon
+						class="text-3xl lg:text-5xl text-[#EA4335] bg-clip-text"
+						icon="mdi:email-outline"
+					/>
+				</a>
+				<a href="">
+					<iconify-icon
+						class="text-3xl lg:text-5xl text-[#4c68d7] bg-clip-text"
+						icon="mdi:instagram"
+					/>
+				</a>
+				<a href="">
+					<iconify-icon
+						class="text-3xl lg:text-5xl text-[#006192] bg-clip-text"
+						icon="mdi:linkedin"
+					/>
+				</a>
 			</div>
 		</div>
 	</article>
@@ -854,10 +1549,24 @@
 			<h3 class="seats"><!--status--></h3>
 			<p class="txt"><!-- data--></p>
 			<div class="details">
-				<i class="fa fa-envelope-o" style="color:#EA4335" /><i
-					class="fa fa-instagram"
-					style="margin-left:60px;background: linear-gradient(0deg,#4c68d7 0%, #bc2a8d 100%);-webkit-background-clip: text;-webkit-text-fill-color: transparent;"
-				/><i class="fa fa-linkedin" style="margin-left:60px;color:#006192" />
+				<a href="">
+					<iconify-icon
+						class="text-3xl lg:text-5xl text-[#EA4335] bg-clip-text"
+						icon="mdi:email-outline"
+					/>
+				</a>
+				<a href="">
+					<iconify-icon
+						class="text-3xl lg:text-5xl text-[#4c68d7] bg-clip-text"
+						icon="mdi:instagram"
+					/>
+				</a>
+				<a href="">
+					<iconify-icon
+						class="text-3xl lg:text-5xl text-[#006192] bg-clip-text"
+						icon="mdi:linkedin"
+					/>
+				</a>
 			</div>
 		</div>
 	</article>
@@ -869,10 +1578,24 @@
 			<h3 class="seats"><!--status--></h3>
 			<p class="txt"><!-- data--></p>
 			<div class="details">
-				<i class="fa fa-envelope-o" style="color:#EA4335" /><i
-					class="fa fa-instagram"
-					style="margin-left:60px;background: linear-gradient(0deg,#4c68d7 0%, #bc2a8d 100%);-webkit-background-clip: text;-webkit-text-fill-color: transparent;"
-				/><i class="fa fa-linkedin" style="margin-left:60px;color:#006192" />
+				<a href="">
+					<iconify-icon
+						class="text-3xl lg:text-5xl text-[#EA4335] bg-clip-text"
+						icon="mdi:email-outline"
+					/>
+				</a>
+				<a href="">
+					<iconify-icon
+						class="text-3xl lg:text-5xl text-[#4c68d7] bg-clip-text"
+						icon="mdi:instagram"
+					/>
+				</a>
+				<a href="">
+					<iconify-icon
+						class="text-3xl lg:text-5xl text-[#006192] bg-clip-text"
+						icon="mdi:linkedin"
+					/>
+				</a>
 			</div>
 		</div>
 	</article>
@@ -884,10 +1607,24 @@
 			<h3 class="seats"><!--status--></h3>
 			<p class="txt"><!-- data--></p>
 			<div class="details">
-				<i class="fa fa-envelope-o" style="color:#EA4335" /><i
-					class="fa fa-instagram"
-					style="margin-left:60px;background: linear-gradient(0deg,#4c68d7 0%, #bc2a8d 100%);-webkit-background-clip: text;-webkit-text-fill-color: transparent;"
-				/><i class="fa fa-linkedin" style="margin-left:60px;color:#006192" />
+				<a href="">
+					<iconify-icon
+						class="text-3xl lg:text-5xl text-[#EA4335] bg-clip-text"
+						icon="mdi:email-outline"
+					/>
+				</a>
+				<a href="">
+					<iconify-icon
+						class="text-3xl lg:text-5xl text-[#4c68d7] bg-clip-text"
+						icon="mdi:instagram"
+					/>
+				</a>
+				<a href="">
+					<iconify-icon
+						class="text-3xl lg:text-5xl text-[#006192] bg-clip-text"
+						icon="mdi:linkedin"
+					/>
+				</a>
 			</div>
 		</div>
 	</article>
@@ -903,10 +1640,24 @@
 			<h3 class="seats"><!--status--></h3>
 			<p class="txt"><!-- data--></p>
 			<div class="details">
-				<i class="fa fa-envelope-o" style="color:#EA4335" /><i
-					class="fa fa-instagram"
-					style="margin-left:60px;background: linear-gradient(0deg,#4c68d7 0%, #bc2a8d 100%);-webkit-background-clip: text;-webkit-text-fill-color: transparent;"
-				/><i class="fa fa-linkedin" style="margin-left:60px;color:#006192" />
+				<a href="">
+					<iconify-icon
+						class="text-3xl lg:text-5xl text-[#EA4335] bg-clip-text"
+						icon="mdi:email-outline"
+					/>
+				</a>
+				<a href="">
+					<iconify-icon
+						class="text-3xl lg:text-5xl text-[#4c68d7] bg-clip-text"
+						icon="mdi:instagram"
+					/>
+				</a>
+				<a href="">
+					<iconify-icon
+						class="text-3xl lg:text-5xl text-[#006192] bg-clip-text"
+						icon="mdi:linkedin"
+					/>
+				</a>
 			</div>
 		</div>
 	</article>
@@ -918,10 +1669,53 @@
 			<h3 class="seats"><!--status--></h3>
 			<p class="txt"><!-- data--></p>
 			<div class="details">
-				<i class="fa fa-envelope-o" style="color:#EA4335" /><i
-					class="fa fa-instagram"
-					style="margin-left:60px;background: linear-gradient(0deg,#4c68d7 0%, #bc2a8d 100%);-webkit-background-clip: text;-webkit-text-fill-color: transparent;"
-				/><i class="fa fa-linkedin" style="margin-left:60px;color:#006192" />
+				<a href="">
+					<iconify-icon
+						class="text-3xl lg:text-5xl text-[#EA4335] bg-clip-text"
+						icon="mdi:email-outline"
+					/>
+				</a>
+				<a href="">
+					<iconify-icon
+						class="text-3xl lg:text-5xl text-[#4c68d7] bg-clip-text"
+						icon="mdi:instagram"
+					/>
+				</a>
+				<a href="">
+					<iconify-icon
+						class="text-3xl lg:text-5xl text-[#006192] bg-clip-text"
+						icon="mdi:linkedin"
+					/>
+				</a>
+			</div>
+		</div>
+	</article>
+	<article class="my-cont">
+		<div class="thumb" />
+		<div class="infos">
+			<h2 class="title">Sakshi Nimje<span class="flag" /></h2>
+			<h3 class="date">Head</h3>
+			<h3 class="seats"><!--status--></h3>
+			<p class="txt"><!-- data--></p>
+			<div class="details">
+				<a href="">
+					<iconify-icon
+						class="text-3xl lg:text-5xl text-[#EA4335] bg-clip-text"
+						icon="mdi:email-outline"
+					/>
+				</a>
+				<a href="">
+					<iconify-icon
+						class="text-3xl lg:text-5xl text-[#4c68d7] bg-clip-text"
+						icon="mdi:instagram"
+					/>
+				</a>
+				<a href="">
+					<iconify-icon
+						class="text-3xl lg:text-5xl text-[#006192] bg-clip-text"
+						icon="mdi:linkedin"
+					/>
+				</a>
 			</div>
 		</div>
 	</article>
@@ -933,10 +1727,24 @@
 			<h3 class="seats"><!--status--></h3>
 			<p class="txt"><!-- data--></p>
 			<div class="details">
-				<i class="fa fa-envelope-o" style="color:#EA4335" /><i
-					class="fa fa-instagram"
-					style="margin-left:60px;background: linear-gradient(0deg,#4c68d7 0%, #bc2a8d 100%);-webkit-background-clip: text;-webkit-text-fill-color: transparent;"
-				/><i class="fa fa-linkedin" style="margin-left:60px;color:#006192" />
+				<a href="">
+					<iconify-icon
+						class="text-3xl lg:text-5xl text-[#EA4335] bg-clip-text"
+						icon="mdi:email-outline"
+					/>
+				</a>
+				<a href="">
+					<iconify-icon
+						class="text-3xl lg:text-5xl text-[#4c68d7] bg-clip-text"
+						icon="mdi:instagram"
+					/>
+				</a>
+				<a href="">
+					<iconify-icon
+						class="text-3xl lg:text-5xl text-[#006192] bg-clip-text"
+						icon="mdi:linkedin"
+					/>
+				</a>
 			</div>
 		</div>
 	</article>
@@ -950,10 +1758,24 @@
 			<h3 class="seats"><!--status--></h3>
 			<p class="txt"><!-- data--></p>
 			<div class="details">
-				<i class="fa fa-envelope-o" style="color:#EA4335" /><i
-					class="fa fa-instagram"
-					style="margin-left:60px;background: linear-gradient(0deg,#4c68d7 0%, #bc2a8d 100%);-webkit-background-clip: text;-webkit-text-fill-color: transparent;"
-				/><i class="fa fa-linkedin" style="margin-left:60px;color:#006192" />
+				<a href="">
+					<iconify-icon
+						class="text-3xl lg:text-5xl text-[#EA4335] bg-clip-text"
+						icon="mdi:email-outline"
+					/>
+				</a>
+				<a href="">
+					<iconify-icon
+						class="text-3xl lg:text-5xl text-[#4c68d7] bg-clip-text"
+						icon="mdi:instagram"
+					/>
+				</a>
+				<a href="">
+					<iconify-icon
+						class="text-3xl lg:text-5xl text-[#006192] bg-clip-text"
+						icon="mdi:linkedin"
+					/>
+				</a>
 			</div>
 		</div>
 	</article>
@@ -965,10 +1787,24 @@
 			<h3 class="seats"><!--status--></h3>
 			<p class="txt"><!-- data--></p>
 			<div class="details">
-				<i class="fa fa-envelope-o" style="color:#EA4335" /><i
-					class="fa fa-instagram"
-					style="margin-left:60px;background: linear-gradient(0deg,#4c68d7 0%, #bc2a8d 100%);-webkit-background-clip: text;-webkit-text-fill-color: transparent;"
-				/><i class="fa fa-linkedin" style="margin-left:60px;color:#006192" />
+				<a href="">
+					<iconify-icon
+						class="text-3xl lg:text-5xl text-[#EA4335] bg-clip-text"
+						icon="mdi:email-outline"
+					/>
+				</a>
+				<a href="">
+					<iconify-icon
+						class="text-3xl lg:text-5xl text-[#4c68d7] bg-clip-text"
+						icon="mdi:instagram"
+					/>
+				</a>
+				<a href="">
+					<iconify-icon
+						class="text-3xl lg:text-5xl text-[#006192] bg-clip-text"
+						icon="mdi:linkedin"
+					/>
+				</a>
 			</div>
 		</div>
 	</article>
@@ -980,10 +1816,24 @@
 			<h3 class="seats"><!--status--></h3>
 			<p class="txt"><!-- data--></p>
 			<div class="details">
-				<i class="fa fa-envelope-o" style="color:#EA4335" /><i
-					class="fa fa-instagram"
-					style="margin-left:60px;background: linear-gradient(0deg,#4c68d7 0%, #bc2a8d 100%);-webkit-background-clip: text;-webkit-text-fill-color: transparent;"
-				/><i class="fa fa-linkedin" style="margin-left:60px;color:#006192" />
+				<a href="">
+					<iconify-icon
+						class="text-3xl lg:text-5xl text-[#EA4335] bg-clip-text"
+						icon="mdi:email-outline"
+					/>
+				</a>
+				<a href="">
+					<iconify-icon
+						class="text-3xl lg:text-5xl text-[#4c68d7] bg-clip-text"
+						icon="mdi:instagram"
+					/>
+				</a>
+				<a href="">
+					<iconify-icon
+						class="text-3xl lg:text-5xl text-[#006192] bg-clip-text"
+						icon="mdi:linkedin"
+					/>
+				</a>
 			</div>
 		</div>
 	</article>
@@ -995,10 +1845,24 @@
 			<h3 class="seats"><!--status--></h3>
 			<p class="txt"><!-- data--></p>
 			<div class="details">
-				<i class="fa fa-envelope-o" style="color:#EA4335" /><i
-					class="fa fa-instagram"
-					style="margin-left:60px;background: linear-gradient(0deg,#4c68d7 0%, #bc2a8d 100%);-webkit-background-clip: text;-webkit-text-fill-color: transparent;"
-				/><i class="fa fa-linkedin" style="margin-left:60px;color:#006192" />
+				<a href="">
+					<iconify-icon
+						class="text-3xl lg:text-5xl text-[#EA4335] bg-clip-text"
+						icon="mdi:email-outline"
+					/>
+				</a>
+				<a href="">
+					<iconify-icon
+						class="text-3xl lg:text-5xl text-[#4c68d7] bg-clip-text"
+						icon="mdi:instagram"
+					/>
+				</a>
+				<a href="">
+					<iconify-icon
+						class="text-3xl lg:text-5xl text-[#006192] bg-clip-text"
+						icon="mdi:linkedin"
+					/>
+				</a>
 			</div>
 		</div>
 	</article>
@@ -1051,11 +1915,14 @@
 		margin-bottom: 6vh;
 	}
 	.my-cont_flex {
-		max-width: 2000vw;
+		max-width: 80vw;
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: space-evenly;
+		@apply mx-auto 2xl:max-w-full ;
 	}
+
+	
 
 	/* a[href] {
 		position: relative;
@@ -1224,7 +2091,7 @@
 		article.my-cont .infos .date {
 			/* font-size: 1.25rem; */
 			margin-top: 6px;
-			@apply text-base
+			@apply text-base;
 		}
 		i {
 			/* font-size: 6rem !important; */
