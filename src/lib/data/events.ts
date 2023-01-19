@@ -184,7 +184,7 @@ export const EVENTS: AdhyaayaEvent[] = [
 		id: 'avishkar-online',
 		mode: 'online',
 		category: 'technical',
-		name: 'Avishkar',
+		name: 'Avishkar - Online',
 		description: 'blah blah blah', //Avishkar is a technical event that tests your knowledge in the field of computer science and technology. It is a 24-hour event that will test your skills in programming, debugging, and logical thinking. It is a team event with a maximum of 3 members per team. The event will be held on 27th and 28th February 2021.
 		amount: [160_00, 160_00, 160_00, 160_00],
 		team_members: [1, 2, 3, 4],
@@ -205,7 +205,7 @@ export const EVENTS: AdhyaayaEvent[] = [
 		id: 'avishkar-offline',
 		mode: 'offline',
 		category: 'technical',
-		name: 'Avishkar',
+		name: 'Avishkar - Offline',
 		description: 'blah blah blah', //Avishkar is a technical event that tests your knowledge in the field of computer science and technology. It is a 24-hour event that will test your skills in programming, debugging, and logical thinking. It is a team event with a maximum of 3 members per team. The event will be held on 27th and 28th February 2021.
 		amount: [160_00, 160_00, 160_00, 160_00],
 		team_members: [1, 2, 3, 4],
