@@ -32,7 +32,7 @@
 	let slide_index = 0;
 	let _Swiper: Swiper;
 
-	const scrollPosition = tweened(0.25, { duration: 1500, easing: cubicInOut });
+	// const scrollPosition = tweened(0.25, { duration: 1500, easing: cubicInOut });
 
 	function onProgress(e: CustomEvent<[swiper: any, progress: number]>) {
 		const [_, progress] = e.detail;
@@ -44,7 +44,7 @@
 		setTimeout(() => {
 			duration.set(0);
 		}, 1000);
-		scrollPosition.set(scrollMapping(progress));
+		// scrollPosition.set(scrollMapping(progress));
 	}
 	function changePage(index: number) {
 		if (_Swiper) _Swiper.slideTo(index, 1000, true);
@@ -68,18 +68,18 @@
 		progressbarOpposite: false
 	};
 
-	function scrollMapping(percentScroll: number) {
-    const positionRange = (6 - (-1));
-    return (percentScroll * positionRange) + (-1);
-  	}
+	// function scrollMapping(percentScroll: number) {
+    // const positionRange = (6 - (-1));
+    // return (percentScroll * positionRange) + (-1);
+  	// }
   	
 	let loaded = false;
 
-	$: {
-		if (sketch) {
-			sketch.camera.position.set(-2, $scrollPosition, 5);
-		}
-	}
+	// $: {
+	// 	if (sketch) {
+	// 		sketch.camera.position.set(-2, $scrollPosition, 5);
+	// 	}
+	// }
 
 	onMount(async () => {
 		const bg = await import('$lib/components/DNA/Sketch');

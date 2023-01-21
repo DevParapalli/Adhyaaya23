@@ -18,7 +18,7 @@
     </div>
     <div class="gallery-button flex flex-col items-center justify-evenly text-justify pt-8">
         <a href="/gallery" class="gallery-button relative bg-gradient-to-bl from-rose-400 via-fuchsia-500 to-indigo-500 text-white text-lg py-3 px-5 rounded-lg inline-flex gap-2">
-            A <span class="fancy">Glimpse</span> of our <span class="fancy">PAST</span>
+            <span>A short view back to the past...</span>
         </a>
     </div>
 </div>
