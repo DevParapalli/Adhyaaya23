@@ -3,23 +3,23 @@
     import gcoen from '$lib/assets/logo/gcoen-knockout.png';
 </script>
 
-<div class="about-us-container h-full w-full flex flex-col items-center p-10">
-    <div class="title h-1/6 pt-10"><span class="text-6xl">About Us</span></div>
-    <div class="content flex flex-row w-full h-3/6 lg:pl-32">
-    <div class="our-college w-1/2 hidden lg:flex flex-col items-center justify-evenly h-full text-justify bg-white/20 backdrop-blur-sm rounded-lg border border-white lg:border-r-0 lg:rounded-r-none">
+<div class="about-us-container h-full md:h-5/6 md:w-5/6 flex flex-col items-center justify-evenly p-10 mx-auto">
+    <div class="title h-1/6 pt-10"><span class="text-4xl lg:text-6xl">About Us</span></div>
+    <div class="content flex flex-row w-full h-4/6">
+    <div class="our-college w-1/2 hidden lg:flex flex-col items-center justify-evenly h-full text-justify bg-white/20 backdrop-blur-sm rounded-lg border border-white lg:border-r-0 lg:rounded-r-none p-4 gap-2">
         <img src="{gcoen}" class="h-28" alt="">
         <p class="max-w-lg text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos possimus asperiores vitae nulla atque quasi ratione consectetur temporibus illum rerum, velit cum expedita quidem porro maxime sit, a debitis soluta.</p>
-        <a data-sveltekit-reload href="https://gcoen.ac.in/" target="_blank" rel="noreferrer noopener nofollow" class="gallery-button relative bg-[conic-gradient(at_left,_var(--tw-gradient-stops))] from-yellow-500 via-purple-500 to-blue-500 text-white text-lg py-3 px-5 rounded-lg inline-flex gap-2">Our College</a>
+        <a data-sveltekit-reload href="https://gcoen.ac.in/" target="_blank" rel="noreferrer noopener nofollow" class="college-button relative bg-gradient-to-bl from-sky-400 via-rose-400 to-lime-400 text-white text-lg py-3 px-5 rounded-lg inline-flex items-center uppercase font-medium gap-2 hover:scale-110 active:scale-90 active:opacity-90 transition-all duration-300 ease-in-out mb-4">Our College <iconify-icon icon="mdi:arrow-right"></iconify-icon></a>
     </div>
-    <div class="us w-full lg:w-1/2 flex flex-col items-center justify-evenly h-full text-justify bg-black/40 backdrop-blur-sm rounded-lg border border-white lg:rounded-l-none">
+    <div class="us w-full lg:w-1/2 flex flex-col items-center justify-evenly h-full text-justify bg-black/40 backdrop-blur-sm rounded-lg border border-white lg:rounded-l-none p-4 gap-2">
         <img src="{logo}" class="h-28" alt="">
-        <p class="max-w-lg text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero doloribus unde libero accusantium blanditiis exercitationem molestiae explicabo nesciunt quod fuga. Provident eveniet beatae quibusdam repudiandae qui praesentium, nulla sed magni.</p>
-        <a href="/team" class="team-button relative px-5 py-3 text-xl bg-gradient-to-tr from-pink-500 via-red-500 to-yellow-500 rounded-lg inline-flex items-center uppercase gap-2 ">Meet The Team <iconify-icon icon="mdi:arrow-right"></a>
+        <p class="max-w-lg md:text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero doloribus unde libero accusantium blanditiis exercitationem molestiae explicabo nesciunt quod fuga. Provident eveniet beatae quibusdam repudiandae qui praesentium, nulla sed magni.</p>
+        <a href="/team" class="team-button relative px-5 py-3 text-xl bg-gradient-to-tr from-pink-500 via-red-500 to-yellow-500 rounded-lg inline-flex items-center uppercase gap-2 hover:scale-110 active:scale-90 active:opacity-90 transition-all duration-300 ease-in-out mb-8">Meet The Team <iconify-icon icon="mdi:arrow-right"></a>
     </div>
     </div>
     <div class="gallery-button flex flex-col items-center justify-evenly text-justify pt-8">
-        <a href="/gallery" class="gallery-button relative bg-gradient-to-bl from-rose-400 via-fuchsia-500 to-indigo-500 text-white text-lg py-3 px-5 rounded-lg inline-flex gap-2">
-            <span>A short view back to the past...</span>
+        <a href="/gallery" class="gallery-button uppercase relative bg-gradient-to-bl from-rose-400 via-fuchsia-500 to-indigo-500 text-white text-xl py-5 px-8 rounded-lg inline-flex items-center gap-2 hover:scale-110 active:scale-90 active:opacity-90 transition-all duration-300 ease-in-out">
+            View our past <iconify-icon icon="mdi:arrow-right"></iconify-icon>
         </a>
     </div>
 </div>
@@ -32,5 +32,12 @@
         @apply absolute h-full w-full rounded-lg blur-xl bg-gradient-to-tr from-pink-500 via-red-500 to-yellow-500 
     }
 
+    .college-button {
+        content: '';
+        z-index: -1;
+        /* background-color: #21D4FD;
+        background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%); */
+        @apply absolute h-full w-full rounded-lg blur-xl bg-gradient-to-bl from-[#21D4FD]  to-[#B721FF]
+    }
     
 </style>
