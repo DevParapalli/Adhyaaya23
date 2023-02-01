@@ -8,7 +8,7 @@
 	// import 'swiper/css/mousewheel';
 
 	// import required modules
-	import { Pagination, Mousewheel, Keyboard } from 'swiper';
+	import { Pagination, Mousewheel, Keyboard, FreeMode } from 'swiper';
 	import type { PaginationOptions } from 'swiper/types';
 	import Loader from '$lib/components/Loader.svelte';
 	import { onMount, SvelteComponent } from 'svelte';
@@ -44,6 +44,7 @@
 		setTimeout(() => {
 			duration.set(0);
 		}, 1000);
+		// if (_Swiper) _Swiper.slideTo(slide_index, 1000, true);
 		// scrollPosition.set(scrollMapping(progress));
 	}
 	function changePage(index: number) {
@@ -133,8 +134,10 @@
 	direction={'vertical'}
 	spaceBetween={0}
 	{pagination}
-	mousewheel={{ forceToAxis: true }}
-	modules={[Pagination, Mousewheel, Keyboard]}
+	slidesPerGroup={1}
+	freeMode={{enabled: true, sticky: true, momentum: false}}
+	mousewheel={{ forceToAxis: true, sensitivity: 1 }}
+	modules={[Pagination, Mousewheel, Keyboard, FreeMode]}
 	on:progress={onProgress}
 	on:swiper={onSwiper}
 >

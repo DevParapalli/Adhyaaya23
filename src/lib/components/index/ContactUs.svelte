@@ -54,13 +54,13 @@
 				>
 			</div>
             <button disabled={submit} class="btn btn-outline btn-block" type="submit">Submit</button>
-			<div class="info-container w-full flex-col items-center justify-center px-4 lg:px-10 hidden md:flex">
-				<div class="card card-compact mx-auto bg-white/20 shadow-xl">
+			<div class="info-container w-full flex-col items-center justify-center px-4 xl:px-10  hidden lg:flex">
+				<div class="card card-compact mx-auto bg-white/20 shadow-xl container">
 				<div class="card-body">
 					<h2 class="card-title">For Technical Queries, </h2>
 					<p>Devansh Parapalli</p>
 					<a href="https://api.whatsapp.com/send?phone=+918793150182&text=[AdhyaayaWebsite]%20Hello!" class="inline-flex items-center gap-2"><iconify-icon icon="mdi:whatsapp"/> 8793150182</a>
-					<a href="mailto:parapallidev@gmail.com" class="inline-flex items-center gap-2"><iconify-icon icon="mdi:email-outline"/>parapallidev@gmail.com</a>
+					<a href="mailto:parapallidev@gmail.com" class="inline-flex items-center gap-2 overflow-clip text-ellipsis"><iconify-icon icon="mdi:email-outline"/>parapallidev@gmail.com</a>
 				  </div>
 			  </div>
 			</div>

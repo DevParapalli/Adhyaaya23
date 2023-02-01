@@ -1,10 +1,10 @@
 <div
-	class="h-full w-3/4 mx-auto lg:w-full flex flex-col pt-8 lg:flex-row items-center justify-evenly gap-28 md:gap-10"
+	class="h-full w-3/4 mx-auto lg:w-full flex flex-col pt-24 lg:flex-row items-center justify-evenly  lg:gap-10"
 >
 	<div
-		class="text-content h-full w-full lg:w-2/3 text-justify text-lg md:text-2xl leading-6 flex flex-col items-center justify-center bg-clip-text text-transparent bg-gradient-to-tr from-pink-200 via-fuchsia-200 to-sky-200 font-semibold"
+		class="text-content h-full w-full xl:w-2/3 text-justify text-sm  md:text-lg xl:text-2xl flex flex-col items-center justify-center bg-clip-text text-transparent bg-gradient-to-tr from-pink-200 via-fuchsia-200 to-sky-200 font-semibold"
 	>
-		<div class="max-w-xl">
+		<div class="max-w-lg lg:max-w-xl px-auto md:pl-10">
 			Over the past years Adhyaaya has had the privilege to have hosted a number of sponsors which
 			provided a very entertaining experience to our visitors as well as the brand. The crowd
 			engagement, media exposure, sampling and brand building opportunities offered at Adhyaaya are
@@ -13,11 +13,11 @@
 		</div>
         <a
 				href="/sponsors"
-				class="da-button text-white mb-10 md: mt-10 mx-auto text-2xl md:text-4xl relative p-4 md:p-8 max-w-lg text-center bg-gradient-to-r from-pink-500 via-fuchsia-500 to-sky-500 rounded-xl transition-all duration-300 hover:scale-105 active:scale-95 active:opacity-90 inline-flex items-center justify-center gap-3"
-				><span>View Sponsors</span> <iconify-icon icon="mdi:arrow-right" /></a
+				class="da-button text-white mb-10 lg:mt-10 mt-auto mx-auto text-2xl lg:text-4xl relative p-4 lg:p-8 max-w-lg text-center bg-gradient-to-r from-pink-500 via-fuchsia-500 to-sky-500 rounded-xl transition-all duration-300 hover:scale-105 active:scale-95 active:opacity-90 inline-flex items-center justify-center gap-3"
+				><span>View Sponsors</span> <iconify-icon icon="lgi:arrow-right" /></a
 			>
 	</div>
-	<div class="lg:w-1/3" />
+	<div class="xl:w-1/3" />
 </div>
 
 <style>
