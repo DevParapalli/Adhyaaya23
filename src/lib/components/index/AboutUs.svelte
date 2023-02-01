@@ -32,12 +32,6 @@
         @apply absolute h-full w-full rounded-lg blur-xl bg-gradient-to-tr from-pink-500 via-red-500 to-yellow-500 
     }
 
-    .college-button {
-        content: '';
-        z-index: -1;
-        /* background-color: #21D4FD;
-        background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%); */
-        @apply absolute h-full w-full rounded-lg blur-xl bg-gradient-to-bl from-[#21D4FD]  to-[#B721FF]
-    }
+    
     
 </style>
