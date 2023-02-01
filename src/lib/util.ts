@@ -64,11 +64,11 @@ export function convertToJSON(body: FormData) {
   }, {} as Record<string, StructuredFormData>);
 }
 
-import {toCanvas} from 'bwip-js';
 
-export function getQRCode(text: string) {
+export async function getQRCode(text: string) {
+  const mod = await (await import('bwip-js')).default;
   const canvas = document.createElement('canvas');
-  toCanvas(canvas, {
+  mod.toCanvas(canvas, {
     bcid: 'qrcode',
     text,
   });

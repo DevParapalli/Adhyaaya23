@@ -16,8 +16,8 @@
 	let EVENT = EVENTS.find((e) => e.id == data.db.event_id);
 
 	let PNG = '';
-	onMount(() => {
-		PNG = getQRCode(`${url_start}/pg/${data.db.id}/success`);
+	onMount(async () => {
+		PNG = await getQRCode(`${url_start}/pg/${data.db.id}/success`);
 	});
 </script>
 

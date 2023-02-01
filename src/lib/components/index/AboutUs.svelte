@@ -1,6 +1,6 @@
 <script>
-    import logo from '$lib/assets/logo/solid.png';
-    import gcoen from '$lib/assets/logo/gcoen-knockout.png';
+    import logo from '$lib/assets/logo/solid.webp';
+    import gcoen from '$lib/assets/logo/gcoen-knockout.webp';
 </script>
 
 <div class="about-us-container h-full md:w-5/6 flex flex-col items-center justify-evenly md:py-10 mx-auto">

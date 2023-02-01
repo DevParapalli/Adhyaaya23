@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { afterNavigate, goto as _goto } from '$app/navigation';
-	import AdhyaayaLogoSolid from '$lib/assets/logo/solid.png';
+	import AdhyaayaLogoSolid from '$lib/assets/logo/solid.webp';
 	import { SOCIALS } from '$lib/data/socials';
 	export let isMenuOpen = false;
 	// export let isMenuOpen = true;
