@@ -57,7 +57,7 @@ export default class Sketch {
 		if (window?.innerWidth < 600) {
 			this.renderer.setPixelRatio(window.devicePixelRatio * 0.35);
 		} else {
-			this.renderer.setPixelRatio(window.devicePixelRatio * 0.65);
+			this.renderer.setPixelRatio(window.devicePixelRatio * 0.55);
 		}
 
 		this.renderer.setSize(this.width, this.height, false);
