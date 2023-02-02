@@ -147,7 +147,7 @@ export default class Sketch {
 				uColor3: { type: 'v3', value: new THREE.Color(0x1954ec) },
 				resolution: { type: 'v4', value: new THREE.Vector4() },
 				uvRate1: {
-					value: new THREE.Vector2(1, 1)
+					value: new THREE.Vector2(2, 1)
 				}
 			},
 			transparent: true,

@@ -1,7 +1,7 @@
 <script lang="ts">
 	import type { PageData } from './$types';
 	// import qr from '$lib/assets/qr-code.png'
-	import adhyaaya_solid_logo from '$lib/assets/logo/solid-shine.png';
+	import adhyaaya_solid_logo from '$lib/assets/logo/solid-resize.webp';
 	import { dev } from '$app/environment';
 	import { getQRCode } from '$lib/util';
 	import { onMount } from 'svelte';
@@ -25,7 +25,7 @@
 	<div class="reciept-container flex flex-col md:flex-row w-full h-full ">
 		<div class="left-half bg-black mx-auto py-0 md:py-10 md:px-0 md:pl-10 w-full md:w-3/5 ">
 			<div class="bg-white flex flex-col md:h-full overflow-y-scroll no-scroll-bar">
-				<div class="logo mx-auto h-40 w-40 mb-8 pt-4"><img src={adhyaaya_solid_logo} alt="" /></div>
+				<div class="logo mx-auto h-40 w-40 mb-8 pt-4"><img src={adhyaaya_solid_logo} class="h-28" height="112" width="202" alt="" /></div>
 				<div class="qr">
 					<img
 						class="qr-code-container h-36 w-36 md:h-48 md:w-48 rounded-none p-2 mx-auto"
