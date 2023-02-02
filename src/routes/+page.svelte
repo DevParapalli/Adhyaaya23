@@ -95,9 +95,9 @@
 		sketch = new Sketch(canvas);
 		sketch.loadObjects();
 		duration.set(2.5);
-		setTimeout(() => {
-			duration.set(0);
-		}, 2000);
+		// setTimeout(() => {
+		// 	duration.set(0);
+		// }, 2500);
 		function animate() {
 			if (sketch) {
 				sketch.duration += $duration;
@@ -106,9 +106,10 @@
 		}
 		animate();
 
-		setTimeout(() => {
+		window.requestIdleCallback(() => {
 			loaded = true;
-		}, 1000);
+			duration.set(0);
+		});
 	});
 
 	
@@ -122,10 +123,10 @@
 	<link rel="preload" href="/draco/draco_decoder.js">
 </svelte:head>
 
-<div id="dna-bg" class="fixed h-screen w-screen -z-50 bg-black" />
+<div id="dna-bg" class="fixed h-screen w-screen -z-50 bg-[#0d0028]" />
 
 {#if !loaded}
-<div transition:fade class="loader h-screen w-screen bg-black fixed z-[9999] flex items-center justify-center">
+<div transition:fade class="loader h-screen w-screen bg-[#0d0028] fixed z-[9999] flex items-center justify-center">
     <div class="preloader">
         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="margin: auto; background: transparent; display: block;" width="200px" height="200px" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid">
 			<circle cx="6.451612903225806" cy="50" r="3" fill="#941946">
@@ -316,8 +317,8 @@
 }
 
 .loader {
-  background: #000;
-  color: #3df1f1;
+  /* background: #000; */
+  /* color: #3df1f1; */
   font: 1em Dosis, sans-serif;
   line-height: 1.5;
   perspective: 40em;
