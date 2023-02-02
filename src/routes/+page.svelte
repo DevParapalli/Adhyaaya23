@@ -13,7 +13,7 @@
 	import Loader from '$lib/components/Loader.svelte';
 	import { onMount, SvelteComponent } from 'svelte';
 	import { tweened } from 'svelte/motion';
-	import type Sketch from '$lib/components/DNA/Sketch';
+	import Sketch from '$lib/components/DNA/Sketch';
 	// import Nav from '$lib/components/Nav.svelte';
 
 	import Home from '$lib/components/index/Home.svelte';
@@ -81,11 +81,14 @@
 	// 		sketch.camera.position.set(-2, $scrollPosition, 5);
 	// 	}
 	// }
+	
+	//DNA BG thingy
+	// import Sketch from '$lib/components/DNA/Sketch.svelte';
+
 
 	onMount(async () => {
-		const bg = await import('$lib/components/DNA/Sketch');
 		const canvas = document.getElementById('dna-bg') ?? document.createElement('canvas');
-		sketch = new bg.default(canvas);
+		sketch = new Sketch(canvas);
 		sketch.loadObjects();
 		duration.set(2.5);
 		setTimeout(() => {
@@ -117,13 +120,13 @@
 		class="pagination-container absolute invisible md:visible left-4 md:left-10 top-1/2 flex flex-col gap-1 md:gap-2 z-50 -translate-y-1/2"
 	>
 		{#each PAGES as page, i}
-			<span
+			<button
 				on:click={() => {
 					changePage(i);
 				}}
 				class="uppercase mono cursor-pointer text-xs px-2 py-0 max-w-xs w-full md:text-base relative after:absolute after:w-0 after:h-full after:bg-white after:mix-blend-difference after:top-0 after:left-0  after:transition-all after:duration-300 after:ease-in-out {i == slide_index
 					? 'text-white after:w-full'
-					: ''}">{page.name}</span
+					: ''}">{page.name}</button
 			>
 		{/each}
 	</div>

@@ -51,6 +51,11 @@
 	});
 </script>
 
+<svelte:head>
+	<script src="/rzp/checkout.js"></script>
+	<script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+</svelte:head>
+
 
 <div class="h-full-w-full flex items-center justify-center">
 	<div class="flex flex-col items-center justify-center">

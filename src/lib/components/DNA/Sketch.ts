@@ -98,7 +98,7 @@ export default class Sketch {
 	}
 	loadObjects = () => {
 		this.loader.load(dna, (gltf) => {
-			// @ts-expect-error custom geometery.
+			// @ts-expect-error custom geometry.
 			this.geometry = gltf.scene.children[0].geometry;
 			this.geometry.center();
 			//run after load

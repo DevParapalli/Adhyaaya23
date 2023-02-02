@@ -74,6 +74,11 @@
 	});
 </script>
 
+<svelte:head>
+	<script src="/rzp/checkout.js"></script>
+	<script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+</svelte:head>
+
 <div class="bg h-full w-full pt-20" style="--bg:url({bg});--opacity:0.75">
 	<div
 		class="header mx-auto text-4xl text-center mb-8 text-white font-bold uppercase font-mono TODO:FONTS "
