@@ -1,3 +1,4 @@
+export const prerender = false;
 import { supabase } from '$lib/supabaseClient';
 import type { DBRegistration } from '$lib/types';
 import { error } from '@sveltejs/kit';

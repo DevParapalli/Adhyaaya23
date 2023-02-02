@@ -1,3 +1,5 @@
+export const prerender = false;
+
 import type { AdhyaayaEvent } from '$lib/data/events';
 import type { PageLoad } from './$types';
 import { EVENTS } from '$lib/data/events';

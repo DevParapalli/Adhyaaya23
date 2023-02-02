@@ -1,3 +1,5 @@
+export const prerender = false;
+
 import type { PageLoad } from './$types';
 import { error, redirect } from '@sveltejs/kit';
 import { EVENTS } from '$lib/data/events';

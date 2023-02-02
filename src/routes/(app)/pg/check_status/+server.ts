@@ -10,6 +10,8 @@ import { dev } from '$app/environment';
 // alert(e.razorpay_order_id);
 // alert(e.razorpay_signature)
 
+export const prerender = false;
+
 export const GET: RequestHandler = async ({ url }) => {
 	const rzp_pid = url.searchParams.get('rzp_pid');
 	const rzp_oid = url.searchParams.get('rzp_oid');
