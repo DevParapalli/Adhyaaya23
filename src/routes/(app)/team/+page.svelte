@@ -236,19 +236,19 @@
 			<h3 class="seats"><!--status--></h3>
 			<p class="txt"><!-- data--></p>
 			<div class="details">
-				<a href="">
+				<a href="mailto:swaraliprayagi1908@gmail.com">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#EA4335] bg-clip-text"
 						icon="mdi:email-outline"
 					/>
 				</a>
-				<a href="">
+				<a href="https://instagram.com/swaraliprayagi">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#4c68d7] bg-clip-text"
 						icon="mdi:instagram"
 					/>
 				</a>
-				<a href="">
+				<a href="https://www.linkedin.com/in/swarali-prayagi-65b400229">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#006192] bg-clip-text"
 						icon="mdi:linkedin"
@@ -323,19 +323,19 @@
 			<h3 class="seats"><!--status--></h3>
 			<p class="txt"><!-- data--></p>
 			<div class="details">
-				<a href="">
+				<a href="mailto:mcparadkar2003@gmail.com">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#EA4335] bg-clip-text"
 						icon="mdi:email-outline"
 					/>
 				</a>
-				<a href="">
+				<a href="https://instagram.com/thelostmanintheworld">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#4c68d7] bg-clip-text"
 						icon="mdi:instagram"
 					/>
 				</a>
-				<a href="">
+				<a href="https://www.linkedin.com/in/malhar-paradkar-97a88b230">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#006192] bg-clip-text"
 						icon="mdi:linkedin"
@@ -356,19 +356,19 @@
 			<h3 class="seats"><!--status--></h3>
 			<p class="txt"><!-- data--></p>
 			<div class="details">
-				<a href="">
+				<a href="mailto:parapallidev@gmail.com">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#EA4335] bg-clip-text"
 						icon="mdi:email-outline"
 					/>
 				</a>
-				<a href="">
+				<a href="https://instagram.com/dev_parapalli">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#4c68d7] bg-clip-text"
 						icon="mdi:instagram"
 					/>
 				</a>
-				<a href="">
+				<a href="https://www.linkedin.com/in/devparapalli/">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#006192] bg-clip-text"
 						icon="mdi:linkedin"
@@ -385,13 +385,13 @@
 			<h3 class="seats"><!--status--></h3>
 			<p class="txt"><!-- data--></p>
 			<div class="details">
-				<a href="">
+				<a href="mailto:dveshaglawe27@gmail.com">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#EA4335] bg-clip-text"
 						icon="mdi:email-outline"
 					/>
 				</a>
-				<a href="">
+				<a href="https://www.instagram.com/dovesh.aglawe.2004">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#4c68d7] bg-clip-text"
 						icon="mdi:instagram"
@@ -445,19 +445,19 @@
 			<h3 class="seats"><!--status--></h3>
 			<p class="txt"><!-- data--></p>
 			<div class="details">
-				<a href="">
+				<a href="mailto:shiwangpande1@gmail.com">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#EA4335] bg-clip-text"
 						icon="mdi:email-outline"
 					/>
 				</a>
-				<a href="">
+				<a href="https://www.instagram.com/__shiwang/">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#4c68d7] bg-clip-text"
 						icon="mdi:instagram"
 					/>
 				</a>
-				<a href="">
+				<a href="https://www.linkedin.com/in/shiwang-pandey/">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#006192] bg-clip-text"
 						icon="mdi:linkedin"
