@@ -108,6 +108,8 @@
 
 </script>
 
+<div id="dna-bg" class="fixed h-screen w-screen -z-50 bg-black" />
+
 {#if !loaded}
 	<Loader />
 {:else}
@@ -125,11 +127,8 @@
 			>
 		{/each}
 	</div>
-{/if}
 
-<div id="dna-bg" class="fixed h-screen w-screen -z-50 bg-black" />
-<!-- <Nav /> -->
-<Swiper
+	<Swiper
 	class="swiper-v"
 	direction={'vertical'}
 	spaceBetween={0}
@@ -151,6 +150,11 @@
 		</SwiperSlide>
 	{/each}
 </Swiper>
+{/if}
+
+
+<!-- <Nav /> -->
+
 
 <style>
 	#dna-bg {
