@@ -1,3 +1,5 @@
+export const prerender = false;
+
 import { _sendEmail } from '$lib/email';
 import type { Actions } from './$types';
  

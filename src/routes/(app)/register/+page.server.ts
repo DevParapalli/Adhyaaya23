@@ -22,10 +22,16 @@ export const actions: Actions = {
 		if(!validator.isMobilePhone(String(data['phone']))){
 			errors.push('phone');
 		}
-		if(!validator.isAlpha(String(data['first_name']))){
+		// if(!validator.isText(String(data['first_name']))){
+		// 	errors.push('first_name');
+		// }
+		// if(!validator.isAlpha(String(data['last_name']))){
+		// 	errors.push('last_name');
+		// }
+		if (String(data['first_name']).length < 3) {
 			errors.push('first_name');
 		}
-		if(!validator.isAlpha(String(data['last_name']))){
+		if (String(data['last_name']).length < 3) {
 			errors.push('last_name');
 		}
 		// if(!validator.isAlphanumeric(String(data['year_grade']))){
@@ -34,7 +40,7 @@ export const actions: Actions = {
 		// if(!validator.isAlphanumeric(String(data['branch_specialization']))){
 		// 	errors.push('branch_specialization');
 		// }
-		if(!validator.isAlphanumeric(String(data['institute']))){
+		if(String(data['institute']).length < 3){
 			errors.push('institute');
 		}
 		const number_of_additional_members = Number(String(data['members']).split('-')[1]) ?? 0;
