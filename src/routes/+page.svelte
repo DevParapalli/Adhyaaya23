@@ -55,18 +55,21 @@
 		_Swiper = swiper;
 	}
 
-	const PAGES: { name: string; component: string | typeof SvelteComponent }[] = [
-		{ name: 'Home', component: Home },
-		{ name: 'Events', component: Events },
-		{ name: 'About Us', component: AboutUs },
-		{ name: 'Sponsors', component: Sponsors },
-		{ name: 'Contact Us', component: ContactUs },
-		{ name: 'Sitemap', component: Footer }
+	const PAGES: { name: string}[] = [
+		{ name: 'Home',  },
+		{ name: 'Events',  },
+		{ name: 'About Us',  },
+		{ name: 'Sponsors',  },
+		{ name: 'Contact Us',  },
+		{ name: 'Sitemap',  }
 	];
 
 	let pagination: PaginationOptions = {
 		type: 'progressbar',
-		progressbarOpposite: false
+		progressbarOpposite: false,
+		// progressbarClass: 'hidden',
+		// progressbarOppositeClass: 'hidden',
+
 	};
 
 	// function scrollMapping(percentScroll: number) {
@@ -115,8 +118,9 @@
 
 {#if !loaded}
 	<Loader />
-{:else}
-	<div
+{/if}
+
+<div
 		class="pagination-container absolute invisible md:visible left-4 md:left-10 top-1/2 flex flex-col gap-1 md:gap-2 z-50 -translate-y-1/2"
 	>
 		{#each PAGES as page, i}
@@ -129,9 +133,9 @@
 					: ''}">{page.name}</button
 			>
 		{/each}
-	</div>
+</div>
 
-	<Swiper
+<Swiper
 	class="swiper-v"
 	direction={'vertical'}
 	spaceBetween={0}
@@ -143,17 +147,26 @@
 	on:progress={onProgress}
 	on:swiper={onSwiper}
 >
-	{#each PAGES as page}
 		<SwiperSlide>
-			{#if typeof page.component === 'string'}
-				{page.component}
-			{:else}
-			<svelte:component this={page.component} {hasScrolled} />
-			{/if}
+			<Home />
 		</SwiperSlide>
-	{/each}
+		<SwiperSlide>
+			<Events />
+		</SwiperSlide>
+		<SwiperSlide>
+			<AboutUs />
+		</SwiperSlide>
+		<SwiperSlide>
+			<Sponsors />
+		</SwiperSlide>
+		<SwiperSlide>
+			<ContactUs />
+		</SwiperSlide>
+		<SwiperSlide>
+			<Footer />
+		</SwiperSlide>
 </Swiper>
-{/if}
+
 
 
 <!-- <Nav /> -->
