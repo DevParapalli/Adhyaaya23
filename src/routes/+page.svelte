@@ -106,10 +106,10 @@
 		}
 		animate();
 
-		window.requestIdleCallback(() => {
+		setTimeout(() => {
 			loaded = true;
 			duration.set(0);
-		});
+		}, 1000);
 	});
 
 	
