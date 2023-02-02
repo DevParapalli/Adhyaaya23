@@ -23,7 +23,7 @@
 	import Sponsors from '$lib/components/index/Sponsors.svelte';
 	import Footer from '$lib/components/index/Footer.svelte';
 
-	import {cubicInOut} from 'svelte/easing';
+	// import {cubicInOut} from 'svelte/easing';
 	import {hasScrolled} from '$lib/stores/UI';
 	
 	let sketch: Sketch;
@@ -77,7 +77,7 @@
     // return (percentScroll * positionRange) + (-1);
   	// }
   	
-	let loaded = false;
+	// let loaded = false;
 
 	// $: {
 	// 	if (sketch) {
@@ -105,9 +105,9 @@
 		}
 		animate();
 
-		setTimeout(() => {
-			loaded = true;
-		}, 500);
+		// setTimeout(() => {
+		// 	loaded = true;
+		// }, 500);
 	});
 
 	
@@ -116,23 +116,63 @@
 
 <div id="dna-bg" class="fixed h-screen w-screen -z-50 bg-black" />
 
-{#if !loaded}
+<!-- {#if !loaded}
 	<Loader />
-{/if}
+{/if} -->
 
 <div
 		class="pagination-container absolute invisible md:visible left-4 md:left-10 top-1/2 flex flex-col gap-1 md:gap-2 z-50 -translate-y-1/2"
 	>
-		{#each PAGES as page, i}
+		
 			<button
 				on:click={() => {
-					changePage(i);
+					changePage(0);
 				}}
-				class="uppercase mono cursor-pointer text-xs px-2 py-0 max-w-xs w-full md:text-base relative after:absolute after:w-0 after:h-full after:bg-white after:mix-blend-difference after:top-0 after:left-0  after:transition-all after:duration-300 after:ease-in-out {i == slide_index
+				class="uppercase mono cursor-pointer text-xs px-2 py-0 max-w-xs w-full md:text-base relative after:absolute after:w-0 after:h-full after:bg-white after:mix-blend-difference after:top-0 after:left-0  after:transition-all after:duration-300 after:ease-in-out {0 == slide_index
 					? 'text-white after:w-full'
-					: ''}">{page.name}</button
+					: ''}">Home</button
 			>
-		{/each}
+			<button
+				on:click={() => {
+					changePage(1);
+				}}
+				class="uppercase mono cursor-pointer text-xs px-2 py-0 max-w-xs w-full md:text-base relative after:absolute after:w-0 after:h-full after:bg-white after:mix-blend-difference after:top-0 after:left-0  after:transition-all after:duration-300 after:ease-in-out {1 == slide_index
+					? 'text-white after:w-full'
+					: ''}">Events</button
+			>
+			<button
+				on:click={() => {
+					changePage(2);
+				}}
+				class="uppercase mono cursor-pointer text-xs px-2 py-0 max-w-xs w-full md:text-base relative after:absolute after:w-0 after:h-full after:bg-white after:mix-blend-difference after:top-0 after:left-0  after:transition-all after:duration-300 after:ease-in-out {2 == slide_index
+					? 'text-white after:w-full'
+					: ''}">About Us</button
+			>
+			<button
+				on:click={() => {
+					changePage(3);
+				}}
+				class="uppercase mono cursor-pointer text-xs px-2 py-0 max-w-xs w-full md:text-base relative after:absolute after:w-0 after:h-full after:bg-white after:mix-blend-difference after:top-0 after:left-0  after:transition-all after:duration-300 after:ease-in-out {3 == slide_index
+					? 'text-white after:w-full'
+					: ''}">Sponsors</button
+			>
+			<button
+				on:click={() => {
+					changePage(4);
+				}}
+				class="uppercase mono cursor-pointer text-xs px-2 py-0 max-w-xs w-full md:text-base relative after:absolute after:w-0 after:h-full after:bg-white after:mix-blend-difference after:top-0 after:left-0  after:transition-all after:duration-300 after:ease-in-out {4 == slide_index
+					? 'text-white after:w-full'
+					: ''}">Contact Us</button
+			>
+			<button
+				on:click={() => {
+					changePage(5);
+				}}
+				class="uppercase mono cursor-pointer text-xs px-2 py-0 max-w-xs w-full md:text-base relative after:absolute after:w-0 after:h-full after:bg-white after:mix-blend-difference after:top-0 after:left-0  after:transition-all after:duration-300 after:ease-in-out {5 == slide_index
+					? 'text-white after:w-full'
+					: ''}">Sitemap</button
+			>
+		
 </div>
 
 <Swiper
