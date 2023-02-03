@@ -119,7 +119,11 @@
     });
 </script>
 
-<a bind:this={card} class="album-item" {href}>
+<a bind:this={card} class="album-item" {href} on:click|preventDefault={(e)=>{
+	const tgt = e.currentTarget.getAttribute('href');
+	document.getElementById(tgt?.replace('#', '') ?? '')?.scrollIntoView({behavior: 'smooth'});
+	// window.scrollTo({top: 0, behavior: 'smooth'});
+}}>
 	<canvas bind:this={canvas} class="canvas" width="250" height="300" />
 	<span class="album-details">
 		<span class="icon inline-flex justify-center items-center justify-items-center"><iconify-icon {icon}/> {icontext}</span>
@@ -148,7 +152,7 @@
         
 		transition: all 0.2s ease-out;
 		transform: scale(1);
-        @apply m-auto h-52 sm:h-80 w-48 sm:w-60 ;
+        @apply m-auto h-52 sm:h-80 w-52 sm:w-60 ;
 	}
 
 	.album-item:hover {
