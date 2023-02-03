@@ -414,19 +414,19 @@
 			<h3 class="seats"><!--status--></h3>
 			<p class="txt"><!-- data--></p>
 			<div class="details">
-				<a href="">
+				<a href="mailto:adityadeshmukh173@gmail.com">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#EA4335] bg-clip-text"
 						icon="mdi:email-outline"
 					/>
 				</a>
-				<a href="">
+				<a href="https://instagram.com/_wsup_shahu_">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#4c68d7] bg-clip-text"
 						icon="mdi:instagram"
 					/>
 				</a>
-				<a href="">
+				<a href="https://www.linkedin.com/in/aditya-deshmukh-05204922a">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#006192] bg-clip-text"
 						icon="mdi:linkedin"
@@ -532,19 +532,19 @@
 			<h3 class="seats"><!--status--></h3>
 			<p class="txt"><!-- data--></p>
 			<div class="details">
-				<a href="">
+				<a href="mailto:kaustubhwarade73@gmail.com">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#EA4335] bg-clip-text"
 						icon="mdi:email-outline"
 					/>
 				</a>
-				<a href="">
+				<a href="https://instagram.com/kaustubh_in_space">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#4c68d7] bg-clip-text"
 						icon="mdi:instagram"
 					/>
 				</a>
-				<a href="">
+				<a href="https://www.linkedin.com/in/kaustubh-warade-500010229">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#006192] bg-clip-text"
 						icon="mdi:linkedin"
@@ -653,7 +653,7 @@
 			<h3 class="seats"><!--status--></h3>
 			<p class="txt"><!-- data--></p>
 			<div class="details">
-				<a href="">
+				<a href="mailto:yraut2802@gmail.com">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#EA4335] bg-clip-text"
 						icon="mdi:email-outline"
@@ -665,7 +665,7 @@
 						icon="mdi:instagram"
 					/>
 				</a>
-				<a href="">
+				<a href="https://www.linkedin.com/in/yash-raut-19bab7247">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#006192] bg-clip-text"
 						icon="mdi:linkedin"
@@ -682,19 +682,19 @@
 			<h3 class="seats"><!--status--></h3>
 			<p class="txt"><!-- data--></p>
 			<div class="details">
-				<a href="">
+				<a href="mailto:nandinithaware0@gmail.com">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#EA4335] bg-clip-text"
 						icon="mdi:email-outline"
 					/>
 				</a>
-				<a href="">
+				<a href="https://instagram.com/_nandini_thaware_">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#4c68d7] bg-clip-text"
 						icon="mdi:instagram"
 					/>
 				</a>
-				<a href="">
+				<a href="https://www.linkedin.com/in/nandini-thaware-4b5b38230">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#006192] bg-clip-text"
 						icon="mdi:linkedin"
@@ -772,19 +772,19 @@
 			<h3 class="seats"><!--status--></h3>
 			<p class="txt"><!-- data--></p>
 			<div class="details">
-				<a href="">
+				<a href="mailto:gaikwadnihal26@gmail.com">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#EA4335] bg-clip-text"
 						icon="mdi:email-outline"
 					/>
 				</a>
-				<a href="">
+				<a href="https://instagram.com/___.nihal.____">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#4c68d7] bg-clip-text"
 						icon="mdi:instagram"
 					/>
 				</a>
-				<a href="">
+				<a href="https://www.linkedin.com/in/nihal-gaikwad-612902230">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#006192] bg-clip-text"
 						icon="mdi:linkedin"
@@ -801,19 +801,19 @@
 			<h3 class="seats"><!--status--></h3>
 			<p class="txt"><!-- data--></p>
 			<div class="details">
-				<a href="">
+				<a href="mailto:atharvamande@gmail.com">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#EA4335] bg-clip-text"
 						icon="mdi:email-outline"
 					/>
 				</a>
-				<a href="">
+				<a href="https://instagram.com/atharva_mande">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#4c68d7] bg-clip-text"
 						icon="mdi:instagram"
 					/>
 				</a>
-				<a href="">
+				<a href="https://www.linkedin.com/in/atharva-mande-1a2693255">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#006192] bg-clip-text"
 						icon="mdi:linkedin"
@@ -890,7 +890,7 @@
 			<h3 class="seats"><!--status--></h3>
 			<p class="txt"><!-- data--></p>
 			<div class="details">
-				<a href="">
+				<a href="mailto:ymkhandelwal8@gmail.com">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#EA4335] bg-clip-text"
 						icon="mdi:email-outline"
@@ -902,7 +902,7 @@
 						icon="mdi:instagram"
 					/>
 				</a>
-				<a href="">
+				<a href="https://www.linkedin.com/in/yash-khandelwal-470907252">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#006192] bg-clip-text"
 						icon="mdi:linkedin"
@@ -1130,19 +1130,19 @@
 			<h3 class="seats"><!--status--></h3>
 			<p class="txt"><!-- data--></p>
 			<div class="details">
-				<a href="">
+				<a href="mailto:burandenb9403@gmail.com">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#EA4335] bg-clip-text"
 						icon="mdi:email-outline"
 					/>
 				</a>
-				<a href="">
+				<a href="https://instagram.com/_https.n1nad">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#4c68d7] bg-clip-text"
 						icon="mdi:instagram"
 					/>
 				</a>
-				<a href="">
+				<a href="https://www.linkedin.com/in/ninad-burande-137354230">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#006192] bg-clip-text"
 						icon="mdi:linkedin"
@@ -1190,19 +1190,19 @@
 			<h3 class="seats"><!--status--></h3>
 			<p class="txt"><!-- data--></p>
 			<div class="details">
-				<a href="">
+				<a href="mailto:vidhanrajput2@gmail.com">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#EA4335] bg-clip-text"
 						icon="mdi:email-outline"
 					/>
 				</a>
-				<a href="">
+				<a href="https://instagram.com/vidhanrajput2">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#4c68d7] bg-clip-text"
 						icon="mdi:instagram"
 					/>
 				</a>
-				<a href="">
+				<a href="https://www.linkedin.com/in/vidhan-singh-rajput-b4169a229">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#006192] bg-clip-text"
 						icon="mdi:linkedin"
@@ -1219,19 +1219,19 @@
 			<h3 class="seats"><!--status--></h3>
 			<p class="txt"><!-- data--></p>
 			<div class="details">
-				<a href="">
+				<a href="mailto:rushikeshpotpite@gmail.com">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#EA4335] bg-clip-text"
 						icon="mdi:email-outline"
 					/>
 				</a>
-				<a href="">
+				<a href="https://instagram.com/rushikesh_potpite03">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#4c68d7] bg-clip-text"
 						icon="mdi:instagram"
 					/>
 				</a>
-				<a href="">
+				<a href="https://www.linkedin.com/in/rushikesh-potpite-910a42229">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#006192] bg-clip-text"
 						icon="mdi:linkedin"
@@ -1398,19 +1398,19 @@
 			<h3 class="seats"><!--status--></h3>
 			<p class="txt"><!-- data--></p>
 			<div class="details">
-				<a href="">
+				<a href="mailto:nandinithaware0@gmail.com">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#EA4335] bg-clip-text"
 						icon="mdi:email-outline"
 					/>
 				</a>
-				<a href="">
+				<a href="https://instagram.com/_nandini_thaware_">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#4c68d7] bg-clip-text"
 						icon="mdi:instagram"
 					/>
 				</a>
-				<a href="">
+				<a href="https://www.linkedin.com/in/nandini-thaware-4b5b38230">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#006192] bg-clip-text"
 						icon="mdi:linkedin"
@@ -1489,19 +1489,19 @@
 			<h3 class="seats"><!--status--></h3>
 			<p class="txt"><!-- data--></p>
 			<div class="details">
-				<a href="">
+				<a href="mailto:ketakimahalle14@gmail.com">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#EA4335] bg-clip-text"
 						icon="mdi:email-outline"
 					/>
 				</a>
-				<a href="">
+				<a href="https://instagram.com/_.ketaki._14">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#4c68d7] bg-clip-text"
 						icon="mdi:instagram"
 					/>
 				</a>
-				<a href="">
+				<a href="https://www.linkedin.com/in/ketaki-mahalle-116979257">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#006192] bg-clip-text"
 						icon="mdi:linkedin"
@@ -1518,19 +1518,19 @@
 			<h3 class="seats"><!--status--></h3>
 			<p class="txt"><!-- data--></p>
 			<div class="details">
-				<a href="">
+				<a href="mailto:siddhibarde26@gmail.com">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#EA4335] bg-clip-text"
 						icon="mdi:email-outline"
 					/>
 				</a>
-				<a href="">
+				<a href="https://instagram.com/siddhibarde_26">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#4c68d7] bg-clip-text"
 						icon="mdi:instagram"
 					/>
 				</a>
-				<a href="">
+				<a href="https://www.linkedin.com/in/siddhi-barde-732348248">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#006192] bg-clip-text"
 						icon="mdi:linkedin"
@@ -1549,19 +1549,19 @@
 			<h3 class="seats"><!--status--></h3>
 			<p class="txt"><!-- data--></p>
 			<div class="details">
-				<a href="">
+				<a href="mailto:pratikbagdi21@gmail.com">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#EA4335] bg-clip-text"
 						icon="mdi:email-outline"
 					/>
 				</a>
-				<a href="">
+				<a href="https://www.instagram.com/impratikbagdi/">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#4c68d7] bg-clip-text"
 						icon="mdi:instagram"
 					/>
 				</a>
-				<a href="">
+				<a href="https://www.linkedin.com/in/pratik-bagdi-b9915a229">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#006192] bg-clip-text"
 						icon="mdi:linkedin"
@@ -1669,19 +1669,19 @@
 			<h3 class="seats"><!--status--></h3>
 			<p class="txt"><!-- data--></p>
 			<div class="details">
-				<a href="">
+				<a href="mailto:chetnasalve00@gmail.com">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#EA4335] bg-clip-text"
 						icon="mdi:email-outline"
 					/>
 				</a>
-				<a href="">
+				<a href="https://instagram.com/chetna__salve">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#4c68d7] bg-clip-text"
 						icon="mdi:instagram"
 					/>
 				</a>
-				<a href="">
+				<a href="https://www.linkedin.com/in/chetna-salve-2951a8249">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#006192] bg-clip-text"
 						icon="mdi:linkedin"
