@@ -53,7 +53,11 @@ export default class Sketch {
 		this.width = this.container.offsetWidth;
 		this.height = this.container.offsetHeight;
 		//renderer
-		this.renderer = new THREE.WebGLRenderer();
+		this.renderer = new THREE.WebGLRenderer({
+			powerPreference: "high-performance",
+			antialias: true, 
+            alpha: true,
+		});
 		if (window?.innerWidth < 600) {
 			this.renderer.setPixelRatio(window.devicePixelRatio * 0.35);
 		} else {

@@ -54,6 +54,7 @@
 <svelte:head>
 	<script src="/rzp/checkout.js"></script>
 	<script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+	<title>Payment Gateway | Adhyaaya'23</title>
 </svelte:head>
 
 

@@ -121,6 +121,7 @@
 	<link rel="preload" href="/draco/draco_decoder.wasm">
 	<link rel="preload" href="/draco/draco_wasm_wrapper.js">
 	<link rel="preload" href="/draco/draco_decoder.js">
+	<title>Adhyaaya'23</title>
 </svelte:head>
 
 <div id="dna-bg" class="fixed h-screen w-screen -z-50 bg-[#0d0028]" />

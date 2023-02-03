@@ -44,6 +44,10 @@
 
 <svelte:window bind:scrollY />
 
+<svelte:head>
+    <title>Meet Our Team | Adhyaaya'23</title>
+</svelte:head>
+
 <!-- <Nav /> -->
 
 <div id="dna-bg" class="fixed h-screen w-screen -z-50 bg-black opacity-75" />

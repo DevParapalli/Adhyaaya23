@@ -21,6 +21,10 @@
 	});
 </script>
 
+<svelte:head>
+    <title>Receipt for {EVENT?.name} | Adhyaaya'23</title>
+</svelte:head>
+
 <div class="md:h-screen w-screen md:w-screen no-scroll-bar">
 	<div class="reciept-container flex flex-col md:flex-row w-full h-full ">
 		<div class="left-half bg-black mx-auto py-0 md:py-10 md:px-0 md:pl-10 w-full md:w-3/5 ">
