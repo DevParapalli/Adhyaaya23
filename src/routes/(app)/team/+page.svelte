@@ -474,7 +474,7 @@
 			<h3 class="seats"><!--status--></h3>
 			<p class="txt"><!-- data--></p>
 			<div class="details">
-				<a href="">
+				<a href="mailto:tusharmeshram608@gmail.com">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#EA4335] bg-clip-text"
 						icon="mdi:email-outline"
@@ -564,7 +564,7 @@
 			<h3 class="seats"><!--status--></h3>
 			<p class="txt"><!-- data--></p>
 			<div class="details">
-				<a href="">
+				<a href="mailto:sahilbrahme@gmail.com">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#EA4335] bg-clip-text"
 						icon="mdi:email-outline"
@@ -659,7 +659,7 @@
 						icon="mdi:email-outline"
 					/>
 				</a>
-				<a href="">
+				<a href="https://www.instagram.com/invites/contact/?i=fw7obohzs7p2&utm_content=6ep3evr">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#4c68d7] bg-clip-text"
 						icon="mdi:instagram"
@@ -922,13 +922,13 @@
 			<h3 class="seats"><!--status--></h3>
 			<p class="txt"><!-- data--></p>
 			<div class="details">
-				<a href="">
+				<a href="mailto:pranavpatle111@gmail.com">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#EA4335] bg-clip-text"
 						icon="mdi:email-outline"
 					/>
 				</a>
-				<a href="">
+				<a href="https://instagram.com/03_pranav_">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#4c68d7] bg-clip-text"
 						icon="mdi:instagram"
@@ -1758,19 +1758,19 @@
 			<h3 class="seats"><!--status--></h3>
 			<p class="txt"><!-- data--></p>
 			<div class="details">
-				<a href="">
+				<a href="mailto:sahilmarbate7@gmail.com">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#EA4335] bg-clip-text"
 						icon="mdi:email-outline"
 					/>
 				</a>
-				<a href="">
+				<a href="https://instagram.com/_talkwithsahil_">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#4c68d7] bg-clip-text"
 						icon="mdi:instagram"
 					/>
 				</a>
-				<a href="">
+				<a href="https://www.linkedin.com/in/sahil-marbate-5b9248251">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#006192] bg-clip-text"
 						icon="mdi:linkedin"
@@ -1845,13 +1845,13 @@
 			<h3 class="seats"><!--status--></h3>
 			<p class="txt"><!-- data--></p>
 			<div class="details">
-				<a href="">
+				<a href="mailto:lokeshshelke19@gmail.com">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#EA4335] bg-clip-text"
 						icon="mdi:email-outline"
 					/>
 				</a>
-				<a href="">
+				<a href="https://instagram.com/lokesh_1908_?igshid=ZDdkNTZiNTM=">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#4c68d7] bg-clip-text"
 						icon="mdi:instagram"
