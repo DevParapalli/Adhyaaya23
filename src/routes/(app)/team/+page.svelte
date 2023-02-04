@@ -40,6 +40,11 @@
 		containerHeight = container.scrollHeight;
 		headingHeight = heading.scrollHeight;
 	});
+
+
+	// Image Imports
+	import test_test from '$lib/assets/team/test-test-compressed.png';
+
 </script>
 
 <svelte:window bind:scrollY />
@@ -55,26 +60,26 @@
 <div bind:this={heading} class="flex_title !mt-0 pt-20">Advisors</div>
 <div bind:this={container} class="my-cont_flex">
 	<article class="my-cont">
-		<div class="thumb" />
+		<div style:--img={`url(${test_test})`} class="thumb" />
 		<div class="infos">
 			<h2 class="title">Nikhil Deshpande<span class="flag" /></h2>
 			<h3 class="date">Advisor</h3>
 			<h3 class="seats"><!--status--></h3>
 			<p class="txt"><!-- data--></p>
 			<div class="details">
-				<a href="">
+				<a rel="external noopener norefferer nofollow" target="_blank" href="">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#EA4335] bg-clip-text"
 						icon="mdi:email-outline"
 					/>
 				</a>
-				<a href="">
+				<a rel="external noopener norefferer nofollow" target="_blank" href="">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#4c68d7] bg-clip-text"
 						icon="mdi:instagram"
 					/>
 				</a>
-				<a href="">
+				<a rel="external noopener norefferer nofollow" target="_blank" href="">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#006192] bg-clip-text"
 						icon="mdi:linkedin"
@@ -91,19 +96,19 @@
 			<h3 class="seats"><!--status--></h3>
 			<p class="txt"><!-- data--></p>
 			<div class="details">
-				<a href="">
+				<a rel="external noopener norefferer nofollow" target="_blank" href="">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#EA4335] bg-clip-text"
 						icon="mdi:email-outline"
 					/>
 				</a>
-				<a href="">
+				<a rel="external noopener norefferer nofollow" target="_blank" href="">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#4c68d7] bg-clip-text"
 						icon="mdi:instagram"
 					/>
 				</a>
-				<a href="">
+				<a rel="external noopener norefferer nofollow" target="_blank" href="">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#006192] bg-clip-text"
 						icon="mdi:linkedin"
@@ -120,19 +125,19 @@
 			<h3 class="seats"><!--status--></h3>
 			<p class="txt"><!-- data--></p>
 			<div class="details">
-				<a href="">
+				<a rel="external noopener norefferer nofollow" target="_blank" href="">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#EA4335] bg-clip-text"
 						icon="mdi:email-outline"
 					/>
 				</a>
-				<a href="">
+				<a rel="external noopener norefferer nofollow" target="_blank" href="">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#4c68d7] bg-clip-text"
 						icon="mdi:instagram"
 					/>
 				</a>
-				<a href="">
+				<a rel="external noopener norefferer nofollow" target="_blank" href="">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#006192] bg-clip-text"
 						icon="mdi:linkedin"
@@ -149,19 +154,19 @@
 			<h3 class="seats"><!--status--></h3>
 			<p class="txt"><!-- data--></p>
 			<div class="details">
-				<a href="">
+				<a rel="external noopener norefferer nofollow" target="_blank" href="">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#EA4335] bg-clip-text"
 						icon="mdi:email-outline"
 					/>
 				</a>
-				<a href="">
+				<a rel="external noopener norefferer nofollow" target="_blank" href="">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#4c68d7] bg-clip-text"
 						icon="mdi:instagram"
 					/>
 				</a>
-				<a href="">
+				<a rel="external noopener norefferer nofollow" target="_blank" href="">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#006192] bg-clip-text"
 						icon="mdi:linkedin"
@@ -178,19 +183,19 @@
 			<h3 class="seats"><!--status--></h3>
 			<p class="txt"><!-- data--></p>
 			<div class="details">
-				<a href="">
+				<a rel="external noopener norefferer nofollow" target="_blank" href="">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#EA4335] bg-clip-text"
 						icon="mdi:email-outline"
 					/>
 				</a>
-				<a href="">
+				<a rel="external noopener norefferer nofollow" target="_blank" href="">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#4c68d7] bg-clip-text"
 						icon="mdi:instagram"
 					/>
 				</a>
-				<a href="">
+				<a rel="external noopener norefferer nofollow" target="_blank" href="">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#006192] bg-clip-text"
 						icon="mdi:linkedin"
@@ -211,19 +216,19 @@
 			<h3 class="seats"><!--status--></h3>
 			<p class="txt"><!-- data--></p>
 			<div class="details">
-				<a href="">
+				<a rel="external noopener norefferer nofollow" target="_blank" href="">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#EA4335] bg-clip-text"
 						icon="mdi:email-outline"
 					/>
 				</a>
-				<a href="">
+				<a rel="external noopener norefferer nofollow" target="_blank" href="">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#4c68d7] bg-clip-text"
 						icon="mdi:instagram"
 					/>
 				</a>
-				<a href="">
+				<a rel="external noopener norefferer nofollow" target="_blank" href="">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#006192] bg-clip-text"
 						icon="mdi:linkedin"
@@ -240,19 +245,19 @@
 			<h3 class="seats"><!--status--></h3>
 			<p class="txt"><!-- data--></p>
 			<div class="details">
-				<a href="mailto:swaraliprayagi1908@gmail.com">
+				<a rel="external noopener norefferer nofollow" target="_blank" href="mailto:swaraliprayagi1908@gmail.com">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#EA4335] bg-clip-text"
 						icon="mdi:email-outline"
 					/>
 				</a>
-				<a href="https://instagram.com/swaraliprayagi">
+				<a rel="external noopener norefferer nofollow" target="_blank" href="https://instagram.com/swaraliprayagi">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#4c68d7] bg-clip-text"
 						icon="mdi:instagram"
 					/>
 				</a>
-				<a href="https://www.linkedin.com/in/swarali-prayagi-65b400229">
+				<a rel="external noopener norefferer nofollow" target="_blank" href="https://www.linkedin.com/in/swarali-prayagi-65b400229">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#006192] bg-clip-text"
 						icon="mdi:linkedin"
@@ -269,19 +274,19 @@
 			<h3 class="seats"><!--status--></h3>
 			<p class="txt"><!-- data--></p>
 			<div class="details">
-				<a href="">
+				<a rel="external noopener norefferer nofollow" target="_blank" href="">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#EA4335] bg-clip-text"
 						icon="mdi:email-outline"
 					/>
 				</a>
-				<a href="">
+				<a rel="external noopener norefferer nofollow" target="_blank" href="">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#4c68d7] bg-clip-text"
 						icon="mdi:instagram"
 					/>
 				</a>
-				<a href="">
+				<a rel="external noopener norefferer nofollow" target="_blank" href="">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#006192] bg-clip-text"
 						icon="mdi:linkedin"
@@ -298,19 +303,19 @@
 			<h3 class="seats"><!--status--></h3>
 			<p class="txt"><!-- data--></p>
 			<div class="details">
-				<a href="">
+				<a rel="external noopener norefferer nofollow" target="_blank" href="">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#EA4335] bg-clip-text"
 						icon="mdi:email-outline"
 					/>
 				</a>
-				<a href="">
+				<a rel="external noopener norefferer nofollow" target="_blank" href="">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#4c68d7] bg-clip-text"
 						icon="mdi:instagram"
 					/>
 				</a>
-				<a href="">
+				<a rel="external noopener norefferer nofollow" target="_blank" href="">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#006192] bg-clip-text"
 						icon="mdi:linkedin"
@@ -327,19 +332,19 @@
 			<h3 class="seats"><!--status--></h3>
 			<p class="txt"><!-- data--></p>
 			<div class="details">
-				<a href="mailto:mcparadkar2003@gmail.com">
+				<a rel="external noopener norefferer nofollow" target="_blank" href="mailto:mcparadkar2003@gmail.com">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#EA4335] bg-clip-text"
 						icon="mdi:email-outline"
 					/>
 				</a>
-				<a href="https://instagram.com/thelostmanintheworld">
+				<a rel="external noopener norefferer nofollow" target="_blank" href="https://instagram.com/thelostmanintheworld">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#4c68d7] bg-clip-text"
 						icon="mdi:instagram"
 					/>
 				</a>
-				<a href="https://www.linkedin.com/in/malhar-paradkar-97a88b230">
+				<a rel="external noopener norefferer nofollow" target="_blank" href="https://www.linkedin.com/in/malhar-paradkar-97a88b230">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#006192] bg-clip-text"
 						icon="mdi:linkedin"
@@ -360,19 +365,19 @@
 			<h3 class="seats"><!--status--></h3>
 			<p class="txt"><!-- data--></p>
 			<div class="details">
-				<a href="mailto:parapallidev@gmail.com">
+				<a rel="external noopener norefferer nofollow" target="_blank" href="mailto:parapallidev@gmail.com">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#EA4335] bg-clip-text"
 						icon="mdi:email-outline"
 					/>
 				</a>
-				<a href="https://instagram.com/dev_parapalli">
+				<a rel="external noopener norefferer nofollow" target="_blank" href="https://instagram.com/dev_parapalli">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#4c68d7] bg-clip-text"
 						icon="mdi:instagram"
 					/>
 				</a>
-				<a href="https://www.linkedin.com/in/devparapalli/">
+				<a rel="external noopener norefferer nofollow" target="_blank" href="https://www.linkedin.com/in/devparapalli/">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#006192] bg-clip-text"
 						icon="mdi:linkedin"
@@ -389,19 +394,19 @@
 			<h3 class="seats"><!--status--></h3>
 			<p class="txt"><!-- data--></p>
 			<div class="details">
-				<a href="mailto:dveshaglawe27@gmail.com">
+				<a rel="external noopener norefferer nofollow" target="_blank" href="mailto:dveshaglawe27@gmail.com">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#EA4335] bg-clip-text"
 						icon="mdi:email-outline"
 					/>
 				</a>
-				<a href="https://www.instagram.com/dovesh.aglawe.2004">
+				<a rel="external noopener norefferer nofollow" target="_blank" href="https://www.instagram.com/dovesh.aglawe.2004">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#4c68d7] bg-clip-text"
 						icon="mdi:instagram"
 					/>
 				</a>
-				<a href="">
+				<a rel="external noopener norefferer nofollow" target="_blank" href="">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#006192] bg-clip-text"
 						icon="mdi:linkedin"
@@ -418,19 +423,19 @@
 			<h3 class="seats"><!--status--></h3>
 			<p class="txt"><!-- data--></p>
 			<div class="details">
-				<a href="mailto:adityadeshmukh173@gmail.com">
+				<a rel="external noopener norefferer nofollow" target="_blank" href="mailto:adityadeshmukh173@gmail.com">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#EA4335] bg-clip-text"
 						icon="mdi:email-outline"
 					/>
 				</a>
-				<a href="https://instagram.com/_wsup_shahu_">
+				<a rel="external noopener norefferer nofollow" target="_blank" href="https://instagram.com/_wsup_shahu_">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#4c68d7] bg-clip-text"
 						icon="mdi:instagram"
 					/>
 				</a>
-				<a href="https://www.linkedin.com/in/aditya-deshmukh-05204922a">
+				<a rel="external noopener norefferer nofollow" target="_blank" href="https://www.linkedin.com/in/aditya-deshmukh-05204922a">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#006192] bg-clip-text"
 						icon="mdi:linkedin"
@@ -449,19 +454,19 @@
 			<h3 class="seats"><!--status--></h3>
 			<p class="txt"><!-- data--></p>
 			<div class="details">
-				<a href="mailto:shiwangpande1@gmail.com">
+				<a rel="external noopener norefferer nofollow" target="_blank" href="mailto:shiwangpande1@gmail.com">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#EA4335] bg-clip-text"
 						icon="mdi:email-outline"
 					/>
 				</a>
-				<a href="https://www.instagram.com/__shiwang/">
+				<a rel="external noopener norefferer nofollow" target="_blank" href="https://www.instagram.com/__shiwang/">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#4c68d7] bg-clip-text"
 						icon="mdi:instagram"
 					/>
 				</a>
-				<a href="https://www.linkedin.com/in/shiwang-pandey/">
+				<a rel="external noopener norefferer nofollow" target="_blank" href="https://www.linkedin.com/in/shiwang-pandey/">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#006192] bg-clip-text"
 						icon="mdi:linkedin"
@@ -478,19 +483,19 @@
 			<h3 class="seats"><!--status--></h3>
 			<p class="txt"><!-- data--></p>
 			<div class="details">
-				<a href="mailto:tusharmeshram608@gmail.com">
+				<a rel="external noopener norefferer nofollow" target="_blank" href="mailto:tusharmeshram608@gmail.com">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#EA4335] bg-clip-text"
 						icon="mdi:email-outline"
 					/>
 				</a>
-				<a href="">
+				<a rel="external noopener norefferer nofollow" target="_blank" href="">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#4c68d7] bg-clip-text"
 						icon="mdi:instagram"
 					/>
 				</a>
-				<a href="">
+				<a rel="external noopener norefferer nofollow" target="_blank" href="">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#006192] bg-clip-text"
 						icon="mdi:linkedin"
@@ -507,19 +512,19 @@
 			<h3 class="seats"><!--status--></h3>
 			<p class="txt"><!-- data--></p>
 			<div class="details">
-				<a href="">
+				<a rel="external noopener norefferer nofollow" target="_blank" href="">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#EA4335] bg-clip-text"
 						icon="mdi:email-outline"
 					/>
 				</a>
-				<a href="">
+				<a rel="external noopener norefferer nofollow" target="_blank" href="">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#4c68d7] bg-clip-text"
 						icon="mdi:instagram"
 					/>
 				</a>
-				<a href="">
+				<a rel="external noopener norefferer nofollow" target="_blank" href="">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#006192] bg-clip-text"
 						icon="mdi:linkedin"
@@ -536,19 +541,19 @@
 			<h3 class="seats"><!--status--></h3>
 			<p class="txt"><!-- data--></p>
 			<div class="details">
-				<a href="mailto:kaustubhwarade73@gmail.com">
+				<a rel="external noopener norefferer nofollow" target="_blank" href="mailto:kaustubhwarade73@gmail.com">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#EA4335] bg-clip-text"
 						icon="mdi:email-outline"
 					/>
 				</a>
-				<a href="https://instagram.com/kaustubh_in_space">
+				<a rel="external noopener norefferer nofollow" target="_blank" href="https://instagram.com/kaustubh_in_space">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#4c68d7] bg-clip-text"
 						icon="mdi:instagram"
 					/>
 				</a>
-				<a href="https://www.linkedin.com/in/kaustubh-warade-500010229">
+				<a rel="external noopener norefferer nofollow" target="_blank" href="https://www.linkedin.com/in/kaustubh-warade-500010229">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#006192] bg-clip-text"
 						icon="mdi:linkedin"
@@ -568,19 +573,19 @@
 			<h3 class="seats"><!--status--></h3>
 			<p class="txt"><!-- data--></p>
 			<div class="details">
-				<a href="mailto:sahilbrahme@gmail.com">
+				<a rel="external noopener norefferer nofollow" target="_blank" href="mailto:sahilbrahme@gmail.com">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#EA4335] bg-clip-text"
 						icon="mdi:email-outline"
 					/>
 				</a>
-				<a href="">
+				<a rel="external noopener norefferer nofollow" target="_blank" href="">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#4c68d7] bg-clip-text"
 						icon="mdi:instagram"
 					/>
 				</a>
-				<a href="">
+				<a rel="external noopener norefferer nofollow" target="_blank" href="">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#006192] bg-clip-text"
 						icon="mdi:linkedin"
@@ -597,19 +602,19 @@
 			<h3 class="seats"><!--status--></h3>
 			<p class="txt"><!-- data--></p>
 			<div class="details">
-				<a href="">
+				<a rel="external noopener norefferer nofollow" target="_blank" href="">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#EA4335] bg-clip-text"
 						icon="mdi:email-outline"
 					/>
 				</a>
-				<a href="">
+				<a rel="external noopener norefferer nofollow" target="_blank" href="">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#4c68d7] bg-clip-text"
 						icon="mdi:instagram"
 					/>
 				</a>
-				<a href="">
+				<a rel="external noopener norefferer nofollow" target="_blank" href="">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#006192] bg-clip-text"
 						icon="mdi:linkedin"
@@ -626,19 +631,19 @@
 			<h3 class="seats"><!--status--></h3>
 			<p class="txt"><!-- data--></p>
 			<div class="details">
-				<a href="">
+				<a rel="external noopener norefferer nofollow" target="_blank" href="">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#EA4335] bg-clip-text"
 						icon="mdi:email-outline"
 					/>
 				</a>
-				<a href="">
+				<a rel="external noopener norefferer nofollow" target="_blank" href="">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#4c68d7] bg-clip-text"
 						icon="mdi:instagram"
 					/>
 				</a>
-				<a href="">
+				<a rel="external noopener norefferer nofollow" target="_blank" href="">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#006192] bg-clip-text"
 						icon="mdi:linkedin"
@@ -657,19 +662,19 @@
 			<h3 class="seats"><!--status--></h3>
 			<p class="txt"><!-- data--></p>
 			<div class="details">
-				<a href="mailto:yraut2802@gmail.com">
+				<a rel="external noopener norefferer nofollow" target="_blank" href="mailto:yraut2802@gmail.com">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#EA4335] bg-clip-text"
 						icon="mdi:email-outline"
 					/>
 				</a>
-				<a href="https://www.instagram.com/yashraut28">
+				<a rel="external noopener norefferer nofollow" target="_blank" href="https://www.instagram.com/yashraut28">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#4c68d7] bg-clip-text"
 						icon="mdi:instagram"
 					/>
 				</a>
-				<a href="https://www.linkedin.com/in/yash-raut-19bab7247">
+				<a rel="external noopener norefferer nofollow" target="_blank" href="https://www.linkedin.com/in/yash-raut-19bab7247">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#006192] bg-clip-text"
 						icon="mdi:linkedin"
@@ -686,19 +691,19 @@
 			<h3 class="seats"><!--status--></h3>
 			<p class="txt"><!-- data--></p>
 			<div class="details">
-				<a href="mailto:nandinithaware0@gmail.com">
+				<a rel="external noopener norefferer nofollow" target="_blank" href="mailto:nandinithaware0@gmail.com">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#EA4335] bg-clip-text"
 						icon="mdi:email-outline"
 					/>
 				</a>
-				<a href="https://instagram.com/_nandini_thaware_">
+				<a rel="external noopener norefferer nofollow" target="_blank" href="https://instagram.com/_nandini_thaware_">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#4c68d7] bg-clip-text"
 						icon="mdi:instagram"
 					/>
 				</a>
-				<a href="https://www.linkedin.com/in/nandini-thaware-4b5b38230">
+				<a rel="external noopener norefferer nofollow" target="_blank" href="https://www.linkedin.com/in/nandini-thaware-4b5b38230">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#006192] bg-clip-text"
 						icon="mdi:linkedin"
@@ -715,19 +720,19 @@
 			<h3 class="seats"><!--status--></h3>
 			<p class="txt"><!-- data--></p>
 			<div class="details">
-				<a href="">
+				<a rel="external noopener norefferer nofollow" target="_blank" href="">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#EA4335] bg-clip-text"
 						icon="mdi:email-outline"
 					/>
 				</a>
-				<a href="">
+				<a rel="external noopener norefferer nofollow" target="_blank" href="">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#4c68d7] bg-clip-text"
 						icon="mdi:instagram"
 					/>
 				</a>
-				<a href="">
+				<a rel="external noopener norefferer nofollow" target="_blank" href="">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#006192] bg-clip-text"
 						icon="mdi:linkedin"
@@ -744,19 +749,19 @@
 			<h3 class="seats"><!--status--></h3>
 			<p class="txt"><!-- data--></p>
 			<div class="details">
-				<a href="">
+				<a rel="external noopener norefferer nofollow" target="_blank" href="">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#EA4335] bg-clip-text"
 						icon="mdi:email-outline"
 					/>
 				</a>
-				<a href="">
+				<a rel="external noopener norefferer nofollow" target="_blank" href="">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#4c68d7] bg-clip-text"
 						icon="mdi:instagram"
 					/>
 				</a>
-				<a href="">
+				<a rel="external noopener norefferer nofollow" target="_blank" href="">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#006192] bg-clip-text"
 						icon="mdi:linkedin"
@@ -776,19 +781,19 @@
 			<h3 class="seats"><!--status--></h3>
 			<p class="txt"><!-- data--></p>
 			<div class="details">
-				<a href="mailto:gaikwadnihal26@gmail.com">
+				<a rel="external noopener norefferer nofollow" target="_blank" href="mailto:gaikwadnihal26@gmail.com">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#EA4335] bg-clip-text"
 						icon="mdi:email-outline"
 					/>
 				</a>
-				<a href="https://instagram.com/___.nihal.____">
+				<a rel="external noopener norefferer nofollow" target="_blank" href="https://instagram.com/___.nihal.____">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#4c68d7] bg-clip-text"
 						icon="mdi:instagram"
 					/>
 				</a>
-				<a href="https://www.linkedin.com/in/nihal-gaikwad-612902230">
+				<a rel="external noopener norefferer nofollow" target="_blank" href="https://www.linkedin.com/in/nihal-gaikwad-612902230">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#006192] bg-clip-text"
 						icon="mdi:linkedin"
@@ -805,19 +810,19 @@
 			<h3 class="seats"><!--status--></h3>
 			<p class="txt"><!-- data--></p>
 			<div class="details">
-				<a href="mailto:atharvamande@gmail.com">
+				<a rel="external noopener norefferer nofollow" target="_blank" href="mailto:atharvamande@gmail.com">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#EA4335] bg-clip-text"
 						icon="mdi:email-outline"
 					/>
 				</a>
-				<a href="https://instagram.com/atharva_mande">
+				<a rel="external noopener norefferer nofollow" target="_blank" href="https://instagram.com/atharva_mande">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#4c68d7] bg-clip-text"
 						icon="mdi:instagram"
 					/>
 				</a>
-				<a href="https://www.linkedin.com/in/atharva-mande-1a2693255">
+				<a rel="external noopener norefferer nofollow" target="_blank" href="https://www.linkedin.com/in/atharva-mande-1a2693255">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#006192] bg-clip-text"
 						icon="mdi:linkedin"
@@ -834,19 +839,19 @@
 			<h3 class="seats"><!--status--></h3>
 			<p class="txt"><!-- data--></p>
 			<div class="details">
-				<a href="">
+				<a rel="external noopener norefferer nofollow" target="_blank" href="">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#EA4335] bg-clip-text"
 						icon="mdi:email-outline"
 					/>
 				</a>
-				<a href="">
+				<a rel="external noopener norefferer nofollow" target="_blank" href="">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#4c68d7] bg-clip-text"
 						icon="mdi:instagram"
 					/>
 				</a>
-				<a href="">
+				<a rel="external noopener norefferer nofollow" target="_blank" href="">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#006192] bg-clip-text"
 						icon="mdi:linkedin"
@@ -865,19 +870,19 @@
 			<h3 class="seats"><!--status--></h3>
 			<p class="txt"><!-- data--></p>
 			<div class="details">
-				<a href="">
+				<a rel="external noopener norefferer nofollow" target="_blank" href="">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#EA4335] bg-clip-text"
 						icon="mdi:email-outline"
 					/>
 				</a>
-				<a href="">
+				<a rel="external noopener norefferer nofollow" target="_blank" href="">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#4c68d7] bg-clip-text"
 						icon="mdi:instagram"
 					/>
 				</a>
-				<a href="">
+				<a rel="external noopener norefferer nofollow" target="_blank" href="">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#006192] bg-clip-text"
 						icon="mdi:linkedin"
@@ -894,19 +899,19 @@
 			<h3 class="seats"><!--status--></h3>
 			<p class="txt"><!-- data--></p>
 			<div class="details">
-				<a href="mailto:ymkhandelwal8@gmail.com">
+				<a rel="external noopener norefferer nofollow" target="_blank" href="mailto:ymkhandelwal8@gmail.com">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#EA4335] bg-clip-text"
 						icon="mdi:email-outline"
 					/>
 				</a>
-				<a href="https://instagram.com/yash_khandelwal08">
+				<a rel="external noopener norefferer nofollow" target="_blank" href="https://instagram.com/yash_khandelwal08">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#4c68d7] bg-clip-text"
 						icon="mdi:instagram"
 					/>
 				</a>
-				<a href="https://www.linkedin.com/in/yash-khandelwal-470907252">
+				<a rel="external noopener norefferer nofollow" target="_blank" href="https://www.linkedin.com/in/yash-khandelwal-470907252">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#006192] bg-clip-text"
 						icon="mdi:linkedin"
@@ -926,19 +931,19 @@
 			<h3 class="seats"><!--status--></h3>
 			<p class="txt"><!-- data--></p>
 			<div class="details">
-				<a href="mailto:pranavpatle111@gmail.com">
+				<a rel="external noopener norefferer nofollow" target="_blank" href="mailto:pranavpatle111@gmail.com">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#EA4335] bg-clip-text"
 						icon="mdi:email-outline"
 					/>
 				</a>
-				<a href="https://instagram.com/03_pranav_">
+				<a rel="external noopener norefferer nofollow" target="_blank" href="https://instagram.com/03_pranav_">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#4c68d7] bg-clip-text"
 						icon="mdi:instagram"
 					/>
 				</a>
-				<a href="">
+				<a rel="external noopener norefferer nofollow" target="_blank" href="">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#006192] bg-clip-text"
 						icon="mdi:linkedin"
@@ -955,19 +960,19 @@
 			<h3 class="seats"><!--status--></h3>
 			<p class="txt"><!-- data--></p>
 			<div class="details">
-				<a href="">
+				<a rel="external noopener norefferer nofollow" target="_blank" href="">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#EA4335] bg-clip-text"
 						icon="mdi:email-outline"
 					/>
 				</a>
-				<a href="">
+				<a rel="external noopener norefferer nofollow" target="_blank" href="">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#4c68d7] bg-clip-text"
 						icon="mdi:instagram"
 					/>
 				</a>
-				<a href="">
+				<a rel="external noopener norefferer nofollow" target="_blank" href="">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#006192] bg-clip-text"
 						icon="mdi:linkedin"
@@ -984,19 +989,19 @@
 			<h3 class="seats"><!--status--></h3>
 			<p class="txt"><!-- data--></p>
 			<div class="details">
-				<a href="">
+				<a rel="external noopener norefferer nofollow" target="_blank" href="">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#EA4335] bg-clip-text"
 						icon="mdi:email-outline"
 					/>
 				</a>
-				<a href="">
+				<a rel="external noopener norefferer nofollow" target="_blank" href="">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#4c68d7] bg-clip-text"
 						icon="mdi:instagram"
 					/>
 				</a>
-				<a href="">
+				<a rel="external noopener norefferer nofollow" target="_blank" href="">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#006192] bg-clip-text"
 						icon="mdi:linkedin"
@@ -1015,19 +1020,19 @@
 			<h3 class="seats"><!--status--></h3>
 			<p class="txt"><!-- data--></p>
 			<div class="details">
-				<a href="">
+				<a rel="external noopener norefferer nofollow" target="_blank" href="">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#EA4335] bg-clip-text"
 						icon="mdi:email-outline"
 					/>
 				</a>
-				<a href="">
+				<a rel="external noopener norefferer nofollow" target="_blank" href="">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#4c68d7] bg-clip-text"
 						icon="mdi:instagram"
 					/>
 				</a>
-				<a href="">
+				<a rel="external noopener norefferer nofollow" target="_blank" href="">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#006192] bg-clip-text"
 						icon="mdi:linkedin"
@@ -1044,19 +1049,19 @@
 			<h3 class="seats"><!--status--></h3>
 			<p class="txt"><!-- data--></p>
 			<div class="details">
-				<a href="">
+				<a rel="external noopener norefferer nofollow" target="_blank" href="">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#EA4335] bg-clip-text"
 						icon="mdi:email-outline"
 					/>
 				</a>
-				<a href="">
+				<a rel="external noopener norefferer nofollow" target="_blank" href="">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#4c68d7] bg-clip-text"
 						icon="mdi:instagram"
 					/>
 				</a>
-				<a href="">
+				<a rel="external noopener norefferer nofollow" target="_blank" href="">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#006192] bg-clip-text"
 						icon="mdi:linkedin"
@@ -1073,19 +1078,19 @@
 			<h3 class="seats"><!--status--></h3>
 			<p class="txt"><!-- data--></p>
 			<div class="details">
-				<a href="">
+				<a rel="external noopener norefferer nofollow" target="_blank" href="">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#EA4335] bg-clip-text"
 						icon="mdi:email-outline"
 					/>
 				</a>
-				<a href="">
+				<a rel="external noopener norefferer nofollow" target="_blank" href="">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#4c68d7] bg-clip-text"
 						icon="mdi:instagram"
 					/>
 				</a>
-				<a href="">
+				<a rel="external noopener norefferer nofollow" target="_blank" href="">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#006192] bg-clip-text"
 						icon="mdi:linkedin"
@@ -1105,19 +1110,19 @@
 			<h3 class="seats"><!--status--></h3>
 			<p class="txt"><!-- data--></p>
 			<div class="details">
-				<a href="">
+				<a rel="external noopener norefferer nofollow" target="_blank" href="">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#EA4335] bg-clip-text"
 						icon="mdi:email-outline"
 					/>
 				</a>
-				<a href="">
+				<a rel="external noopener norefferer nofollow" target="_blank" href="">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#4c68d7] bg-clip-text"
 						icon="mdi:instagram"
 					/>
 				</a>
-				<a href="">
+				<a rel="external noopener norefferer nofollow" target="_blank" href="">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#006192] bg-clip-text"
 						icon="mdi:linkedin"
@@ -1134,19 +1139,19 @@
 			<h3 class="seats"><!--status--></h3>
 			<p class="txt"><!-- data--></p>
 			<div class="details">
-				<a href="mailto:burandenb9403@gmail.com">
+				<a rel="external noopener norefferer nofollow" target="_blank" href="mailto:burandenb9403@gmail.com">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#EA4335] bg-clip-text"
 						icon="mdi:email-outline"
 					/>
 				</a>
-				<a href="https://instagram.com/_https.n1nad">
+				<a rel="external noopener norefferer nofollow" target="_blank" href="https://instagram.com/_https.n1nad">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#4c68d7] bg-clip-text"
 						icon="mdi:instagram"
 					/>
 				</a>
-				<a href="https://www.linkedin.com/in/ninad-burande-137354230">
+				<a rel="external noopener norefferer nofollow" target="_blank" href="https://www.linkedin.com/in/ninad-burande-137354230">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#006192] bg-clip-text"
 						icon="mdi:linkedin"
@@ -1163,19 +1168,19 @@
 			<h3 class="seats"><!--status--></h3>
 			<p class="txt"><!-- data--></p>
 			<div class="details">
-				<a href="">
+				<a rel="external noopener norefferer nofollow" target="_blank" href="">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#EA4335] bg-clip-text"
 						icon="mdi:email-outline"
 					/>
 				</a>
-				<a href="">
+				<a rel="external noopener norefferer nofollow" target="_blank" href="">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#4c68d7] bg-clip-text"
 						icon="mdi:instagram"
 					/>
 				</a>
-				<a href="">
+				<a rel="external noopener norefferer nofollow" target="_blank" href="">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#006192] bg-clip-text"
 						icon="mdi:linkedin"
@@ -1194,19 +1199,19 @@
 			<h3 class="seats"><!--status--></h3>
 			<p class="txt"><!-- data--></p>
 			<div class="details">
-				<a href="mailto:vidhanrajput2@gmail.com">
+				<a rel="external noopener norefferer nofollow" target="_blank" href="mailto:vidhanrajput2@gmail.com">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#EA4335] bg-clip-text"
 						icon="mdi:email-outline"
 					/>
 				</a>
-				<a href="https://instagram.com/vidhanrajput2">
+				<a rel="external noopener norefferer nofollow" target="_blank" href="https://instagram.com/vidhanrajput2">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#4c68d7] bg-clip-text"
 						icon="mdi:instagram"
 					/>
 				</a>
-				<a href="https://www.linkedin.com/in/vidhan-singh-rajput-b4169a229">
+				<a rel="external noopener norefferer nofollow" target="_blank" href="https://www.linkedin.com/in/vidhan-singh-rajput-b4169a229">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#006192] bg-clip-text"
 						icon="mdi:linkedin"
@@ -1223,19 +1228,19 @@
 			<h3 class="seats"><!--status--></h3>
 			<p class="txt"><!-- data--></p>
 			<div class="details">
-				<a href="mailto:rushikeshpotpite@gmail.com">
+				<a rel="external noopener norefferer nofollow" target="_blank" href="mailto:rushikeshpotpite@gmail.com">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#EA4335] bg-clip-text"
 						icon="mdi:email-outline"
 					/>
 				</a>
-				<a href="https://instagram.com/rushikesh_potpite03">
+				<a rel="external noopener norefferer nofollow" target="_blank" href="https://instagram.com/rushikesh_potpite03">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#4c68d7] bg-clip-text"
 						icon="mdi:instagram"
 					/>
 				</a>
-				<a href="https://www.linkedin.com/in/rushikesh-potpite-910a42229">
+				<a rel="external noopener norefferer nofollow" target="_blank" href="https://www.linkedin.com/in/rushikesh-potpite-910a42229">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#006192] bg-clip-text"
 						icon="mdi:linkedin"
@@ -1252,19 +1257,19 @@
 			<h3 class="seats"><!--status--></h3>
 			<p class="txt"><!-- data--></p>
 			<div class="details">
-				<a href="">
+				<a rel="external noopener norefferer nofollow" target="_blank" href="">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#EA4335] bg-clip-text"
 						icon="mdi:email-outline"
 					/>
 				</a>
-				<a href="">
+				<a rel="external noopener norefferer nofollow" target="_blank" href="">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#4c68d7] bg-clip-text"
 						icon="mdi:instagram"
 					/>
 				</a>
-				<a href="">
+				<a rel="external noopener norefferer nofollow" target="_blank" href="">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#006192] bg-clip-text"
 						icon="mdi:linkedin"
@@ -1281,19 +1286,19 @@
 			<h3 class="seats"><!--status--></h3>
 			<p class="txt"><!-- data--></p>
 			<div class="details">
-				<a href="">
+				<a rel="external noopener norefferer nofollow" target="_blank" href="">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#EA4335] bg-clip-text"
 						icon="mdi:email-outline"
 					/>
 				</a>
-				<a href="">
+				<a rel="external noopener norefferer nofollow" target="_blank" href="">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#4c68d7] bg-clip-text"
 						icon="mdi:instagram"
 					/>
 				</a>
-				<a href="">
+				<a rel="external noopener norefferer nofollow" target="_blank" href="">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#006192] bg-clip-text"
 						icon="mdi:linkedin"
@@ -1313,19 +1318,19 @@
 			<h3 class="seats"><!--status--></h3>
 			<p class="txt"><!-- data--></p>
 			<div class="details">
-				<a href="">
+				<a rel="external noopener norefferer nofollow" target="_blank" href="">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#EA4335] bg-clip-text"
 						icon="mdi:email-outline"
 					/>
 				</a>
-				<a href="">
+				<a rel="external noopener norefferer nofollow" target="_blank" href="">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#4c68d7] bg-clip-text"
 						icon="mdi:instagram"
 					/>
 				</a>
-				<a href="">
+				<a rel="external noopener norefferer nofollow" target="_blank" href="">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#006192] bg-clip-text"
 						icon="mdi:linkedin"
@@ -1342,19 +1347,19 @@
 			<h3 class="seats"><!--status--></h3>
 			<p class="txt"><!-- data--></p>
 			<div class="details">
-				<a href="">
+				<a rel="external noopener norefferer nofollow" target="_blank" href="">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#EA4335] bg-clip-text"
 						icon="mdi:email-outline"
 					/>
 				</a>
-				<a href="">
+				<a rel="external noopener norefferer nofollow" target="_blank" href="">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#4c68d7] bg-clip-text"
 						icon="mdi:instagram"
 					/>
 				</a>
-				<a href="">
+				<a rel="external noopener norefferer nofollow" target="_blank" href="">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#006192] bg-clip-text"
 						icon="mdi:linkedin"
@@ -1373,19 +1378,19 @@
 			<h3 class="seats"><!--status--></h3>
 			<p class="txt"><!-- data--></p>
 			<div class="details">
-				<a href="">
+				<a rel="external noopener norefferer nofollow" target="_blank" href="">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#EA4335] bg-clip-text"
 						icon="mdi:email-outline"
 					/>
 				</a>
-				<a href="">
+				<a rel="external noopener norefferer nofollow" target="_blank" href="">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#4c68d7] bg-clip-text"
 						icon="mdi:instagram"
 					/>
 				</a>
-				<a href="">
+				<a rel="external noopener norefferer nofollow" target="_blank" href="">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#006192] bg-clip-text"
 						icon="mdi:linkedin"
@@ -1402,19 +1407,19 @@
 			<h3 class="seats"><!--status--></h3>
 			<p class="txt"><!-- data--></p>
 			<div class="details">
-				<a href="mailto:nandinithaware0@gmail.com">
+				<a rel="external noopener norefferer nofollow" target="_blank" href="mailto:nandinithaware0@gmail.com">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#EA4335] bg-clip-text"
 						icon="mdi:email-outline"
 					/>
 				</a>
-				<a href="https://instagram.com/_nandini_thaware_">
+				<a rel="external noopener norefferer nofollow" target="_blank" href="https://instagram.com/_nandini_thaware_">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#4c68d7] bg-clip-text"
 						icon="mdi:instagram"
 					/>
 				</a>
-				<a href="https://www.linkedin.com/in/nandini-thaware-4b5b38230">
+				<a rel="external noopener norefferer nofollow" target="_blank" href="https://www.linkedin.com/in/nandini-thaware-4b5b38230">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#006192] bg-clip-text"
 						icon="mdi:linkedin"
@@ -1435,19 +1440,19 @@
 			<h3 class="seats"><!--status--></h3>
 			<p class="txt"><!-- data--></p>
 			<div class="details">
-				<a href="">
+				<a rel="external noopener norefferer nofollow" target="_blank" href="">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#EA4335] bg-clip-text"
 						icon="mdi:email-outline"
 					/>
 				</a>
-				<a href="">
+				<a rel="external noopener norefferer nofollow" target="_blank" href="">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#4c68d7] bg-clip-text"
 						icon="mdi:instagram"
 					/>
 				</a>
-				<a href="">
+				<a rel="external noopener norefferer nofollow" target="_blank" href="">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#006192] bg-clip-text"
 						icon="mdi:linkedin"
@@ -1464,19 +1469,19 @@
 			<h3 class="seats"><!--status--></h3>
 			<p class="txt"><!-- data--></p>
 			<div class="details">
-				<a href="">
+				<a rel="external noopener norefferer nofollow" target="_blank" href="">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#EA4335] bg-clip-text"
 						icon="mdi:email-outline"
 					/>
 				</a>
-				<a href="">
+				<a rel="external noopener norefferer nofollow" target="_blank" href="">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#4c68d7] bg-clip-text"
 						icon="mdi:instagram"
 					/>
 				</a>
-				<a href="">
+				<a rel="external noopener norefferer nofollow" target="_blank" href="">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#006192] bg-clip-text"
 						icon="mdi:linkedin"
@@ -1493,19 +1498,19 @@
 			<h3 class="seats"><!--status--></h3>
 			<p class="txt"><!-- data--></p>
 			<div class="details">
-				<a href="mailto:ketakimahalle14@gmail.com">
+				<a rel="external noopener norefferer nofollow" target="_blank" href="mailto:ketakimahalle14@gmail.com">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#EA4335] bg-clip-text"
 						icon="mdi:email-outline"
 					/>
 				</a>
-				<a href="https://instagram.com/_.ketaki._14">
+				<a rel="external noopener norefferer nofollow" target="_blank" href="https://instagram.com/_.ketaki._14">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#4c68d7] bg-clip-text"
 						icon="mdi:instagram"
 					/>
 				</a>
-				<a href="https://www.linkedin.com/in/ketaki-mahalle-116979257">
+				<a rel="external noopener norefferer nofollow" target="_blank" href="https://www.linkedin.com/in/ketaki-mahalle-116979257">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#006192] bg-clip-text"
 						icon="mdi:linkedin"
@@ -1522,19 +1527,19 @@
 			<h3 class="seats"><!--status--></h3>
 			<p class="txt"><!-- data--></p>
 			<div class="details">
-				<a href="mailto:siddhibarde26@gmail.com">
+				<a rel="external noopener norefferer nofollow" target="_blank" href="mailto:siddhibarde26@gmail.com">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#EA4335] bg-clip-text"
 						icon="mdi:email-outline"
 					/>
 				</a>
-				<a href="https://instagram.com/siddhibarde_26">
+				<a rel="external noopener norefferer nofollow" target="_blank" href="https://instagram.com/siddhibarde_26">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#4c68d7] bg-clip-text"
 						icon="mdi:instagram"
 					/>
 				</a>
-				<a href="https://www.linkedin.com/in/siddhi-barde-732348248">
+				<a rel="external noopener norefferer nofollow" target="_blank" href="https://www.linkedin.com/in/siddhi-barde-732348248">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#006192] bg-clip-text"
 						icon="mdi:linkedin"
@@ -1553,19 +1558,19 @@
 			<h3 class="seats"><!--status--></h3>
 			<p class="txt"><!-- data--></p>
 			<div class="details">
-				<a href="mailto:pratikbagdi21@gmail.com">
+				<a rel="external noopener norefferer nofollow" target="_blank" href="mailto:pratikbagdi21@gmail.com">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#EA4335] bg-clip-text"
 						icon="mdi:email-outline"
 					/>
 				</a>
-				<a href="https://www.instagram.com/impratikbagdi/">
+				<a rel="external noopener norefferer nofollow" target="_blank" href="https://www.instagram.com/impratikbagdi/">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#4c68d7] bg-clip-text"
 						icon="mdi:instagram"
 					/>
 				</a>
-				<a href="https://www.linkedin.com/in/pratik-bagdi-b9915a229">
+				<a rel="external noopener norefferer nofollow" target="_blank" href="https://www.linkedin.com/in/pratik-bagdi-b9915a229">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#006192] bg-clip-text"
 						icon="mdi:linkedin"
@@ -1582,19 +1587,19 @@
 			<h3 class="seats"><!--status--></h3>
 			<p class="txt"><!-- data--></p>
 			<div class="details">
-				<a href="">
+				<a rel="external noopener norefferer nofollow" target="_blank" href="">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#EA4335] bg-clip-text"
 						icon="mdi:email-outline"
 					/>
 				</a>
-				<a href="">
+				<a rel="external noopener norefferer nofollow" target="_blank" href="">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#4c68d7] bg-clip-text"
 						icon="mdi:instagram"
 					/>
 				</a>
-				<a href="">
+				<a rel="external noopener norefferer nofollow" target="_blank" href="">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#006192] bg-clip-text"
 						icon="mdi:linkedin"
@@ -1611,19 +1616,19 @@
 			<h3 class="seats"><!--status--></h3>
 			<p class="txt"><!-- data--></p>
 			<div class="details">
-				<a href="">
+				<a rel="external noopener norefferer nofollow" target="_blank" href="">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#EA4335] bg-clip-text"
 						icon="mdi:email-outline"
 					/>
 				</a>
-				<a href="">
+				<a rel="external noopener norefferer nofollow" target="_blank" href="">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#4c68d7] bg-clip-text"
 						icon="mdi:instagram"
 					/>
 				</a>
-				<a href="">
+				<a rel="external noopener norefferer nofollow" target="_blank" href="">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#006192] bg-clip-text"
 						icon="mdi:linkedin"
@@ -1644,19 +1649,19 @@
 			<h3 class="seats"><!--status--></h3>
 			<p class="txt"><!-- data--></p>
 			<div class="details">
-				<a href="">
+				<a rel="external noopener norefferer nofollow" target="_blank" href="">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#EA4335] bg-clip-text"
 						icon="mdi:email-outline"
 					/>
 				</a>
-				<a href="">
+				<a rel="external noopener norefferer nofollow" target="_blank" href="">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#4c68d7] bg-clip-text"
 						icon="mdi:instagram"
 					/>
 				</a>
-				<a href="">
+				<a rel="external noopener norefferer nofollow" target="_blank" href="">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#006192] bg-clip-text"
 						icon="mdi:linkedin"
@@ -1673,19 +1678,19 @@
 			<h3 class="seats"><!--status--></h3>
 			<p class="txt"><!-- data--></p>
 			<div class="details">
-				<a href="mailto:chetnasalve00@gmail.com">
+				<a rel="external noopener norefferer nofollow" target="_blank" href="mailto:chetnasalve00@gmail.com">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#EA4335] bg-clip-text"
 						icon="mdi:email-outline"
 					/>
 				</a>
-				<a href="https://instagram.com/chetna__salve">
+				<a rel="external noopener norefferer nofollow" target="_blank" href="https://instagram.com/chetna__salve">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#4c68d7] bg-clip-text"
 						icon="mdi:instagram"
 					/>
 				</a>
-				<a href="https://www.linkedin.com/in/chetna-salve-2951a8249">
+				<a rel="external noopener norefferer nofollow" target="_blank" href="https://www.linkedin.com/in/chetna-salve-2951a8249">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#006192] bg-clip-text"
 						icon="mdi:linkedin"
@@ -1702,19 +1707,19 @@
 			<h3 class="seats"><!--status--></h3>
 			<p class="txt"><!-- data--></p>
 			<div class="details">
-				<a href="">
+				<a rel="external noopener norefferer nofollow" target="_blank" href="">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#EA4335] bg-clip-text"
 						icon="mdi:email-outline"
 					/>
 				</a>
-				<a href="">
+				<a rel="external noopener norefferer nofollow" target="_blank" href="">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#4c68d7] bg-clip-text"
 						icon="mdi:instagram"
 					/>
 				</a>
-				<a href="">
+				<a rel="external noopener norefferer nofollow" target="_blank" href="">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#006192] bg-clip-text"
 						icon="mdi:linkedin"
@@ -1731,19 +1736,19 @@
 			<h3 class="seats"><!--status--></h3>
 			<p class="txt"><!-- data--></p>
 			<div class="details">
-				<a href="">
+				<a rel="external noopener norefferer nofollow" target="_blank" href="">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#EA4335] bg-clip-text"
 						icon="mdi:email-outline"
 					/>
 				</a>
-				<a href="">
+				<a rel="external noopener norefferer nofollow" target="_blank" href="">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#4c68d7] bg-clip-text"
 						icon="mdi:instagram"
 					/>
 				</a>
-				<a href="">
+				<a rel="external noopener norefferer nofollow" target="_blank" href="">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#006192] bg-clip-text"
 						icon="mdi:linkedin"
@@ -1762,19 +1767,19 @@
 			<h3 class="seats"><!--status--></h3>
 			<p class="txt"><!-- data--></p>
 			<div class="details">
-				<a href="mailto:sahilmarbate7@gmail.com">
+				<a rel="external noopener norefferer nofollow" target="_blank" href="mailto:sahilmarbate7@gmail.com">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#EA4335] bg-clip-text"
 						icon="mdi:email-outline"
 					/>
 				</a>
-				<a href="https://instagram.com/_talkwithsahil_">
+				<a rel="external noopener norefferer nofollow" target="_blank" href="https://instagram.com/_talkwithsahil_">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#4c68d7] bg-clip-text"
 						icon="mdi:instagram"
 					/>
 				</a>
-				<a href="https://www.linkedin.com/in/sahil-marbate-5b9248251">
+				<a rel="external noopener norefferer nofollow" target="_blank" href="https://www.linkedin.com/in/sahil-marbate-5b9248251">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#006192] bg-clip-text"
 						icon="mdi:linkedin"
@@ -1791,19 +1796,19 @@
 			<h3 class="seats"><!--status--></h3>
 			<p class="txt"><!-- data--></p>
 			<div class="details">
-				<a href="">
+				<a rel="external noopener norefferer nofollow" target="_blank" href="">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#EA4335] bg-clip-text"
 						icon="mdi:email-outline"
 					/>
 				</a>
-				<a href="">
+				<a rel="external noopener norefferer nofollow" target="_blank" href="">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#4c68d7] bg-clip-text"
 						icon="mdi:instagram"
 					/>
 				</a>
-				<a href="">
+				<a rel="external noopener norefferer nofollow" target="_blank" href="">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#006192] bg-clip-text"
 						icon="mdi:linkedin"
@@ -1820,19 +1825,19 @@
 			<h3 class="seats"><!--status--></h3>
 			<p class="txt"><!-- data--></p>
 			<div class="details">
-				<a href="">
+				<a rel="external noopener norefferer nofollow" target="_blank" href="">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#EA4335] bg-clip-text"
 						icon="mdi:email-outline"
 					/>
 				</a>
-				<a href="">
+				<a rel="external noopener norefferer nofollow" target="_blank" href="">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#4c68d7] bg-clip-text"
 						icon="mdi:instagram"
 					/>
 				</a>
-				<a href="">
+				<a rel="external noopener norefferer nofollow" target="_blank" href="">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#006192] bg-clip-text"
 						icon="mdi:linkedin"
@@ -1849,19 +1854,19 @@
 			<h3 class="seats"><!--status--></h3>
 			<p class="txt"><!-- data--></p>
 			<div class="details">
-				<a href="mailto:lokeshshelke19@gmail.com">
+				<a rel="external noopener norefferer nofollow" target="_blank" href="mailto:lokeshshelke19@gmail.com">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#EA4335] bg-clip-text"
 						icon="mdi:email-outline"
 					/>
 				</a>
-				<a href="https://instagram.com/lokesh_1908_?igshid=ZDdkNTZiNTM=">
+				<a rel="external noopener norefferer nofollow" target="_blank" href="https://instagram.com/lokesh_1908_?igshid=ZDdkNTZiNTM=">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#4c68d7] bg-clip-text"
 						icon="mdi:instagram"
 					/>
 				</a>
-				<a href="">
+				<a rel="external noopener norefferer nofollow" target="_blank" href="">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#006192] bg-clip-text"
 						icon="mdi:linkedin"
@@ -1928,20 +1933,20 @@
 
 	
 
-	/* a[href] {
+	/* a[rel="external noopener norefferer nofollow" target="_blank" href] {
 		position: relative;
 	}
-	a[href],
-	a[href]:link,
-	a[href]:visited,
-	a[href]:active {
+	a[rel="external noopener norefferer nofollow" target="_blank" href],
+	a[rel="external noopener norefferer nofollow" target="_blank" href]:link,
+	a[rel="external noopener norefferer nofollow" target="_blank" href]:visited,
+	a[rel="external noopener norefferer nofollow" target="_blank" href]:active {
 		text-decoration: none;
 		color: #d8276c;
 		text-shadow: 2px 2px 2px #070c11;
 		padding-bottom: 3px;
 		font-weight: bold;
 	}
-	a[href]::after {
+	a[rel="external noopener norefferer nofollow" target="_blank" href]::after {
 		content: '';
 		position: absolute;
 		left: 0;
@@ -1952,7 +1957,7 @@
 		height: 1px;
 		transition: 0.35s cubic-bezier(0.17, 0.67, 0.5, 1.03);
 	}
-	a[href]:hover::after {
+	a[rel="external noopener norefferer nofollow" target="_blank" href]:hover::after {
 		width: 100%;
 		box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
 	}
@@ -1984,7 +1989,7 @@
 	article.my-cont .thumb {
 		width: auto;
 		height: 260px;
-		background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/397014/new-york-city.png')
+		background: var(--img, url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/397014/new-york-city.png'))
 			no-repeat center;
 
 		border-radius: 3px;
