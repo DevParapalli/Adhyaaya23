@@ -663,7 +663,7 @@
 						icon="mdi:email-outline"
 					/>
 				</a>
-				<a href="https://www.instagram.com/invites/contact/?i=fw7obohzs7p2&utm_content=6ep3evr">
+				<a href="https://www.instagram.com/yashraut28">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#4c68d7] bg-clip-text"
 						icon="mdi:instagram"
@@ -900,7 +900,7 @@
 						icon="mdi:email-outline"
 					/>
 				</a>
-				<a href="">
+				<a href="https://instagram.com/yash_khandelwal08">
 					<iconify-icon
 						class="text-3xl lg:text-5xl text-[#4c68d7] bg-clip-text"
 						icon="mdi:instagram"
