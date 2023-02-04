@@ -9,7 +9,7 @@
 	let non_technical = data.events.filter((event) => event.category === 'non-technical');
 	let workshops = data.events.filter((event) => event.category === 'workshops');
 	import MainCards from '$lib/components/events/MainCards.svelte';
-  import img from '$lib/assets/backgrounds/8.png';
+//   import img from '$lib/assets/backgrounds/8.png';
 	import EventCard from '$lib/components/events/EventCard.svelte';
 
 
