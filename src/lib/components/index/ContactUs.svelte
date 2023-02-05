@@ -3,7 +3,7 @@
 	import { enhance } from "$app/forms";
     let submit = false;
 </script>
-<div class="md:h-full h-5/6  w-5/6 flex flex-col md:flex-row justify-center items-center m-auto pt-12 2xl:pt-24 ">
+<div class="md:h-full flex flex-col md:flex-row justify-center items-center m-auto pt-12 2xl:pt-24 ">
     <div class="section md:w-1/3 w-5/6 h-5/6 md:bg-black/20 py-3 md:py-0 rounded-lg md:border border-white">
         <form on:submit={() => {
             submit = true;

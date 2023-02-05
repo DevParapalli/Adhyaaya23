@@ -1,15 +1,17 @@
 <script>
-    import {hasScrolled} from '$lib/stores/UI';
+    // import {hasScrolled} from '$lib/stores/UI';
 	import { fade } from 'svelte/transition';
+
+    export let scrollPos = 0;
 </script> 
 <div class="wrapper w-full h-full flex items-center text-left relative">
     <div class="main w-full ml-[8.33333333333333334%] md:ml-[16.66666666667%]">
         <div class="big-text w-5/6 md:w-7/12 text-4xl xl:text-5xl 2xl:text-7xl bg-clip-text text-transparent">Lorem ipsum dolor sit amet, <br /> consectetur adipiscing elit, <br /> sed do eiusmod tempor</div>
     </div>
-    {#if !$hasScrolled}
-    <div out:fade class="scroll-text absolute left-[8.33333333333333334%] md:left-[16.66666666667%] bottom-0 text-sm">
+    {#if scrollPos < 35}
+    <div transition:fade class="scroll-text absolute left-[8.33333333333333334%] md:left-[16.66666666667%] bottom-0 text-sm">
         SCROLL TO EXPLORE
-        <div class="scroll-line mt-6 md:mt-10 h-14 md:h-20  w-1 bg-red-500"></div>
+        <div class="scroll-line mt-6 md:mt-10 h-20  w-1 bg-red-500"></div>
     </div>
     {/if}
 </div>

@@ -52,6 +52,8 @@ export default class Sketch {
 		this.container = container;
 		this.width = this.container.offsetWidth;
 		this.height = this.container.offsetHeight;
+		// this.width = window.innerWidth;
+		// this.height = window.innerHeight;
 		//renderer
 		this.renderer = new THREE.WebGLRenderer({
 			powerPreference: "high-performance",
@@ -191,8 +193,8 @@ export default class Sketch {
 		this.bloomPass.threshold = this.settings.bloomThreshold;
 		this.bloomPass.strength = this.settings.bloomStrength;
 		this.bloomPass.radius = this.settings.bloomRadius;
-		this.dna.rotation.y = this.duration / 50;
-		this.material.uniforms.time.value = this.time;
+		this.dna.rotation.y = this.duration / 100;
+		this.material.uniforms.time.value = this.duration;
 		requestAnimationFrame(this.render);
 		// this.renderer.render(this.scene, this.camera);
 		this.composer.render();
