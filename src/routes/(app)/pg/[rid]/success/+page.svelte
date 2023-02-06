@@ -18,6 +18,9 @@
 	let PNG = '';
 	onMount(async () => {
 		PNG = await getQRCode(`${url_start}/pg/${data.db.id}/success`);
+		setTimeout(() => {
+			alert("Please join the WhatsApp group. The link is given in the instructions.")
+		}, 100)
 	});
 </script>
 

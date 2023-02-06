@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { afterUpdate, onMount } from 'svelte';
-	import bg from '$lib/assets/registration.png';
+	import bg from '$lib/assets/backgrounds/register-1.jpg';
 	import { enhance } from '$app/forms';
 	import autoanimate from '@formkit/auto-animate';
 	import "iconify-icon"
@@ -68,6 +68,13 @@
 			closeAllModals();
 			openModal(EventCustomPropModal, { event_id: data.event.id });
 		};
+		if (form?.errors) {
+			form.errors.forEach((error) => {
+				toastError(`Incorrect Field: ${error}`);
+			});
+			document.getElementById(form.errors[0])?.focus();
+			form.errors = [];
+		}
 	})
 	onMount(() => {
 		setDefaultTeamMember();
@@ -79,6 +86,7 @@
 	<script src="https://checkout.razorpay.com/v1/checkout.js"></script>
 	<title>Registration Form | Adhyaaya'23</title>
 </svelte:head>
+
 
 <div class="bg h-full w-full pt-20" style="--bg:url({bg});--opacity:0.75">
 	<div
@@ -100,10 +108,10 @@
 	<form
 		use:enhance
 		use:autoanimate
-		class="registration-form container max-w-3xl mx-auto px-10 py-10 bg-black/50"
+		class="registration-form container max-w-3xl mx-auto px-10 py-10 bg-black/50 rounded-lg"
 		method="POST"
 	>
-		<div class="details-container w-full flex flex-row mb-4">
+		<div class="details-container w-full flex flex-row pb-4 mb-2 border-b-2 border-b-white/30">
 			<div class="event-details grid grid-cols-2">
 				<span>Event Name:</span>
 				<span>{data.event.name}</span>

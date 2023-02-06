@@ -100,6 +100,7 @@ export const EVENTS: AdhyaayaEvent[] = [
 			}
 		],
 		is_active: false,
+		whatsapp_link: "https://chat.whatsapp.com/HrCxXF4JBjLLoGQmqe89Rr"
 	},
 	{	
 		
@@ -199,7 +200,8 @@ export const EVENTS: AdhyaayaEvent[] = [
 				phone: '1234567890'
 			}
 		],
-		is_active: false
+		is_active: false,
+		whatsapp_link: "https://chat.whatsapp.com/BPDlJw6eH90LKUv0AGcvAg"
 	},
 	{
 		id: 'avishkar-offline',
@@ -220,7 +222,8 @@ export const EVENTS: AdhyaayaEvent[] = [
 				phone: '1234567890'
 			}
 		],
-		is_active: false
+		is_active: false, 
+		whatsapp_link: "https://chat.whatsapp.com/BPDlJw6eH90LKUv0AGcvAg"
 	},
     {
 		id: 'caddiction',
@@ -263,7 +266,8 @@ export const EVENTS: AdhyaayaEvent[] = [
 				phone: '1234567890'
 			}
 		],
-		is_active: true
+		is_active: true,
+		whatsapp_link: "https://chat.whatsapp.com/Bb6BOwMLprsGoz0sggxGaz"
 	},
 	{
 		id: 'codeventure',
@@ -284,7 +288,8 @@ export const EVENTS: AdhyaayaEvent[] = [
 				phone: '1234567890'
 			}
 		],
-		is_active: true
+		is_active: true,
+		whatsapp_link: "https://chat.whatsapp.com/BcAeNWFxTmBJyR8FwaQNIW"
 	},
 	{
 		id: 'bridge-o-craft',
@@ -347,9 +352,9 @@ export const EVENTS: AdhyaayaEvent[] = [
 				phone: '1234567890'
 			}
 		],
-		is_active: true
+		is_active: true,
+		whatsapp_link: "https://chat.whatsapp.com/Fihx9B1pCwCEmE6yyJRIs7"
 	},
-	// TODO: Respawn
 	{
 		id: 'bornpsychos',
 		mode: 'offline',
@@ -369,7 +374,8 @@ export const EVENTS: AdhyaayaEvent[] = [
 				phone: '1234567890'
 			}
 		],
-		is_active: true
+		is_active: true,
+		whatsapp_link: "https://chat.whatsapp.com/ErzzKroyiw6IoL5pAWzHC5"
 	},
 	{
 		id: 'food-o-holics',
@@ -390,7 +396,8 @@ export const EVENTS: AdhyaayaEvent[] = [
 				phone: '1234567890'
 			}
 		],
-		is_active: true
+		is_active: true,
+		whatsapp_link: "https://chat.whatsapp.com/KoKTPhgXNZxEof5xHUBLCh"
 	},
 	{
 		id: 'cricbash',
@@ -411,7 +418,8 @@ export const EVENTS: AdhyaayaEvent[] = [
 				phone: '1234567890'
 			}
 		],
-		is_active: true
+		is_active: true,
+		whatsapp_link: "https://chat.whatsapp.com/ETCp1yUYn5U8BEDSp5VtBH"
 	},
 	// TODO: Finalize the data for these...
 	{
@@ -454,7 +462,8 @@ export const EVENTS: AdhyaayaEvent[] = [
 				phone: '1234567890'
 			}
 		],
-		is_active: true
+		is_active: true,
+		whatsapp_link: "https://chat.whatsapp.com/GwpSrB9MEcL4sW54WL1Hto"
 	},
 	{
 		id: 'stargaze',
@@ -544,7 +553,7 @@ export const EVENTS: AdhyaayaEvent[] = [
 		id: 'aeromodelling-workshop',
 		mode: 'offline', 
 		category: 'workshops',
-		name: 'airplane go brrrrrrr',
+		name: 'Multirotor Workshop',
 		description: 'blah blah blah', //Avishkar is a technical event that tests your knowledge in the field of computer science and technology. It is a 24-hour event that will test your skills in programming, debugging, and logical thinking. It is a team event with a maximum of 3 members per team. The event will be held on 27th and 28th February 2021.
 		amount: [1600_00],
 		team_members: [1],
@@ -559,27 +568,7 @@ export const EVENTS: AdhyaayaEvent[] = [
 				phone: '1234567890'
 			}
 		],
-		is_active: true
-	},
-	{
-		id: 'aeromodelling-workshop',
-		mode: 'online', 
-		category: 'workshops',
-		name: 'airplane go brrrrrrr',
-		description: 'blah blah blah', //Avishkar is a technical event that tests your knowledge in the field of computer science and technology. It is a 24-hour event that will test your skills in programming, debugging, and logical thinking. It is a team event with a maximum of 3 members per team. The event will be held on 27th and 28th February 2021.
-		amount: [1600_00],
-		team_members: [1],
-		start_date: new Date('28 Feb 2023'),
-		end_date: new Date('28 Feb 2023'),
-		small_image: 'https://placeimg.com/360/360/tech',
-		icon: 'carbon:code',
-		poster: 'http://placeimg.com/1280/720/tech',
-		contact: [
-			{
-				name: 'Devansh Parapalli',
-				phone: '1234567890'
-			}
-		],
-		is_active: true
+		is_active: true,
+		whatsapp_link: 'https://chat.whatsapp.com/HA17R0Jp55cAe6rq6agUfz'
 	},
 ];
