@@ -134,7 +134,7 @@
 					on:mouseover={() => {
 						setBackgroundPosition(bgX, -125);
 					}}
-					class="menu-item-container flex flex-col md:flex-row gap-4 md:gap-16"
+					class="menu-item-container flex flex-col md:flex-row gap-4 md:gap-16 h-1/2 pt-10"
 				>
 					<a
 						href="/legal/privacy_policy"

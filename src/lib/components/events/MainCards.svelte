@@ -179,12 +179,12 @@
 		font-weight: 900;
 		display: inline-block;
 		width: 100%;
-        @apply text-2xl sm:text-4xl ;
+        @apply text-2xl sm:text-3xl ;
 	}
 	.subtitle {
 		font-weight: 100;
 		line-height: 1.25rem;
-        @apply text-xl sm:text-4xl ;
+        @apply text-xl sm:text-2xl ;
 	}
 	.subtext {
 		font-size: 1.1167rem;

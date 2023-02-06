@@ -10,7 +10,9 @@
 	on:click={() => {
 		openModal(EventInfoModal, { event: data });
 	}}
-	class=""
+	class="p-6 border border-white rounded-lg text-white bg-white/10 bg-blur-xl flex flex-col items-center gap-4 w-52 h-64"
 >
-{data.name}
+<img height="150" width="150" src="https://via.placeholder.com/150x150" alt="">
+<span>{data.name}</span>
+
 </button>

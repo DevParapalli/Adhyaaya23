@@ -55,6 +55,7 @@
 
     onMount(() => {
         preloadCode('/register');
+        window.scrollTo({ top: 0, behavior: 'smooth'});
     })
 </script>
 

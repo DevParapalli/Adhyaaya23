@@ -15,7 +15,11 @@
 	import * as THREE from 'three';
 
 	let canvas: HTMLCanvasElement;
-
+	let mouse: THREE.Vector2;
+	function onMouseMove(x: number, y:number) {
+		mouse.x = x * 2 - 1;
+		mouse.y = -y * 2 + 1;
+	}
 	onMount(() => {
 		// Three JS Template
 		const renderer = new THREE.WebGLRenderer({ antialias: true });
@@ -79,9 +83,9 @@
 				const geometry = new THREE.IcosahedronGeometry(1);
 				const material = new THREE.MeshStandardMaterial({
 					shading: THREE.FlatShading,
-					color: 0x111111,
+					color: 0x0d0028,
 					transparent: false,
-					opacity: 1,
+					opacity: 0,
 					wireframe: false
 				});
 				const cube = new THREE.Mesh(geometry, material);
@@ -149,18 +153,18 @@
 
 		//------------------------------------------------------------- RAYCASTER
 		const raycaster = new THREE.Raycaster();
-		let mouse = new THREE.Vector2(),
-			INTERSECTED;
+		mouse = new THREE.Vector2()
+		let INTERSECTED: any;
 		let intersected;
 
 		function onMouseMove(event) {
-			event.preventDefault();
+			// event.preventDefault();
 			mouse.x = (event.clientX / window.innerWidth) * 2 - 1;
 			mouse.y = -(event.clientY / window.innerHeight) * 2 + 1;
 		}
 		function onMouseDown(event) {
 			event.preventDefault();
-			onMouseMove(event);
+			// onMouseMove(event);
 			raycaster.setFromCamera(mouse, camera);
 			const intersected = raycaster.intersectObjects(modularGruop.children);
 			if (intersected.length > 0) {
@@ -229,59 +233,75 @@
 		animate();
 		init();
 	});
+
+	function convertRange(value: number, r1: number[], r2:number[]) {
+		return ((value - r1[0]) * (r2[1] - r2[0])) / (r1[1] - r1[0]) + r2[0];
+	}
+
+	let height: number = 0;
 </script>
 
 <svelte:head>
 	<title>Events | Adhyaaya'23</title>
 </svelte:head>
 
-<svelte:window on:resize={() => {}} />
+<svelte:window on:resize={() => {}} on:scroll={(e)=>{
+	onMouseMove(0,convertRange(window.scrollY, [0, height - window.innerHeight], [0, 1]))
+}} />
 
 <!-- <canvas bind:this={canvas} class="orb-canvas -z-50 fixed bg-white !h-screen !w-screen" /> -->
 <!-- <img src="{img}" class="-z-50 fixed h-screen w-screen object-cover"> -->
 <div
 	id="bg"
-	class=" fixed h-screen w-screen -z-50 overflow-clip blur"
+	class=" fixed h-screen w-screen -z-50 overflow-clip blur-sm"
 />
 
 
 
 <div
-	class="events-container grid grid-cols-1 justify-items-stretch pt-28 min-h-screen scroll-smooth"
+	bind:clientHeight={height}
+	class="events-container grid grid-cols-1 justify-items-stretch pt-28 min-h-[50vh] scroll-smooth"
 >
 	<!-- Title -->
 	<div class="flex flex-col items-center justify-center">
-		<h1 class="text-4xl font-bold text-center text-white">Events</h1>
+		<h1 class="text-4xl font-bold text-center text-white gravedigger">Events</h1>
 	</div>
 	<div
-		class="section-header h-full min-h-[calc(100vh-7rem)] flex items-center justify-center flex-wrap transition-all duration-500 ease-in-out gap-4"
+		class="section-header h-full min-h-[calc(100vh-7rem)] flex items-center justify-center flex-wrap transition-all duration-500 ease-in-out gap-4 md:gap-10 pt-16"
 	>
-		<MainCards color={3} href="#technical" />
-		<MainCards color={2} href="#non-technical" />
-		<MainCards color={0} href="#workshops" />
+		<MainCards color={3} href="#technical" icontext="" title="Technical" subtitle="Events" subtext="" />
+		<MainCards color={2} href="#non-technical" icontext="" title="Non-Tech" subtitle="Events" subtext="" />
+		<MainCards color={0} href="#workshops" icontext="" title="Workshops" subtitle="" subtext="" />
 	</div>
 
+	<div class="flex flex-col items-center justify-center pt-16">
+		<h1 class="text-2xl font-bold text-center text-white gravedigger">Technical Events</h1>
+	</div>
 	<div
 		id="technical"
-		class="h-full min-h-screen flex items-center justify-center flex-wrap transition-all duration-500 ease-in-out gap-4"
+		class="h-full min-h-[50vh] flex items-center justify-center flex-wrap transition-all duration-500 ease-in-out gap-4 md:gap-10 pt-16"
 	>
 		{#each technical as t}
 			<EventCard data={t} />
 		{/each}
 	</div>
-
+	<div class="flex flex-col items-center justify-center pt-16">
+		<h1 class="text-2xl font-bold text-center text-white gravedigger">Non-Tech Events</h1>
+	</div>
 	<div
 		id="non-technical"
-		class="h-full min-h-screen flex items-center justify-center flex-wrap transition-all duration-500 ease-in-out gap-4"
+		class="h-full min-h-[50vh] flex items-center justify-center flex-wrap transition-all duration-500 ease-in-out gap-4 md:gap-10 pt-16"
 	>
 		{#each non_technical as nt}
 			<EventCard data={nt} />
 		{/each}
 	</div>
-
+	<div class="flex flex-col items-center justify-center pt-16">
+		<h1 class="text-2xl font-bold text-center text-white gravedigger">Workshops</h1>
+	</div>
 	<div
 		id="workshops"
-		class="h-full min-h-screen flex items-center justify-center flex-wrap transition-all duration-500 ease-in-out gap-4"
+		class="h-full min-h-[50vh] flex items-center justify-center flex-wrap transition-all duration-500 ease-in-out gap-4 md:gap-10 pt-16"
 	>
 		{#each workshops as w}
 			<EventCard data={w} />

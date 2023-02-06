@@ -88,9 +88,9 @@
 </svelte:head>
 
 
-<div class="bg h-full w-full pt-20" style="--bg:url({bg});--opacity:0.75">
+<div class="bg lg:h-full w-full pt-20 object-cover" style="--bg:url({bg});--opacity:0.75">
 	<div
-		class="header mx-auto text-4xl text-center mb-8 text-white font-bold uppercase font-mono TODO:FONTS "
+		class="header mx-auto text-4xl text-center mb-8 text-white font-bold uppercase font-mono gravedigger"
 	>
 		Registration Form
 	</div>
