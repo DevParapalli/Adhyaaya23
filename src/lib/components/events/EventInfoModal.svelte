@@ -7,8 +7,9 @@
     export let event: AdhyaayaEvent;
     export let isOpen: boolean;
 
-    import {closeModal} from 'svelte-modals';
+    import {closeModal as _closeModal} from 'svelte-modals';
 	import { onMount } from "svelte";
+	import { fade } from "svelte/transition";
 
     export let date_options: Intl.DateTimeFormatOptions = {
         weekday: 'long',
@@ -47,15 +48,21 @@
             case 5:
                 return 'Quintet';
             case 6:
-                return 'Sextet';
+                return 'Squad';
             default:
                 return 'Team';
         }
     }
 
+    let scrollPos: number;
+    function closeModal() {
+        window.scrollTo({ top: scrollPos, behavior: 'smooth'});
+        _closeModal();
+    }
     onMount(() => {
         preloadCode('/register');
-        window.scrollTo({ top: 0, behavior: 'smooth'});
+        scrollPos = window.scrollY;
+        window.scrollTo({ top: 0, behavior: 'auto'});
     })
 </script>
 
@@ -74,7 +81,7 @@
 
 {#if isOpen}
 
-<div class="modal-wrapper relative h-full w-full z-[210] bg-black/50">
+<div transition:fade class="modal-wrapper relative h-full w-full z-[210] bg-black/50">
     <button class="h-10 w-10 md:h-12 md:w-12 rounded-full border border-white right-10 top-8 absolute transition-all duration-500 ease-in-out hover:scale-105 active:scale-95 z-50 mix-blend-difference">
         <div
         class="absolute w-[18px] h-[2px] origin-center bg-white transition-all ease-in-out duration-500"
@@ -99,13 +106,13 @@
                     <span class="font-bold">{ec.name}</span> - {ec.phone}<br />
                 {/each}
             </p>
-            <div class="player-indicator flex flex-row justify-evenly items-center mt-auto w-full">
+            <div class="player-indicator flex flex-row flex-wrap justify-evenly items-center mt-auto w-full gap-4">
                 {#if event.team_members.filter(i => i != 0).length > 1 }
-                    You can play as:
+                    <span class="w-full">You can play as:</span>
                 {/if}
                 {#each Array(6) as _, i}
                 {#if event.team_members.includes(i+1)}
-                <button on:click={() => {members_selected = i+1}} class="badge {members_selected == i+1 ? 'border-green-500 text-green-500':''} badge-outline badge-sm md:badge-lg hover:scale-110 active:scale-90 active:opacity-90">{getMemberText(i+1)} ({i+1})</button>
+                <button on:click={() => {members_selected = i+1}} class="rounded-lg p-2 lg:p-4 lg:text-lg border border-white {members_selected == i+1 ? 'border-green-500 text-green-500':''} mx-2 hover:scale-110 active:scale-90 active:opacity-90 transition-all duration-300 ease-in-out">{getMemberText(i+1)} ({i+1})</button>
                 {/if}
                 {/each}
                 <!-- {#if event.team_members.includes(1)}

@@ -88,7 +88,7 @@
 </svelte:head>
 
 
-<div class="bg lg:h-full w-full pt-20 object-cover" style="--bg:url({bg});--opacity:0.75">
+<div class="bg w-full pt-20 object-cover pb-10" style="--bg:url({bg});--opacity:0.75">
 	<div
 		class="header mx-auto text-4xl text-center mb-8 text-white font-bold uppercase font-mono gravedigger"
 	>
@@ -111,7 +111,7 @@
 		class="registration-form container max-w-3xl mx-auto px-10 py-10 bg-black/50 rounded-lg"
 		method="POST"
 	>
-		<div class="details-container w-full flex flex-row pb-4 mb-2 border-b-2 border-b-white/30">
+		<div class="details-container w-full flex flex-col md:flex-row pb-4 mb-2 border-b-2 border-b-white/30">
 			<div class="event-details grid grid-cols-2">
 				<span>Event Name:</span>
 				<span>{data.event.name}</span>
