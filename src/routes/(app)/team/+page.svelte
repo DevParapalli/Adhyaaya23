@@ -43,7 +43,64 @@
 
 
 	// Image Imports
-	import test_test from '$lib/assets/team/test-test-compressed.png';
+	import nikhil_deshpande_photo from '$lib/assets/team/advisors/nikhil-deshpande-compressed.webp'; 
+	import ujjwal_gupta_photo from '$lib/assets/team/advisors/ujjwal-gupta-compressed.webp';
+	import laksh_bahl_photo from '$lib/assets/team/advisors/laksh-bahl-compressed.webp';
+	import yash_bhagat_photo from '$lib/assets/team/advisors/yash-bhagat-compressed.webp';
+	import arya_mahashabde_photo from '$lib/assets/team/advisors/arya-mahashabde-compressed.webp';
+	import shlok_tajne_photo from '$lib/assets/team/coordinators/shlok-tajne-compressed.webp';
+	import swarali_prayagi_photo from '$lib/assets/team/coordinators/swarali-prayagi-compressed.webp';
+	import mayank_masram_photo from '$lib/assets/team/coordinators/mayank-masram-compressed.webp';
+	import aditya_tete_photo from '$lib/assets/team/coordinators/aditya-tete-compressed.webp';
+	import malhar_paradkar_photo from '$lib/assets/team/coordinators/malhar-paradkar-compressed.webp';
+	import dev_parapalli_photo from '$lib/assets/team/technical/dev-parapalli-compressed.webp';
+	import dovesh_aglawe_photo from '$lib/assets/team/technical/dovesh-aglawe-compressed.webp';
+	import aditya_deshmukh_photo from '$lib/assets/team/technical/aditya-deshmukh-compressed.webp';
+	import shiwang_pandey_photo from '$lib/assets/team/technical/shiwang-pandey-compressed.webp';
+	import tushar_meshram_photo from '$lib/assets/team/technical/tushar-meshram-compressed.webp';
+	import harsh_bangre_photo from '$lib/assets/team/technical/harsh-bangre-compressed.webp';
+	import kaustubh_warade_photo from '$lib/assets/team/technical/kaustubh-warade-compressed.webp';
+	import sahil_brahme_photo from '$lib/assets/team/organisation/sahil-brahme-compressed.webp';
+	import parth_trimare_photo from '$lib/assets/team/organisation/parth-trimare-compressed.webp'; 
+	import shubhlak_kanpate_photo from '$lib/assets/team/organisation/shubhlak-kanpate-compressed.webp';
+	import yash_raut_photo from '$lib/assets/team/organisation/yash-raut-compressed.webp';
+	import nandini_thaware_photo from '$lib/assets/team/organisation/nandini-thaware-compressed.webp';
+	import aastha_dongare_photo from '$lib/assets/team/organisation/aastha-dongare-compressed.webp';
+	import urvashi_gour_photo from '$lib/assets/team/organisation/urvashi-gour-compressed.webp';
+	import nihal_gaikwad_photo from '$lib/assets/team/sponsorship/nihal-gaikwad-compressed.webp';
+	import atharva_mande_photo from '$lib/assets/team/sponsorship/atharva-mande-compressed.webp';
+	import divija_pawar_photo from '$lib/assets/team/sponsorship/divija-pawar-compressed.webp';
+	import anish_behere_photo from '$lib/assets/team/sponsorship/anish-behere-compressed.webp';
+	import yash_khandelwal_photo from '$lib/assets/team/sponsorship/yash-khandelwal-compressed.webp';
+	import pranav_patle_photo from '$lib/assets/team/publicity/pranav-patle-compressed.webp';
+	import pranav_supare_photo from '$lib/assets/team/publicity/pranav-supare-compressed.webp';
+	import vedant_gotmare_photo from '$lib/assets/team/publicity/vedant-gotmare-compressed.webp';
+	import vedant_nimgade_photo from '$lib/assets/team/publicity/vedant-nimgade-compressed.webp';
+	import rugved_yadalwar_photo from '$lib/assets/team/publicity/rugved-yadalwar-compressed.webp';
+	import aadil_burani_photo from '$lib/assets/team/publicity/aadil-burani-compressed.webp';
+	import priya_nandanwar_photo from '$lib/assets/team/accounting/priya-nandanwar-compressed.webp';
+	import ninad_burande_photo from '$lib/assets/team/accounting/ninad-burande-compressed.webp';
+	import kashish_budhwani_photo from '$lib/assets/team/accounting/kashish-budhwani-compressed.webp';
+	import vidhan_rajput_photo from '$lib/assets/team/accounting/vidhan-rajput-compressed.webp';
+	import rushikesh_potpite_photo from '$lib/assets/team/accounting/rushikesh-potpite-compressed.webp';
+	import aishwarya_dongare_photo from '$lib/assets/team/accounting/aishwarya-dongare-compressed.webp';
+	import vikas_yadav_photo from '$lib/assets/team/accounting/vikas-yadav-compressed.webp';
+	import kashish_budwani_photo from '$lib/assets/team/content-writing/kashish-budwani-compressed.webp';
+	import akanksh_bodakhe_photo from '$lib/assets/team/creativity-and-decoration/akanksh-bodakhe-compressed.webp';
+	import bhumika_hedaoo_photo from '$lib/assets/team/creativity-and-decoration/bhumika-hedaoo-compressed.webp';
+	import ketaki_mahalle_photo from '$lib/assets/team/creativity-and-decoration/ketaki-mahalle-compressed.webp';
+	import siddhi_barde_photo from '$lib/assets/team/creativity-and-decoration/siddhi-barde-compressed.webp';
+	import pratik_bagdi_photo from '$lib/assets/team/creativity-and-decoration/pratik-bagdi-compressed.webp';
+	import jay_bele_photo from '$lib/assets/team/creativity-and-decoration/jay-bele-compressed.webp';
+	import aditya_bangar_photo from '$lib/assets/team/creativity-and-decoration/aditya-bangar-compressed.webp';
+	import sai_deodhe_photo from '$lib/assets/team/hospitality-and-discipline/sai-deodhe-compressed.webp';
+	import chetna_salve_photo from '$lib/assets/team/hospitality-and-discipline/chetna-salve-compressed.webp';
+	import sakshi_nimje_photo from '$lib/assets/team/hospitality-and-discipline/sakshi-nimje-compressed.webp';
+	import manjeet_naik_photo from '$lib/assets/team/hospitality-and-discipline/manjeet-naik-compressed.webp';
+	import sahil_marbate_photo from '$lib/assets/team/hospitality-and-discipline/sahil-marbate-compressed.webp';
+	import shardul_rathod_photo from '$lib/assets/team/hospitality-and-discipline/shardul-rathod-compressed.webp';
+	import mukti_purohit_photo from '$lib/assets/team/hospitality-and-discipline/mukti-purohit-compressed.webp';
+	import lokesh_shelke_photo from '$lib/assets/team/hospitality-and-discipline/lokesh-shelke-compressed.webp';
 
 </script>
 
@@ -60,7 +117,7 @@
 <div bind:this={heading} class="flex_title !mt-0 pt-20">Advisors</div>
 <div bind:this={container} class="my-cont_flex">
 	<article class="my-cont">
-		<div style:--img={`url(${test_test})`} class="thumb" />
+		<div style:--img={`url(${nikhil_deshpande_photo})`} class="thumb" />
 		<div class="infos">
 			<h2 class="title">Nikhil Deshpande<span class="flag" /></h2>
 			<h3 class="date">Advisor</h3>
@@ -89,7 +146,7 @@
 		</div>
 	</article>
 	<article class="my-cont">
-		<div class="thumb" />
+		<div style:--img={`url(${ujjwal_gupta_photo})`} class="thumb" />
 		<div class="infos">
 			<h2 class="title">Ujjwal Gupta<span class="flag" /></h2>
 			<h3 class="date">Advisor</h3>
@@ -118,7 +175,7 @@
 		</div>
 	</article>
 	<article class="my-cont">
-		<div class="thumb" />
+		<div style:--img={`url(${laksh_bahl_photo})`} class="thumb" />
 		<div class="infos">
 			<h2 class="title">Laksh Bahl<span class="flag" /></h2>
 			<h3 class="date">Advisor</h3>
@@ -147,7 +204,7 @@
 		</div>
 	</article>
 	<article class="my-cont">
-		<div class="thumb" />
+		<div style:--img={`url(${yash_bhagat_photo})`} class="thumb" />
 		<div class="infos">
 			<h2 class="title">Yash Bhagat<span class="flag" /></h2>
 			<h3 class="date">Advisor</h3>
@@ -176,7 +233,7 @@
 		</div>
 	</article>
 	<article class="my-cont">
-		<div class="thumb" />
+		<div style:--img={`url(${arya_mahashabde_photo})`} class="thumb" />
 		<div class="infos">
 			<h2 class="title">Arya Mahashabde<span class="flag" /></h2>
 			<h3 class="date">Advisor</h3>
@@ -209,7 +266,7 @@
 <div class="flex_title">Coordinators</div>
 <div class="my-cont_flex">
 	<article class="my-cont">
-		<div class="thumb" />
+		<div style:--img={`url(${shlok_tajne_photo})`} class="thumb" />
 		<div class="infos">
 			<h2 class="title">Shlok Tajne<span class="flag" /></h2>
 			<h3 class="date">Coordinator</h3>
@@ -238,7 +295,7 @@
 		</div>
 	</article>
 	<article class="my-cont">
-		<div class="thumb" />
+		<div style:--img={`url(${swarali_prayagi_photo})`} class="thumb" />
 		<div class="infos">
 			<h2 class="title">Swarali Prayagi<span class="flag" /></h2>
 			<h3 class="date">Coordinator</h3>
@@ -267,7 +324,7 @@
 		</div>
 	</article>
 	<article class="my-cont">
-		<div class="thumb" />
+		<div style:--img={`url(${mayank_masram_photo})`} class="thumb" />
 		<div class="infos">
 			<h2 class="title">Mayank Masram<span class="flag" /></h2>
 			<h3 class="date">Coordinator</h3>
@@ -296,7 +353,7 @@
 		</div>
 	</article>
 	<article class="my-cont">
-		<div class="thumb" />
+		<div style:--img={`url(${aditya_tete_photo})`} class="thumb" />
 		<div class="infos">
 			<h2 class="title">Aditya Tete<span class="flag" /></h2>
 			<h3 class="date">Coordinator</h3>
@@ -325,7 +382,7 @@
 		</div>
 	</article>
 	<article class="my-cont">
-		<div class="thumb" />
+		<div style:--img={`url(${malhar_paradkar_photo})`} class="thumb" />
 		<div class="infos">
 			<h2 class="title">Malhar Paradkar<span class="flag" /></h2>
 			<h3 class="date">Coordinator</h3>
@@ -358,7 +415,7 @@
 <div class="flex_title">Technical Team</div>
 <div class="my-cont_flex">
 	<article class="my-cont">
-		<div class="thumb" />
+		<div style:--img={`url(${dev_parapalli_photo})`} class="thumb" />
 		<div class="infos">
 			<h2 class="title">Dev Parapalli<span class="flag" /></h2>
 			<h3 class="date">Head</h3>
@@ -387,7 +444,7 @@
 		</div>
 	</article>
 	<article class="my-cont">
-		<div class="thumb" />
+		<div style:--img={`url(${dovesh_aglawe_photo})`} class="thumb" />
 		<div class="infos">
 			<h2 class="title">Dovesh Aglawe<span class="flag" /></h2>
 			<h3 class="date">Head</h3>
@@ -416,7 +473,7 @@
 		</div>
 	</article>
 	<article class="my-cont">
-		<div class="thumb" />
+		<div style:--img={`url(${aditya_deshmukh_photo})`} class="thumb" />
 		<div class="infos">
 			<h2 class="title">Aditya Deshmukh<span class="flag" /></h2>
 			<h3 class="date">Head</h3>
@@ -447,7 +504,7 @@
 </div>
 <div class="my-cont_flex">
 	<article class="my-cont">
-		<div class="thumb" />
+		<div style:--img={`url(${shiwang_pandey_photo})`} class="thumb" />
 		<div class="infos">
 			<h2 class="title">Shiwang Pandey<span class="flag" /></h2>
 			<h3 class="date">Co Head</h3>
@@ -476,7 +533,7 @@
 		</div>
 	</article>
 	<article class="my-cont">
-		<div class="thumb" />
+		<div style:--img={`url(${tushar_meshram_photo})`} class="thumb" />
 		<div class="infos">
 			<h2 class="title">Tushar Meshram<span class="flag" /></h2>
 			<h3 class="date">Co Head</h3>
@@ -505,9 +562,9 @@
 		</div>
 	</article>
 	<article class="my-cont">
-		<div class="thumb" />
+		<div style:--img={`url(${harsh_bangre_photo})`} class="thumb" />
 		<div class="infos">
-			<h2 class="title">Hrsh Bangre<span class="flag" /></h2>
+			<h2 class="title">Harsh Bangre<span class="flag" /></h2>
 			<h3 class="date">Co Head</h3>
 			<h3 class="seats"><!--status--></h3>
 			<p class="txt"><!-- data--></p>
@@ -534,7 +591,7 @@
 		</div>
 	</article>
 	<article class="my-cont">
-		<div class="thumb" />
+		<div style:--img={`url(${kaustubh_warade_photo})`} class="thumb" />
 		<div class="infos">
 			<h2 class="title">Kaustubh Warade<span class="flag" /></h2>
 			<h3 class="date">Co Head</h3>
@@ -566,7 +623,7 @@
 <div class="flex_title">Organisation Team</div>
 <div class="my-cont_flex">
 	<article class="my-cont">
-		<div class="thumb" />
+		<div style:--img={`url(${sahil_brahme_photo})`} class="thumb" />
 		<div class="infos">
 			<h2 class="title">Sahil Brahme<span class="flag" /></h2>
 			<h3 class="date">Head</h3>
@@ -595,7 +652,7 @@
 		</div>
 	</article>
 	<article class="my-cont">
-		<div class="thumb" />
+		<div style:--img={`url(${parth_trimare_photo})`} class="thumb" />
 		<div class="infos">
 			<h2 class="title">Parth Trimare<span class="flag" /></h2>
 			<h3 class="date">Head</h3>
@@ -624,7 +681,7 @@
 		</div>
 	</article>
 	<article class="my-cont">
-		<div class="thumb" />
+		<div style:--img={`url(${shubhlak_kanpate_photo})`} class="thumb" />
 		<div class="infos">
 			<h2 class="title">Shubhlak Kanpate<span class="flag" /></h2>
 			<h3 class="date">Head</h3>
@@ -655,7 +712,7 @@
 </div>
 <div class="my-cont_flex">
 	<article class="my-cont">
-		<div class="thumb" />
+		<div style:--img={`url(${yash_raut_photo})`} class="thumb" />
 		<div class="infos">
 			<h2 class="title">Yash Raut<span class="flag" /></h2>
 			<h3 class="date">Co Head</h3>
@@ -684,7 +741,7 @@
 		</div>
 	</article>
 	<article class="my-cont">
-		<div class="thumb" />
+		<div style:--img={`url(${nandini_thaware_photo})`} class="thumb" />
 		<div class="infos">
 			<h2 class="title">Nandini Thaware<span class="flag" /></h2>
 			<h3 class="date">Co Head</h3>
@@ -713,7 +770,7 @@
 		</div>
 	</article>
 	<article class="my-cont">
-		<div class="thumb" />
+		<div style:--img={`url(${aastha_dongare_photo})`} class="thumb" />
 		<div class="infos">
 			<h2 class="title">Aastha Dongare<span class="flag" /></h2>
 			<h3 class="date">Co Head</h3>
@@ -742,7 +799,7 @@
 		</div>
 	</article>
 	<article class="my-cont">
-		<div class="thumb" />
+		<div style:--img={`url(${urvashi_gour_photo})`} class="thumb" />
 		<div class="infos">
 			<h2 class="title">Urvashi Gour<span class="flag" /></h2>
 			<h3 class="date">Co Head</h3>
@@ -774,7 +831,7 @@
 <div class="flex_title">Sponsorship Team</div>
 <div class="my-cont_flex">
 	<article class="my-cont">
-		<div class="thumb" />
+		<div style:--img={`url(${nihal_gaikwad_photo})`} class="thumb" />
 		<div class="infos">
 			<h2 class="title">Nihal Gaikwad<span class="flag" /></h2>
 			<h3 class="date">Head</h3>
@@ -803,7 +860,7 @@
 		</div>
 	</article>
 	<article class="my-cont">
-		<div class="thumb" />
+		<div style:--img={`url(${atharva_mande_photo})`} class="thumb" />
 		<div class="infos">
 			<h2 class="title">Atharva Mande<span class="flag" /></h2>
 			<h3 class="date">Head</h3>
@@ -832,7 +889,7 @@
 		</div>
 	</article>
 	<article class="my-cont">
-		<div class="thumb" />
+		<div style:--img={`url(${divija_pawar_photo})`} class="thumb" />
 		<div class="infos">
 			<h2 class="title">Divija Pawar<span class="flag" /></h2>
 			<h3 class="date">Head</h3>
@@ -863,7 +920,7 @@
 </div>
 <div class="my-cont_flex">
 	<article class="my-cont">
-		<div class="thumb" />
+		<div style:--img={`url(${anish_behere_photo})`} class="thumb" />
 		<div class="infos">
 			<h2 class="title">Anish Behere<span class="flag" /></h2>
 			<h3 class="date">Co Head</h3>
@@ -892,7 +949,7 @@
 		</div>
 	</article>
 	<article class="my-cont">
-		<div class="thumb" />
+		<div style:--img={`url(${yash_khandelwal_photo})`} class="thumb" />
 		<div class="infos">
 			<h2 class="title">Yash Khandelwal<span class="flag" /></h2>
 			<h3 class="date">Co Head</h3>
@@ -924,7 +981,7 @@
 <div class="flex_title">Publicity Team</div>
 <div class="my-cont_flex">
 	<article class="my-cont">
-		<div class="thumb" />
+		<div style:--img={`url(${pranav_patle_photo})`} class="thumb" />
 		<div class="infos">
 			<h2 class="title">Pranav Patle<span class="flag" /></h2>
 			<h3 class="date">Head</h3>
@@ -953,7 +1010,7 @@
 		</div>
 	</article>
 	<article class="my-cont">
-		<div class="thumb" />
+		<div style:--img={`url(${pranav_supare_photo})`} class="thumb" />
 		<div class="infos">
 			<h2 class="title">Pranav Supare<span class="flag" /></h2>
 			<h3 class="date">Head</h3>
@@ -982,7 +1039,7 @@
 		</div>
 	</article>
 	<article class="my-cont">
-		<div class="thumb" />
+		<div style:--img={`url(${vedant_gotmare_photo})`} class="thumb" />
 		<div class="infos">
 			<h2 class="title">Vedant Gotmare<span class="flag" /></h2>
 			<h3 class="date">Head</h3>
@@ -1013,7 +1070,7 @@
 </div>
 <div class="my-cont_flex">
 	<article class="my-cont">
-		<div class="thumb" />
+		<div style:--img={`url(${vedant_nimgade_photo})`} class="thumb" />
 		<div class="infos">
 			<h2 class="title">Vedant Nimgade<span class="flag" /></h2>
 			<h3 class="date">Co Head</h3>
@@ -1042,7 +1099,7 @@
 		</div>
 	</article>
 	<article class="my-cont">
-		<div class="thumb" />
+		<div style:--img={`url(${rugved_yadalwar_photo})`} class="thumb" />
 		<div class="infos">
 			<h2 class="title">Rugved Yadalwar<span class="flag" /></h2>
 			<h3 class="date">Co Head</h3>
@@ -1071,7 +1128,7 @@
 		</div>
 	</article>
 	<article class="my-cont">
-		<div class="thumb" />
+		<div style:--img={`url(${aadil_burani_photo})`} class="thumb" />
 		<div class="infos">
 			<h2 class="title">Aadil Burani<span class="flag" /></h2>
 			<h3 class="date">Co Head</h3>
@@ -1103,7 +1160,7 @@
 <div class="flex_title">Accounting Team</div>
 <div class="my-cont_flex">
 	<article class="my-cont">
-		<div class="thumb" />
+		<div style:--img={`url(${priya_nandanwar_photo})`} class="thumb" />
 		<div class="infos">
 			<h2 class="title">Priya Nandanwar<span class="flag" /></h2>
 			<h3 class="date">Head</h3>
@@ -1132,7 +1189,7 @@
 		</div>
 	</article>
 	<article class="my-cont">
-		<div class="thumb" />
+		<div style:--img={`url(${ninad_burande_photo})`} class="thumb" />
 		<div class="infos">
 			<h2 class="title">Ninad Burande<span class="flag" /></h2>
 			<h3 class="date">Head</h3>
@@ -1161,7 +1218,7 @@
 		</div>
 	</article>
 	<article class="my-cont">
-		<div class="thumb" />
+		<div style:--img={`url(${kashish_budhwani_photo})`} class="thumb" />
 		<div class="infos">
 			<h2 class="title">Kashish Budhwani<span class="flag" /></h2>
 			<h3 class="date">Head</h3>
@@ -1192,7 +1249,7 @@
 </div>
 <div class="my-cont_flex">
 	<article class="my-cont">
-		<div class="thumb" />
+		<div style:--img={`url(${vidhan_rajput_photo})`} class="thumb" />
 		<div class="infos">
 			<h2 class="title">Vidhan Rajput<span class="flag" /></h2>
 			<h3 class="date">Co Head</h3>
@@ -1221,7 +1278,7 @@
 		</div>
 	</article>
 	<article class="my-cont">
-		<div class="thumb" />
+		<div style:--img={`url(${rushikesh_potpite_photo})`} class="thumb" />
 		<div class="infos">
 			<h2 class="title">Rushikesh Potpite<span class="flag" /></h2>
 			<h3 class="date">Co Head</h3>
@@ -1250,7 +1307,7 @@
 		</div>
 	</article>
 	<article class="my-cont">
-		<div class="thumb" />
+		<div style:--img={`url(${aishwarya_dongare_photo})`} class="thumb" />
 		<div class="infos">
 			<h2 class="title">Aishwarya Dongare<span class="flag" /></h2>
 			<h3 class="date">Co Head</h3>
@@ -1279,7 +1336,7 @@
 		</div>
 	</article>
 	<article class="my-cont">
-		<div class="thumb" />
+		<div style:--img={`url(${vikas_yadav_photo})`} class="thumb" />
 		<div class="infos">
 			<h2 class="title">Vikas Yadav<span class="flag" /></h2>
 			<h3 class="date">Co Head</h3>
@@ -1311,7 +1368,7 @@
 <div class="flex_title">Content Writing Team</div>
 <div class="my-cont_flex">
 	<article class="my-cont">
-		<div class="thumb" />
+		<div style:--img={`url(${kashish_budwani_photo})`} class="thumb" />
 		<div class="infos">
 			<h2 class="title">Kashish Budwani<span class="flag" /></h2>
 			<h3 class="date">Head</h3>
@@ -1340,7 +1397,7 @@
 		</div>
 	</article>
 	<article class="my-cont">
-		<div class="thumb" />
+		<div style:--img={`url(${vikas_yadav_photo})`} class="thumb" />
 		<div class="infos">
 			<h2 class="title">Vikas Yadav<span class="flag" /></h2>
 			<h3 class="date">Head</h3>
@@ -1371,7 +1428,7 @@
 </div>
 <div class="my-cont_flex">
 	<article class="my-cont">
-		<div class="thumb" />
+		<div style:--img={`url(${divija_pawar_photo})`} class="thumb" />
 		<div class="infos">
 			<h2 class="title">Divija Pawar<span class="flag" /></h2>
 			<h3 class="date">Co Head</h3>
@@ -1400,7 +1457,7 @@
 		</div>
 	</article>
 	<article class="my-cont">
-		<div class="thumb" />
+		<div style:--img={`url(${nandini_thaware_photo})`} class="thumb" />
 		<div class="infos">
 			<h2 class="title">Nandini Thaware<span class="flag" /></h2>
 			<h3 class="date">Co Head</h3>
@@ -1433,7 +1490,7 @@
 <div class="flex_title">Creativity and Decoration team</div>
 <div class="my-cont_flex">
 	<article class="my-cont">
-		<div class="thumb" />
+		<div style:--img={`url(${akanksh_bodakhe_photo})`} class="thumb" />
 		<div class="infos">
 			<h2 class="title">Akanksh Bodakhe<span class="flag" /></h2>
 			<h3 class="date">Head</h3>
@@ -1462,7 +1519,7 @@
 		</div>
 	</article>
 	<article class="my-cont">
-		<div class="thumb" />
+		<div style:--img={`url(${bhumika_hedaoo_photo})`} class="thumb" />
 		<div class="infos">
 			<h2 class="title">Bhumika Hedaoo<span class="flag" /></h2>
 			<h3 class="date">Head</h3>
@@ -1491,7 +1548,7 @@
 		</div>
 	</article>
 	<article class="my-cont">
-		<div class="thumb" />
+		<div style:--img={`url(${ketaki_mahalle_photo})`} class="thumb" />
 		<div class="infos">
 			<h2 class="title">Ketaki Mahalle<span class="flag" /></h2>
 			<h3 class="date">Head</h3>
@@ -1520,7 +1577,7 @@
 		</div>
 	</article>
 	<article class="my-cont">
-		<div class="thumb" />
+		<div style:--img={`url(${siddhi_barde_photo})`} class="thumb" />
 		<div class="infos">
 			<h2 class="title">Siddhi Barde<span class="flag" /></h2>
 			<h3 class="date">Head</h3>
@@ -1551,7 +1608,7 @@
 </div>
 <div class="my-cont_flex">
 	<article class="my-cont">
-		<div class="thumb" />
+		<div style:--img={`url(${pratik_bagdi_photo})`} class="thumb" />
 		<div class="infos">
 			<h2 class="title">Pratik Bagdi<span class="flag" /></h2>
 			<h3 class="date">Co Head</h3>
@@ -1580,7 +1637,7 @@
 		</div>
 	</article>
 	<article class="my-cont">
-		<div class="thumb" />
+		<div style:--img={`url(${jay_bele_photo})`} class="thumb" />
 		<div class="infos">
 			<h2 class="title">Jay Bele<span class="flag" /></h2>
 			<h3 class="date">Co Head</h3>
@@ -1609,7 +1666,7 @@
 		</div>
 	</article>
 	<article class="my-cont">
-		<div class="thumb" />
+		<div style:--img={`url(${aditya_bangar_photo})`} class="thumb" />
 		<div class="infos">
 			<h2 class="title">Aditya Bangar<span class="flag" /></h2>
 			<h3 class="date">Co Head</h3>
@@ -1642,7 +1699,7 @@
 <div class="flex_title">Hospitality And Discipline team</div>
 <div class="my-cont_flex">
 	<article class="my-cont">
-		<div class="thumb" />
+		<div style:--img={`url(${sai_deodhe_photo})`} class="thumb" />
 		<div class="infos">
 			<h2 class="title">Sai Deodhe<span class="flag" /></h2>
 			<h3 class="date">Head</h3>
@@ -1671,7 +1728,7 @@
 		</div>
 	</article>
 	<article class="my-cont">
-		<div class="thumb" />
+		<div style:--img={`url(${chetna_salve_photo})`} class="thumb" />
 		<div class="infos">
 			<h2 class="title">Chetna Salve<span class="flag" /></h2>
 			<h3 class="date">Head</h3>
@@ -1700,7 +1757,7 @@
 		</div>
 	</article>
 	<article class="my-cont">
-		<div class="thumb" />
+		<div style:--img={`url(${sakshi_nimje_photo})`} class="thumb" />
 		<div class="infos">
 			<h2 class="title">Sakshi Nimje<span class="flag" /></h2>
 			<h3 class="date">Head</h3>
@@ -1729,7 +1786,7 @@
 		</div>
 	</article>
 	<article class="my-cont">
-		<div class="thumb" />
+		<div style:--img={`url(${manjeet_naik_photo})`} class="thumb" />
 		<div class="infos">
 			<h2 class="title">Manjeet Naik<span class="flag" /></h2>
 			<h3 class="date">Head</h3>
@@ -1760,7 +1817,7 @@
 </div>
 <div class="my-cont_flex">
 	<article class="my-cont">
-		<div class="thumb" />
+		<div style:--img={`url(${sahil_marbate_photo})`} class="thumb" />
 		<div class="infos">
 			<h2 class="title">Sahil Marbate<span class="flag" /></h2>
 			<h3 class="date">Co Head</h3>
@@ -1789,7 +1846,7 @@
 		</div>
 	</article>
 	<article class="my-cont">
-		<div class="thumb" />
+		<div style:--img={`url(${shardul_rathod_photo})`} class="thumb" />
 		<div class="infos">
 			<h2 class="title">Shardul Rathod<span class="flag" /></h2>
 			<h3 class="date">Co Head</h3>
@@ -1818,7 +1875,7 @@
 		</div>
 	</article>
 	<article class="my-cont">
-		<div class="thumb" />
+		<div style:--img={`url(${mukti_purohit_photo})`} class="thumb" />
 		<div class="infos">
 			<h2 class="title">Mukti Purohit<span class="flag" /></h2>
 			<h3 class="date">Co Head</h3>
@@ -1847,7 +1904,7 @@
 		</div>
 	</article>
 	<article class="my-cont">
-		<div class="thumb" />
+		<div style:--img={`url(${lokesh_shelke_photo})`} class="thumb" />
 		<div class="infos">
 			<h2 class="title">Lokesh Shelke<span class="flag" /></h2>
 			<h3 class="date">Co Head</h3>
