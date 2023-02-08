@@ -2047,7 +2047,7 @@
 		width: auto;
 		height: 260px;
 		background: var(--img, url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/397014/new-york-city.png'))
-			no-repeat ;
+			no-repeat;
 		background-size: cover;
 		background-position-x: center;
 		border-radius: 3px;
