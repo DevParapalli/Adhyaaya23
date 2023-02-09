@@ -117,10 +117,10 @@
 </script>
 
 <svelte:head>
-	<link rel="preload" href="{dna}">
-	<link rel="preload" href="/draco/draco_decoder.wasm">
-	<link rel="preload" href="/draco/draco_wasm_wrapper.js">
-	<link rel="preload" href="/draco/draco_decoder.js">
+	<link rel="preload" href="{dna}" as="fetch">
+	<link rel="preload" href="/draco/draco_decoder.wasm" as="fetch" crossorigin="use-credentials">
+	<link rel="preload" href="/draco/draco_wasm_wrapper.js" as="script" crossorigin="use-credentials">
+	<link rel="preload" href="/draco/draco_decoder.js" as="script" type="text/script">
 	<title>Adhyaaya'23</title>
 </svelte:head>
 
