@@ -11,7 +11,7 @@
 	$: array = [...Array(repeat)].map(_ => [...text].concat([...separator])).flat();
 </script>
 
-<div class="controls hidden">
+<div class="controls hidden nunu">
 	<p><span>Text</span><input type="text" bind:value={text} /></p>
 	<p><span>Separator</span><input type="text" bind:value={separator} /></p>
 	<p><span>Repeat</span><input type="number" bind:value={repeat} min="1" /></p>

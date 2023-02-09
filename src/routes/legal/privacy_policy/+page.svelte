@@ -3,7 +3,7 @@
 </svelte:head>
 
 <div class="container mx-auto text-2xl pt-32 px-4">Privacy Policy</div>
-<div class="container mx-auto pt-10 px-4">
+<div class="container mx-auto pt-10 px-4 nunu">
     You have given Adhyaaya, the permission to do the following:<br/>
 1. By using our website, you hereby consent to our privacy policy and agree to its terms.<br/>
 2. Store and process the participants data (such as E-mail ID, photograph, contact number etc.) at each and every possible point for legitimate interests of Adhyaaya.<br/>

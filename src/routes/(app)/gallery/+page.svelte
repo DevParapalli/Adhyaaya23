@@ -30,11 +30,11 @@
 	class="events-container grid grid-cols-1 justify-items-stretch pt-28 min-h-[50vh] scroll-smooth"
 >
 	<div class="flex flex-col items-center justify-center pb-28">
-		<h1 class="text-4xl font-bold text-center text-white gravedigger">Gallery</h1>
+		<h1 class="text-4xl font-bold text-center text-white myfont">Gallery</h1>
 	</div>
 
 	<div class="flex flex-col items-center justify-center pb-12">
-		<h1 class="text-2xl font-bold text-center text-white gravedigger">2021</h1>
+		<h1 class="text-2xl font-bold text-center text-white nunu">2021</h1>
 	</div>
 	<div class="zoomwall" id="2021">
 		<img src="/gallery/2021/0.jpeg" alt="" />
@@ -51,7 +51,7 @@
 		<img src="/gallery/2021/11.jpeg" alt="" />
 	</div>
     <div class="flex flex-col items-center justify-center pb-12 pt-12">
-		<h1 class="text-2xl font-bold text-center text-white gravedigger">2020</h1>
+		<h1 class="text-2xl font-bold text-center text-white nunu">2020</h1>
 	</div>
 	<div class="zoomwall" id="2020">
 		<img src="/gallery/2020/0.jpg" alt="" />
@@ -68,7 +68,7 @@
 		<img src="/gallery/2020/11.jpg" alt="" />
 	</div>
     <div class="flex flex-col items-center justify-center pb-12 pt-12">
-		<h1 class="text-2xl font-bold text-center text-white gravedigger">2019</h1>
+		<h1 class="text-2xl font-bold text-center text-white nunu">2019</h1>
 	</div>
 	<div class="zoomwall" id="2019">
 		<img src="/gallery/2019/0.jpg" alt="" />
@@ -85,7 +85,7 @@
 		<img src="/gallery/2019/11.jpg" alt="" />
 	</div>
     <div class="flex flex-col items-center justify-center pb-12 pt-12">
-		<h1 class="text-2xl font-bold text-center text-white gravedigger">2018</h1>
+		<h1 class="text-2xl font-bold text-center text-white nunu">2018</h1>
 	</div>
 	<div class="zoomwall" id="2018">
 		<img src="/gallery/2018/0.jpg" alt="" />

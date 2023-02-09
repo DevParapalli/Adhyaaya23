@@ -4,7 +4,7 @@
 	<div
 		class="text-content h-1/2 w-full xl:w-2/3 text-justify text-sm  md:text-lg xl:text-2xl flex flex-col items-center justify-center bg-clip-text text-transparent bg-gradient-to-tr from-pink-200 via-fuchsia-200 to-sky-200 font-semibold"
 	>
-		<div class="max-w-lg lg:max-w-xl px-auto md:pl-10 pb-16">
+		<div class="max-w-lg lg:max-w-xl px-auto md:pl-10 pb-16 nunu font-medium">
 			Over the past years Adhyaaya has had the privilege to have hosted a number of sponsors which
 			provided a very entertaining experience to our visitors as well as the brand. The crowd
 			engagement, media exposure, sampling and brand building opportunities offered at Adhyaaya are

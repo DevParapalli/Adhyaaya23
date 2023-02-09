@@ -19,7 +19,7 @@
 		<div class="card-container">
 			<div class=" card w-96 bg-base-200 shadow-xl border border-white">
 				<div class="card-body">
-					<div class="self-end">
+					<div class="self-end nunu">
 						<button
 							on:click={close}
 							class="rounded-full bg-base-300 text-4xl w-[2.25rem] h-[2.25rem]"

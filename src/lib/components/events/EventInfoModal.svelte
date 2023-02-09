@@ -100,11 +100,11 @@
         <div class="content-container flex flex-col items-baseline lg:w-2/3 px-6 pt-6 bg-purple-900">
             <h2 class="event-name text-4xl">{event.name}</h2>
             <p class="date py-2">{display_date}</p>
-            <p class="event-description py-2">{event.description}</p>
-            <p class="ec-contact py-2">
+            <p class="event-description py-2 nunu">{event.description}</p>
+            <p class="ec-contact py-2 nunu">
                 For Queries Contact:<br />
                 {#each event.contact as ec}
-                    <span class="font-bold">{ec.name}</span> - {ec.phone}<br />
+                    <span class="font-bold nunu">{ec.name}</span> - {ec.phone}<br />
                 {/each}
             </p>
             <div class="player-indicator flex flex-row flex-wrap justify-evenly items-center mt-auto w-full gap-4">

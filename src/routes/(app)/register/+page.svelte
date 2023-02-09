@@ -11,16 +11,16 @@
 	</div>
     <div class="bg-red-500/40 p-6 rounded-lg text-white text-justify mx-auto max-w-lg">
         <h3 class="text-xl font-bold mb-4">Payment Processor Issues</h3>
-        <p class="mb-4">We're currently facing issues with our payment processor, and so have disabled registrations. Please stay tuned for updates. In the meantime, if you need assistance, please contact:</p>
+        <p class="mb-4 nunu">We're currently facing issues with our payment processor, and so have disabled registrations. Please stay tuned for updates. In the meantime, if you need assistance, please contact:</p>
         <div class="flex items-center justify-center">
           <div class="bg-red-500/30 p-4 rounded-full mr-4">
             <iconify-icon icon="uil:user" class="text-4xl" />
           </div>
           <div class="text-left">
-            <h4 class="font-bold">John Doe</h4>
-            <p>Support Manager</p>
-            <p><a href="tel:555-555-5555">555-555-5555</a></p>
-            <p><a href="mailto:john.doe@example.com">john.doe@example.com</a></p>
+            <h4 class="font-bold nunu">John Doe</h4>
+            <p class="nunu">Support Manager</p>
+            <p><a href="tel:555-555-5555" class="nunu">555-555-5555</a></p>
+            <p><a href="mailto:john.doe@example.com" class="nunu">john.doe@example.com</a></p>
           </div>
         </div>
       </div>

@@ -3,7 +3,7 @@
 	import { enhance } from "$app/forms";
     let submit = false;
 </script>
-<div class="md:h-full flex flex-col md:flex-row justify-center items-center m-auto pt-12 2xl:pt-24 ">
+<div class="md:h-full flex flex-col md:flex-row justify-center items-center m-auto pt-12 2xl:pt-24">
     <div class="section md:w-1/3 w-5/6 h-5/6 md:bg-black/20 py-3 md:py-0 rounded-lg md:border border-white">
         <form on:submit={() => {
             submit = true;
@@ -71,20 +71,20 @@
     <h3 class="text-2xl lg:text-4xl xl:text-6xl pt-0 md:pt-10">Contact Us</h3>
     <div class="contact-info px-4 md:px-10 pt-4 flex flex-col gap-4 md:gap-8 items-start">
         <div class="card card-compact mx-auto bg-black/50 shadow-xl w-full">
-            <div class="card-body">
-                <h2 class="card-title">For Event-Related Queries,</h2>
-				<p>Malhar Paradkar</p>
-                <a href="tel:+918793150182" class="inline-flex items-center gap-2"><iconify-icon icon="mdi:phone-outline"/> 8793150182</a>
-                <a href="mailto:parapallidev@gmail.com" class="inline-flex items-center gap-2"><iconify-icon icon="mdi:email-outline"/>parapallidev@gmail.com</a>
+            <div class="card-body ">
+                <h2 class="card-title nunu">For Event-Related Queries,</h2>
+				<p class="nunu">Malhar Paradkar</p>
+                <a href="tel:+918793150182" class="inline-flex items-center gap-2 nunu"><iconify-icon icon="mdi:phone-outline"/> 8793150182</a>
+                <a href="mailto:parapallidev@gmail.com" class="inline-flex items-center gap-2 nunu"><iconify-icon icon="mdi:email-outline"/>parapallidev@gmail.com</a>
               </div>
           </div>
 		  <!-- <div class="text-6xl mx-auto">OR</div> -->
           <div class="card card-compact mx-auto bg-black/50 shadow-xl">
-            <div class="card-body">
-              <h2 class="card-title">For Other/General Queries,</h2>
-			<p>Shlok Suraj Tajne</p>
-			  <a href="tel:+918793150182" class="inline-flex items-center gap-2"><iconify-icon icon="mdi:phone-outline"/> 8793150182</a>
-              <a href="mailto:parapallidev@gmail.com" class="inline-flex items-center gap-2"><iconify-icon icon="mdi:email-outline"/>parapallidev@gmail.com</a>
+            <div class="card-body nunu">
+              <h2 class="card-title nunu">For Other/General Queries,</h2>
+			<p class="nunu">Shlok Suraj Tajne</p>
+			  <a href="tel:+918793150182" class="inline-flex items-center gap-2 nunu"><iconify-icon icon="mdi:phone-outline"/> 8793150182</a>
+              <a href="mailto:parapallidev@gmail.com" class="inline-flex items-center gap-2 nunu"><iconify-icon icon="mdi:email-outline"/>parapallidev@gmail.com</a>
             </div>
           </div>
     </div>

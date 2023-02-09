@@ -3,7 +3,7 @@
 </svelte:head>
 
 <div class="container mx-auto text-2xl pt-32 px-4">Terms and Conditions</div>
-<div class="container mx-auto pt-10 px-4">
+<div class="container mx-auto pt-10 px-4 nunu">
 The Terms and Conditions are as follows :<br/>
 1. There is no option of refund of any entry. So, kindly do the registration only when you are confirmed to participate.<br/>
 2. Events are conducted and right to decision is held by the Adhyaaya committee.<br/>

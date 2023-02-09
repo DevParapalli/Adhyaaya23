@@ -22,7 +22,7 @@
     /* add Tailwind CSS styles here */
   </style>
   
- <div class="flex items-center flex-col pt-28">
+ <div class="flex items-center flex-col pt-28 px-4">
     <div class="text-4xl font-bold text-center">Sponsors</div>
   
     <div class="mt-12">
