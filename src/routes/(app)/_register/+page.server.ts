@@ -2,7 +2,7 @@ import { EVENTS, type AdhyaayaEvent } from '$lib/data/events';
 import { convertToJSON } from '$lib/util';
 import { fail, redirect } from '@sveltejs/kit';
 import { supabase } from '$lib/supabaseClient';
-import type { Actions } from './$types';
+import type { Actions } from '../register/$types';
 import validator from 'validator';
 import type { DBRegistration } from '$lib/types';
 import { dev } from '$app/environment';
