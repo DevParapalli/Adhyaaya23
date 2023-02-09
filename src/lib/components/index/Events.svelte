@@ -6,10 +6,10 @@
     
     <EventsCarousel />
     
-    <div class="middle-container text-3xl">
+    <div class="middle-container text-xl lg:text-3xl">
         <!-- <button class="max-w-lg w-full bg-red-500 p-12">EXPLORE OUR EVENTS</button> -->
         <!-- <a class="btn cta">So Click-a-licious</a> -->
-        <a href="/events" class="da-button relative p-8 max-w-lg text-center bg-gradient-to-r from-pink-500 via-fuchsia-500 to-sky-500 rounded-xl transition-all duration-300 hover:scale-105 active:scale-95 active:opacity-90 inline-flex items-center justify-center gap-3 mx-8"><span>EXPLORE OUR EVENTS</span> <iconify-icon icon="mdi:arrow-right" /></a>
+        <a href="/events" class="da-button relative p-4 lg:p-8 max-w-xs lg:max-w-lg text-center bg-gradient-to-r from-pink-500 via-fuchsia-500 to-sky-500 rounded-xl transition-all duration-300 hover:scale-105 active:scale-95 active:opacity-90 inline-flex items-center justify-center gap-3 mx-8"><span>EXPLORE OUR EVENTS</span> <iconify-icon icon="mdi:arrow-right" /></a>
     </div>
     
     <EventsCarousel alt />

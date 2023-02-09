@@ -36,8 +36,15 @@ export interface AdhyaayaEvent {
 	custom_properties?: AdhyaayaCustomProperty[];
 }
 
-import virtual_placement_icon from '$lib/assets/icons/virtual-placement.png'
-
+import virtual_placement_icon from '$lib/assets/icons/virtual-placement.png?url'
+import respawn from '$lib/assets/icons/respawn.png?url'
+import vaad_vivad from '$lib/assets/icons/vaad-vivad.png?url'
+import foodoshit from '$lib/assets/icons/foodoholics.png?url'
+import cricbash from '$lib/assets/icons/cricbash.png?url'
+import cadoshit from '$lib/assets/icons/cadoshop.png?url'
+import jigyasa from '$lib/assets/icons/jigyasa.png?url'
+import stargaze from '$lib/assets/icons/stargaze.png?url'
+import gdsc from '$lib/assets/icons/gdsc.png?url'
 
 export const EVENTS: AdhyaayaEvent[] = [
 	
@@ -53,7 +60,7 @@ export const EVENTS: AdhyaayaEvent[] = [
 		start_date: new Date('28 Feb 2023'),
 		end_date: new Date('28 Feb 2023'),
 		small_image: 'https://placeimg.com/360/360/tech',
-		icon: 'flat-color-icons:idea',
+		icon: `url::${respawn}`,
 		poster: 'http://placeimg.com/1280/720/tech',
 		contact: [
 			{
@@ -91,7 +98,7 @@ export const EVENTS: AdhyaayaEvent[] = [
 		start_date: new Date('28 Feb 2023'),
 		end_date: new Date('28 Feb 2023'),
 		small_image: 'https://placeimg.com/360/360/tech',
-		icon: 'flat-color-icons:idea',
+		icon: `url::${respawn}`,	
 		poster: 'http://placeimg.com/1280/720/tech',
 		contact: [
 			{
@@ -114,7 +121,7 @@ export const EVENTS: AdhyaayaEvent[] = [
 		start_date: new Date('28 Feb 2023'),
 		end_date: new Date('28 Feb 2023'),
 		small_image: 'https://placeimg.com/360/360/tech',
-		icon: 'flat-color-icons:idea',
+		icon: `url::${respawn}`,
 		poster: 'http://placeimg.com/1280/720/tech',
 		contact: [
 			{
@@ -136,7 +143,7 @@ export const EVENTS: AdhyaayaEvent[] = [
 		start_date: new Date('28 Feb 2023'),
 		end_date: new Date('28 Feb 2023'),
 		small_image: 'https://placeimg.com/360/360/tech',
-		icon: 'flat-color-icons:idea',
+		icon: `url::${respawn}`,
 		poster: 'http://placeimg.com/1280/720/tech',
 		contact: [
 			{
@@ -331,7 +338,7 @@ export const EVENTS: AdhyaayaEvent[] = [
 				phone: '1234567890'
 			}
 		],
-		is_active: true
+		is_active: false
 	},
 	{
 		id: 'vaad-vivad',
@@ -344,7 +351,7 @@ export const EVENTS: AdhyaayaEvent[] = [
 		start_date: new Date('28 Feb 2023'),
 		end_date: new Date('28 Feb 2023'),
 		small_image: 'https://placeimg.com/360/360/tech',
-		icon: 'carbon:code',
+		icon: `url::${vaad_vivad}`,
 		poster: 'http://placeimg.com/1280/720/tech',
 		contact: [
 			{
@@ -388,7 +395,7 @@ export const EVENTS: AdhyaayaEvent[] = [
 		start_date: new Date('28 Feb 2023'),
 		end_date: new Date('28 Feb 2023'),
 		small_image: 'https://placeimg.com/360/360/tech',
-		icon: 'carbon:code',
+		icon: `url::${foodoshit}`,
 		poster: 'http://placeimg.com/1280/720/tech',
 		contact: [
 			{
@@ -410,7 +417,7 @@ export const EVENTS: AdhyaayaEvent[] = [
 		start_date: new Date('28 Feb 2023'),
 		end_date: new Date('28 Feb 2023'),
 		small_image: 'https://placeimg.com/360/360/tech',
-		icon: 'carbon:code',
+		icon: `url::${cricbash}`,
 		poster: 'http://placeimg.com/1280/720/tech',
 		contact: [
 			{
@@ -433,7 +440,7 @@ export const EVENTS: AdhyaayaEvent[] = [
 		start_date: new Date('28 Feb 2023'),
 		end_date: new Date('28 Feb 2023'),
 		small_image: 'https://placeimg.com/360/360/tech',
-		icon: 'carbon:code',
+		icon: `url::${cadoshit}`,
 		poster: 'http://placeimg.com/1280/720/tech',
 		contact: [
 			{
@@ -454,7 +461,7 @@ export const EVENTS: AdhyaayaEvent[] = [
 		start_date: new Date('28 Feb 2023'),
 		end_date: new Date('28 Feb 2023'),
 		small_image: 'https://placeimg.com/360/360/tech',
-		icon: 'carbon:code',
+		icon: `url::${jigyasa}`,
 		poster: 'http://placeimg.com/1280/720/tech',
 		contact: [
 			{
@@ -476,7 +483,7 @@ export const EVENTS: AdhyaayaEvent[] = [
 		start_date: new Date('28 Feb 2023'),
 		end_date: new Date('28 Feb 2023'),
 		small_image: 'https://placeimg.com/360/360/tech',
-		icon: 'carbon:code',
+		icon: `url::${stargaze}`,
 		poster: 'http://placeimg.com/1280/720/tech',
 		contact: [
 			{
@@ -486,18 +493,39 @@ export const EVENTS: AdhyaayaEvent[] = [
 		],
 		is_active: true
 	},
+	// {
+	// 	id: 'robotics-workshop',
+	// 	mode: 'offline', 
+	// 	category: 'workshops',
+	// 	name: 'build a bot',
+	// 	description: 'blah blah blah', //Avishkar is a technical event that tests your knowledge in the field of computer science and technology. It is a 24-hour event that will test your skills in programming, debugging, and logical thinking. It is a team event with a maximum of 3 members per team. The event will be held on 27th and 28th February 2021.
+	// 	amount: [1600_00],
+	// 	team_members: [1],
+	// 	start_date: new Date('28 Feb 2023'),
+	// 	end_date: new Date('28 Feb 2023'),
+	// 	small_image: 'https://placeimg.com/360/360/tech',
+	// 	icon: 'carbon:code',
+	// 	poster: 'http://placeimg.com/1280/720/tech',
+	// 	contact: [
+	// 		{
+	// 			name: 'Devansh Parapalli',
+	// 			phone: '1234567890'
+	// 		}
+	// 	],
+	// 	is_active: true
+	// },
 	{
-		id: 'robotics-workshop',
+		id: 'stock-market-workshop',
 		mode: 'offline', 
 		category: 'workshops',
-		name: 'build a bot',
+		name: 'Stock Market Workshop',
 		description: 'blah blah blah', //Avishkar is a technical event that tests your knowledge in the field of computer science and technology. It is a 24-hour event that will test your skills in programming, debugging, and logical thinking. It is a team event with a maximum of 3 members per team. The event will be held on 27th and 28th February 2021.
-		amount: [1600_00],
+		amount: [100_00],
 		team_members: [1],
 		start_date: new Date('28 Feb 2023'),
 		end_date: new Date('28 Feb 2023'),
 		small_image: 'https://placeimg.com/360/360/tech',
-		icon: 'carbon:code',
+		icon: 'icon-park:stock-market',
 		poster: 'http://placeimg.com/1280/720/tech',
 		contact: [
 			{
@@ -513,12 +541,12 @@ export const EVENTS: AdhyaayaEvent[] = [
 		category: 'workshops',
 		name: 'when is google',
 		description: 'blah blah blah', //Avishkar is a technical event that tests your knowledge in the field of computer science and technology. It is a 24-hour event that will test your skills in programming, debugging, and logical thinking. It is a team event with a maximum of 3 members per team. The event will be held on 27th and 28th February 2021.
-		amount: [1600_00],
+		amount: [0],
 		team_members: [1],
 		start_date: new Date('28 Feb 2023'),
 		end_date: new Date('28 Feb 2023'),
 		small_image: 'https://placeimg.com/360/360/tech',
-		icon: 'carbon:code',
+		icon: `url::${gdsc}`,
 		poster: 'http://placeimg.com/1280/720/tech',
 		contact: [
 			{
@@ -529,17 +557,17 @@ export const EVENTS: AdhyaayaEvent[] = [
 		is_active: true
 	},
 	{
-		id: 'photography-workshop',
+		id: 'ev-workshop',
 		mode: 'offline', 
 		category: 'workshops',
-		name: 'i shoot kids',
+		name: 'EV Workshop',
 		description: 'blah blah blah', //Avishkar is a technical event that tests your knowledge in the field of computer science and technology. It is a 24-hour event that will test your skills in programming, debugging, and logical thinking. It is a team event with a maximum of 3 members per team. The event will be held on 27th and 28th February 2021.
-		amount: [1600_00],
+		amount: [100_00],
 		team_members: [1],
 		start_date: new Date('28 Feb 2023'),
 		end_date: new Date('28 Feb 2023'),
 		small_image: 'https://placeimg.com/360/360/tech',
-		icon: 'carbon:code',
+		icon: 'bi:ev-station-fill',
 		poster: 'http://placeimg.com/1280/720/tech',
 		contact: [
 			{
@@ -553,14 +581,14 @@ export const EVENTS: AdhyaayaEvent[] = [
 		id: 'aeromodelling-workshop',
 		mode: 'offline', 
 		category: 'workshops',
-		name: 'Multirotor Workshop',
+		name: 'Aeromodelling Workshop',
 		description: 'blah blah blah', //Avishkar is a technical event that tests your knowledge in the field of computer science and technology. It is a 24-hour event that will test your skills in programming, debugging, and logical thinking. It is a team event with a maximum of 3 members per team. The event will be held on 27th and 28th February 2021.
-		amount: [1600_00],
+		amount: [2400_00],
 		team_members: [1],
 		start_date: new Date('28 Feb 2023'),
 		end_date: new Date('28 Feb 2023'),
 		small_image: 'https://placeimg.com/360/360/tech',
-		icon: 'carbon:code',
+		icon: 'mdi:aeroplane',
 		poster: 'http://placeimg.com/1280/720/tech',
 		contact: [
 			{

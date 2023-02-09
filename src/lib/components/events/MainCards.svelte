@@ -3,7 +3,7 @@
 	import FragmentShader from './shaders/fragment.glsl?raw';
 	import VertexShader from './shaders/vertex.glsl?raw';
 	import NoiseShader from './shaders/noise.glsl?raw';
-
+	import tech from '$lib/assets/icons/tech.png'
 	let canvas: HTMLCanvasElement;
     let card: HTMLAnchorElement;
     
@@ -16,6 +16,7 @@
     export let icon = "";
     export let icontext = "DevParapalli";
     export let color = 1;
+	export let image = tech;
 
     let _bg : string;
 
@@ -113,9 +114,9 @@
             };
             animate();
     };  
-
+	
     onMount(async () => {
-        await createWave(card, colors);
+        createWave(card, colors);
     });
 </script>
 
@@ -128,8 +129,9 @@
 	<span class="album-details">
 		<span class="icon inline-flex justify-center items-center justify-items-center"><iconify-icon {icon}/> {icontext}</span>
 		<span class="title">{title}</span>
-		<span class="subtitle">{subtitle}</span>
+		<span class="subtitle {subtitle.length < 3 ? 'text-transparent':''}">{subtitle}</span>
 		<span style:--bg={_bg} class="subtext">{subtext}</span>
+		<img src="{image}" class="absolute mx-auto left-0 right-0 h-auto w-36 pt-8" alt="">
 	</span>
 </a>
 
@@ -152,7 +154,7 @@
         
 		transition: all 0.2s ease-out;
 		transform: scale(1);
-        @apply m-auto h-52 sm:h-80 w-52 sm:w-60 ;
+        @apply m-auto h-80 w-64 ;
 	}
 
 	.album-item:hover {

@@ -239,6 +239,10 @@
 	}
 
 	let height: number = 0;
+
+	import tech from '$lib/assets/icons/tech.png';
+	import ntech from '$lib/assets/icons/nontech.png';
+	import wksp from '$lib/assets/icons/workshops.png';
 </script>
 
 <svelte:head>
@@ -269,9 +273,9 @@
 	<div
 		class="section-header h-full min-h-[calc(100vh-7rem)] flex items-center justify-center flex-wrap transition-all duration-500 ease-in-out gap-4 md:gap-10 pt-16"
 	>
-		<MainCards color={3} href="#technical" icontext="" title="Technical" subtitle="Events" subtext="" />
-		<MainCards color={2} href="#non-technical" icontext="" title="Non-Tech" subtitle="Events" subtext="" />
-		<MainCards color={0} href="#workshops" icontext="" title="Workshops" subtitle="" subtext="" />
+		<MainCards color={3} href="#technical" icontext="" title="Technical" subtitle="Events" subtext="" image="{tech}"/>
+		<MainCards color={2} href="#non-technical" icontext="" title="Non-Tech" subtitle="Events" subtext="" image="{ntech}" />
+		<MainCards color={0} href="#workshops" icontext="" title="Workshops" subtitle="." subtext="" image="{wksp}" />
 	</div>
 
 	<div class="flex flex-col items-center justify-center pt-16">

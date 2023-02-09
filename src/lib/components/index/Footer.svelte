@@ -25,7 +25,7 @@
     </div>
     <div class="flex flex-col items-stretch justify-evenly p-4 h-1/2">
         <div class="heading text-2xl btn btn-ghost btn-lg transition-none hover:scale-100 active:scale-100 hover:bg-opacity-0 cursor-auto border-0 border-b-2 rounded-b-none border-white hover:text-white">Legal</div>
-        <div class="btn btn-ghost text-lg hover:text-white">Terms and Conditions</div>
+        <div class="btn btn-ghost text-lg hover:text-white">T &amp; C</div>
         <div class="btn btn-ghost text-lg hover:text-white">Privacy Policy</div>
         <div class="btn btn-ghost text-lg hover:text-white">Legal Contact</div>
     </div>

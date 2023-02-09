@@ -7,7 +7,7 @@
     export let event: AdhyaayaEvent;
     export let isOpen: boolean;
 
-    import {closeModal as _closeModal} from 'svelte-modals';
+    import {closeModal as _closeModal, closeAllModals} from 'svelte-modals';
 	import { onMount } from "svelte";
 	import { fade } from "svelte/transition";
 
@@ -58,6 +58,7 @@
     function closeModal() {
         window.scrollTo({ top: scrollPos, behavior: 'smooth'});
         _closeModal();
+        closeAllModals();
     }
     onMount(() => {
         preloadCode('/register');
@@ -81,7 +82,7 @@
 
 {#if isOpen}
 
-<div transition:fade class="modal-wrapper relative h-full w-full z-[210] bg-black/50">
+<div class="modal-wrapper relative h-full w-full z-[210] bg-black/50">
     <button class="h-10 w-10 md:h-12 md:w-12 rounded-full border border-white right-10 top-8 absolute transition-all duration-500 ease-in-out hover:scale-105 active:scale-95 z-50 mix-blend-difference">
         <div
         class="absolute w-[18px] h-[2px] origin-center bg-white transition-all ease-in-out duration-500"
@@ -135,13 +136,14 @@
                 {/if} -->
             </div>
             <div class="button-container flex lg:flex-row flex-col justify-around gap-4 w-full mt-4 mb-4">
-                <button on:click={() => {
+                <button on:click={async () => {
                     closeModal();
+                    closeAllModals();
                     if (members_selected) {
-                        goto(`/register?event=${event.id}&members=${members_selected}`);
+                        await goto(`/register?event=${event.id}&members=${members_selected}`);
                     }
                     else {
-                        goto(`/register?event=${event.id}`);
+                        await goto(`/register?event=${event.id}`);
                     }
                 }} class="register-btn w-full lg:w-1/2 bg-green-500 rounded-lg p-2 hover:scale-105 active:scale-95 active:opacity-90 transition-all duration-300 ease-in-out uppercase">Register</button>
                 <button class="learn-more-btn w-full lg:w-1/2 bg-blue-500 rounded-lg p-2 hover:scale-105 active:scale-95 active:opacity-90 transition-all duration-300 ease-in-out uppercase">Learn More</button>
