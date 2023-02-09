@@ -46,7 +46,7 @@
 	import dna from '$lib/assets/3d-models/dna.glb?url';
 	import { fade } from 'svelte/transition';
 
-	onMount(async () => {
+	async function loadObjects() {
 		const canvas = document.getElementById('dna-bg') ?? document.createElement('canvas');
 		sketch = new Sketch(canvas);
 		sketch.loadObjects();
@@ -63,9 +63,12 @@
 		animate();
 
 		setTimeout(() => {
-			loaded = true;
 			duration.set(0);
-		}, 1000);
+		}, 1500);
+		loaded = true;
+	}
+	onMount(() => {
+		loadObjects();
 	});
 
 	function scrollMapping(percentScroll: number) {

@@ -56,7 +56,7 @@
 						{#if EVENT?.icon.includes('url::')}
 						<img class="h-9 w-9" src="{EVENT.icon.replace('url::', '')}" alt="">
 				   {:else}
-					   <iconify-icon class="text-8xl" icon={EVENT?.icon} />
+					   <iconify-icon class="text-4xl" icon={EVENT?.icon} />
 				   {/if}
 						</div>
 						<div class="event-data text-lg text-gray-700 font-mono">
