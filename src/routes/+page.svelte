@@ -63,9 +63,10 @@
 		animate();
 
 		setTimeout(() => {
+			loaded = true;
 			duration.set(0);
-		}, 1500);
-		loaded = true;
+		}, 2500);
+		
 	}
 	onMount(() => {
 		loadObjects();
