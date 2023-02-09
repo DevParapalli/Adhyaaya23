@@ -1,7 +1,10 @@
 <script>
     import "iconify-icon";
-    import "lite-youtube-embed";
-    import "lite-youtube-embed/src/lite-yt-embed.css";
+    import { onMount } from "svelte";
+    onMount(()=>{
+        import("lite-youtube-embed");
+        import("lite-youtube-embed/src/lite-yt-embed.css");
+    })
 </script>
 
 <div class="md:h-full pt-32
