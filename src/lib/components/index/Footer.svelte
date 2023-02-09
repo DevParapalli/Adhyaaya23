@@ -1,5 +1,7 @@
 <script>
     import "iconify-icon";
+    import "lite-youtube-embed";
+    import "lite-youtube-embed/src/lite-yt-embed.css";
 </script>
 
 <div class="md:h-full pt-32
@@ -37,6 +39,7 @@
         </div>
     </div>
     <div class="h-full lg:w-1/3  order-1 lg:order-3 aspect-[16/9]" >
-        <iframe width="100%" height="100%" src="https://www.youtube-nocookie.com/embed/YiVULH51pJA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <!-- <iframe width="100%" height="100%" src="https://www.youtube-nocookie.com/embed/YiVULH51pJA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
+        <lite-youtube videoid="YiVULH51pJA" playlabel="Adhyaaya'23 Coming Soon" class="h-full w-full"></lite-youtube>
     </div>
 </div>
