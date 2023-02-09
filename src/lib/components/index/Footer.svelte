@@ -19,15 +19,15 @@
         <a href="/sponsors" class="btn btn-ghost text-lg hover:text-white">Sponsors</a>
         <a href="/gallery" data-sveltekit-reload class="btn btn-ghost text-lg hover:text-white">Gallery</a>
         <a href="/register?select=true" class="btn btn-ghost text-lg hover:text-white">Register</a>
-        <div class="btn btn-ghost text-lg hover:text-white">Timeline</div>
+        <a href="/timeline" class="btn btn-ghost text-lg hover:text-white">Timeline</a>
 
         
     </div>
     <div class="flex flex-col items-stretch justify-evenly p-4 h-1/2">
         <div class="heading text-2xl btn btn-ghost btn-lg transition-none hover:scale-100 active:scale-100 hover:bg-opacity-0 cursor-auto border-0 border-b-2 rounded-b-none border-white hover:text-white">Legal</div>
-        <div class="btn btn-ghost text-lg hover:text-white">T &amp; C</div>
-        <div class="btn btn-ghost text-lg hover:text-white">Privacy Policy</div>
-        <div class="btn btn-ghost text-lg hover:text-white">Legal Contact</div>
+        <a href="/legal/terms_and_conditions" class="btn btn-ghost text-lg hover:text-white">T &amp; C</a>
+        <a href="/legal/privacy_policy" class="btn btn-ghost text-lg hover:text-white">Privacy Policy</a>
+        <a href="/legal/contact_info" class="btn btn-ghost text-lg hover:text-white">Legal Contact</a>
     </div>
     </div>
     <div class="h-full lg:w-1/3  flex flex-col order-3 lg:order-2">

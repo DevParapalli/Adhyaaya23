@@ -29,7 +29,7 @@
     .team-button::before {
         content: '';
         z-index: -1;
-        @apply absolute h-full w-full rounded-lg blur-xl bg-gradient-to-tr from-pink-500 via-red-500 to-yellow-500 -translate-x-[7.5%]
+        @apply absolute h-full w-full rounded-lg blur-lg opacity-50 bg-gradient-to-tr from-pink-500 via-red-500 to-yellow-500 -translate-x-[7.5%]
     }
 
     
