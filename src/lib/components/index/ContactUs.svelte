@@ -14,7 +14,7 @@
 					type="text"
 					name="name"
 					id="name"
-					class="block py-2 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-400 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+					class="nunu block py-2 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-400 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
 					placeholder=" "
 					required
 				/>
@@ -29,7 +29,7 @@
 					type="email"
 					name="email"
 					id="email"
-					class="block py-2 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-400 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+					class="nunu block py-2 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-400 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
 					placeholder=" "
 					required
 				/>
@@ -39,11 +39,11 @@
 					>Email</label
 				>
 			</div>
-            <div class="relative z-0 mb-2 w-full group">
+            <div class="relative z-0 mb-2 w-full group pb-10">
 				<textarea
 					name="message"
 					id="message"
-					class="block py-2 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-400 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+					class="nunu block py-2 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-400 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
 					placeholder=" "
 					required
 				/>
@@ -53,7 +53,7 @@
 					>Message</label
 				>
 			</div>
-            <button disabled={submit} class="btn btn-outline btn-block" type="submit">Submit</button>
+            <button disabled={submit} class="btn btn-outline btn-block bg-white/25 hover:bg-white/50 hover:scale-105 active:opacity-90 active:scale-95 " type="submit">Submit</button>
 			<div class="info-container w-full flex-col items-center justify-center px-4 xl:px-10  hidden lg:flex">
 				<div class="card card-compact mx-auto bg-white/20 shadow-xl container">
 				<div class="card-body">

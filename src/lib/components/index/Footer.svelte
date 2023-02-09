@@ -9,7 +9,7 @@
 
 <div class="md:h-full pt-32
  w-11/12  m-auto flex flex-col lg:flex-row items-stretch justify-evenly pb-4">
-    <div class="h-full lg:w-1/3 bg-purple-900/20 order-2 lg:order-1 p-4">
+    <div class="h-full lg:w-1/3 bg-purple-900/20 order-2 lg:order-3 p-4">
     <!-- Links Here, 2 headings -->
     <div class="flex flex-col items-stretch justify-evenly p-4 h-1/2">
         <div class="heading text-2xl btn btn-ghost btn-lg transition-none hover:scale-100 active:scale-100 hover:bg-opacity-0 cursor-auto border-0 border-b-2 rounded-b-none border-white hover:text-white">Sitemap</div>
@@ -41,7 +41,7 @@
         <button class="youtube h-8 w-8 lg:h-12 lg:w-12 bg-red-500 rounded-full text-2xl lg:text-4xl inline-flex items-center justify-center hover:scale-105 active:scale-95 active:opacity-95 transition-all duration-300 ease-in-out"><iconify-icon icon="mdi:youtube"/></button>
         </div>
     </div>
-    <div class="h-full lg:w-1/3  order-1 lg:order-3 aspect-[16/9]" >
+    <div class="h-full lg:w-1/3  order-1 lg:order-1 aspect-[16/9]" >
         <!-- <iframe width="100%" height="100%" src="https://www.youtube-nocookie.com/embed/YiVULH51pJA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
         <lite-youtube videoid="YiVULH51pJA" playlabel="Adhyaaya'23 Coming Soon" class="h-full w-full"></lite-youtube>
     </div>

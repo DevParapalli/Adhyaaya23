@@ -5,7 +5,7 @@
 
 <div class="bg w-full pt-20 object-cover pb-10 min-h-screen" style="--bg:url({bg});--opacity:0.75">
 	<div
-		class="header mx-auto text-4xl text-center mb-8 text-white font-bold uppercase font-mono gravedigger"
+		class="header mx-auto text-4xl text-center mb-8 text-white font-bold uppercase myfont"
 	>
 		Registration Form
 	</div>
