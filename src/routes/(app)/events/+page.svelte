@@ -245,7 +245,7 @@
 	<title>Events | Adhyaaya'23</title>
 </svelte:head>
 
-<svelte:window on:resize={() => {}} on:scroll={(e)=>{
+<svelte:window on:resize={() => {}} on:scroll|passive={(e)=>{
 	onMouseMove(0,convertRange(window.scrollY, [0, height - window.innerHeight], [0, 1]))
 }} />
 
