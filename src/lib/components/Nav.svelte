@@ -118,7 +118,8 @@
 					}}
 					class="menu-item">Sponsors</a
 				>
-				<a
+				<a	
+				data-sveltekit-reload
 					href="/gallery"
 					on:focus={() => {
 						setBackgroundPosition(bgX, -100);

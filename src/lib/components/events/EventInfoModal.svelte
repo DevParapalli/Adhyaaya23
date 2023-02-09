@@ -100,7 +100,7 @@
         <div class="content-container flex flex-col items-baseline lg:w-2/3 px-6 pt-6 bg-purple-900">
             <h2 class="event-name text-4xl">{event.name}</h2>
             <p class="date py-2">{display_date}</p>
-            <p class="event-description py-2">{Array(15).fill(event.description)}</p>
+            <p class="event-description py-2">{event.description}</p>
             <p class="ec-contact py-2">
                 For Queries Contact:<br />
                 {#each event.contact as ec}

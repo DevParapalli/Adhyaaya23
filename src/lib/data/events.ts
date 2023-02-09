@@ -54,7 +54,7 @@ export const EVENTS: AdhyaayaEvent[] = [
 		mode: 'offline',
 		category: 'non-technical',
 		name: 'Respawn',
-		description: 'blah blah blah', //Avishkar is a technical event that tests your knowledge in the field of computer science and technology. It is a 24-hour event that will test your skills in programming, debugging, and logical thinking. It is a team event with a maximum of 3 members per team. The event will be held on 27th and 28th February 2021.
+		description: 'Respawn is an e-sports event featuring popular games like COD, VALORANT and CHESS, available on Mobile and PC platforms. Open to all ages, COD and VALORANT have a team entry fee, with teams of 4 and 5 players respectively. CHESS has a solo entry fee. Matches in COD and VALORANT last for a maximum of 40 minutes and cheating will result in a ban. Joining information will be provided through a WhatsApp group.', 
 		amount: [0, 0, 0],
 		team_members: [0, 0, 0],
 		start_date: new Date('28 Feb 2023'),
@@ -64,9 +64,13 @@ export const EVENTS: AdhyaayaEvent[] = [
 		poster: 'http://placeimg.com/1280/720/tech',
 		contact: [
 			{
-				name: 'Devansh Parapalli',
-				phone: '1234567890'
-			}
+				name: 'Rohit Bhoge',
+				phone: '7972520981'
+			},
+			{
+				name: 'Shiwang Pandey',
+				phone: '8698760337'
+			},
 		],
 		is_active: true,
 		custom_properties: [
@@ -92,7 +96,7 @@ export const EVENTS: AdhyaayaEvent[] = [
 		mode: 'offline',
 		category: 'non-technical',
 		name: 'Respawn Valorant',
-		description: 'blah blah blah', //Avishkar is a technical event that tests your knowledge in the field of computer science and technology. It is a 24-hour event that will test your skills in programming, debugging, and logical thinking. It is a team event with a maximum of 3 members per team. The event will be held on 27th and 28th February 2021.
+		description: 'Respawn is an e-sports event featuring popular games like COD, VALORANT and CHESS, available on Mobile and PC platforms. Open to all ages, COD and VALORANT have a team entry fee, with teams of 4 and 5 players respectively. CHESS has a solo entry fee. Matches in COD and VALORANT last for a maximum of 40 minutes and cheating will result in a ban. Joining information will be provided through a WhatsApp group.', 
 		amount: [250_00],
 		team_members: [5],
 		start_date: new Date('28 Feb 2023'),
@@ -115,7 +119,7 @@ export const EVENTS: AdhyaayaEvent[] = [
 		mode: 'offline',
 		category: 'non-technical',
 		name: 'Respawn Chess',
-		description: 'blah blah blah', //Avishkar is a technical event that tests your knowledge in the field of computer science and technology. It is a 24-hour event that will test your skills in programming, debugging, and logical thinking. It is a team event with a maximum of 3 members per team. The event will be held on 27th and 28th February 2021.
+		description: 'Respawn is an e-sports event featuring popular games like COD, VALORANT and CHESS, available on Mobile and PC platforms. Open to all ages, COD and VALORANT have a team entry fee, with teams of 4 and 5 players respectively. CHESS has a solo entry fee. Matches in COD and VALORANT last for a maximum of 40 minutes and cheating will result in a ban. Joining information will be provided through a WhatsApp group.', 
 		amount: [50_00],
 		team_members: [1],
 		start_date: new Date('28 Feb 2023'),
@@ -137,7 +141,7 @@ export const EVENTS: AdhyaayaEvent[] = [
 		mode: 'offline',
 		category: 'non-technical',
 		name: 'Respawn COD',
-		description: 'blah blah blah', //Avishkar is a technical event that tests your knowledge in the field of computer science and technology. It is a 24-hour event that will test your skills in programming, debugging, and logical thinking. It is a team event with a maximum of 3 members per team. The event will be held on 27th and 28th February 2021.
+		description: 'Respawn is an e-sports event featuring popular games like COD, VALORANT and CHESS, available on Mobile and PC platforms. Open to all ages, COD and VALORANT have a team entry fee, with teams of 4 and 5 players respectively. CHESS has a solo entry fee. Matches in COD and VALORANT last for a maximum of 40 minutes and cheating will result in a ban. Joining information will be provided through a WhatsApp group.', 
 		amount: [160_00],
 		team_members: [4],
 		start_date: new Date('28 Feb 2023'),
@@ -158,7 +162,7 @@ export const EVENTS: AdhyaayaEvent[] = [
 		mode: 'offline',
 		category: 'technical',
 		name: 'Avishkar',
-		description: 'blah blah blah', //Avishkar is a technical event that tests your knowledge in the field of computer science and technology. It is a 24-hour event that will test your skills in programming, debugging, and logical thinking. It is a team event with a maximum of 3 members per team. The event will be held on 27th and 28th February 2021.
+		description: 'Avishkar is a project competition for engineering students to showcase their innovative ideas. Teams can have up to 5 members and projects can be in hardware or software categories. Competition consists of two rounds: elimination and questionnaire. Register today!', 
 		amount: [160_00, 160_00, 160_00, 160_00],
 		team_members: [1, 2, 3, 4],
 		start_date: new Date('28 Feb 2023'),
@@ -193,7 +197,7 @@ export const EVENTS: AdhyaayaEvent[] = [
 		mode: 'online',
 		category: 'technical',
 		name: 'Avishkar - Online',
-		description: 'blah blah blah', //Avishkar is a technical event that tests your knowledge in the field of computer science and technology. It is a 24-hour event that will test your skills in programming, debugging, and logical thinking. It is a team event with a maximum of 3 members per team. The event will be held on 27th and 28th February 2021.
+		description: 'Avishkar is a project competition for engineering students to showcase their innovative ideas. Teams can have up to 5 members and projects can be in hardware or software categories. Competition consists of two rounds: elimination and questionnaire. Register today!', 
 		amount: [160_00, 160_00, 160_00, 160_00],
 		team_members: [1, 2, 3, 4],
 		start_date: new Date('28 Feb 2023'),
@@ -215,7 +219,7 @@ export const EVENTS: AdhyaayaEvent[] = [
 		mode: 'offline',
 		category: 'technical',
 		name: 'Avishkar - Offline',
-		description: 'blah blah blah', //Avishkar is a technical event that tests your knowledge in the field of computer science and technology. It is a 24-hour event that will test your skills in programming, debugging, and logical thinking. It is a team event with a maximum of 3 members per team. The event will be held on 27th and 28th February 2021.
+		description: 'Avishkar is a project competition for engineering students to showcase their innovative ideas. Teams can have up to 5 members and projects can be in hardware or software categories. Competition consists of two rounds: elimination and questionnaire. Register today!', 
 		amount: [160_00, 160_00, 160_00, 160_00],
 		team_members: [1, 2, 3, 4],
 		start_date: new Date('28 Feb 2023'),
@@ -237,7 +241,7 @@ export const EVENTS: AdhyaayaEvent[] = [
 		mode: 'offline',
 		category: 'technical',
 		name: 'Caddiction',
-		description: 'blah blah blah', //Avishkar is a technical event that tests your knowledge in the field of computer science and technology. It is a 24-hour event that will test your skills in programming, debugging, and logical thinking. It is a team event with a maximum of 3 members per team. The event will be held on 27th and 28th February 2021.
+		description: 'blah blah blah', 
 		amount: [70_00, 130_00],
 		team_members: [1, 2],
 		start_date: new Date('28 Feb 2023'),
@@ -258,7 +262,7 @@ export const EVENTS: AdhyaayaEvent[] = [
 		mode: 'offline',
 		category: 'technical',
 		name: 'Virtual Placement',
-		description: 'blah blah blah', //Avishkar is a technical event that tests your knowledge in the field of computer science and technology. It is a 24-hour event that will test your skills in programming, debugging, and logical thinking. It is a team event with a maximum of 3 members per team. The event will be held on 27th and 28th February 2021.
+		description: 'blah blah blah', 
 		amount: [80_00],
 		team_members: [1],
 		start_date: new Date('28 Feb 2023'),
@@ -281,7 +285,7 @@ export const EVENTS: AdhyaayaEvent[] = [
 		mode: 'offline',
 		category: 'technical',
 		name: 'CodeVenture',
-		description: 'blah blah blah', //Avishkar is a technical event that tests your knowledge in the field of computer science and technology. It is a 24-hour event that will test your skills in programming, debugging, and logical thinking. It is a team event with a maximum of 3 members per team. The event will be held on 27th and 28th February 2021.
+		description: 'CodeVenture is a coding competition that tests your debugging and coding skills. Showcase your expertise in mathematics, data structures, algorithms and more. Compete solo using any programming language on a PC with a good internet connection. Join us for a thrilling coding experience!', 
 		amount: [50_00],
 		team_members: [1],
 		start_date: new Date('28 Feb 2023'),
@@ -303,7 +307,7 @@ export const EVENTS: AdhyaayaEvent[] = [
 		mode: 'offline',
 		category: 'technical',
 		name: 'Bridge-O-Craft',
-		description: 'blah blah blah', //Avishkar is a technical event that tests your knowledge in the field of computer science and technology. It is a 24-hour event that will test your skills in programming, debugging, and logical thinking. It is a team event with a maximum of 3 members per team. The event will be held on 27th and 28th February 2021.
+		description: 'Bridge-O-Craft by Adhyaaya offers a chance to test your engineering skills with a Treasure Hunt, Bridge Making and Load Bearing Test. Compete for cash prizes, runner up awards and certificates for all participants. Join now!', 
 		amount: [250_00, 250_00, 250_00, 250_00],
 		team_members: [1, 2, 3, 4],
 		start_date: new Date('28 Feb 2023'),
@@ -324,7 +328,7 @@ export const EVENTS: AdhyaayaEvent[] = [
 		mode: 'offline',
 		category: 'technical',
 		name: 'RoboRace',
-		description: 'blah blah blah', //Avishkar is a technical event that tests your knowledge in the field of computer science and technology. It is a 24-hour event that will test your skills in programming, debugging, and logical thinking. It is a team event with a maximum of 3 members per team. The event will be held on 27th and 28th February 2021.
+		description: 'blah blah blah', 
 		amount: [100_00], //TODO: Confirm the details for this event
 		team_members: [4],
 		start_date: new Date('28 Feb 2023'),
@@ -345,7 +349,7 @@ export const EVENTS: AdhyaayaEvent[] = [
 		mode: 'offline',
 		category: 'non-technical',
 		name: 'Vaad Vivad',
-		description: 'blah blah blah', //Avishkar is a technical event that tests your knowledge in the field of computer science and technology. It is a 24-hour event that will test your skills in programming, debugging, and logical thinking. It is a team event with a maximum of 3 members per team. The event will be held on 27th and 28th February 2021.
+		description: 'blah blah blah', 
 		amount: [50_00],
 		team_members: [1],
 		start_date: new Date('28 Feb 2023'),
@@ -367,7 +371,7 @@ export const EVENTS: AdhyaayaEvent[] = [
 		mode: 'offline',
 		category: 'non-technical',
 		name: 'Born-Psychos',
-		description: 'blah blah blah', //Avishkar is a technical event that tests your knowledge in the field of computer science and technology. It is a 24-hour event that will test your skills in programming, debugging, and logical thinking. It is a team event with a maximum of 3 members per team. The event will be held on 27th and 28th February 2021.
+		description: 'Born Psychos is an adrenaline-fueled event that tests your aptitude skills through exciting rounds and challenges. Hone your critical thinking, leadership, and teamwork abilities while solving riddles and participating in elimination-style games. Join with a team of 2 or 4 for a fee of 80/- or 160/- respectively. Embrace your inner psychos and register today for a thrilling experience!',
 		amount: [80_00, 160_00],
 		team_members: [2, 4],
 		start_date: new Date('28 Feb 2023'),
@@ -385,11 +389,11 @@ export const EVENTS: AdhyaayaEvent[] = [
 		whatsapp_link: "https://chat.whatsapp.com/ErzzKroyiw6IoL5pAWzHC5"
 	},
 	{
-		id: 'food-o-holics',
+		id: 'food-o-holic',
 		mode: 'offline',
 		category: 'non-technical',
-		name: 'Food-O-Holics',
-		description: 'blah blah blah', //Avishkar is a technical event that tests your knowledge in the field of computer science and technology. It is a 24-hour event that will test your skills in programming, debugging, and logical thinking. It is a team event with a maximum of 3 members per team. The event will be held on 27th and 28th February 2021.
+		name: 'Food-O-Holic',
+		description: '"Food-o-Holic" is an exciting competition for teams of 4 members with an entry fee of 240. The competition consists of 3 rounds: "Lord of Buns," "Khao to Jane," and "Desert Dash." In each round, teams compete in food-related challenges and quizzes, from collecting buns with tied hands to finishing a dessert without using their hands. The winning team is decided by points or speed. Register now for a fun and thrilling culinary adventure.', 
 		amount: [240_00],
 		team_members: [4],
 		start_date: new Date('28 Feb 2023'),
@@ -411,7 +415,7 @@ export const EVENTS: AdhyaayaEvent[] = [
 		mode: 'offline',
 		category: 'non-technical',
 		name: 'Cricbash',
-		description: 'blah blah blah', //Avishkar is a technical event that tests your knowledge in the field of computer science and technology. It is a 24-hour event that will test your skills in programming, debugging, and logical thinking. It is a team event with a maximum of 3 members per team. The event will be held on 27th and 28th February 2021.
+		description: 'Join the thrilling Cricbash cricket league with a team of 6 (mixed gender). Compete in 5-over matches with fun challenges and special "Bazooka" spot for bonus runs. Hurry and register your team now as slots are limited!', 
 		amount: [420_00],
 		team_members: [6],
 		start_date: new Date('28 Feb 2023'),
@@ -434,7 +438,7 @@ export const EVENTS: AdhyaayaEvent[] = [
 		mode: 'offline', 
 		category: 'workshops',
 		name: 'CAD-O-Shop',
-		description: 'blah blah blah', //Avishkar is a technical event that tests your knowledge in the field of computer science and technology. It is a 24-hour event that will test your skills in programming, debugging, and logical thinking. It is a team event with a maximum of 3 members per team. The event will be held on 27th and 28th February 2021.
+		description: 'blah blah blah', 
 		amount: [0],
 		team_members: [1],
 		start_date: new Date('28 Feb 2023'),
@@ -455,7 +459,7 @@ export const EVENTS: AdhyaayaEvent[] = [
 		mode: 'offline', 
 		category: 'workshops',
 		name: 'Jigyasa',
-		description: 'blah blah blah', //Avishkar is a technical event that tests your knowledge in the field of computer science and technology. It is a 24-hour event that will test your skills in programming, debugging, and logical thinking. It is a team event with a maximum of 3 members per team. The event will be held on 27th and 28th February 2021.
+		description: 'blah blah blah', 
 		amount: [0],
 		team_members: [1],
 		start_date: new Date('28 Feb 2023'),
@@ -477,7 +481,7 @@ export const EVENTS: AdhyaayaEvent[] = [
 		mode: 'offline', 
 		category: 'workshops',
 		name: 'Stargaze',
-		description: 'blah blah blah', //Avishkar is a technical event that tests your knowledge in the field of computer science and technology. It is a 24-hour event that will test your skills in programming, debugging, and logical thinking. It is a team event with a maximum of 3 members per team. The event will be held on 27th and 28th February 2021.
+		description: 'blah blah blah', 
 		amount: [40_00],
 		team_members: [1],
 		start_date: new Date('28 Feb 2023'),
@@ -498,7 +502,7 @@ export const EVENTS: AdhyaayaEvent[] = [
 	// 	mode: 'offline', 
 	// 	category: 'workshops',
 	// 	name: 'build a bot',
-	// 	description: 'blah blah blah', //Avishkar is a technical event that tests your knowledge in the field of computer science and technology. It is a 24-hour event that will test your skills in programming, debugging, and logical thinking. It is a team event with a maximum of 3 members per team. The event will be held on 27th and 28th February 2021.
+	// 	description: 'blah blah blah', 
 	// 	amount: [1600_00],
 	// 	team_members: [1],
 	// 	start_date: new Date('28 Feb 2023'),
@@ -519,7 +523,7 @@ export const EVENTS: AdhyaayaEvent[] = [
 		mode: 'offline', 
 		category: 'workshops',
 		name: 'Stock Market Workshop',
-		description: 'blah blah blah', //Avishkar is a technical event that tests your knowledge in the field of computer science and technology. It is a 24-hour event that will test your skills in programming, debugging, and logical thinking. It is a team event with a maximum of 3 members per team. The event will be held on 27th and 28th February 2021.
+		description: 'blah blah blah', 
 		amount: [100_00],
 		team_members: [1],
 		start_date: new Date('28 Feb 2023'),
@@ -540,7 +544,7 @@ export const EVENTS: AdhyaayaEvent[] = [
 		mode: 'offline', 
 		category: 'workshops',
 		name: 'when is google',
-		description: 'blah blah blah', //Avishkar is a technical event that tests your knowledge in the field of computer science and technology. It is a 24-hour event that will test your skills in programming, debugging, and logical thinking. It is a team event with a maximum of 3 members per team. The event will be held on 27th and 28th February 2021.
+		description: 'blah blah blah', 
 		amount: [0],
 		team_members: [1],
 		start_date: new Date('28 Feb 2023'),
@@ -561,7 +565,7 @@ export const EVENTS: AdhyaayaEvent[] = [
 		mode: 'offline', 
 		category: 'workshops',
 		name: 'EV Workshop',
-		description: 'blah blah blah', //Avishkar is a technical event that tests your knowledge in the field of computer science and technology. It is a 24-hour event that will test your skills in programming, debugging, and logical thinking. It is a team event with a maximum of 3 members per team. The event will be held on 27th and 28th February 2021.
+		description: 'blah blah blah', 
 		amount: [100_00],
 		team_members: [1],
 		start_date: new Date('28 Feb 2023'),
@@ -582,7 +586,7 @@ export const EVENTS: AdhyaayaEvent[] = [
 		mode: 'offline', 
 		category: 'workshops',
 		name: 'Aeromodelling Workshop',
-		description: 'blah blah blah', //Avishkar is a technical event that tests your knowledge in the field of computer science and technology. It is a 24-hour event that will test your skills in programming, debugging, and logical thinking. It is a team event with a maximum of 3 members per team. The event will be held on 27th and 28th February 2021.
+		description: 'blah blah blah', 
 		amount: [2400_00],
 		team_members: [1],
 		start_date: new Date('28 Feb 2023'),

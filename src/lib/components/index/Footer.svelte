@@ -13,12 +13,12 @@
     <!-- Links Here, 2 headings -->
     <div class="flex flex-col items-stretch justify-evenly p-4 h-1/2">
         <div class="heading text-2xl btn btn-ghost btn-lg transition-none hover:scale-100 active:scale-100 hover:bg-opacity-0 cursor-auto border-0 border-b-2 rounded-b-none border-white hover:text-white">Sitemap</div>
-        <div class="btn btn-ghost text-lg hover:text-white">Home</div>
-        <div class="btn btn-ghost text-lg hover:text-white">Events</div>
-        <div class="btn btn-ghost text-lg hover:text-white">Team</div>
-        <div class="btn btn-ghost text-lg hover:text-white">Sponsors</div>
-        <div class="btn btn-ghost text-lg hover:text-white">Gallery</div>
-        <div class="btn btn-ghost text-lg hover:text-white">Register</div>
+        <a href="/" class="btn btn-ghost text-lg hover:text-white">Home</a>
+        <a href="/events" class="btn btn-ghost text-lg hover:text-white">Events</a>
+        <a href="/team" class="btn btn-ghost text-lg hover:text-white">Team</a>
+        <a href="/sponsors" class="btn btn-ghost text-lg hover:text-white">Sponsors</a>
+        <a href="/gallery" data-sveltekit-reload class="btn btn-ghost text-lg hover:text-white">Gallery</a>
+        <a href="/register?select=true" class="btn btn-ghost text-lg hover:text-white">Register</a>
         <div class="btn btn-ghost text-lg hover:text-white">Timeline</div>
 
         

@@ -9,7 +9,7 @@
     <div class="our-college w-1/2 hidden xl:flex flex-col items-center justify-evenly h-full text-justify bg-white/20 backdrop-blur-sm rounded-lg border border-white lg:border-r-0 lg:rounded-r-none p-4 gap-2">
         <img loading="lazy" src="{gcoen}" class="h-28" height="112" width="355" alt="">
         <p class="max-w-lg text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos possimus asperiores vitae nulla atque quasi ratione consectetur temporibus illum rerum, velit cum expedita quidem porro maxime sit, a debitis soluta.</p>
-        <a data-sveltekit-reload href="https://gcoen.ac.in/" target="_blank" rel="noreferrer noopener nofollow" class="college-button relative bg-gradient-to-bl from-sky-400 via-rose-400 to-lime-400 text-white text-lg py-3 px-5 rounded-lg inline-flex items-center uppercase font-medium gap-2 hover:scale-110 active:scale-90 active:opacity-90 transition-all duration-300 ease-in-out mb-4">Our College <iconify-icon icon="mdi:arrow-right"></iconify-icon></a>
+        <a data-sveltekit-reload href="https://gcoen.ac.in/" target="_blank" rel="noreferrer" class="college-button relative bg-gradient-to-bl from-sky-400 via-rose-400 to-lime-400 text-white text-lg py-3 px-5 rounded-lg inline-flex items-center uppercase font-medium gap-2 hover:scale-110 active:scale-90 active:opacity-90 transition-all duration-300 ease-in-out mb-4">Our College <iconify-icon icon="mdi:arrow-right"></iconify-icon></a>
     </div>
     <div class="us w-full xl:w-1/2 flex flex-col items-center justify-evenly h-full text-justify bg-black/40 backdrop-blur-sm rounded-lg border border-white lg:rounded-l-none p-6 gap-2">
         <img loading="lazy" src="{logo}" class="h-28" height="112" width="202" alt="">
@@ -18,7 +18,7 @@
     </div>
     </div>
     <div class="gallery-button flex flex-col items-center justify-evenly text-justify pt-8">
-        <a href="/gallery" class="gallery-button uppercase relative bg-gradient-to-bl from-rose-400 via-fuchsia-500 to-indigo-500 text-white text-xl py-5 px-8 rounded-lg inline-flex items-center gap-2 hover:scale-110 active:scale-90 active:opacity-90 transition-all duration-300 ease-in-out">
+        <a data-sveltekit-reload href="/gallery" class="gallery-button uppercase relative bg-gradient-to-bl from-rose-400 via-fuchsia-500 to-indigo-500 text-white text-xl py-5 px-8 rounded-lg inline-flex items-center gap-2 hover:scale-110 active:scale-90 active:opacity-90 transition-all duration-300 ease-in-out">
             View our past <iconify-icon icon="mdi:arrow-right"></iconify-icon>
         </a>
     </div>
