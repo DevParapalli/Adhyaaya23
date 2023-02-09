@@ -189,7 +189,7 @@
 					INTERSECTED = null;
 				}
 			}
-			console.log(intersected.length);
+			dev ? console.log(intersected.length): null;
 		}
 
 		// window.addEventListener('mousedown', onMouseDown, false);
@@ -243,6 +243,7 @@
 	import tech from '$lib/assets/icons/tech.png';
 	import ntech from '$lib/assets/icons/nontech.png';
 	import wksp from '$lib/assets/icons/workshops.png';
+	import { dev } from '$app/environment';
 </script>
 
 <svelte:head>

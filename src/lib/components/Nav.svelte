@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { dev } from '$app/environment';
 	import { afterNavigate, goto as _goto } from '$app/navigation';
 	import AdhyaayaLogoSolid from '$lib/assets/logo/solid-resize.webp';
 	import { SOCIALS } from '$lib/data/socials';
@@ -18,7 +19,7 @@
 	function setBackgroundPosition(x = bgX, y = bgY) {
 		bgX = x;
 		bgY = y;
-		console.log(bgX, bgY);
+		dev ? console.log(bgX, bgY):null;
 	}
 </script>
 
