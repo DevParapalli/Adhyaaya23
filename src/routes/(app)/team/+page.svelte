@@ -145,6 +145,35 @@
 		</div>
 	</article>
 	<article class="my-cont">
+		<div style:--img={`url(${arya_mahashabde_photo})`} class="thumb" />
+		<div class="infos">
+			<h2 class="title">Arya Mahashabde<span class="flag" /></h2>
+			<h3 class="date">Advisor</h3>
+			<h3 class="seats"><!--status--></h3>
+			<p class="txt"><!-- data--></p>
+			<div class="details">
+				<a rel="external noopener noreferrer nofollow" target="_blank" href="mailto:mahashabde.arya@gmail.com">
+					<iconify-icon
+						class="text-3xl lg:text-5xl text-[#EA4335] bg-clip-text"
+						icon="mdi:email-outline"
+					/>
+				</a>
+				<a rel="external noopener noreferrer nofollow" target="_blank" href="https://instagram.com/arya1608">
+					<iconify-icon
+						class="text-3xl lg:text-5xl text-[#4c68d7] bg-clip-text"
+						icon="mdi:instagram"
+					/>
+				</a>
+				<a rel="external noopener noreferrer nofollow" target="_blank" href="https://www.linkedin.com/in/arya-mahashabde-582665228">
+					<iconify-icon
+						class="text-3xl lg:text-5xl text-[#006192] bg-clip-text"
+						icon="mdi:linkedin"
+					/>
+				</a>
+			</div>
+		</div>
+	</article>
+	<article class="my-cont">
 		<div style:--img={`url(${laksh_bahl_photo})`} class="thumb" />
 		<div class="infos">
 			<h2 class="title">Laksh Bahl<span class="flag" /></h2>
@@ -202,35 +231,7 @@
 			</div>
 		</div>
 	</article>
-	<article class="my-cont">
-		<div style:--img={`url(${arya_mahashabde_photo})`} class="thumb" />
-		<div class="infos">
-			<h2 class="title">Arya Mahashabde<span class="flag" /></h2>
-			<h3 class="date">Advisor</h3>
-			<h3 class="seats"><!--status--></h3>
-			<p class="txt"><!-- data--></p>
-			<div class="details">
-				<a rel="external noopener noreferrer nofollow" target="_blank" href="mailto:mahashabde.arya@gmail.com">
-					<iconify-icon
-						class="text-3xl lg:text-5xl text-[#EA4335] bg-clip-text"
-						icon="mdi:email-outline"
-					/>
-				</a>
-				<a rel="external noopener noreferrer nofollow" target="_blank" href="https://instagram.com/arya1608">
-					<iconify-icon
-						class="text-3xl lg:text-5xl text-[#4c68d7] bg-clip-text"
-						icon="mdi:instagram"
-					/>
-				</a>
-				<a rel="external noopener noreferrer nofollow" target="_blank" href="https://www.linkedin.com/in/arya-mahashabde-582665228">
-					<iconify-icon
-						class="text-3xl lg:text-5xl text-[#006192] bg-clip-text"
-						icon="mdi:linkedin"
-					/>
-				</a>
-			</div>
-		</div>
-	</article>
+	
 </div>
 
 <div class="flex_title">Coordinators</div>
