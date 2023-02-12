@@ -116,6 +116,35 @@
 <div bind:this={heading} class="flex_title !mt-0 pt-20">Advisors</div>
 <div bind:this={container} class="my-cont_flex">
 	<article class="my-cont">
+		<div style:--img={`url(${yash_bhagat_photo})`} class="thumb" />
+		<div class="infos">
+			<h2 class="title">Yash Bhagat<span class="flag" /></h2>
+			<h3 class="date">Advisor</h3>
+			<h3 class="seats"><!--status--></h3>
+			<p class="txt"><!-- data--></p>
+			<div class="details">
+				<a rel="external noopener noreferrer nofollow" target="_blank" href="mailto:yashbhagat6601@gmail.com">
+					<iconify-icon
+						class="text-3xl lg:text-5xl text-[#EA4335] bg-clip-text"
+						icon="mdi:email-outline"
+					/>
+				</a>
+				<a rel="external noopener noreferrer nofollow" target="_blank" href="https://instagram.com/_anthony_edward_stark_">
+					<iconify-icon
+						class="text-3xl lg:text-5xl text-[#4c68d7] bg-clip-text"
+						icon="mdi:instagram"
+					/>
+				</a>
+				<a rel="external noopener noreferrer nofollow" target="_blank" href="https://www.linkedin.com/in/yash-bhagat-195a45264">
+					<iconify-icon
+						class="text-3xl lg:text-5xl text-[#006192] bg-clip-text"
+						icon="mdi:linkedin"
+					/>
+				</a>
+			</div>
+		</div>
+	</article>
+	<article class="my-cont">
 		<div style:--img={`url(${ujjwal_gupta_photo})`} class="thumb" />
 		<div class="infos">
 			<h2 class="title">Ujjwal Gupta<span class="flag" /></h2>
@@ -202,35 +231,7 @@
 			</div>
 		</div>
 	</article>
-	<article class="my-cont">
-		<div style:--img={`url(${yash_bhagat_photo})`} class="thumb" />
-		<div class="infos">
-			<h2 class="title">Yash Bhagat<span class="flag" /></h2>
-			<h3 class="date">Advisor</h3>
-			<h3 class="seats"><!--status--></h3>
-			<p class="txt"><!-- data--></p>
-			<div class="details">
-				<a rel="external noopener noreferrer nofollow" target="_blank" href="mailto:yashbhagat6601@gmail.com">
-					<iconify-icon
-						class="text-3xl lg:text-5xl text-[#EA4335] bg-clip-text"
-						icon="mdi:email-outline"
-					/>
-				</a>
-				<a rel="external noopener noreferrer nofollow" target="_blank" href="https://instagram.com/_anthony_edward_stark_">
-					<iconify-icon
-						class="text-3xl lg:text-5xl text-[#4c68d7] bg-clip-text"
-						icon="mdi:instagram"
-					/>
-				</a>
-				<a rel="external noopener noreferrer nofollow" target="_blank" href="https://www.linkedin.com/in/yash-bhagat-195a45264">
-					<iconify-icon
-						class="text-3xl lg:text-5xl text-[#006192] bg-clip-text"
-						icon="mdi:linkedin"
-					/>
-				</a>
-			</div>
-		</div>
-	</article>
+	
 	
 </div>
 
