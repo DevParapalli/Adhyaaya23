@@ -99,22 +99,32 @@
 					class="menu-item">Events</a
 				>
 				<a
-					href="/team"
+					href="/timeline"
 					on:focus={() => {
 						setBackgroundPosition(bgX, -50);
 					}}
 					on:mouseover={() => {
 						setBackgroundPosition(bgX, -50);
+					}}
+					class="menu-item">Timeline</a
+				>
+				<a
+					href="/team"
+					on:focus={() => {
+						setBackgroundPosition(bgX, -75);
+					}}
+					on:mouseover={() => {
+						setBackgroundPosition(bgX, -75);
 					}}
 					class="menu-item">Team</a
 				>
 				<a
 					href="/sponsors"
 					on:focus={() => {
-						setBackgroundPosition(bgX, -75);
+						setBackgroundPosition(bgX, -100);
 					}}
 					on:mouseover={() => {
-						setBackgroundPosition(bgX, -75);
+						setBackgroundPosition(bgX, -100);
 					}}
 					class="menu-item">Sponsors</a
 				>
@@ -122,19 +132,19 @@
 				data-sveltekit-reload
 					href="/gallery"
 					on:focus={() => {
-						setBackgroundPosition(bgX, -100);
+						setBackgroundPosition(bgX, -125);
 					}}
 					on:mouseover={() => {
-						setBackgroundPosition(bgX, -100);
+						setBackgroundPosition(bgX, -125);
 					}}
 					class="menu-item">Gallery</a
 				>
 				<div
 					on:focus={() => {
-						setBackgroundPosition(bgX, -125);
+						setBackgroundPosition(bgX, -150);
 					}}
 					on:mouseover={() => {
-						setBackgroundPosition(bgX, -125);
+						setBackgroundPosition(bgX, -150);
 					}}
 					class="menu-item-container flex flex-col md:flex-row gap-4 md:gap-16 h-1/2 pt-10"
 				>
@@ -179,11 +189,11 @@
 			class=" {isMenuOpen} social w-full flex items-center self-end justify-end py-6 pb-32 md:pb-6 mt-auto z-[140]"
 		>
 			{#each SOCIALS as social}
-				<div
+				<a rel="external" target="_blank" href="{social.link}"
 					class="h-10 w-10 md:h-12 md:w-12 rounded-full border border-white mx-auto md:ml-0 md:mr-10 inline-flex items-center justify-center text-2xl md:text-3xl cursor-pointer {social.text} {social.bg} hover:scale-105 active:scale-95 active:opacity-90 transition-all duration-200 ease-in-out"
 				>
 					<iconify-icon icon={social.icon} />
-				</div>
+				</a>
 			{/each}
 		</div>
 	{/if}

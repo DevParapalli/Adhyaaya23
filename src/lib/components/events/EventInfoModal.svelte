@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { goto, preloadCode } from "$app/navigation";
+	import { afterNavigate, goto, preloadCode } from "$app/navigation";
 	import type { AdhyaayaEvent } from "$lib/data/events";
 	import { clickOutside } from "$lib/util";
 
@@ -60,6 +60,9 @@
         _closeModal();
         closeAllModals();
     }
+    afterNavigate(() => {
+        closeModal();
+    })
     onMount(() => {
         preloadCode('/register');
         scrollPos = window.scrollY;
