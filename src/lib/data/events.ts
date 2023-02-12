@@ -106,8 +106,8 @@ export const EVENTS: AdhyaayaEvent[] = [
 		poster: 'http://placeimg.com/1280/720/tech',
 		contact: [
 			{
-				name: 'Devansh Parapalli',
-				phone: '1234567890'
+				name: 'Rohit Bhoge',
+				phone: '7972520981'
 			}
 		],
 		is_active: false,
@@ -129,8 +129,8 @@ export const EVENTS: AdhyaayaEvent[] = [
 		poster: 'http://placeimg.com/1280/720/tech',
 		contact: [
 			{
-				name: 'Devansh Parapalli',
-				phone: '1234567890'
+				name: 'Shiwang Pandey',
+				phone: '8459795840'
 			}
 		],
 		is_active: false,
@@ -172,8 +172,12 @@ export const EVENTS: AdhyaayaEvent[] = [
 		poster: 'http://placeimg.com/1280/720/tech',
 		contact: [
 			{
-				name: 'Devansh Parapalli',
-				phone: '1234567890'
+				name: 'Vikas Yadav',
+				phone: '8767666388'
+			},
+			{
+				name: 'Sudarshan Malkar',
+				phone: '9763682990'
 			}
 		],
 		is_active: true,
@@ -207,8 +211,12 @@ export const EVENTS: AdhyaayaEvent[] = [
 		poster: 'http://placeimg.com/1280/720/tech',
 		contact: [
 			{
-				name: 'Devansh Parapalli',
-				phone: '1234567890'
+				name: 'Vikas Yadav',
+				phone: '8767666388'
+			},
+			{
+				name: 'Sudarshan Malkar',
+				phone: '9763682990'
 			}
 		],
 		is_active: false,
@@ -229,8 +237,12 @@ export const EVENTS: AdhyaayaEvent[] = [
 		poster: 'http://placeimg.com/1280/720/tech',
 		contact: [
 			{
-				name: 'Devansh Parapalli',
-				phone: '1234567890'
+				name: 'Vikas Yadav',
+				phone: '8767666388'
+			},
+			{
+				name: 'Sudarshan Malkar',
+				phone: '9763682990'
 			}
 		],
 		is_active: false, 
@@ -251,8 +263,8 @@ export const EVENTS: AdhyaayaEvent[] = [
 		poster: 'http://placeimg.com/1280/720/tech',
 		contact: [
 			{
-				name: 'Devansh Parapalli',
-				phone: '1234567890'
+				name: 'Vishakha Bondre',
+				phone: '8799935057'
 			}
 		],
 		is_active: true
@@ -273,8 +285,12 @@ export const EVENTS: AdhyaayaEvent[] = [
 		poster: 'http://placeimg.com/1280/720/tech',
 		contact: [
 			{
-				name: 'Devansh Parapalli',
-				phone: '1234567890'
+				name: 'Spandan Ghate',
+				phone: '8788501277'
+			},
+			{
+				name: 'Shreedhar Shinde',
+				phone: '7058180488'
 			}
 		],
 		is_active: true,
@@ -317,8 +333,12 @@ export const EVENTS: AdhyaayaEvent[] = [
 		poster: 'http://placeimg.com/1280/720/tech',
 		contact: [
 			{
-				name: 'Devansh Parapalli',
-				phone: '1234567890'
+				name: 'Pratham Chandankhede',
+				phone: '7558281643'
+			},
+			{
+				name: 'Kalpana Rathode',
+				phone: '8010961439'
 			}
 		],
 		is_active: true
@@ -359,8 +379,12 @@ export const EVENTS: AdhyaayaEvent[] = [
 		poster: 'http://placeimg.com/1280/720/tech',
 		contact: [
 			{
-				name: 'Devansh Parapalli',
-				phone: '1234567890'
+				name: 'Nikita',
+				phone: '8806986949'
+			},
+			{
+				name: 'Aditya Damble',
+				phone: '8378847784'
 			}
 		],
 		is_active: true,
@@ -403,8 +427,12 @@ export const EVENTS: AdhyaayaEvent[] = [
 		poster: 'http://placeimg.com/1280/720/tech',
 		contact: [
 			{
-				name: 'Devansh Parapalli',
-				phone: '1234567890'
+				name: 'Riya Pashine',
+				phone: '9226720135'
+			},
+			{
+				name: 'Pranav Supare',
+				phone: '9370231042'
 			}
 		],
 		is_active: true,
@@ -425,8 +453,8 @@ export const EVENTS: AdhyaayaEvent[] = [
 		poster: 'http://placeimg.com/1280/720/tech',
 		contact: [
 			{
-				name: 'Devansh Parapalli',
-				phone: '1234567890'
+				name: 'Pranav Patle',
+				phone: '7620117921'
 			}
 		],
 		is_active: true,
@@ -448,8 +476,8 @@ export const EVENTS: AdhyaayaEvent[] = [
 		poster: 'http://placeimg.com/1280/720/tech',
 		contact: [
 			{
-				name: 'Devansh Parapalli',
-				phone: '1234567890'
+				name: 'Vishakha Bondre',
+				phone: '8799935057'
 			}
 		],
 		is_active: true
@@ -469,8 +497,8 @@ export const EVENTS: AdhyaayaEvent[] = [
 		poster: 'http://placeimg.com/1280/720/tech',
 		contact: [
 			{
-				name: 'Devansh Parapalli',
-				phone: '1234567890'
+				name: 'Rushikesh Ghawghawe',
+				phone: '9607773343'
 			}
 		],
 		is_active: true,
@@ -491,8 +519,8 @@ export const EVENTS: AdhyaayaEvent[] = [
 		poster: 'http://placeimg.com/1280/720/tech',
 		contact: [
 			{
-				name: 'Devansh Parapalli',
-				phone: '1234567890'
+				name: 'Vedant Gotmare',
+				phone: '9921707207'
 			}
 		],
 		is_active: true
@@ -554,8 +582,8 @@ export const EVENTS: AdhyaayaEvent[] = [
 		poster: 'http://placeimg.com/1280/720/tech',
 		contact: [
 			{
-				name: 'Devansh Parapalli',
-				phone: '1234567890'
+				name: 'Neha Malode',
+				phone: '7058441799'
 			}
 		],
 		is_active: true
