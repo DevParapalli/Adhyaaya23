@@ -69,7 +69,7 @@ export const EVENTS: AdhyaayaEvent[] = [
 			},
 			{
 				name: 'Shiwang Pandey',
-				phone: '8698760337'
+				phone: '8459795840'
 			},
 		],
 		is_active: true,
@@ -108,6 +108,10 @@ export const EVENTS: AdhyaayaEvent[] = [
 			{
 				name: 'Rohit Bhoge',
 				phone: '7972520981'
+			},
+			{
+				name: 'Shiwang Pandey',
+				phone: '8459795840'
 			}
 		],
 		is_active: false,
@@ -128,6 +132,10 @@ export const EVENTS: AdhyaayaEvent[] = [
 		icon: `url::${respawn}`,
 		poster: 'http://placeimg.com/1280/720/tech',
 		contact: [
+			{
+				name: 'Rohit Bhoge',
+				phone: '7972520981'
+			},
 			{
 				name: 'Shiwang Pandey',
 				phone: '8459795840'
@@ -151,8 +159,12 @@ export const EVENTS: AdhyaayaEvent[] = [
 		poster: 'http://placeimg.com/1280/720/tech',
 		contact: [
 			{
-				name: 'Devansh Parapalli',
-				phone: '1234567890'
+				name: 'Rohit Bhoge',
+				phone: '7972520981'
+			},
+			{
+				name: 'Shiwang Pandey',
+				phone: '8459795840'
 			}
 		],
 		is_active: false,
