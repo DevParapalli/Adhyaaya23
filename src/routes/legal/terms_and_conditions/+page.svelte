@@ -65,6 +65,22 @@
 			</li>
 			<li class="list-item">
 				<p class="content-text list-text">
+					Events are conducted by and the right to decision is held by Adhyaaya'23.Decision by Adhyaaya’23 is final and binding.
+				</p>
+			</li>
+			<li class="list-item">
+				<p class="content-text list-text">
+					Accommodation and Travel will not be provided by Adhyaaya'23.
+				</p>
+			</li>
+			<li class="list-item">
+				<p class="content-text list-text">
+					The organizers will not be responsible for any network lag or disconnectivity issues. Participants
+	                    have to manage the issues by themselves.
+				</p>
+			</li>
+			<li class="list-item">
+				<p class="content-text list-text">
 					Neither we nor any third parties provide any warranty or guarantee as to the accuracy,
 					timeliness, performance, completeness or suitability of the information and materials
 					found or offered on this website for any particular purpose. You acknowledge that such

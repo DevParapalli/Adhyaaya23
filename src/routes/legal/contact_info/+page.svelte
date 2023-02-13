@@ -14,6 +14,12 @@
 			Telephone No: 8793150182<br />
 			E-Mail ID: adhyaaya.gcoen@gmail.com
 		</p>
+
+        <ul class="content-list">
+			Please note the following : 
+            <li>We do not entertain any refunds or cancellations.</li>
+            <li>Shipping is not applicable for this business.</li>
+		</ul>
 	</div>
 </div>
 
