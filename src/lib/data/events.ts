@@ -188,8 +188,8 @@ export const EVENTS: AdhyaayaEvent[] = [
 				phone: '8767666388'
 			},
 			{
-				name: 'Sudarshan Malkar',
-				phone: '9763682990'
+				name: 'Anmol Moray',
+				phone: '8956886685'
 			}
 		],
 		is_active: true,
@@ -227,8 +227,8 @@ export const EVENTS: AdhyaayaEvent[] = [
 				phone: '8767666388'
 			},
 			{
-				name: 'Sudarshan Malkar',
-				phone: '9763682990'
+				name: 'Anmol Moray',
+				phone: '8956886685'
 			}
 		],
 		is_active: false,
@@ -253,8 +253,8 @@ export const EVENTS: AdhyaayaEvent[] = [
 				phone: '8767666388'
 			},
 			{
-				name: 'Sudarshan Malkar',
-				phone: '9763682990'
+				name: 'Anmol Moray',
+				phone: '8956886685'
 			}
 		],
 		is_active: false, 

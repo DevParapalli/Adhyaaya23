@@ -189,7 +189,7 @@
 			class=" {isMenuOpen} social w-full flex items-center self-end justify-end py-6 pb-32 md:pb-6 mt-auto z-[140]"
 		>
 			{#each SOCIALS as social}
-				<a rel="external" target="_blank" href="{social.link}"
+				<a rel="noreferrer" target="_blank" href="{social.link}"
 					class="h-10 w-10 md:h-12 md:w-12 rounded-full border border-white mx-auto md:ml-0 md:mr-10 inline-flex items-center justify-center text-2xl md:text-3xl cursor-pointer {social.text} {social.bg} hover:scale-105 active:scale-95 active:opacity-90 transition-all duration-200 ease-in-out"
 				>
 					<iconify-icon icon={social.icon} />

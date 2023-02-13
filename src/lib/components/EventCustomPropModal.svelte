@@ -2,12 +2,13 @@
 	import { goto } from '$app/navigation';
 	import { EVENTS } from '$lib/data/events';
 	import { closeModal } from 'svelte-modals';
-	import { fade } from 'svelte/transition';
+	import { page } from '$app/stores';
 	export let isOpen: boolean;
     export let event_id: string;
 
     let event = EVENTS.find((event) => event.id === event_id) ?? EVENTS[0];
 	// export let reset_func: () => void;
+	 
 	let value: string;
 	import "iconify-icon";
 
@@ -30,13 +31,12 @@
 						>
 					</div>
 					{#if event && event.custom_properties}
-                    <h2 class="card-title hidden">Card title!</h2>
 					<p>{event.custom_properties[0].label ?? 'Select option below...'}</p>
 					<div class="card-actions justify-center">
 						<select
 							bind:value
 							on:change={() => {
-								if (close()) goto(`/register?event=${value}`);
+								if (close()) goto(`/register?event=${value}` + ($page.url.search.includes('members') ? `&members=${$page.url.searchParams.get('members')}` : ''));
 								// console.log(value);
 							}}
 							class="select select-bordered w-full max-w-xs">

@@ -149,7 +149,7 @@
                         await goto(`/register?event=${event.id}`);
                     }
                 }} class="register-btn w-full lg:w-1/2 bg-green-500 rounded-lg p-2 hover:scale-105 active:scale-95 active:opacity-90 transition-all duration-300 ease-in-out uppercase">Register</button>
-                <a href="{`${$page.url.origin}/${event.id}.pdf`}" class="learn-more-btn text-center w-full lg:w-1/2 bg-blue-500 rounded-lg p-2 hover:scale-105 active:scale-95 active:opacity-90 transition-all duration-300 ease-in-out uppercase">Learn More</a>
+                <a target="_blank" rel="noreferrer" href="{`${$page.url.origin}/drafts/${event.id.replaceAll('::', '')}.pdf`}" class="learn-more-btn text-center w-full lg:w-1/2 bg-blue-500 rounded-lg p-2 hover:scale-105 active:scale-95 active:opacity-90 transition-all duration-300 ease-in-out uppercase">Learn More</a>
             </div>
         </div>
     </div>
