@@ -612,7 +612,7 @@ export const EVENTS: AdhyaayaEvent[] = [
 		id: 'gdsc-lecture',
 		mode: 'offline', 
 		category: 'workshops',
-		name: 'when is google',
+		name: 'GDSC Guest Lecture',
 		description: 'blah blah blah', 
 		amount: [0],
 		team_members: [1],
@@ -629,27 +629,27 @@ export const EVENTS: AdhyaayaEvent[] = [
 		],
 		is_active: true
 	},
-	{
-		id: 'ev-workshop',
-		mode: 'offline', 
-		category: 'workshops',
-		name: 'EV Workshop',
-		description: 'blah blah blah', 
-		amount: [100_00],
-		team_members: [1],
-		start_date: new Date('28 Feb 2023'),
-		end_date: new Date('28 Feb 2023'),
-		small_image: 'https://placeimg.com/360/360/tech',
-		icon: 'bi:ev-station-fill',
-		poster: 'http://placeimg.com/1280/720/tech',
-		contact: [
-			{
-				name: 'Devansh Parapalli',
-				phone: '1234567890'
-			}
-		],
-		is_active: true
-	},
+	// {
+	// 	id: 'ev-workshop',
+	// 	mode: 'offline', 
+	// 	category: 'workshops',
+	// 	name: 'EV Workshop',
+	// 	description: 'blah blah blah', 
+	// 	amount: [100_00],
+	// 	team_members: [1],
+	// 	start_date: new Date('28 Feb 2023'),
+	// 	end_date: new Date('28 Feb 2023'),
+	// 	small_image: 'https://placeimg.com/360/360/tech',
+	// 	icon: 'bi:ev-station-fill',
+	// 	poster: 'http://placeimg.com/1280/720/tech',
+	// 	contact: [
+	// 		{
+	// 			name: 'Devansh Parapalli',
+	// 			phone: '1234567890'
+	// 		}
+	// 	],
+	// 	is_active: true
+	// },
 	{
 		id: 'aeromodelling-workshop',
 		mode: 'offline', 

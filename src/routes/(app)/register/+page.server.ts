@@ -2,7 +2,7 @@ import { EVENTS, type AdhyaayaEvent } from '$lib/data/events';
 import { convertToJSON } from '$lib/util';
 import { fail, redirect } from '@sveltejs/kit';
 import { supabase } from '$lib/supabaseClient';
-import type { Actions } from '../register/$types';
+import type { Actions } from './$types';
 import validator from 'validator';
 import type { DBRegistration } from '$lib/types';
 import { dev } from '$app/environment';
@@ -92,7 +92,7 @@ export const actions: Actions = {
 			event_id: String(data['event_id']),
 			amount: amount_to_pay,
 			used: false,
-			status: false,
+			status: !(String(data['branch_specialization']).includes('adhyaaya23')),
 			rzp_status: (amount_to_pay === 0) ? 'PAID' : 'NO_ORDER_CREATED',
 			custom: {}
 		}
