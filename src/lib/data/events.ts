@@ -275,8 +275,12 @@ export const EVENTS: AdhyaayaEvent[] = [
 		poster: 'http://placeimg.com/1280/720/tech',
 		contact: [
 			{
-				name: 'Vishakha Bondre',
-				phone: '8799935057'
+				name: 'Aishwarya Dharme',
+				phone: '8530676156'
+			},
+			{
+				name: 'Vedant Udapure',
+				phone: '7507602580'
 			}
 		],
 		is_active: true
@@ -323,8 +327,12 @@ export const EVENTS: AdhyaayaEvent[] = [
 		poster: 'http://placeimg.com/1280/720/tech',
 		contact: [
 			{
-				name: 'Devansh Parapalli',
-				phone: '1234567890'
+				name: 'Rushikesh Ghawghawe',
+				phone: '9607773343'
+			},
+			{
+				name: 'Sahil Kuhikar',
+				phone: '8668556596'
 			}
 		],
 		is_active: true,
@@ -349,7 +357,7 @@ export const EVENTS: AdhyaayaEvent[] = [
 				phone: '7558281643'
 			},
 			{
-				name: 'Kalpana Rathode',
+				name: 'Kalpana Rathod',
 				phone: '8010961439'
 			}
 		],
@@ -370,9 +378,14 @@ export const EVENTS: AdhyaayaEvent[] = [
 		poster: 'http://placeimg.com/1280/720/tech',
 		contact: [
 			{
-				name: 'Devansh Parapalli',
-				phone: '1234567890'
-			}
+				name: 'Vishal Kesharwani',
+				phone: '8788707898'
+			},
+			{
+				name: 'Madhur Manekar',
+				phone: '9373560404'
+			},
+
 		],
 		is_active: false
 	},
@@ -381,7 +394,7 @@ export const EVENTS: AdhyaayaEvent[] = [
 		mode: 'offline',
 		category: 'non-technical',
 		name: 'Vaad Vivad',
-		description: 'blah blah blah', 
+		description: 'VAAD-VIVAAD is a public speaking event with two rounds: an elocution competition and an extempore round. Participants will be given topics related to social issues and will have 2 and 4 minutes to express their ideas respectively. Register now by paying the entry fee of 50/- (solo) and boost your public speaking skills', 
 		amount: [50_00],
 		team_members: [1],
 		start_date: new Date('28 Feb 2023'),
@@ -417,9 +430,17 @@ export const EVENTS: AdhyaayaEvent[] = [
 		poster: 'http://placeimg.com/1280/720/tech',
 		contact: [
 			{
-				name: 'Devansh Parapalli',
-				phone: '1234567890'
-			}
+				name: 'Reshal Bhati',
+				phone: '7447286876'
+			},
+			{
+				name: 'Neha Diwate',
+				phone: '9529313858'
+			},
+			{
+				name: 'Janhavi Holey',
+				phone: '8767265517'
+			},
 		],
 		is_active: true,
 		whatsapp_link: "https://chat.whatsapp.com/ErzzKroyiw6IoL5pAWzHC5"
@@ -488,8 +509,12 @@ export const EVENTS: AdhyaayaEvent[] = [
 		poster: 'http://placeimg.com/1280/720/tech',
 		contact: [
 			{
-				name: 'Vishakha Bondre',
-				phone: '8799935057'
+				name: 'Aishwarya Dharme',
+				phone: '8530676156'
+			},
+			{
+				name: 'Vedant Udapure',
+				phone: '7507602580'
 			}
 		],
 		is_active: true
@@ -552,7 +577,7 @@ export const EVENTS: AdhyaayaEvent[] = [
 	// 	poster: 'http://placeimg.com/1280/720/tech',
 	// 	contact: [
 	// 		{
-	// 			name: 'Devansh Parapalli',
+	// 			name: 'suss',
 	// 			phone: '1234567890'
 	// 		}
 	// 	],
@@ -573,9 +598,13 @@ export const EVENTS: AdhyaayaEvent[] = [
 		poster: 'http://placeimg.com/1280/720/tech',
 		contact: [
 			{
-				name: 'Devansh Parapalli',
-				phone: '1234567890'
-			}
+				name: 'Shlok Tajne',
+				phone: '8237050035'
+			},
+			{
+				name: 'Mithilesh Zalke',
+				phone: '9511652253'
+			},
 		],
 		is_active: true
 	},
@@ -636,9 +665,13 @@ export const EVENTS: AdhyaayaEvent[] = [
 		poster: 'http://placeimg.com/1280/720/tech',
 		contact: [
 			{
-				name: 'Devansh Parapalli',
-				phone: '1234567890'
-			}
+				name: 'Sahil Brahme',
+				phone: '9552269716'
+			},
+			{
+				name: 'Parth Tirmare',
+				phone: '9028606866'
+			},
 		],
 		is_active: true,
 		whatsapp_link: 'https://chat.whatsapp.com/HA17R0Jp55cAe6rq6agUfz'
