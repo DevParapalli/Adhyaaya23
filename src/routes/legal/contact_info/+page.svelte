@@ -1,8 +1,42 @@
 <svelte:head>
-    <title>Contact Info | Adhyaaya'23</title>
+	<title>Contact Info | Adhyaaya'23</title>
 </svelte:head>
 
-<div class="container mx-auto text-2xl pt-32 px-4">Contact Info</div>
-<div class="container mx-auto pt-10 px-4">
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+<div class="compalinace-content">
+	<div class="content-container">
+		<p class="content-head">Contact us</p>
+		<div class="content-seprater" />
+		<p class="updated-date">Last updated on Oct 31st 2022</p>
+		<p class="content-text">You may contact us using the information below:</p>
+		<p class="content-text">
+			Merchant Legal entity name: Adhyaaya'23<br />
+			Registered Address: Government College of Engineering, Sector-27, Mihan Rehabilitation Colony, Khapri, Nagpur - 441108<br />
+			Telephone No: 8793150182<br />
+			E-Mail ID: adhyaaya.gcoen@gmail.com
+		</p>
+	</div>
 </div>
+
+<style lang="postcss">
+	.compalinace-content {
+		@apply py-40 px-6;
+	}
+	.content-container {
+		@apply container;
+	}
+	.content-head {
+		@apply text-4xl;
+	}
+	.content-seprater {
+		width: 28px;
+		height: 5px;
+		background-color: #213554;
+		margin-top: 16px;
+	}
+    .updated-date {
+        @apply text-sm text-gray-500 mt-4;
+    }
+    [class*="content-"] {
+        font-family: "Nunito", sans-serif;
+    }
+</style>
