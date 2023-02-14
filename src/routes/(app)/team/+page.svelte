@@ -43,6 +43,7 @@
 
 
 	// Image Imports
+	import nikhil_deshpande_photo from '$lib/assets/team/advisors/nikhil-deshpande-compressed.webp?url';
 	import ujjwal_gupta_photo from '$lib/assets/team/advisors/ujjwal-gupta-compressed.webp?url';
 	import laksh_bahl_photo from '$lib/assets/team/advisors/laksh-bahl-compressed.webp?url';
 	import yash_bhagat_photo from '$lib/assets/team/advisors/yash-bhagat-compressed.webp?url';
@@ -206,6 +207,35 @@
 		<div style:--img={`url(${laksh_bahl_photo})`} class="thumb" />
 		<div class="infos">
 			<h2 class="title">Laksh Bahl<span class="flag" /></h2>
+			<h3 class="date">Advisor</h3>
+			<h3 class="seats"><!--status--></h3>
+			<p class="txt"><!-- data--></p>
+			<div class="details">
+				<a rel="external noopener noreferrer nofollow" target="_blank" href="">
+					<iconify-icon
+						class="text-3xl lg:text-5xl text-[#EA4335] bg-clip-text"
+						icon="mdi:email-outline"
+					/>
+				</a>
+				<a rel="external noopener noreferrer nofollow" target="_blank" href="">
+					<iconify-icon
+						class="text-3xl lg:text-5xl text-[#4c68d7] bg-clip-text"
+						icon="mdi:instagram"
+					/>
+				</a>
+				<a rel="external noopener noreferrer nofollow" target="_blank" href="">
+					<iconify-icon
+						class="text-3xl lg:text-5xl text-[#006192] bg-clip-text"
+						icon="mdi:linkedin"
+					/>
+				</a>
+			</div>
+		</div>
+	</article>
+	<article class="my-cont">
+		<div style:--img={`url(${nikhil_deshpande_photo})`} class="thumb" />
+		<div class="infos">
+			<h2 class="title">Nikhil Deshpande<span class="flag" /></h2>
 			<h3 class="date">Advisor</h3>
 			<h3 class="seats"><!--status--></h3>
 			<p class="txt"><!-- data--></p>

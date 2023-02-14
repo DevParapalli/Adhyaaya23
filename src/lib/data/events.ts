@@ -546,7 +546,7 @@ export const EVENTS: AdhyaayaEvent[] = [
 		mode: 'offline', 
 		category: 'workshops',
 		name: 'Stargaze',
-		description: 'blah blah blah', 
+		description: 'Explore the depths of the universe at Adhyaaya\'23! Join the Astronomy Club at GCOEN for expert guest lectures, hands-on exploration sessions, and more. Come and STARGAZE with us!', 
 		amount: [40_00],
 		team_members: [1],
 		start_date: new Date('28 Feb 2023'),
