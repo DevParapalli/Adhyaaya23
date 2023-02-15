@@ -10,7 +10,7 @@
 		<div
 			class="big-text w-5/6 md:w-7/12 text-3xl xl:text-5xl 2xl:text-6xl bg-clip-text text-transparent hemnder font-extralight leading-[3.5rem] xl:leading-[5.5rem] 2xl:leading-[7rem]"
 		>
-			Redefining possibilities with Multiverse and AI, Adhyaaya'23
+		Discover your tech-talent, ignite your innovation at Adhyaaya 2023
 		</div>
 	</div>
 	{#if scrollPos < 35}
