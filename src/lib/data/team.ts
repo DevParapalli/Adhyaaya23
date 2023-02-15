@@ -1,21 +1,21 @@
 export interface AdhyaaayaTeamMemberSocial {
-    // icon from iconify, such as "mdi:facebook"
-    icon: string;
-    // link to the social media profile
-    link: string;
+	// icon from iconify, such as "mdi:facebook"
+	icon: string;
+	// link to the social media profile
+	link: string;
 }
 
 export interface AdhyaaayaTeamMember {
-    // full name
-    name: string;
-    // role in the whole team, such as TECHNICAL HEAD
-    role: string;
-    // 480x480 image url
-    image: string; 
-    // a 1 line description.
-    description: string;
-    // social media links
-    social: AdhyaaayaTeamMemberSocial[];
+	// full name
+	name: string;
+	// role in the whole team, such as TECHNICAL HEAD
+	role: string;
+	// 480x480 image url
+	image: string;
+	// a 1 line description.
+	description: string;
+	// social media links
+	social: AdhyaaayaTeamMemberSocial[];
 }
 
 export const ADVISORS: AdhyaaayaTeamMember[] = [];

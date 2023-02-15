@@ -345,22 +345,22 @@ export const template = `
 `;
 
 export interface EmailData {
-    rid: string;
-    name: string;
-    phone: string;
-    members: string;
-    amount: string;
-    event: string;
-    mode: string;
-    date: string;
-    ec: string;
-    contact: string;
-    qr:string;
-    receipt: string;
+	rid: string;
+	name: string;
+	phone: string;
+	members: string;
+	amount: string;
+	event: string;
+	mode: string;
+	date: string;
+	ec: string;
+	contact: string;
+	qr: string;
+	receipt: string;
 }
 
 export function getEmailHTML(data: EmailData) {
-    return template.replace(/{{(.*?)}}/g, (match) => {
-        return data[match.slice(2, -2) as keyof EmailData];
-    });
+	return template.replace(/{{(.*?)}}/g, (match) => {
+		return data[match.slice(2, -2) as keyof EmailData];
+	});
 }

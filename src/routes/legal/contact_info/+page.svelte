@@ -10,15 +10,16 @@
 		<p class="content-text">You may contact us using the information below:</p>
 		<p class="content-text">
 			Merchant Legal entity name: Adhyaaya'23<br />
-			Registered Address: Government College of Engineering, Sector-27, Mihan Rehabilitation Colony, Khapri, Nagpur - 441108<br />
+			Registered Address: Government College of Engineering, Sector-27, Mihan Rehabilitation Colony,
+			Khapri, Nagpur - 441108<br />
 			Telephone No: 8793150182<br />
 			E-Mail ID: adhyaaya.gcoen@gmail.com
 		</p>
 
-        <ul class="content-list nunu">
-			Please note the following : 
-            <li class="nunu">We do not entertain any refunds or cancellations.</li>
-            <li class="nunu">Shipping is not applicable for this business.</li>
+		<ul class="content-list nunu">
+			Please note the following :
+			<li class="nunu">We do not entertain any refunds or cancellations.</li>
+			<li class="nunu">Shipping is not applicable for this business.</li>
 		</ul>
 	</div>
 </div>
@@ -39,10 +40,10 @@
 		background-color: #213554;
 		margin-top: 16px;
 	}
-    .updated-date {
-        @apply text-sm text-gray-500 mt-4;
-    }
-    [class*="content-"] {
-        font-family: "Nunito", sans-serif;
-    }
+	.updated-date {
+		@apply text-sm text-gray-500 mt-4;
+	}
+	[class*='content-'] {
+		font-family: 'Nunito', sans-serif;
+	}
 </style>

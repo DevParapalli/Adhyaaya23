@@ -5,12 +5,12 @@
 	import { afterNavigate } from '$app/navigation';
 	onMount(() => {
 		// zoomwall.create(document.getElementById('2018'), true);
-        requestIdleCallback(() => {
-            zoomwall.create(document.getElementById('2021'), true);
-            zoomwall.create(document.getElementById('2020'), true);
-            zoomwall.create(document.getElementById('2019'), true);
-            zoomwall.create(document.getElementById('2018'), true);
-        });
+		requestIdleCallback(() => {
+			zoomwall.create(document.getElementById('2021'), true);
+			zoomwall.create(document.getElementById('2020'), true);
+			zoomwall.create(document.getElementById('2019'), true);
+			zoomwall.create(document.getElementById('2018'), true);
+		});
 	});
 	afterUpdate(() => {
 		// zoomwall.create(document.getElementById('2018'), true);
@@ -50,7 +50,7 @@
 		<img src="/gallery/2021/10.jpeg" alt="" />
 		<img src="/gallery/2021/11.jpeg" alt="" />
 	</div>
-    <div class="flex flex-col items-center justify-center pb-12 pt-12">
+	<div class="flex flex-col items-center justify-center pb-12 pt-12">
 		<h1 class="text-2xl font-bold text-center text-white nunu">2020</h1>
 	</div>
 	<div class="zoomwall" id="2020">
@@ -67,7 +67,7 @@
 		<img src="/gallery/2020/10.jpg" alt="" />
 		<img src="/gallery/2020/11.jpg" alt="" />
 	</div>
-    <div class="flex flex-col items-center justify-center pb-12 pt-12">
+	<div class="flex flex-col items-center justify-center pb-12 pt-12">
 		<h1 class="text-2xl font-bold text-center text-white nunu">2019</h1>
 	</div>
 	<div class="zoomwall" id="2019">
@@ -84,7 +84,7 @@
 		<img src="/gallery/2019/10.jpg" alt="" />
 		<img src="/gallery/2019/11.jpg" alt="" />
 	</div>
-    <div class="flex flex-col items-center justify-center pb-12 pt-12">
+	<div class="flex flex-col items-center justify-center pb-12 pt-12">
 		<h1 class="text-2xl font-bold text-center text-white nunu">2018</h1>
 	</div>
 	<div class="zoomwall" id="2018">
@@ -107,28 +107,28 @@
 	/* @import 'zoomwall.js/lib/zoomwall.css'; */
 
 	.zoomwall {
-  font-size: 0;
-  overflow: hidden;
-}
+		font-size: 0;
+		overflow: hidden;
+	}
 
-.zoomwall img {
-    display: inline-block;
-  width: auto;
-  height: 15vw;
-  opacity: 1;
-  vertical-align: top;
-  transform-origin: 0% 0%;
-  transition-property: transform, opacity;
-  transition-duration: 0.3s;
-  transition-timing-function: ease-out;
-}
+	.zoomwall img {
+		display: inline-block;
+		width: auto;
+		height: 15vw;
+		opacity: 1;
+		vertical-align: top;
+		transform-origin: 0% 0%;
+		transition-property: transform, opacity;
+		transition-duration: 0.3s;
+		transition-timing-function: ease-out;
+	}
 
-.zoomwall.lightbox img {
-  opacity: 0.3;
-  transition-timing-function: ease-in;
-}
+	.zoomwall.lightbox img {
+		opacity: 0.3;
+		transition-timing-function: ease-in;
+	}
 
-.zoomwall.lightbox img.active {
-  opacity: 1;
-}
+	.zoomwall.lightbox img.active {
+		opacity: 1;
+	}
 </style>

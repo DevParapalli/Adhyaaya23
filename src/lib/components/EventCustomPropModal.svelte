@@ -4,13 +4,13 @@
 	import { closeModal } from 'svelte-modals';
 	import { page } from '$app/stores';
 	export let isOpen: boolean;
-    export let event_id: string;
+	export let event_id: string;
 
-    let event = EVENTS.find((event) => event.id === event_id) ?? EVENTS[0];
+	let event = EVENTS.find((event) => event.id === event_id) ?? EVENTS[0];
 	// export let reset_func: () => void;
-	 
+
 	let value: string;
-	import "iconify-icon";
+	import 'iconify-icon';
 
 	function close() {
 		// reset_func();
@@ -31,23 +31,31 @@
 						>
 					</div>
 					{#if event && event.custom_properties}
-					<p>{event.custom_properties[0].label ?? 'Select option below...'}</p>
-					<div class="card-actions justify-center">
-						<select
-							bind:value
-							on:change={() => {
-								if (close()) goto(`/register?event=${value}` + ($page.url.search.includes('members') ? `&members=${$page.url.searchParams.get('members')}` : ''));
-								// console.log(value);
-							}}
-							class="select select-bordered w-full max-w-xs">
-							<option class="invisible hidden" disabled selected>Select Here</option>
-							{#each event.custom_properties[0].options ?? [] as option, i}
-								<option class="font-mono" value={event.custom_properties[0].redirect[i] ?? ''}
-									>{option}</option>
-							{/each}
-						</select>
-					</div>
-                    {/if}
+						<p>{event.custom_properties[0].label ?? 'Select option below...'}</p>
+						<div class="card-actions justify-center">
+							<select
+								bind:value
+								on:change={() => {
+									if (close())
+										goto(
+											`/register?event=${value}` +
+												($page.url.search.includes('members')
+													? `&members=${$page.url.searchParams.get('members')}`
+													: '')
+										);
+									// console.log(value);
+								}}
+								class="select select-bordered w-full max-w-xs"
+							>
+								<option class="invisible hidden" disabled selected>Select Here</option>
+								{#each event.custom_properties[0].options ?? [] as option, i}
+									<option class="font-mono" value={event.custom_properties[0].redirect[i] ?? ''}
+										>{option}</option
+									>
+								{/each}
+							</select>
+						</div>
+					{/if}
 				</div>
 			</div>
 		</div>

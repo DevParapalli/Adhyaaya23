@@ -11,13 +11,13 @@
 			let j = Math.floor(Math.random() * (i + 1));
 			[array[i], array[j]] = [array[j], array[i]];
 		}
-        return array;
+		return array;
 	}
 </script>
 
 <div class="slider">
 	<div style="--width: {EVENTS.length}" class="slide-track {alt}">
-		{#each shuffle(EVENTS.filter(e=>e.is_active)) as event}
+		{#each shuffle(EVENTS.filter((e) => e.is_active)) as event}
 			<div class="slide inline-flex items-center justify-center">
 				<button
 					on:click={async () => {
@@ -27,7 +27,7 @@
 					class="flex flex-col items-center justify-center h-full text-xl"
 				>
 					{#if event.icon.includes('url::')}
-						 <img class="h-9 w-9" src="{event.icon.replace('url::', '')}" alt="">
+						<img class="h-9 w-9" src={event.icon.replace('url::', '')} alt="" />
 					{:else}
 						<iconify-icon class="text-4xl" icon={event.icon} />
 					{/if}
@@ -91,7 +91,7 @@
 		overflow: hidden;
 		position: relative;
 		/* width: 960px; */
-        /* Change here to change the color of the background */
+		/* Change here to change the color of the background */
 		@apply bg-purple-500/20 w-full h-40 shadow-2xl rounded-2xl flex items-center justify-center;
 	}
 	.slider::before,

@@ -1,4 +1,3 @@
-
 import * as THREE from 'three';
 import fragment from '$lib/components/DNA/shaders/fragment.glsl?raw';
 import vertex from '$lib/components/DNA/shaders/vertexParticles.glsl?raw';
@@ -13,9 +12,7 @@ import { UnrealBloomPass } from 'three/examples/jsm/postprocessing/UnrealBloomPa
 import { AberrationShader } from '$lib/components/DNA/shaders/CustomPass';
 // import type { Vector3 } from 'three';
 
-
-
-export default class Sketch { 
+export default class Sketch {
 	scene: THREE.Scene;
 	container: HTMLElement;
 	width: number;
@@ -43,7 +40,6 @@ export default class Sketch {
 
 	material: THREE.ShaderMaterial;
 
-	
 	constructor(container: HTMLElement, alternate = false) {
 		//scene
 		this.scene = new THREE.Scene();
@@ -56,9 +52,9 @@ export default class Sketch {
 		// this.height = window.innerHeight;
 		//renderer
 		this.renderer = new THREE.WebGLRenderer({
-			powerPreference: "high-performance",
-			antialias: true, 
-            alpha: true,
+			powerPreference: 'high-performance',
+			antialias: true,
+			alpha: true
 		});
 		if (window?.innerWidth < 600) {
 			this.renderer.setPixelRatio(window.devicePixelRatio * 0.35);
@@ -73,9 +69,7 @@ export default class Sketch {
 		//model loaders
 		this.loader = new GLTFLoader();
 		this.dracoLoader = new DRACOLoader();
-		this.dracoLoader.setDecoderPath(
-			'/draco/'
-		);
+		this.dracoLoader.setDecoderPath('/draco/');
 		this.loader.setDRACOLoader(this.dracoLoader);
 		//add canvas
 		this.container.appendChild(this.renderer.domElement);
@@ -86,9 +80,9 @@ export default class Sketch {
 			0.001,
 			1000
 		);
-		
+
 		this.camera.position.set(-2, 1, 5);
-		
+
 		//orbit controls
 		// const orbitControls = new toc(THREE);
 		// this.controls = new orbitControls(this.camera, this.renderer.domElement);
@@ -140,7 +134,6 @@ export default class Sketch {
 		this.composer.addPass(this.effect1);
 	}
 	addObjects() {
-		
 		this.material = new THREE.ShaderMaterial({
 			extensions: {
 				derivatives: '#extension GL_OES_standard_derivatives : enable'

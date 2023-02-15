@@ -17,9 +17,9 @@ export const GET: RequestHandler = async ({ url }) => {
 	const rzp_oid = url.searchParams.get('rzp_oid');
 	const rzp_sig = url.searchParams.get('rzp_sig');
 
-	dev ? console.log('rzp_pid', rzp_pid):null;
-	dev ? console.log('rzp_oid', rzp_oid): null;
-	dev ? console.log('rzp_sig', rzp_sig): null;
+	dev ? console.log('rzp_pid', rzp_pid) : null;
+	dev ? console.log('rzp_oid', rzp_oid) : null;
+	dev ? console.log('rzp_sig', rzp_sig) : null;
 
 	if (rzp_pid && rzp_oid && rzp_sig) {
 		const { data } = await supabase
@@ -30,8 +30,8 @@ export const GET: RequestHandler = async ({ url }) => {
 			.single();
 		if (!data) throw error(404, 'Order ID not found');
 		const generated = sha256.hmac(RZP_SECRET, rzp_oid + '|' + rzp_pid);
-		dev ? console.log('generated', generated): null;
-		dev ? console.log('rzp_sig', rzp_sig): null;
+		dev ? console.log('generated', generated) : null;
+		dev ? console.log('rzp_sig', rzp_sig) : null;
 		if (generated === rzp_sig) {
 			const { data: _data } = await supabase
 				.from('registrations')

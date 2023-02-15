@@ -3,7 +3,7 @@ import NodeMailer from 'nodemailer';
 import { supabase } from '$lib/supabaseClient';
 import type { DBRegistration } from '$lib/types';
 import { EVENTS } from '$lib/data/events';
-import {SMTP_USER, SMTP_PASS, SG_KEY} from '$env/static/private'
+import { SMTP_USER, SMTP_PASS, SG_KEY } from '$env/static/private';
 import { dev } from '$app/environment';
 
 export async function _sendEmail(
@@ -12,7 +12,7 @@ export async function _sendEmail(
 	html: string,
 	text: string,
 	// from = "Adhyaaya'23 | GCOEN <registrations@adhyaaya.org>",
-	from = "Registrations @ Adhyaaya'23 <noreply.adhyaaya.gcoen@gmail.com>",
+	from = "Registrations @ Adhyaaya'23 <noreply.adhyaaya.gcoen@gmail.com>"
 	// replyTo = 'registrations@adhyaaya.org',
 ) {
 	const transporter = NodeMailer.createTransport({
@@ -29,7 +29,7 @@ export async function _sendEmail(
 		to,
 		subject,
 		html,
-		text,
+		text
 		// replyTo
 	});
 }
@@ -67,13 +67,14 @@ export async function sendEmail(registration_id: string) {
 		contact: '+919876543210',
 		qr: registration.id ?? 'Pending',
 		// TODO: change link to prod
-		receipt: `${dev ? 'http://localhost:5173' : 'https://adhyaaya.devparapalli.in'}/pg/${registration.id}/success`
-	})
+		receipt: `${dev ? 'http://localhost:5173' : 'https://adhyaaya.devparapalli.in'}/pg/${
+			registration.id
+		}/success`
+	});
 	const text = `Hi ${registration.name},\n\nThank you for registering for Adhyaaya'23. We are glad to have you on board. We will be sending you more details about the event soon.\nPlease note the registration id: ${registration.id}\n\nRegards,\nTeam Adhyaaya'23`;
 
-    return await _sendEmail(registration.email, 'Adhyaaya\'23 Registration', html, text)
+	return await _sendEmail(registration.email, "Adhyaaya'23 Registration", html, text);
 }
-
 
 export async function sendAPIEmail(registration_id: string) {
 	const { data: registration, error } = (await supabase
@@ -108,8 +109,10 @@ export async function sendAPIEmail(registration_id: string) {
 		contact: '+919876543210',
 		qr: registration.id ?? 'Pending',
 		// TODO: change link to prod
-		receipt: `${dev ? 'http://localhost:5173' : 'https://adhyaaya.devparapalli.in'}/pg/${registration.id}/success`
-	})
+		receipt: `${dev ? 'http://localhost:5173' : 'https://adhyaaya.devparapalli.in'}/pg/${
+			registration.id
+		}/success`
+	});
 	const text = `Hi ${registration.name},\n\nThank you for registering for Adhyaaya'23. We are glad to have you on board. We will be sending you more details about the event soon.\nPlease note the registration id: ${registration.id}\n\nRegards,\nTeam Adhyaaya'23`;
 
 	const sgMail = (await import('@sendgrid/mail')).default;
@@ -122,4 +125,4 @@ export async function sendAPIEmail(registration_id: string) {
 		html
 	};
 	return sgMail.send(msg);
-	}
+}

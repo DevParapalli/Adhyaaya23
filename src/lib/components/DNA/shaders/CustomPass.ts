@@ -1,11 +1,11 @@
 export const AberrationShader = {
-    uniforms: {
-        "tDiffuse": { value: 0.1 },
-        "distort": { value: 0.5 },
-        "time": { value: 0 }
-    },
-    vertexShader: `varying vec2 vUv;void main() {vUv = uv;gl_Position = projectionMatrix * modelViewMatrix * vec4( position, 1.0 );}`,
-    fragmentShader: `uniform sampler2D tDiffuse;
+	uniforms: {
+		tDiffuse: { value: 0.1 },
+		distort: { value: 0.5 },
+		time: { value: 0 }
+	},
+	vertexShader: `varying vec2 vUv;void main() {vUv = uv;gl_Position = projectionMatrix * modelViewMatrix * vec4( position, 1.0 );}`,
+	fragmentShader: `uniform sampler2D tDiffuse;
         uniform float distort;
         uniform float time;
         varying vec2 vUv;
@@ -61,4 +61,4 @@ export const AberrationShader = {
             gl_FragColor = sumcol / sumw;
         }
     `
-}
+};

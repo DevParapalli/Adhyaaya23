@@ -7,7 +7,7 @@ const config = {
 		// 	quality: [0.5],
 		// 	speed: 6,
 		//   },}),
-		sveltekit(),
+		sveltekit()
 	],
 	test: {
 		include: ['src/**/*.{test,spec}.{js,ts}']

@@ -16,7 +16,7 @@
 
 	let canvas: HTMLCanvasElement;
 	let mouse: THREE.Vector2;
-	function onMouseMove(x: number, y:number) {
+	function onMouseMove(x: number, y: number) {
 		mouse.x = x * 2 - 1;
 		mouse.y = -y * 2 + 1;
 	}
@@ -161,7 +161,7 @@
 
 		//------------------------------------------------------------- RAYCASTER
 		const raycaster = new THREE.Raycaster();
-		mouse = new THREE.Vector2()
+		mouse = new THREE.Vector2();
 		let INTERSECTED: any;
 		let intersected;
 
@@ -197,7 +197,7 @@
 					INTERSECTED = null;
 				}
 			}
-			dev ? console.log(intersected.length): null;
+			dev ? console.log(intersected.length) : null;
 		}
 
 		// window.addEventListener('mousedown', onMouseDown, false);
@@ -242,7 +242,7 @@
 		init();
 	});
 
-	function convertRange(value: number, r1: number[], r2:number[]) {
+	function convertRange(value: number, r1: number[], r2: number[]) {
 		return ((value - r1[0]) * (r2[1] - r2[0])) / (r1[1] - r1[0]) + r2[0];
 	}
 
@@ -258,18 +258,16 @@
 	<title>Events | Adhyaaya'23</title>
 </svelte:head>
 
-<svelte:window on:resize={() => {}} on:scroll|passive={(e)=>{
-	onMouseMove(0,convertRange(window.scrollY, [0, height - window.innerHeight], [0, 1]))
-}} />
+<svelte:window
+	on:resize={() => {}}
+	on:scroll|passive={(e) => {
+		onMouseMove(0, convertRange(window.scrollY, [0, height - window.innerHeight], [0, 1]));
+	}}
+/>
 
 <!-- <canvas bind:this={canvas} class="orb-canvas -z-50 fixed bg-white !h-screen !w-screen" /> -->
 <!-- <img src="{img}" class="-z-50 fixed h-screen w-screen object-cover"> -->
-<div
-	id="bg"
-	class=" fixed h-screen w-screen -z-50 overflow-clip blur-sm"
-/>
-
-
+<div id="bg" class=" fixed h-screen w-screen -z-50 overflow-clip blur-sm" />
 
 <div
 	bind:clientHeight={height}
@@ -282,9 +280,33 @@
 	<div
 		class="section-header h-full min-h-[calc(100vh-7rem)] flex items-center justify-center flex-wrap transition-all duration-500 ease-in-out gap-4 md:gap-10 pt-16"
 	>
-		<MainCards color={3} href="#technical" icontext="" title="Technical" subtitle="Events" subtext="" image="{tech}"/>
-		<MainCards color={2} href="#non-technical" icontext="" title="Non-Tech" subtitle="Events" subtext="" image="{ntech}" />
-		<MainCards color={0} href="#workshops" icontext="" title="Workshops" subtitle="." subtext="" image="{wksp}" />
+		<MainCards
+			color={3}
+			href="#technical"
+			icontext=""
+			title="Technical"
+			subtitle="Events"
+			subtext=""
+			image={tech}
+		/>
+		<MainCards
+			color={2}
+			href="#non-technical"
+			icontext=""
+			title="Non-Tech"
+			subtitle="Events"
+			subtext=""
+			image={ntech}
+		/>
+		<MainCards
+			color={0}
+			href="#workshops"
+			icontext=""
+			title="Workshops"
+			subtitle="."
+			subtext=""
+			image={wksp}
+		/>
 	</div>
 
 	<div class="flex flex-col items-center justify-center pt-16">

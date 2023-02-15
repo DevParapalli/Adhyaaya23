@@ -19,8 +19,6 @@ import unisoft from '$lib/assets/sponsors/unisoft.png?url';
 import paarangat from '$lib/assets/sponsors/parangat.png?url';
 import frostandfeather from '$lib/assets/sponsors/frostandfeather.png?url';
 
-
-
 export const SPONSORS: AdhyaayaSponsor[] = [
 	{
 		name: 'Sponsor Name',
@@ -63,7 +61,7 @@ export const SPONSORS: AdhyaayaSponsor[] = [
 		link: 'https://www.google.com',
 		title: 'Sponsor',
 		category: SponsorCategory.GOLD
-	},
+	}
 ];
 
-export const PAST_SPONSORS: AdhyaayaSponsor[] = []
+export const PAST_SPONSORS: AdhyaayaSponsor[] = [];

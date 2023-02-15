@@ -1,8 +1,8 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
 
-	let config = "1";
-	let roundness = "1";
+	let config = '1';
+	let roundness = '1';
 
 	const rand = (min: number, max: number) => Math.floor(Math.random() * (max - min + 1) + min);
 
@@ -25,7 +25,7 @@
 
 	let prev = 0;
 
-    let wrapper: HTMLDivElement;
+	let wrapper: HTMLDivElement;
 
 	onMount(() => {
 		const interval = setInterval(() => {
@@ -37,14 +37,14 @@
 
 			prev = index;
 		}, 1000);
-        return () => {
-            clearInterval(interval);
-        }
+		return () => {
+			clearInterval(interval);
+		};
 	});
 </script>
 
 <div class="h-screen w-screen fixed z-[9999] bg-black flex items-center justify-center">
-	<div bind:this="{wrapper}" id="wrapper" data-configuration={config} data-roundness={roundness}>
+	<div bind:this={wrapper} id="wrapper" data-configuration={config} data-roundness={roundness}>
 		<div class="shape" />
 		<div class="shape" />
 		<div class="shape" />

@@ -166,13 +166,13 @@
 		background-color: #213554;
 		margin-top: 16px;
 	}
-    .updated-date {
-        @apply text-sm text-gray-500 mt-4;
-    }
-    [class*="content-"] {
-        font-family: "Nunito", sans-serif;
-    }
-    strong {
-        font-family: "Nunito", sans-serif;
-    }
+	.updated-date {
+		@apply text-sm text-gray-500 mt-4;
+	}
+	[class*='content-'] {
+		font-family: 'Nunito', sans-serif;
+	}
+	strong {
+		font-family: 'Nunito', sans-serif;
+	}
 </style>

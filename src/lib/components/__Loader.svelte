@@ -1,22 +1,21 @@
 <script>
-
-	import { fade } from "svelte/transition";
-
+	import { fade } from 'svelte/transition';
 </script>
+
 <div out:fade>
-    <h1>Adhyaaya'23</h1>
-    <section>
-        <div />
-        <div />
-        <div />
-        <div />
-        <div />
-        <div />
-        <div />
-        <div />
-        <div />
-        <div />
-    </section>
+	<h1>Adhyaaya'23</h1>
+	<section>
+		<div />
+		<div />
+		<div />
+		<div />
+		<div />
+		<div />
+		<div />
+		<div />
+		<div />
+		<div />
+	</section>
 </div>
 
 <style>

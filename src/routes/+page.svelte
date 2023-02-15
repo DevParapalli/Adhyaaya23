@@ -66,7 +66,6 @@
 			loaded = true;
 			duration.set(0);
 		}, 2500);
-		
 	}
 	onMount(() => {
 		loadObjects();
@@ -84,7 +83,6 @@
 			sketch.duration += 0.17;
 		}
 	}
-
 </script>
 
 <svelte:head>

@@ -12,8 +12,9 @@ export const load: PageServerLoad = async ({ params, fetch }) => {
 	let { data } = await supabase.from('registrations').select('*').eq('id', params.rid).single();
 	if (!data) throw error(404, 'Registration ID not found');
 	// POST TO RZP
-	if( data['rzp_status'] === 'PAID') // Incase of paid already, redirect to success page.
-	throw redirect(307, '/pg/'+params.rid+'/success');
+	if (data['rzp_status'] === 'PAID')
+		// Incase of paid already, redirect to success page.
+		throw redirect(307, '/pg/' + params.rid + '/success');
 
 	const _req = await fetch('https://api.razorpay.com/v1/orders', {
 		method: 'POST',

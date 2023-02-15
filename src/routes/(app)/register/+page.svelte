@@ -3,7 +3,7 @@
 	import bg from '$lib/assets/backgrounds/register-1.jpg';
 	import { enhance } from '$app/forms';
 	import autoanimate from '@formkit/auto-animate';
-	import "iconify-icon"
+	import 'iconify-icon';
 	import type { PageData, ActionData } from './$types';
 	import { toastError } from '$lib/util';
 	import { openModal, closeAllModals } from 'svelte-modals';
@@ -63,11 +63,11 @@
 		// else if (data.select) openModal(EventChangeModal);
 	});
 	afterUpdate(() => {
-		// if the component requires a redirect to correct event, then we use 
+		// if the component requires a redirect to correct event, then we use
 		if (data.custom) {
 			closeAllModals();
 			openModal(EventCustomPropModal, { event_id: data.event.id });
-		};
+		}
 		if (form?.errors) {
 			form.errors.forEach((error) => {
 				toastError(`Incorrect Field: ${error}`);
@@ -75,7 +75,7 @@
 			document.getElementById(form.errors[0])?.focus();
 			form.errors = [];
 		}
-	})
+	});
 	onMount(() => {
 		setDefaultTeamMember();
 	});
@@ -87,22 +87,19 @@
 	<title>Registration Form | Adhyaaya'23</title>
 </svelte:head>
 
-
 <div class="bg w-full pt-20 object-cover pb-10 min-h-screen" style="--bg:url({bg});--opacity:0.75">
-	<div
-		class="header mx-auto text-4xl text-center mb-8 text-white font-bold uppercase font-mono"
-	>
+	<div class="header mx-auto text-4xl text-center mb-8 text-white font-bold uppercase font-mono">
 		Registration Form
 	</div>
 	{#if form?.errors}
 		<div class="mx-auto w-full flex flex-col">
 			<!-- <span class="hidden">{toasting()}</span> -->
-		<span class="mx-auto">Please correct the following errors:</span>
-		<ol class="mx-auto">
-			{#each form.errors as error}
-				<li>{error}</li>
-			{/each}
-		</ol>
+			<span class="mx-auto">Please correct the following errors:</span>
+			<ol class="mx-auto">
+				{#each form.errors as error}
+					<li>{error}</li>
+				{/each}
+			</ol>
 		</div>
 	{/if}
 	<form
@@ -111,7 +108,9 @@
 		class="registration-form container max-w-3xl mx-auto px-10 py-10 bg-black/50 rounded-lg"
 		method="POST"
 	>
-		<div class="details-container w-full flex flex-col md:flex-row pb-4 mb-2 border-b-2 border-b-white/30">
+		<div
+			class="details-container w-full flex flex-col md:flex-row pb-4 mb-2 border-b-2 border-b-white/30"
+		>
 			<div class="event-details grid grid-cols-2">
 				<span>Event Name:</span>
 				<span>{data.event.name}</span>
@@ -373,8 +372,14 @@
 		{:else}
 			<button disabled>Please select a choice above</button>
 		{/if}
-		<hr class="border border-white/60 mt-4"/>
-		<div class="mx-auto text-sm px-10"><br />By registering you agree to receive transactional (receipts etc.) emails from Adhyaaya. Please see our <a class="underline text-white" href="/legal/privacy_policy">Privacy Policy</a> for info on how your data is handled and <a class="underline text-white" href="/legal/terms_and_conditions">Terms and Conditions</a> for more info.</div>
+		<hr class="border border-white/60 mt-4" />
+		<div class="mx-auto text-sm px-10">
+			<br />By registering you agree to receive transactional (receipts etc.) emails from Adhyaaya.
+			Please see our <a class="underline text-white" href="/legal/privacy_policy">Privacy Policy</a>
+			for info on how your data is handled and
+			<a class="underline text-white" href="/legal/terms_and_conditions">Terms and Conditions</a> for
+			more info.
+		</div>
 	</form>
 </div>
 
@@ -390,10 +395,10 @@
 	}
 
 	* {
-		font-family: "Nunito", sans-serif;
+		font-family: 'Nunito', sans-serif;
 	}
 
 	.header {
-		font-family: 'My Font'
-	} 
+		font-family: 'My Font';
+	}
 </style>

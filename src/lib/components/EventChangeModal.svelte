@@ -6,7 +6,7 @@
 	export let isOpen: boolean;
 	// export let reset_func: () => void;
 	let value: string;
-	import "iconify-icon";
+	import 'iconify-icon';
 
 	function close() {
 		// reset_func();
@@ -35,11 +35,11 @@
 								if (close()) goto(`/register?event=${value}`);
 								// console.log(value);
 							}}
-							class="select select-bordered w-full max-w-xs">
+							class="select select-bordered w-full max-w-xs"
+						>
 							<option class="invisible hidden" disabled selected>Select Here</option>
-							{#each EVENTS.filter(e=>e.is_active) as event}
-								<option class="font-mono" value={event.id}
-									>{event.name}</option>
+							{#each EVENTS.filter((e) => e.is_active) as event}
+								<option class="font-mono" value={event.id}>{event.name}</option>
 							{/each}
 						</select>
 					</div>

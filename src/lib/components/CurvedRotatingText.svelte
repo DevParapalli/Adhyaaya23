@@ -1,6 +1,6 @@
 <script lang="ts">
 	export let speed = 50;
-    export let size = 130;
+	export let size = 130;
 	export let font = 0.7;
 	export let text = 'Hello World';
 	export let repeat = 3;
@@ -8,7 +8,7 @@
 	export let classes = '';
 
 	let array: string[] = [];
-	$: array = [...Array(repeat)].map(_ => [...text].concat([...separator])).flat();
+	$: array = [...Array(repeat)].map((_) => [...text].concat([...separator])).flat();
 </script>
 
 <div class="controls hidden nunu">
@@ -17,19 +17,25 @@
 	<p><span>Repeat</span><input type="number" bind:value={repeat} min="1" /></p>
 	<p><span>Circle size</span><input type="number" bind:value={size} min="100" step="10" /></p>
 	<p><span>Font size</span><input type="number" bind:value={font} min="0.1" step="0.1" /></p>
-	<p><span>Animation duration</span><input type="number" bind:value={speed} min="10" step="10" /></p>
+	<p>
+		<span>Animation duration</span><input type="number" bind:value={speed} min="10" step="10" />
+	</p>
 </div>
 
 <div class="seal {classes}" style="--size: {size}px; --speed: {speed * 1000}ms; --font: {font}em">
 	{#each array as char, index}
-		<div class="char" style="--angle: {`${1 / array.length * index}turn`}">{char}</div>
+		<div class="char" style="--angle: {`${(1 / array.length) * index}turn`}">{char}</div>
 	{/each}
 </div>
 
 <style>
 	@keyframes rotation {
-		0%   { transform: rotate(0turn); }
-		100% { transform: rotate(1turn); }
+		0% {
+			transform: rotate(0turn);
+		}
+		100% {
+			transform: rotate(1turn);
+		}
 	}
 	.controls span {
 		display: block;

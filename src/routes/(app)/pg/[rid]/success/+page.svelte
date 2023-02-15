@@ -19,20 +19,22 @@
 	onMount(async () => {
 		PNG = await getQRCode(`${url_start}/pg/${data.db.id}/success`);
 		setTimeout(() => {
-			alert("Please join the WhatsApp group. The link is given in the instructions.")
-		}, 100)
+			alert('Please join the WhatsApp group. The link is given in the instructions.');
+		}, 100);
 	});
 </script>
 
 <svelte:head>
-    <title>Receipt for {EVENT?.name} | Adhyaaya'23</title>
+	<title>Receipt for {EVENT?.name} | Adhyaaya'23</title>
 </svelte:head>
 
 <div class="md:h-screen w-screen md:w-screen no-scroll-bar">
 	<div class="reciept-container flex flex-col md:flex-row w-full h-full ">
 		<div class="left-half bg-black mx-auto py-0 md:py-10 md:px-0 md:pl-10 w-full md:w-3/5 ">
 			<div class="bg-white flex flex-col md:h-full overflow-y-scroll no-scroll-bar">
-				<div class="logo mx-auto h-40 w-40 mb-8 pt-4"><img src={adhyaaya_solid_logo} class="h-28" height="112" width="202" alt="" /></div>
+				<div class="logo mx-auto h-40 w-40 mb-8 pt-4">
+					<img src={adhyaaya_solid_logo} class="h-28" height="112" width="202" alt="" />
+				</div>
 				<div class="qr">
 					<img
 						class="qr-code-container h-36 w-36 md:h-48 md:w-48 rounded-none p-2 mx-auto"
@@ -42,7 +44,8 @@
 				</div>
 
 				<div class="reciept-number mx-auto pt-4 hidden md:block">
-					<span class=" font-bold text-gray-500 truncate text-ellipsis overflow-hidden line-clamp-1 font-mono uppercase"
+					<span
+						class=" font-bold text-gray-500 truncate text-ellipsis overflow-hidden line-clamp-1 font-mono uppercase"
 						>{data.db.id}</span
 					>
 				</div>
@@ -53,11 +56,11 @@
 						<div
 							class="event-logo h-10 w-10 mr-2 text-4xl inline-flex items-center justify-center text-black"
 						>
-						{#if EVENT?.icon.includes('url::')}
-						<img class="h-9 w-9" src="{EVENT.icon.replace('url::', '')}" alt="">
-				   {:else}
-					   <iconify-icon class="text-4xl" icon={EVENT?.icon} />
-				   {/if}
+							{#if EVENT?.icon.includes('url::')}
+								<img class="h-9 w-9" src={EVENT.icon.replace('url::', '')} alt="" />
+							{:else}
+								<iconify-icon class="text-4xl" icon={EVENT?.icon} />
+							{/if}
 						</div>
 						<div class="event-data text-lg text-gray-700">
 							{EVENT?.name} | {EVENT?.mode.toLocaleUpperCase()}
@@ -104,8 +107,8 @@
 					{#if EVENT?.mode == 'online'}
 						<li>
 							Adhyaaya <span class="text-bold uppercase text-white underline">will not</span> be help
-							responsible for any network lag, connectivity issues during the event, participants
-							are expected to have a stable internet connection.
+							responsible for any network lag, connectivity issues during the event, participants are
+							expected to have a stable internet connection.
 						</li>
 					{/if}
 					{#if EVENT?.mode == 'offline'}
