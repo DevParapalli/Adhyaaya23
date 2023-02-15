@@ -95,7 +95,7 @@ export const actions: Actions = {
 			rzp_status:
 				amount_to_pay === 0 || String(data['branch_specialization']) === 'EPNemGE0iQ'
 					? 'PAID'
-					: 'NO_ORDER_CREATED',
+					: 'NO_PAYMENT_CREATED',
 			custom: {}
 		};
 
