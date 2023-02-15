@@ -1,10 +1,19 @@
-<script>
+<script lang="ts">
 	// import {hasScrolled} from '$lib/stores/UI';
 	import { slide } from 'svelte/transition';
-
+	import {page} from '$app/stores';
 	export let scrollPos = 0;
+	let animate = false;
+	
+	function maybe(fn: any, options: any) {
+		if (animate) {
+			return fn(options);
+		}
+	}
+
 </script>
 
+{#if $page.url.pathname === '/'}
 <div class="wrapper w-full h-full flex items-center text-left relative">
 	<div class="main w-full ml-[8.33333333333333334%] md:ml-[16.66666666667%]">
 		<div
@@ -15,7 +24,7 @@
 	</div>
 	{#if scrollPos < 35}
 		<div
-			transition:slide={{delay: 300, duration: 800}}
+			in:slide={{delay: 300, duration: 800}} out:slide={{delay: 0, duration: 300}}
 			class="scroll-text absolute left-[8.33333333333333334%] md:left-[16.66666666667%] bottom-0 text-sm"
 		>
 			SCROLL TO EXPLORE
@@ -23,6 +32,7 @@
 		</div>
 	{/if}
 </div>
+{/if}
 
 <!-- {@debug hasScrolled, $hasScrolled} -->
 <style>

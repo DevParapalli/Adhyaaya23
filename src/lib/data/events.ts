@@ -45,6 +45,7 @@ import cadoshit from '$lib/assets/icons/cadoshop.png?url';
 import jigyasa from '$lib/assets/icons/jigyasa.png?url';
 import stargaze from '$lib/assets/icons/stargaze.png?url';
 import gdsc from '$lib/assets/icons/gdsc.png?url';
+import multirotor from '$lib/assets/icons/multirotor.png?url';
 
 import p_avishkar from '$lib/assets/posters/avishkar.jpg?url';
 import p_bridge from '$lib/assets/posters/bridge-o-craft.jpg?url';
@@ -673,7 +674,7 @@ export const EVENTS: AdhyaayaEvent[] = [
 		start_date: new Date('28 Feb 2023'),
 		end_date: new Date('28 Feb 2023'),
 		small_image: 'https://placeimg.com/360/360/tech',
-		icon: 'mdi:aeroplane',
+		icon: `url::${multirotor}`,
 		poster: p_coming_soon,
 		contact: [
 			{
