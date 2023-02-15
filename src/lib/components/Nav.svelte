@@ -29,16 +29,16 @@
 	<div
 		class="fixed top-0 w-full min-h-16 bg-transparent z-[200] pointer-events-none flex flex-row px-4 md:px-10  items-center pt-[4vh] print:hidden"
 	>
-		{#if !$page.url.pathname.includes('success')}
+		
 			<button
 				on:click={() => {
 					goto('/');
 				}}
-				class="logo bg-transparent w-20 md:w-36 pointer-events-auto py-1 px-2  rounded-lg transition-all duration-250 hover:scale-105 active:scale-95 cursor-pointer mr-auto"
+				class="logo bg-transparent {$page.url.pathname.includes('success') ? 'invisible':''} w-20 md:w-36 pointer-events-auto py-1 px-2  rounded-lg transition-all duration-250 hover:scale-105 active:scale-95 cursor-pointer mr-auto"
 			>
 				<img src={AdhyaayaLogoSolid} alt="" />
 			</button>
-		{/if}
+		
 
 		<a
 			href="/register?select=true"
