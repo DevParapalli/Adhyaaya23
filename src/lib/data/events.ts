@@ -549,7 +549,8 @@ export const EVENTS: AdhyaayaEvent[] = [
 				phone: '9607773343'
 			}
 		],
-		is_active: true,
+		// TODO: Fix this
+		is_active: false,
 		whatsapp_link: "https://chat.whatsapp.com/GwpSrB9MEcL4sW54WL1Hto"
 	},
 	{
