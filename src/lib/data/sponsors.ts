@@ -13,6 +13,14 @@ export interface AdhyaayaSponsor {
 	category?: SponsorCategory; // SILVER, GOLD, PLATINUM, DIAMOND, TITLE
 }
 
+import orangebits from '$lib/assets/sponsors/orangebits.png?url';
+import pythonacademy from '$lib/assets/sponsors/pythonacademy.png?url';
+import unisoft from '$lib/assets/sponsors/unisoft.png?url';
+import paarangat from '$lib/assets/sponsors/parangat.png?url';
+import frostandfeather from '$lib/assets/sponsors/frostandfeather.png?url';
+
+
+
 export const SPONSORS: AdhyaayaSponsor[] = [
 	{
 		name: 'Sponsor Name',
@@ -22,73 +30,40 @@ export const SPONSORS: AdhyaayaSponsor[] = [
 		category: SponsorCategory.TITLE
 	},
 	{
-		name: 'Sponsor Name',
-		image: (await import('$lib/assets/sponsors/orangebits.png?url')).default,
+		name: 'Orange Bits',
+		image: orangebits,
 		link: 'https://orangebitsindia.com/',
 		title: 'Sponsor',
 		category: SponsorCategory.GOLD
 	},
 	{
-		name: 'Sponsor Name',
-		image: 'https://via.placeholder.com/200x200',
-		link: 'https://www.google.com',
+		name: 'Python Academy',
+		image: pythonacademy,
+		link: 'https://www.pythonacademy.in/',
 		title: 'Sponsor',
 		category: SponsorCategory.GOLD
 	},
 	{
-		name: 'Sponsor Name',
-		image: 'https://via.placeholder.com/200x200',
-		link: 'https://www.google.com',
+		name: 'Unisoft Technologies',
+		image: unisoft,
+		link: 'http://www.unisoftindia.org/',
 		title: 'Sponsor',
 		category: SponsorCategory.GOLD
 	},
 	{
-		name: 'Sponsor Name',
-		image: 'https://via.placeholder.com/200x200',
-		link: 'https://www.google.com',
+		name: 'Paarangat Edu.',
+		image: paarangat,
+		link: 'https://paarangatedu.com/',
 		title: 'Sponsor',
 		category: SponsorCategory.GOLD
 	},
 	{
-		name: 'Sponsor Name',
-		image: 'https://via.placeholder.com/200x200',
+		name: 'Frost & Feather',
+		image: frostandfeather,
 		link: 'https://www.google.com',
 		title: 'Sponsor',
 		category: SponsorCategory.GOLD
 	},
-	{
-		name: 'Sponsor Name',
-		image: 'https://via.placeholder.com/200x200',
-		link: 'https://www.google.com',
-		title: 'Sponsor',
-		category: SponsorCategory.GOLD
-	},
-	{
-		name: 'Sponsor Name',
-		image: 'https://via.placeholder.com/200x200',
-		link: 'https://www.google.com',
-		title: 'Sponsor',
-		category: SponsorCategory.GOLD
-	},
-	{
-		name: 'Sponsor Name',
-		image: 'https://via.placeholder.com/200x200',
-		link: 'https://www.google.com',
-		title: 'Sponsor',
-		category: SponsorCategory.GOLD
-	},
-	{
-		name: 'Sponsor Name',
-		image: 'https://via.placeholder.com/200x200',
-		link: 'https://www.google.com',
-		title: 'Sponsor',
-		category: SponsorCategory.GOLD
-	},
-	{
-		name: 'Sponsor Name',
-		image: 'https://via.placeholder.com/200x200',
-		link: 'https://www.google.com',
-		title: 'Sponsor',
-		category: SponsorCategory.GOLD
-	}
 ];
+
+export const PAST_SPONSORS: AdhyaayaSponsor[] = []

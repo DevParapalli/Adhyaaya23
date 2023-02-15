@@ -7,6 +7,7 @@
     <div class="section md:w-1/3 w-5/6 h-5/6 md:bg-black/20 py-3 md:py-0 rounded-lg md:border border-white">
         <form on:submit={() => {
             submit = true;
+			alert("Thank you for contacting us! We will get back to you soon.")
         }} 
         class="p-2 md:p-10 h-full w-full flex flex-col items-center justify-evenly" method="POST" use:enhance action="/forms/contact_us">
             <div class="relative z-0 mb-3 w-full group">
@@ -57,10 +58,10 @@
 			<div class="info-container w-full flex-col items-center justify-center px-4 xl:px-10  hidden lg:flex">
 				<div class="card card-compact mx-auto bg-white/20 shadow-xl container">
 				<div class="card-body">
-					<h2 class="card-title">For Technical Queries, </h2>
-					<p>Devansh Parapalli</p>
-					<a href="https://api.whatsapp.com/send?phone=+918793150182&text=[AdhyaayaWebsite]%20Hello!" class="inline-flex items-center gap-2"><iconify-icon icon="mdi:whatsapp"/> 8793150182</a>
-					<a href="mailto:parapallidev@gmail.com" class="inline-flex items-center gap-2 overflow-clip text-ellipsis"><iconify-icon icon="mdi:email-outline"/>parapallidev@gmail.com</a>
+					<h2 class="card-title nunu">For Technical Queries, </h2>
+					<p class="nunu">Devansh Parapalli</p>
+					<a href="https://api.whatsapp.com/send?phone=+918793150182&text=[AdhyaayaWebsite]%20Hello!" class="nunu inline-flex items-center gap-2"><iconify-icon icon="mdi:whatsapp"/> 8793150182</a>
+					<a href="mailto:parapallidev@gmail.com" class="nunu inline-flex items-center gap-2 overflow-clip text-ellipsis"><iconify-icon icon="mdi:email-outline"/>parapallidev@gmail.com</a>
 				  </div>
 			  </div>
 			</div>
@@ -74,8 +75,8 @@
             <div class="card-body ">
                 <h2 class="card-title nunu">For Event-Related Queries,</h2>
 				<p class="nunu">Malhar Paradkar</p>
-                <a href="tel:+918793150182" class="inline-flex items-center gap-2 nunu"><iconify-icon icon="mdi:phone-outline"/> 8793150182</a>
-                <a href="mailto:parapallidev@gmail.com" class="inline-flex items-center gap-2 nunu"><iconify-icon icon="mdi:email-outline"/>parapallidev@gmail.com</a>
+                <a href="tel:+919096831236" class="inline-flex items-center gap-2 nunu"><iconify-icon icon="mdi:phone-outline"/> 9096831236</a>
+                <a href="mailto:mcparadkar2003@gmail.com" class="inline-flex items-center gap-2 nunu"><iconify-icon icon="mdi:email-outline"/>mcparadkar2003@gmail.com</a>
               </div>
           </div>
 		  <!-- <div class="text-6xl mx-auto">OR</div> -->
@@ -83,8 +84,8 @@
             <div class="card-body nunu">
               <h2 class="card-title nunu">For Other/General Queries,</h2>
 			<p class="nunu">Shlok Suraj Tajne</p>
-			  <a href="tel:+918793150182" class="inline-flex items-center gap-2 nunu"><iconify-icon icon="mdi:phone-outline"/> 8793150182</a>
-              <a href="mailto:parapallidev@gmail.com" class="inline-flex items-center gap-2 nunu"><iconify-icon icon="mdi:email-outline"/>parapallidev@gmail.com</a>
+			  <a href="tel:+918237050035" class="inline-flex items-center gap-2 nunu"><iconify-icon icon="mdi:phone-outline"/> 8237050035</a>
+              <a href="mailto:shloktajne944@gmail.com" class="inline-flex items-center gap-2 nunu"><iconify-icon icon="mdi:email-outline"/>shloktajne944@gmail.com</a>
             </div>
           </div>
     </div>

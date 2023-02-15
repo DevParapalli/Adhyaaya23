@@ -379,7 +379,7 @@ export const EVENTS: AdhyaayaEvent[] = [
 		mode: 'offline',
 		category: 'technical',
 		name: 'RoboRace',
-		description: 'blah blah blah', 
+		description: 'Are you ready to test your driving skills in a high-octane race against the clock? Join us for RoboRace, where you\'ll have the opportunity to navigate a challenging race track using a bot provided by DROID DEVS. Whether you\'re a seasoned pro or a first-time racer, this event is open to all students, so grab your friends and sign up for a chance to win big prizes! With an easier track to start and a final round with even more challenging obstacles, the competition will be fierce, but only the fastest will come out on top. So what are you waiting for? Join us for an unforgettable event that\'s sure to be a highlight of the year!', 
 		amount: [100_00], //TODO: Confirm the details for this event
 		team_members: [4],
 		start_date: new Date('28 Feb 2023'),
@@ -617,7 +617,7 @@ export const EVENTS: AdhyaayaEvent[] = [
 				phone: '9511652253'
 			},
 		],
-		is_active: true
+		is_active: false
 	},
 	{
 		id: 'gdsc-lecture',
@@ -638,7 +638,7 @@ export const EVENTS: AdhyaayaEvent[] = [
 				phone: '7058441799'
 			}
 		],
-		is_active: true
+		is_active: false
 	},
 	// {
 	// 	id: 'ev-workshop',

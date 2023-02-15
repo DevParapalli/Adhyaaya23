@@ -6,6 +6,7 @@
     import { onMount } from 'svelte';
     import background from "./bg.jpg?url"
     import {SPONSORS} from '$lib/data/sponsors';
+	import autoAnimate from '@formkit/auto-animate';
     const TITLE_SPONSOR = SPONSORS.find(sponsor => sponsor.category === 'TITLE');
     
     function shuffle(array: typeof SPONSORS) {
@@ -36,11 +37,12 @@
       <img src={TITLE_SPONSOR?.image} alt={TITLE_SPONSOR?.title} />
     </div>
      -->
-    <div class="mt-12 flex flex-row flex-wrap items-center gap-10 px-4">
+    <div use:autoAnimate class="mt-12 flex flex-row flex-wrap items-center gap-10 px-4">
       {#each SPONSORS_LIST as sponsor}
-        <a href="{sponsor.link}" class="max-w-sm mx-auto mt-8">
-          <img height="200" width="200" src={sponsor.image} alt={sponsor.title} />
-          <div class="mt-2 text-lg font-bold">{sponsor.title}</div>
+        <a href="{sponsor.link}" class="max-w-sm mx-auto mt-8 text-center">
+          <img height="200" width="200" src={sponsor.image} alt={sponsor.title} class="bg-white rounded-md mx-auto"/>
+          <div class="mt-2 text-lg font-bold nunu">{sponsor.name}</div>
+          <div class="mt-2 text-md font-semibold">{sponsor.title}</div>
         </a>
       {/each}
     </div>
