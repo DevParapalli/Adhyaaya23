@@ -18,6 +18,7 @@
 	afterNavigate(() => {
 		// zoomwall.create(document.getElementById('2018'), true);
 	});
+	import bg from './bg.jpg?url';
 </script>
 
 <svelte:head>
@@ -25,6 +26,8 @@
 </svelte:head>
 
 <!-- zoomwall.js -->
+
+<div style="--bg: url('{bg}');" class="fixed h-screen w-screen -z-50 bg opacity-50"></div>
 
 <div
 	class="events-container grid grid-cols-1 justify-items-stretch pt-28 min-h-[50vh] scroll-smooth"
@@ -130,5 +133,13 @@
 
 	.zoomwall.lightbox img.active {
 		opacity: 1;
+	}
+
+
+	.bg {
+		background: var(--bg);
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
 	}
 </style>
