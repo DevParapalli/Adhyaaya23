@@ -4,13 +4,19 @@
 	import EventInfoModal from '$lib/components/events/EventInfoModal.svelte';
 
 	export let data: AdhyaayaEvent;
+
+	function randomInt(min: number, max: number) {
+		return Math.floor(Math.random() * (max - min + 1)) + min;
+	}
+
 </script>
 
 <button
 	on:click={() => {
 		openModal(EventInfoModal, { event: data });
 	}}
-	class="p-6 border border-white rounded-lg text-white bg-white/10 bg-blur-xl flex flex-col items-center justify-evenly gap-4 w-52 h-64"
+	style:--tw-rotate='{randomInt(-2, 2)}deg'
+	class="p-6 border border-white rounded-lg text-white bg-white/10 hover:bg-white/20 bg-blur-xl flex flex-col items-center justify-evenly gap-4 w-52 h-64 hover:scale-110 transition-all duration-300 hover:transform"
 >
 	{#if data.icon.includes('url::')}
 		<img

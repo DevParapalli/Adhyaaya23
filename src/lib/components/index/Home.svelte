@@ -4,12 +4,6 @@
 	import {page} from '$app/stores';
 	export let scrollPos = 0;
 	let animate = false;
-	
-	function maybe(fn: any, options: any) {
-		if (animate) {
-			return fn(options);
-		}
-	}
 
 </script>
 
