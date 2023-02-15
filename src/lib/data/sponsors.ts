@@ -23,8 +23,8 @@ export const SPONSORS: AdhyaayaSponsor[] = [
 	},
 	{
 		name: 'Sponsor Name',
-		image: 'https://via.placeholder.com/200x200',
-		link: 'https://www.google.com',
+		image: (await import('$lib/assets/sponsors/orangebits.png?url')).default,
+		link: 'https://orangebitsindia.com/',
 		title: 'Sponsor',
 		category: SponsorCategory.GOLD
 	},

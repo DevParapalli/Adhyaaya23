@@ -48,13 +48,14 @@ import gdsc from '$lib/assets/icons/gdsc.png?url'
 
 import p_avishkar from '$lib/assets/posters/avishkar.jpg?url'
 import p_bridge from '$lib/assets/posters/bridge-o-craft.jpg?url'
-import p_cadoshit from '$lib/assets/posters/caddiction.jpg?url'
+import p_caddiction from '$lib/assets/posters/caddiction.jpg?url'
 import p_cricbash from '$lib/assets/posters/cricbash.jpg?url'
 import p_foodoshit from '$lib/assets/posters/foodoholics.jpg?url'
 import p_respawn from '$lib/assets/posters/respawn.jpg?url'
 import p_stargaze from '$lib/assets/posters/stargaze.jpg?url'
 import p_codeventure from '$lib/assets/posters/codeventure.jpg?url'
 
+import p_coming_soon from '$lib/assets/posters/coming-soon.png?url'
 
 export const EVENTS: AdhyaayaEvent[] = [
 	
@@ -275,14 +276,14 @@ export const EVENTS: AdhyaayaEvent[] = [
 		mode: 'offline',
 		category: 'technical',
 		name: 'Caddiction',
-		description: 'blah blah blah', 
+		description: 'Participate in Adhaaya\'s CADDICTION, a thrilling 3D designing competition that will test your skills and let you compete with your peers. This exciting event comprises two rounds, an online quiz, and a 3D modeling challenge where you can use any CAD software or parametric software to showcase your abilities. The quiz and challenge questions will be tailored to your branch. The event is open to individuals and duos, and there are exciting prizes worth 8K to be won.', 
 		amount: [70_00, 130_00],
 		team_members: [1, 2],
 		start_date: new Date('28 Feb 2023'),
 		end_date: new Date('28 Feb 2023'),
 		small_image: 'https://placeimg.com/360/360/tech',
 		icon: 'carbon:cad',
-		poster: p_cadoshit,
+		poster: p_caddiction,
 		contact: [
 			{
 				name: 'Aishwarya Dharme',
@@ -300,7 +301,7 @@ export const EVENTS: AdhyaayaEvent[] = [
 		mode: 'offline',
 		category: 'technical',
 		name: 'Virtual Placement',
-		description: 'blah blah blah', 
+		description: 'Attention all students! Are you ready to take the first step towards your dream job? Adhyaaya\'23 Virtual Placement is here to help you prepare and excel in your upcoming placements. With an entry fee of only 70/- and a price pool of up to 7k, this is an opportunity you cannot miss! You will be tested on your mental ability, communication skills, stress-handling, and confidence. Don\'t wait, register now and get ready to impress your future employers!', 
 		amount: [80_00],
 		team_members: [1],
 		start_date: new Date('28 Feb 2023'),
@@ -308,7 +309,7 @@ export const EVENTS: AdhyaayaEvent[] = [
 		small_image: 'https://placeimg.com/360/360/tech',
 		icon: `url::${virtual_placement_icon}`,
 		// icon: 'healthicons:group-discussion-meetingx3-negative',
-		poster: 'http://placeimg.com/1280/720/tech',
+		poster: p_coming_soon,
 		contact: [
 			{
 				name: 'Spandan Ghate',
@@ -385,7 +386,7 @@ export const EVENTS: AdhyaayaEvent[] = [
 		end_date: new Date('28 Feb 2023'),
 		small_image: 'https://placeimg.com/360/360/tech',
 		icon: 'vscode-icons:file-type-robots',
-		poster: 'http://placeimg.com/1280/720/tech',
+		poster: p_coming_soon,
 		contact: [
 			{
 				name: 'Vishal Kesharwani',
@@ -411,7 +412,7 @@ export const EVENTS: AdhyaayaEvent[] = [
 		end_date: new Date('28 Feb 2023'),
 		small_image: 'https://placeimg.com/360/360/tech',
 		icon: `url::${vaad_vivad}`,
-		poster: 'http://placeimg.com/1280/720/tech',
+		poster: p_coming_soon,
 		contact: [
 			{
 				name: 'Nikita',
@@ -437,7 +438,7 @@ export const EVENTS: AdhyaayaEvent[] = [
 		end_date: new Date('28 Feb 2023'),
 		small_image: 'https://placeimg.com/360/360/tech',
 		icon: 'ri:treasure-map-line',
-		poster: 'http://placeimg.com/1280/720/tech',
+		poster: p_coming_soon,
 		contact: [
 			{
 				name: 'Reshal Bhati',
@@ -509,14 +510,14 @@ export const EVENTS: AdhyaayaEvent[] = [
 		mode: 'offline', 
 		category: 'workshops',
 		name: 'CAD-O-Shop',
-		description: 'blah blah blah', 
+		description: 'Join CAD-O-SHOP, the ultimate destination for all aspiring engineers and designers! This event is an incredible opportunity to learn about the latest software trends and techniques demanded by the industry. With the guidance of expert professionals, you can explore the world of 3D modelling and turn your imagination into reality.', 
 		amount: [0],
 		team_members: [1],
 		start_date: new Date('28 Feb 2023'),
 		end_date: new Date('28 Feb 2023'),
 		small_image: 'https://placeimg.com/360/360/tech',
 		icon: `url::${cadoshit}`,
-		poster: 'http://placeimg.com/1280/720/tech',
+		poster: p_coming_soon,
 		contact: [
 			{
 				name: 'Aishwarya Dharme',
@@ -541,7 +542,7 @@ export const EVENTS: AdhyaayaEvent[] = [
 		end_date: new Date('28 Feb 2023'),
 		small_image: 'https://placeimg.com/360/360/tech',
 		icon: `url::${jigyasa}`,
-		poster: 'http://placeimg.com/1280/720/tech',
+		poster: p_coming_soon,
 		contact: [
 			{
 				name: 'Rushikesh Ghawghawe',
@@ -584,7 +585,7 @@ export const EVENTS: AdhyaayaEvent[] = [
 	// 	end_date: new Date('28 Feb 2023'),
 	// 	small_image: 'https://placeimg.com/360/360/tech',
 	// 	icon: 'carbon:code',
-	// 	poster: 'http://placeimg.com/1280/720/tech',
+	// 	poster: p_coming_soon,
 	// 	contact: [
 	// 		{
 	// 			name: 'suss',
@@ -605,7 +606,7 @@ export const EVENTS: AdhyaayaEvent[] = [
 		end_date: new Date('28 Feb 2023'),
 		small_image: 'https://placeimg.com/360/360/tech',
 		icon: 'icon-park:stock-market',
-		poster: 'http://placeimg.com/1280/720/tech',
+		poster: p_coming_soon,
 		contact: [
 			{
 				name: 'Shlok Tajne',
@@ -630,7 +631,7 @@ export const EVENTS: AdhyaayaEvent[] = [
 		end_date: new Date('28 Feb 2023'),
 		small_image: 'https://placeimg.com/360/360/tech',
 		icon: `url::${gdsc}`,
-		poster: 'http://placeimg.com/1280/720/tech',
+		poster: p_coming_soon,
 		contact: [
 			{
 				name: 'Neha Malode',
@@ -651,7 +652,7 @@ export const EVENTS: AdhyaayaEvent[] = [
 	// 	end_date: new Date('28 Feb 2023'),
 	// 	small_image: 'https://placeimg.com/360/360/tech',
 	// 	icon: 'bi:ev-station-fill',
-	// 	poster: 'http://placeimg.com/1280/720/tech',
+	// 	poster: p_coming_soon,
 	// 	contact: [
 	// 		{
 	// 			name: 'Devansh Parapalli',
@@ -664,15 +665,15 @@ export const EVENTS: AdhyaayaEvent[] = [
 		id: 'aeromodelling-workshop',
 		mode: 'offline', 
 		category: 'workshops',
-		name: 'Aeromodelling Workshop',
-		description: 'blah blah blah', 
+		name: 'Multirotor Workshop',
+		description: 'Learn about the exciting world of unmanned aerial vehicles (UAVs) with the Multirotor Workshop at Government College of Engineering in Nagpur. This two-day workshop covers the basics of multi-rotors and offers hands-on experience in assembling and configuring a UAV. Led by experienced instructors, it\'s perfect for beginners and experts alike. Register now to gain practical knowledge and take the first step towards becoming a UAV expert.', 
 		amount: [2400_00],
 		team_members: [1],
 		start_date: new Date('28 Feb 2023'),
 		end_date: new Date('28 Feb 2023'),
 		small_image: 'https://placeimg.com/360/360/tech',
 		icon: 'mdi:aeroplane',
-		poster: 'http://placeimg.com/1280/720/tech',
+		poster: p_coming_soon,
 		contact: [
 			{
 				name: 'Sahil Brahme',

@@ -11,7 +11,7 @@
 	import MainCards from '$lib/components/events/MainCards.svelte';
 	//   import img from '$lib/assets/backgrounds/8.png';
 	import EventCard from '$lib/components/events/EventCard.svelte';
-	import { onMount } from 'svelte';
+	import { afterUpdate, onMount } from 'svelte';
 	import * as THREE from 'three';
 
 	let canvas: HTMLCanvasElement;
@@ -20,8 +20,16 @@
 		mouse.x = x * 2 - 1;
 		mouse.y = -y * 2 + 1;
 	}
+
+	// afterUpdate(() => {
+	// 	if (data.view != 'list') {
+	// 		openModal(EventInfoModal, { event: EVENTS.find((e) => e.id == data.view) || EVENTS[0] });
+	// 	}
+	// })
+
 	onMount(() => {
 		// Three JS Template
+
 		const renderer = new THREE.WebGLRenderer({ antialias: true });
 		renderer.setSize(window.innerWidth, window.innerHeight);
 		renderer.shadowMap.enabled = false;

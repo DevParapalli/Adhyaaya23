@@ -2,6 +2,8 @@
 	import { goto } from '$app/navigation';
 
 	import { EVENTS } from '$lib/data/events';
+	import { openModal } from 'svelte-modals';
+	import EventInfoModal from '../events/EventInfoModal.svelte';
 	export let alt = false;
 	function shuffle(array: typeof EVENTS) {
 		array = array.slice();
@@ -18,8 +20,9 @@
 		{#each shuffle(EVENTS.filter(e=>e.is_active)) as event}
 			<div class="slide inline-flex items-center justify-center">
 				<button
-					on:click={() => {
-						goto(`/events?view=${event.id}`);
+					on:click={async () => {
+						await goto(`/events?view=${event.id}`);
+						openModal(EventInfoModal, { event });
 					}}
 					class="flex flex-col items-center justify-center h-full text-xl"
 				>

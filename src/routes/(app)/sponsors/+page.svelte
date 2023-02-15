@@ -31,17 +31,17 @@
  <div class="flex items-center flex-col pt-28 px-4">
     <div class="text-4xl font-bold text-center">Sponsors</div>
   
-    <div class="mt-12">
+    <!-- <div class="mt-12">
       <div class="text-3xl font-bold mb-4">{TITLE_SPONSOR?.title}</div>
       <img src={TITLE_SPONSOR?.image} alt={TITLE_SPONSOR?.title} />
     </div>
-    
+     -->
     <div class="mt-12 flex flex-row flex-wrap items-center gap-10 px-4">
       {#each SPONSORS_LIST as sponsor}
-        <div class="max-w-sm mx-auto mt-8">
-          <img src={sponsor.image} alt={sponsor.title} />
+        <a href="{sponsor.link}" class="max-w-sm mx-auto mt-8">
+          <img height="200" width="200" src={sponsor.image} alt={sponsor.title} />
           <div class="mt-2 text-lg font-bold">{sponsor.title}</div>
-        </div>
+        </a>
       {/each}
     </div>
  </div>
