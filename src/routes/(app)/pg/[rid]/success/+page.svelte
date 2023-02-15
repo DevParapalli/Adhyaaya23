@@ -11,7 +11,7 @@
 	import MouseTrailer from '$lib/components/MouseTrailer.svelte';
 	export let data: PageData;
 	// TODO: Change this to the actual URL
-	const url_start = dev ? 'http://localhost:5173' : 'https://adhyaaya.devparapalli.in';
+	const url_start = dev ? 'http://localhost:5173' : 'https://adhyaaya.org';
 
 	let EVENT = EVENTS.find((e) => e.id == data.db.event_id);
 
@@ -42,7 +42,7 @@
 				</div>
 
 				<div class="reciept-number mx-auto pt-4 hidden md:block">
-					<span class="text-lg font-bold text-gray-500 truncate text-ellipsis overflow-hidden"
+					<span class=" font-bold text-gray-500 truncate text-ellipsis overflow-hidden line-clamp-1 font-mono uppercase"
 						>{data.db.id}</span
 					>
 				</div>
@@ -59,7 +59,7 @@
 					   <iconify-icon class="text-4xl" icon={EVENT?.icon} />
 				   {/if}
 						</div>
-						<div class="event-data text-lg text-gray-700 font-mono">
+						<div class="event-data text-lg text-gray-700">
 							{EVENT?.name} | {EVENT?.mode.toLocaleUpperCase()}
 							<br />
 							{EVENT?.start_date.toLocaleDateString('en-IN', {
@@ -95,27 +95,27 @@
 		</div>
 		<div class="right-half bg-white mx-auto py-0 md:py-10 md:px-0 md:pr-10  w-full md:w-2/5">
 			<div class="bg-black md:h-full px-8 md:pl-6 py-8 overflow-y-scroll no-scroll-bar">
-				<span class="instructions-header text-2xl text-white mb-2">Instructions</span>
+				<span class="instructions-header text-2xl text-white mb-2 nunu">Instructions</span>
 				<ul class="space-y-1 max-w-md list-disc list-inside text-gray-500 dark:text-gray-400">
 					<li class={EVENT?.whatsapp_link ? '' : 'hidden'}>
 						Join the <a href={EVENT?.whatsapp_link} class="text-white underline">WhatsApp group</a>
 						for updates. ({EVENT?.whatsapp_link})
 					</li>
-					{#if EVENT?.mode === 'online'}
+					{#if EVENT?.mode == 'online'}
 						<li>
 							Adhyaaya <span class="text-bold uppercase text-white underline">will not</span> be help
 							responsible for any network lag, connectivity issues during the event, participants
 							are expected to have a stable internet connection.
 						</li>
 					{/if}
-					{#if EVENT?.mode === 'offline'}
+					{#if EVENT?.mode == 'offline'}
 						<li>
 							Adhyaaya <span class="text-bold uppercase text-white underline">DOES NOT</span> provide
 							any accommodation or transport. You will have to arrange your own.
 						</li>
 						<li>
 							It is <span class="text-bold uppercase text-white underline">MANDATORY</span> to carry
-							a identification proof and a vaccination certificate for attending offline events.
+							an identification proof and a vaccination certificate for attending offline events.
 						</li>
 					{/if}
 					{#if EVENT?.custom_instructions}
@@ -133,7 +133,7 @@
 						Please ensure you are a part of the Event's WhatsApp Group. All information will be
 						communicated to you using it.
 					</li>
-					<li>Keep this page bookmarked for future reference.</li>
+					<li class="print:hidden">Keep this page bookmarked for future reference.</li>
 				</ul>
 			</div>
 		</div>
@@ -154,4 +154,10 @@
 </div>
 
 <style>
+	li {
+		font-family: 'Nunito', sans-serif;
+	}
+	li > * {
+		font-family: 'Nunito', sans-serif;
+	}
 </style>

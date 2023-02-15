@@ -28,7 +28,7 @@
 		@apply py-40 px-6;
 	}
 	.content-container {
-		@apply container;
+		@apply mx-auto max-w-4xl;
 	}
 	.content-head {
 		@apply text-4xl;

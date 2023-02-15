@@ -121,13 +121,13 @@
 			ways:
 		</p>
 		<ul class="unorder-list">
-			<li class="list-item">
+			<!-- <li class="list-item">
 				<p class="content-text list-text">
 					whenever you are asked to fill in a form on the website, look for the box that you can
 					click to indicate that you do not want the information to be used by anybody for direct
 					marketing purposes
 				</p>
-			</li>
+			</li> -->
 			<li class="list-item">
 				<p class="content-text list-text">
 					if you have previously agreed to us using your personal information for direct marketing
@@ -155,7 +155,7 @@
 		@apply py-40 px-6;
 	}
 	.content-container {
-		@apply container;
+		@apply mx-auto max-w-4xl;
 	}
 	.content-head {
 		@apply text-4xl;

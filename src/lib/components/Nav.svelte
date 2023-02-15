@@ -19,56 +19,61 @@
 	function setBackgroundPosition(x = bgX, y = bgY) {
 		bgX = x;
 		bgY = y;
-		dev ? console.log(bgX, bgY):null;
+		dev ? console.log(bgX, bgY) : null;
 	}
+
+	import { page } from '$app/stores';
 </script>
 
-<div
-	class="fixed top-0 w-full min-h-16 bg-transparent z-[200] pointer-events-none flex flex-row px-4 md:px-10  items-center pt-[4vh] print:hidden"
->
+{#if !$page.url.pathname.includes('asdfghbjnkml.swderft')}
 	<div
-		on:click={() => {
-			goto('/');
-		}}
-		class="logo bg-transparent w-20 md:w-36 pointer-events-auto py-1 px-2  rounded-lg transition-all duration-250 hover:scale-105 active:scale-95 cursor-pointer mr-auto"
+		class="fixed top-0 w-full min-h-16 bg-transparent z-[200] pointer-events-none flex flex-row px-4 md:px-10  items-center pt-[4vh] print:hidden"
 	>
-		<img src={AdhyaayaLogoSolid} alt="" />
-	</div>
+		{#if !$page.url.pathname.includes('success')}
+			<button
+				on:click={() => {
+					goto('/');
+				}}
+				class="logo bg-transparent w-20 md:w-36 pointer-events-auto py-1 px-2  rounded-lg transition-all duration-250 hover:scale-105 active:scale-95 cursor-pointer mr-auto"
+			>
+				<img src={AdhyaayaLogoSolid} alt="" />
+			</button>
+		{/if}
 
-	<a
-		href="/register?select=true"
-		class="register text-white pointer-events-auto bg-transparent ml-auto md:mr-10 mr-4 py-1 px-2 md:py-2 md:px-4 rounded-full border {isMenuOpen
-			? 'border-white'
-			: 'border-white/60'} text-lg hover:scale-110 active:scale-90 cursor-pointer transition-all duration-250 ease-in-out"
-	>
-		Register
-	</a>
-	<input id="menu-toggle" bind:checked={isMenuOpen} type="checkbox" class="hidden" />
-	<label
-		for="menu-toggle"
-		class="menu-icon  cursor-pointer h-10 w-10 md:h-12 md:w-12 rounded-full pointer-events-auto relative transition-all duration-500 ease-in-out hover:scale-105 active:scale-95 border  {isMenuOpen
-			? 'border-white'
-			: 'border-white/60'}"
+		<a
+			href="/register?select=true"
+			class="register text-white pointer-events-auto bg-transparent ml-auto md:mr-10 mr-4 py-1 px-2 md:py-2 md:px-4 rounded-full border {isMenuOpen
+				? 'border-white'
+				: 'border-white/60'} text-lg hover:scale-110 active:scale-90 cursor-pointer transition-all duration-250 ease-in-out"
 		>
-		<div
-			class="absolute w-[18px] h-[2px] origin-center bg-white transition-all ease-in-out duration-500 "
-			style="{isMenuOpen
-				? 'top: 50%;'
-				: 'top: calc(50% - 4px);'} left: 50%; transform: translateX(-50%) translateY(-50%) {isMenuOpen
-				? 'rotate(-45deg)'
-				: 'rotate(0deg)'} translateZ(0px);"
-		/>
-		<div
-			class="absolute w-[18px] h-[2px] origin-center bg-white transition-all ease-in-out duration-500"
-			style="{isMenuOpen
-				? 'top: 50%;'
-				: 'top: calc(50% + 4px);'} left: 50%; transform: translateX(-50%) translateY(-50%) {isMenuOpen
-				? 'rotate(45deg)'
-				: 'rotate(0deg)'} translateZ(0px);"
-		/></label
-	>
-</div>
-
+			Register
+		</a>
+		<input id="menu-toggle" bind:checked={isMenuOpen} type="checkbox" class="hidden" />
+		<label
+			for="menu-toggle"
+			class="menu-icon  cursor-pointer h-10 w-10 md:h-12 md:w-12 rounded-full pointer-events-auto relative transition-all duration-500 ease-in-out hover:scale-105 active:scale-95 border  {isMenuOpen
+				? 'border-white'
+				: 'border-white/60'}"
+		>
+			<div
+				class="absolute w-[18px] h-[2px] origin-center bg-white transition-all ease-in-out duration-500 "
+				style="{isMenuOpen
+					? 'top: 50%;'
+					: 'top: calc(50% - 4px);'} left: 50%; transform: translateX(-50%) translateY(-50%) {isMenuOpen
+					? 'rotate(-45deg)'
+					: 'rotate(0deg)'} translateZ(0px);"
+			/>
+			<div
+				class="absolute w-[18px] h-[2px] origin-center bg-white transition-all ease-in-out duration-500"
+				style="{isMenuOpen
+					? 'top: 50%;'
+					: 'top: calc(50% + 4px);'} left: 50%; transform: translateX(-50%) translateY(-50%) {isMenuOpen
+					? 'rotate(45deg)'
+					: 'rotate(0deg)'} translateZ(0px);"
+			/></label
+		>
+	</div>
+{/if}
 <div
 	class="menu-container {isMenuOpen} h-full bg-[#190829] rounded-none z-[120] fixed right-0 top-0 flex flex-col print:hidden"
 >
@@ -129,8 +134,8 @@
 					}}
 					class="menu-item">Sponsors</a
 				>
-				<a	
-				data-sveltekit-reload
+				<a
+					data-sveltekit-reload
 					href="/gallery"
 					on:focus={() => {
 						setBackgroundPosition(bgX, -125);
@@ -190,7 +195,10 @@
 			class=" {isMenuOpen} social w-full flex items-center self-end justify-end py-6 pb-32 md:pb-6 mt-auto z-[140]"
 		>
 			{#each SOCIALS as social}
-				<a rel="noreferrer" target="_blank" href="{social.link}"
+				<a
+					rel="noreferrer"
+					target="_blank"
+					href={social.link}
 					class="h-10 w-10 md:h-12 md:w-12 rounded-full border border-white mx-auto md:ml-0 md:mr-10 inline-flex items-center justify-center text-2xl md:text-3xl cursor-pointer {social.text} {social.bg} hover:scale-105 active:scale-95 active:opacity-90 transition-all duration-200 ease-in-out"
 				>
 					<iconify-icon icon={social.icon} />
