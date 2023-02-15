@@ -4,6 +4,7 @@
 
 <script lang="ts">
     import { onMount } from 'svelte';
+    import background from "./bg.jpg?url"
     import {SPONSORS} from '$lib/data/sponsors';
     const TITLE_SPONSOR = SPONSORS.find(sponsor => sponsor.category === 'TITLE');
     
@@ -19,9 +20,14 @@
   </script>
   
   <style>
-    /* add Tailwind CSS styles here */
+    .bg {
+      background: var(--bg) no-repeat center fixed;
+      background-size: cover;
+    }
   </style>
-  
+
+<div style:--bg='url("{background}")' class="-z-50 fixed h-screen w-screen scale-105 overflow-clip bg"></div>
+
  <div class="flex items-center flex-col pt-28 px-4">
     <div class="text-4xl font-bold text-center">Sponsors</div>
   

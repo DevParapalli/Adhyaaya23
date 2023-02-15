@@ -98,7 +98,7 @@
 					}}
 					class="menu-item">Events</a
 				>
-				<a
+				<!-- <a
 					href="/timeline"
 					on:focus={() => {
 						setBackgroundPosition(bgX, -50);
@@ -107,8 +107,9 @@
 						setBackgroundPosition(bgX, -50);
 					}}
 					class="menu-item">Timeline</a
-				>
+				> -->
 				<a
+					data-sveltekit-reload
 					href="/team"
 					on:focus={() => {
 						setBackgroundPosition(bgX, -75);

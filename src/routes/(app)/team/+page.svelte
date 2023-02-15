@@ -1,46 +1,46 @@
 <script lang="ts">
-	import Nav from '$lib/components/Nav.svelte';
-	import type Sketch from '$lib/components/DNA/Sketch';
-	import { tweened } from 'svelte/motion';
-	import { onMount } from 'svelte';
+	// import Nav from '$lib/components/Nav.svelte';
+	// import type Sketch from '$lib/components/DNA/Sketch';
+	// import { tweened } from 'svelte/motion';
+	// import { onMount } from 'svelte';
 
-	let sketch: Sketch;
-	let scrollY: number, headingHeight: number, containerHeight: number, scrollHeight: number;
+	// let sketch: Sketch;
+	// let scrollY: number, headingHeight: number, containerHeight: number, scrollHeight: number;
 
-	let container: HTMLDivElement, heading: HTMLDivElement;
-	function scrollMapping(percentScroll: number) {
-		const positionRange = 8 - -1;
-		return percentScroll * positionRange + -1;
-	}
-	$: {
-		if (sketch) {
-			scrollHeight = containerHeight * 18 + headingHeight * 10;
-			sketch.camera.position.set(0, scrollMapping(scrollY / scrollHeight), 5);
-			sketch.duration += 0.17;
-		}
-	}
-	onMount(async () => {
-		const bg = await import('$lib/components/DNA/Sketch');
-		const canvas = document.getElementById('dna-bg') ?? document.createElement('canvas');
-		sketch = new bg.default(canvas);
-		sketch.camera.position.set(-2, -1, 5);
-		sketch.loadObjects();
-		// duration.set(2.5);
-		// setTimeout(() => {
-		// 	duration.set(0);
-		// }, 2000);
-		// function animate() {
-		// 	if (sketch) {
-		// 		sketch.duration += $duration;
-		// 	}
-		// 	requestAnimationFrame(animate);
-		// }
-		// animate();
-		// calculate scroll height :
-		containerHeight = container.scrollHeight;
-		headingHeight = heading.scrollHeight;
-	});
-
+	// let container: HTMLDivElement, heading: HTMLDivElement;
+	// function scrollMapping(percentScroll: number) {
+	// 	const positionRange = 8 - -1;
+	// 	return percentScroll * positionRange + -1;
+	// }
+	// $: {
+	// 	if (sketch) {
+	// 		scrollHeight = containerHeight * 18 + headingHeight * 10;
+	// 		sketch.camera.position.set(0, scrollMapping(scrollY / scrollHeight), 5);
+	// 		sketch.duration += 0.17;
+	// 	}
+	// }
+	// onMount(async () => {
+	// 	const bg = await import('$lib/components/DNA/Sketch');
+	// 	const canvas = document.getElementById('dna-bg') ?? document.createElement('canvas');
+	// 	sketch = new bg.default(canvas);
+	// 	sketch.camera.position.set(-2, -1, 5);
+	// 	sketch.loadObjects();
+	// 	// duration.set(2.5);
+	// 	// setTimeout(() => {
+	// 	// 	duration.set(0);
+	// 	// }, 2000);
+	// 	// function animate() {
+	// 	// 	if (sketch) {
+	// 	// 		sketch.duration += $duration;
+	// 	// 	}
+	// 	// 	requestAnimationFrame(animate);
+	// 	// }
+	// 	// animate();
+	// 	// calculate scroll height :
+	// 	containerHeight = container.scrollHeight;
+	// 	headingHeight = heading.scrollHeight;
+	// });
+	import bg from './bg.jpg'
 
 	// Image Imports
 	import nikhil_deshpande_photo from '$lib/assets/team/advisors/nikhil-deshpande-compressed.webp?url';
@@ -104,7 +104,7 @@
 
 </script>
 
-<svelte:window bind:scrollY />
+<!-- <svelte:window bind:scrollY /> -->
 
 <svelte:head>
     <title>Meet Our Team | Adhyaaya'23</title>
@@ -112,10 +112,11 @@
 
 <!-- <Nav /> -->
 
-<div id="dna-bg" class="fixed h-screen w-screen -z-50 bg-black opacity-75" />
-
-<div bind:this={heading} class="flex_title !mt-0 pt-20">Advisors</div>
-<div bind:this={container} class="my-cont_flex">
+<div style:--bg='url("{bg}")' id="dna-bg" class="fixed h-screen w-screen -z-50 bg-black opacity-75" />
+<!-- bind:this={heading} -->
+<div  class="flex_title !mt-0 pt-20">Advisors</div>
+<!-- bind:this={container} -->
+<div  class="my-cont_flex">
 	<article class="my-cont">
 		<div style:--img={`url(${yash_bhagat_photo})`} class="thumb" />
 		<div class="infos">
@@ -1974,6 +1975,12 @@
 		background: #152536;
 	} */
 
+	#dna-bg {
+		background: var(--bg) center no-repeat;
+		background-size: cover;
+	}
+
+
 	.flex_title {
 		font-family: title, sans-serif;
 		font-size: 4rem;
@@ -2058,7 +2065,7 @@
 		width: auto;
 		height: 350px;
 		position: relative;
-		padding: 14px 24px;
+		padding: 8px 14px;
 		background: rgb(255, 255, 255);
 		transition: all 0.5s;
 	}
@@ -2067,10 +2074,11 @@
 		margin: 10px 0;
 		letter-spacing: 1px;
 		color: #152536;
-		font-family: 'Grotesque Black', sans-serif;
+		font-family: 'Nunito', sans-serif;
 		font-size: 1.2rem;
 		text-transform: uppercase;
 		text-shadow: 0 0 0px #2b2b2b8e;
+		@apply line-clamp-1
 	}
 	article.my-cont .infos .flag {
 		position: absolute;
@@ -2090,7 +2098,7 @@
 		text-transform: uppercase;
 		font-size: 0.85rem;
 		color: rgba(21, 37, 54, 0.7);
-		font-family: 'Grotesque', sans-serif;
+		font-family: 'My Font', sans-serif;
 	}
 
 	article.my-cont .infos .seats {
@@ -2159,7 +2167,7 @@
 		}
 		article.my-cont .infos .date {
 			/* font-size: 1.25rem; */
-			margin-top: 6px;
+			margin-top: -2px;
 			@apply text-base;
 		}
 		i {

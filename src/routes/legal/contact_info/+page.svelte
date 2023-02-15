@@ -15,10 +15,10 @@
 			E-Mail ID: adhyaaya.gcoen@gmail.com
 		</p>
 
-        <ul class="content-list">
+        <ul class="content-list nunu">
 			Please note the following : 
-            <li>We do not entertain any refunds or cancellations.</li>
-            <li>Shipping is not applicable for this business.</li>
+            <li class="nunu">We do not entertain any refunds or cancellations.</li>
+            <li class="nunu">Shipping is not applicable for this business.</li>
 		</ul>
 	</div>
 </div>

@@ -15,11 +15,11 @@
         <div class="heading text-2xl btn btn-ghost btn-lg transition-none hover:scale-100 active:scale-100 hover:bg-opacity-0 cursor-auto border-0 border-b-2 rounded-b-none border-white hover:text-white">Sitemap</div>
         <a href="/" class="btn btn-ghost text-lg hover:text-white">Home</a>
         <a href="/events" class="btn btn-ghost text-lg hover:text-white">Events</a>
-        <a href="/team" class="btn btn-ghost text-lg hover:text-white">Team</a>
+        <a data-sveltekit-reload href="/team" class="btn btn-ghost text-lg hover:text-white">Team</a>
         <a href="/sponsors" class="btn btn-ghost text-lg hover:text-white">Sponsors</a>
         <a href="/gallery" data-sveltekit-reload class="btn btn-ghost text-lg hover:text-white">Gallery</a>
         <a href="/register?select=true" class="btn btn-ghost text-lg hover:text-white">Register</a>
-        <a href="/timeline" class="btn btn-ghost text-lg hover:text-white">Timeline</a>
+        <!-- <a href="/timeline" class="btn btn-ghost text-lg hover:text-white">Timeline</a> -->
 
         
     </div>

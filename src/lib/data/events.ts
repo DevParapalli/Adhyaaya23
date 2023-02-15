@@ -46,6 +46,16 @@ import jigyasa from '$lib/assets/icons/jigyasa.png?url'
 import stargaze from '$lib/assets/icons/stargaze.png?url'
 import gdsc from '$lib/assets/icons/gdsc.png?url'
 
+import p_avishkar from '$lib/assets/posters/avishkar.jpg?url'
+import p_bridge from '$lib/assets/posters/bridge-o-craft.jpg?url'
+import p_cadoshit from '$lib/assets/posters/caddiction.jpg?url'
+import p_cricbash from '$lib/assets/posters/cricbash.jpg?url'
+import p_foodoshit from '$lib/assets/posters/foodoholics.jpg?url'
+import p_respawn from '$lib/assets/posters/respawn.jpg?url'
+import p_stargaze from '$lib/assets/posters/stargaze.jpg?url'
+import p_codeventure from '$lib/assets/posters/codeventure.jpg?url'
+
+
 export const EVENTS: AdhyaayaEvent[] = [
 	
 	{	
@@ -61,7 +71,7 @@ export const EVENTS: AdhyaayaEvent[] = [
 		end_date: new Date('28 Feb 2023'),
 		small_image: 'https://placeimg.com/360/360/tech',
 		icon: `url::${respawn}`,
-		poster: 'http://placeimg.com/1280/720/tech',
+		poster: p_respawn,
 		contact: [
 			{
 				name: 'Rohit Bhoge',
@@ -103,7 +113,7 @@ export const EVENTS: AdhyaayaEvent[] = [
 		end_date: new Date('28 Feb 2023'),
 		small_image: 'https://placeimg.com/360/360/tech',
 		icon: `url::${respawn}`,	
-		poster: 'http://placeimg.com/1280/720/tech',
+		poster: p_respawn,
 		contact: [
 			{
 				name: 'Rohit Bhoge',
@@ -130,7 +140,7 @@ export const EVENTS: AdhyaayaEvent[] = [
 		end_date: new Date('28 Feb 2023'),
 		small_image: 'https://placeimg.com/360/360/tech',
 		icon: `url::${respawn}`,
-		poster: 'http://placeimg.com/1280/720/tech',
+		poster: p_respawn,
 		contact: [
 			{
 				name: 'Rohit Bhoge',
@@ -156,7 +166,7 @@ export const EVENTS: AdhyaayaEvent[] = [
 		end_date: new Date('28 Feb 2023'),
 		small_image: 'https://placeimg.com/360/360/tech',
 		icon: `url::${respawn}`,
-		poster: 'http://placeimg.com/1280/720/tech',
+		poster: p_respawn,
 		contact: [
 			{
 				name: 'Rohit Bhoge',
@@ -181,7 +191,7 @@ export const EVENTS: AdhyaayaEvent[] = [
 		end_date: new Date('28 Feb 2023'),
 		small_image: 'https://placeimg.com/360/360/tech',
 		icon: 'flat-color-icons:idea',
-		poster: 'http://placeimg.com/1280/720/tech',
+		poster: p_avishkar,
 		contact: [
 			{
 				name: 'Vikas Yadav',
@@ -220,7 +230,7 @@ export const EVENTS: AdhyaayaEvent[] = [
 		end_date: new Date('28 Feb 2023'),
 		small_image: 'https://placeimg.com/360/360/tech',
 		icon: 'flat-color-icons:idea',
-		poster: 'http://placeimg.com/1280/720/tech',
+		poster: p_avishkar,
 		contact: [
 			{
 				name: 'Vikas Yadav',
@@ -246,7 +256,7 @@ export const EVENTS: AdhyaayaEvent[] = [
 		end_date: new Date('28 Feb 2023'),
 		small_image: 'https://placeimg.com/360/360/tech',
 		icon: 'flat-color-icons:idea',
-		poster: 'http://placeimg.com/1280/720/tech',
+		poster: p_avishkar,
 		contact: [
 			{
 				name: 'Vikas Yadav',
@@ -272,7 +282,7 @@ export const EVENTS: AdhyaayaEvent[] = [
 		end_date: new Date('28 Feb 2023'),
 		small_image: 'https://placeimg.com/360/360/tech',
 		icon: 'carbon:cad',
-		poster: 'http://placeimg.com/1280/720/tech',
+		poster: p_cadoshit,
 		contact: [
 			{
 				name: 'Aishwarya Dharme',
@@ -324,7 +334,7 @@ export const EVENTS: AdhyaayaEvent[] = [
 		end_date: new Date('28 Feb 2023'),
 		small_image: 'https://placeimg.com/360/360/tech',
 		icon: 'carbon:code',
-		poster: 'http://placeimg.com/1280/720/tech',
+		poster: p_codeventure,
 		contact: [
 			{
 				name: 'Rushikesh Ghawghawe',
@@ -350,7 +360,7 @@ export const EVENTS: AdhyaayaEvent[] = [
 		end_date: new Date('28 Feb 2023'),
 		small_image: 'https://placeimg.com/360/360/tech',
 		icon: 'noto:bridge-at-night',
-		poster: 'http://placeimg.com/1280/720/tech',
+		poster: p_bridge,
 		contact: [
 			{
 				name: 'Pratham Chandankhede',
@@ -457,7 +467,7 @@ export const EVENTS: AdhyaayaEvent[] = [
 		end_date: new Date('28 Feb 2023'),
 		small_image: 'https://placeimg.com/360/360/tech',
 		icon: `url::${foodoshit}`,
-		poster: 'http://placeimg.com/1280/720/tech',
+		poster: p_foodoshit,
 		contact: [
 			{
 				name: 'Riya Pashine',
@@ -483,7 +493,7 @@ export const EVENTS: AdhyaayaEvent[] = [
 		end_date: new Date('28 Feb 2023'),
 		small_image: 'https://placeimg.com/360/360/tech',
 		icon: `url::${cricbash}`,
-		poster: 'http://placeimg.com/1280/720/tech',
+		poster: p_cricbash,
 		contact: [
 			{
 				name: 'Pranav Patle',
@@ -553,7 +563,7 @@ export const EVENTS: AdhyaayaEvent[] = [
 		end_date: new Date('28 Feb 2023'),
 		small_image: 'https://placeimg.com/360/360/tech',
 		icon: `url::${stargaze}`,
-		poster: 'http://placeimg.com/1280/720/tech',
+		poster: p_stargaze,
 		contact: [
 			{
 				name: 'Vedant Gotmare',
