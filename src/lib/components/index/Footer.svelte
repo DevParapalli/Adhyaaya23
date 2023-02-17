@@ -9,9 +9,9 @@
 
 <div
 	class="md:h-full pt-32
- w-11/12  m-auto flex flex-col lg:flex-row items-stretch justify-evenly pb-4"
+ w-11/12  m-auto flex flex-col gap-4 lg:flex-row items-stretch justify-evenly pb-4"
 >
-	<div class="h-full lg:w-1/3 bg-purple-900/20 order-2 lg:order-3 p-4">
+	<div class="h-full lg:w-1/3 bg-purple-900/20 order-2 lg:order-3 p-4 rounded-lg border border-white">
 		<!-- Links Here, 2 headings -->
 		<div class="flex flex-col items-stretch justify-evenly p-4">
 			<div
@@ -44,7 +44,7 @@
 			<a href="/legal/contact_info" class="btn btn-sm  btn-ghost text-lg hover:text-white">Legal Contact</a>
 		</div>
 	</div>
-	<div class="h-full lg:w-1/3  flex flex-col order-3 lg:order-2">
+	<div class="h-full lg:w-1/3  flex flex-col order-3 lg:order-2 rounded-lg border border-white">
 		<div class="h-5/6 w-full bg-black/50">
 			<iframe
 				title="Google Map for GCOEN"
@@ -83,7 +83,7 @@
 			>
 		</div>
 	</div>
-	<div class="h-full lg:w-1/3  order-1 lg:order-1 aspect-[16/9]">
+	<div class="h-full lg:w-1/3  order-1 lg:order-1 aspect-[16/9] rounded-lg border border-white">
 		<!-- <iframe width="100%" height="100%" src="https://www.youtube-nocookie.com/embed/YiVULH51pJA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
 		<lite-youtube videoid="YiVULH51pJA" playlabel="Adhyaaya'23 Coming Soon" class="h-full w-full" />
 	</div>
