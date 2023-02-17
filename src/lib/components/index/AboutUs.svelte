@@ -9,7 +9,7 @@
 	<div class="title h-1/6 pb-10"><span class="text-4xl lg:text-6xl">About Us</span></div>
 	<div class="content flex flex-row w-full h-4/6">
 		<div
-			class="our-college w-1/2 hidden xl:flex flex-col items-center justify-evenly h-auto text-justify bg-white/20 backdrop-blur-sm rounded-lg border border-white lg:border-r-0 lg:rounded-r-none p-4 gap-2"
+			class="our-college w-1/2 hidden xl:flex flex-col items-center justify-evenly h-auto text-justify bg-black/40 backdrop-blur-sm rounded-lg border-r border-white  lg:rounded-r-none p-4 gap-2"
 		>
 			<img loading="lazy" src={gcoen} class="h-28" height="112" width="355" alt="" />
 			<p class="max-w-lg text-lg nunu">
@@ -23,12 +23,12 @@
 				href="https://gcoen.ac.in/"
 				target="_blank"
 				rel="noreferrer"
-				class="college-button relative bg-gradient-to-bl from-sky-400 via-rose-400 to-lime-400 text-white text-lg py-3 px-5 rounded-lg inline-flex items-center uppercase font-medium gap-2 hover:scale-110 active:scale-90 active:opacity-90 transition-all duration-300 ease-in-out mb-4"
+				class="college-button relative bg-gradient-to-bl from-black via-blue-400 to-purple-400 text-white text-lg py-3 px-5 rounded-lg inline-flex items-center uppercase font-medium gap-2 hover:scale-110 active:scale-90 active:opacity-90 transition-all duration-300 ease-in-out mb-4"
 				>Our College <iconify-icon icon="mdi:arrow-right" /></a
 			>
 		</div>
 		<div
-			class="us w-full xl:w-1/2 flex flex-col items-center justify-evenly h-auto text-justify bg-black/40 backdrop-blur-sm rounded-lg border border-white lg:rounded-l-none p-6 gap-2"
+			class="us w-full xl:w-1/2 flex flex-col items-center justify-evenly h-auto text-justify bg-black/40 backdrop-blur-sm rounded-lg border-l border-white lg:rounded-l-none p-6 gap-2"
 		>
 			<img loading="lazy" src={logo} class="h-28" height="112" width="202" alt="" />
 			<p class="max-w-lg md:text-lg nunu">
