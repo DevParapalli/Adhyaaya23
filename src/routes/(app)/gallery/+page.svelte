@@ -124,6 +124,8 @@
 		transition-property: transform, opacity;
 		transition-duration: 0.3s;
 		transition-timing-function: ease-out;
+		padding-left: 1rem;
+		padding-bottom: 1rem;
 	}
 
 	.zoomwall.lightbox img {

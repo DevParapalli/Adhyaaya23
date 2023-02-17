@@ -11,9 +11,9 @@
 	class="md:h-full pt-32
  w-11/12  m-auto flex flex-col gap-4 lg:flex-row items-stretch justify-evenly pb-4"
 >
-	<div class="h-full lg:w-1/3 bg-purple-900/20 order-2 lg:order-3 p-4 rounded-lg border border-white">
+	<div class="h-full lg:w-1/3 bg-purple-900/50 order-2 lg:order-3 p-4 rounded-lg border border-white text-white">
 		<!-- Links Here, 2 headings -->
-		<div class="flex flex-col items-stretch justify-evenly p-4">
+		<div class="flex flex-col items-stretch justify-evenly p-4 pb-0">
 			<div
 				class="heading text-2xl btn btn-ghost btn-lg transition-none hover:scale-100 active:scale-100 hover:bg-opacity-0 cursor-auto border-0 border-b-2 rounded-b-none border-white hover:text-white"
 			>
@@ -29,7 +29,7 @@
 			<a href="/register?select=true" class="btn btn-sm  btn-ghost text-lg hover:text-white">Register</a>
 			<!-- <a href="/timeline" class="btn btn-sm  btn-ghost text-lg hover:text-white">Timeline</a> -->
 		</div>
-		<div class="flex flex-col items-stretch justify-evenly p-4">
+		<div class="flex flex-col items-stretch justify-evenly p-4 pt-0">
 			<div
 				class="heading text-2xl btn btn-ghost btn-lg transition-none hover:scale-100 active:scale-100 hover:bg-opacity-0 cursor-auto border-0 border-b-2 rounded-b-none border-white hover:text-white"
 			>
@@ -55,11 +55,11 @@
 				allowfullscreen
 				loading="lazy"
 				referrerpolicy="no-referrer-when-downgrade"
-				class="h-full w-full z-[220]"
+				class="h-full w-full z-[220] rounded-lg"
 			/>
 		</div>
 		<div
-			class="h-1/6 w-full bg-purple-900/20 flex flex-row items-center justify-evenly py-8 text-white"
+			class="h-1/6 w-full bg-purple-900/50 flex flex-row items-center justify-evenly py-8 text-white"
 		>
 			<a
 				href="mailto:adhyaaya.gcoen@gmail.com"
@@ -85,6 +85,6 @@
 	</div>
 	<div class="h-full lg:w-1/3  order-1 lg:order-1 aspect-[16/9] rounded-lg border border-white">
 		<!-- <iframe width="100%" height="100%" src="https://www.youtube-nocookie.com/embed/YiVULH51pJA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
-		<lite-youtube videoid="YiVULH51pJA" playlabel="Adhyaaya'23 Coming Soon" class="h-full w-full" />
+		<lite-youtube videoid="YiVULH51pJA" playlabel="Adhyaaya'23 Coming Soon" class="h-full w-full rounded-lg" />
 	</div>
 </div>

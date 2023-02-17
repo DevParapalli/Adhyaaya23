@@ -245,7 +245,7 @@
 	}
 
 	.menu-item {
-		@apply text-4xl xl:text-5xl 2xl:text-7xl py-4 pl-[10vw] lg:pl-[15vw] opacity-100 transition-all duration-500 ease-in-out whitespace-nowrap line-clamp-1 xl:leading-4 w-fit;
+		@apply text-4xl xl:text-5xl 2xl:text-6xl 3xl:text-7xl py-4 pl-[10vw] lg:pl-[15vw] opacity-100 transition-all duration-500 ease-in-out whitespace-nowrap line-clamp-1 xl:leading-4 w-fit;
 	}
 
 	.menu-item:hover {

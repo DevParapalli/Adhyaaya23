@@ -72,10 +72,10 @@
 	<div
 		bind:this={blob}
 		id="blob"
-		class="fixed h-[30vh] w-[35vh] bg-gradient-to-tr from-red-800  via-purple-900 to-blue-700 animate-spin duration-[20000ms]"
+		class="fixed h-[30vh] w-[40vh] bg-gradient-to-tr from-red-500  via-purple-500 to-blue-500 animate-spin duration-[20000ms]"
 	/>
 </div>
-<div id="bg-filter" class="fixed h-screen w-screen -z-40 backdrop-blur-3xl" />
+<div id="bg-filter" class="fixed h-screen w-screen -z-40 backdrop-blur-[150px]" />
 <div
 	bind:clientHeight={height}
 	class="events-container grid grid-cols-1 justify-items-stretch pt-28 min-h-[50vh] scroll-smooth"
@@ -143,7 +143,7 @@
 	</div>
 	<div
 		id="workshops"
-		class="h-full min-h-[50vh] flex items-center justify-center flex-wrap transition-all duration-500 ease-in-out gap-4 md:gap-10 pt-16"
+		class="h-full min-h-[50vh] flex items-center justify-center flex-wrap transition-all duration-500 ease-in-out gap-4 md:gap-10 pt-16 pb-24"
 	>
 		{#each workshops as w}
 			<EventCard data={w} />

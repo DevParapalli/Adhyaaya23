@@ -3,9 +3,9 @@
 	let submit = false;
 </script>
 
-<div class="md:h-full flex flex-col md:flex-row justify-center items-center m-auto pt-12 2xl:pt-24">
+<div class="md:h-full flex flex-col md:flex-row justify-center items-center m-auto pt-12 2xl:pt-24 text-white">
 	<div
-		class="section md:w-1/3 w-5/6 h-5/6 md:bg-black/20 py-3 md:py-0 rounded-lg md:border border-white"
+		class="section md:w-1/3 w-5/6 h-5/6 md:bg-black/20 py-3 md:py-0 rounded-lg md:rounded-r-none md:border border-white"
 	>
 		<form
 			on:submit={() => {
@@ -67,7 +67,7 @@
 				type="submit">Submit</button
 			>
 			<div
-				class="info-container w-full flex-col items-center justify-center px-4 xl:px-10  hidden lg:flex"
+				class="info-container w-full flex-col items-center justify-center px-4 xl:px-10 hidden lg:flex pt-4"
 			>
 				<div class="card card-compact mx-auto bg-white/20 shadow-xl container">
 					<div class="card-body">
@@ -90,9 +90,9 @@
 	</div>
 	<div
 		id="center-console"
-		class="section md:w-1/3 w-5/6 h-1/2 md:h-5/6 flex flex-col items-center justify-between py-3 md:py-0 rounded-lg md:border md:border-black md:bg-white/20"
+		class="section md:w-1/3 w-5/6 h-1/2 md:h-5/6 flex flex-col items-center justify-between py-3 md:py-0 rounded-lg rounded-l-none md:border-l-0 md:border md:border-white md:bg-black/20"
 	>
-		<h3 class="text-2xl lg:text-4xl xl:text-6xl pt-0 md:pt-10">Contact Us</h3>
+		<h3 class="text-2xl lg:text-4xl xl:text-5xl 2xl:text-6xl pt-0 md:pt-10">Contact Us</h3>
 		<div class="contact-info px-4 md:px-10 pt-4 flex flex-col gap-4 md:gap-8 items-start">
 			<div class="card card-compact mx-auto bg-black/50 shadow-xl w-full">
 				<div class="card-body ">

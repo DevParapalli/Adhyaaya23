@@ -180,8 +180,8 @@ export const EVENTS: AdhyaayaEvent[] = [
 		name: 'Avishkar',
 		description:
 			'Avishkar is a project competition for engineering students to showcase their innovative ideas. Teams can have up to 5 members and projects can be in hardware or software categories. Competition consists of two rounds: elimination and questionnaire. Register today!',
-		amount: [159_00, 159_00, 159_00, 159_00],
-		team_members: [1, 2, 3, 4],
+		amount: [159_00, 159_00],
+		team_members: [2, 4],
 		start_date: new Date('9 Mar 2023'),
 		end_date: new Date('9 Mar 2023'),
 		small_image: 'https://placeimg.com/360/360/tech',
@@ -214,8 +214,8 @@ export const EVENTS: AdhyaayaEvent[] = [
 		name: 'Avishkar - Online',
 		description:
 			'Avishkar is a project competition for engineering students to showcase their innovative ideas. Teams can have up to 5 members and projects can be in hardware or software categories. Competition consists of two rounds: elimination and questionnaire. Register today!',
-		amount: [159_00, 159_00, 159_00, 159_00],
-		team_members: [1, 2, 3, 4],
+		amount: [159_00, 159_00],
+		team_members: [2, 4],
 		start_date: new Date('9 Mar 2023'),
 		end_date: new Date('9 Mar 2023'),
 		small_image: 'https://placeimg.com/360/360/tech',
@@ -241,8 +241,8 @@ export const EVENTS: AdhyaayaEvent[] = [
 		name: 'Avishkar - Offline',
 		description:
 			'Avishkar is a project competition for engineering students to showcase their innovative ideas. Teams can have up to 5 members and projects can be in hardware or software categories. Competition consists of two rounds: elimination and questionnaire. Register today!',
-		amount: [159_00, 159_00, 159_00, 159_00],
-		team_members: [1, 2, 3, 4],
+		amount: [159_00, 159_00],
+		team_members: [2, 4],
 		start_date: new Date('9 Mar 2023'),
 		end_date: new Date('9 Mar 2023'),
 		small_image: 'https://placeimg.com/360/360/tech',
@@ -349,8 +349,8 @@ export const EVENTS: AdhyaayaEvent[] = [
 		name: 'Bridge-O-Craft',
 		description:
 			'Bridge-O-Craft by Adhyaaya offers a chance to test your engineering skills with a Treasure Hunt, Bridge Making and Load Bearing Test. Compete for cash prizes, runner up awards and certificates for all participants. Join now!',
-		amount: [250_00, 250_00, 250_00, 250_00],
-		team_members: [1, 2, 3, 4],
+		amount: [250_00, 250_00, 250_00, 250_00, 250_00],
+		team_members: [1, 2, 3, 4, 5],
 		start_date: new Date('9 Mar 2023'),
 		end_date: new Date('9 Mar 2023'),
 		small_image: 'https://placeimg.com/360/360/tech',
@@ -392,7 +392,7 @@ export const EVENTS: AdhyaayaEvent[] = [
 				phone: '9373560404'
 			}
 		],
-		is_active: false
+		is_active: true
 	},
 	{
 		id: 'vaad-vivad',
