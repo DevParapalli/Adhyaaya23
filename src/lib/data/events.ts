@@ -549,7 +549,7 @@ export const EVENTS: AdhyaayaEvent[] = [
 			}
 		],
 		// TODO: Fix this
-		is_active: false,
+		is_active: true,
 		whatsapp_link: 'https://chat.whatsapp.com/GwpSrB9MEcL4sW54WL1Hto'
 	},
 	{
@@ -618,29 +618,29 @@ export const EVENTS: AdhyaayaEvent[] = [
 				phone: '9511652253'
 			}
 		],
-		is_active: false
+		is_active: true
 	},
-	{
-		id: 'gdsc-lecture',
-		mode: 'offline',
-		category: 'workshops',
-		name: 'GDSC Guest Lecture',
-		description: 'blah blah blah',
-		amount: [0],
-		team_members: [1],
-		start_date: new Date('9 Mar 2023'),
-		end_date: new Date('9 Mar 2023'),
-		small_image: 'https://placeimg.com/360/360/tech',
-		icon: `url::${gdsc}`,
-		poster: p_coming_soon,
-		contact: [
-			{
-				name: 'Neha Malode',
-				phone: '7058441799'
-			}
-		],
-		is_active: false
-	},
+	// {
+	// 	id: 'gdsc-lecture',
+	// 	mode: 'offline',
+	// 	category: 'workshops',
+	// 	name: 'GDSC Guest Lecture',
+	// 	description: 'blah blah blah',
+	// 	amount: [0],
+	// 	team_members: [1],
+	// 	start_date: new Date('9 Mar 2023'),
+	// 	end_date: new Date('9 Mar 2023'),
+	// 	small_image: 'https://placeimg.com/360/360/tech',
+	// 	icon: `url::${gdsc}`,
+	// 	poster: p_coming_soon,
+	// 	contact: [
+	// 		{
+	// 			name: 'Neha Malode',
+	// 			phone: '7058441799'
+	// 		}
+	// 	],
+	// 	is_active: true
+	// },
 	// {
 	// 	id: 'ev-workshop',
 	// 	mode: 'offline',
@@ -662,31 +662,31 @@ export const EVENTS: AdhyaayaEvent[] = [
 	// 	],
 	// 	is_active: true
 	// },
-	{
-		id: 'aeromodelling-workshop',
-		mode: 'offline',
-		category: 'workshops',
-		name: 'Multirotor Workshop',
-		description:
-			"Learn about the exciting world of unmanned aerial vehicles (UAVs) with the Multirotor Workshop at Government College of Engineering in Nagpur. This two-day workshop covers the basics of multi-rotors and offers hands-on experience in assembling and configuring a UAV. Led by experienced instructors, it's perfect for beginners and experts alike. Register now to gain practical knowledge and take the first step towards becoming a UAV expert.",
-		amount: [2400_00],
-		team_members: [1],
-		start_date: new Date('9 Mar 2023'),
-		end_date: new Date('9 Mar 2023'),
-		small_image: 'https://placeimg.com/360/360/tech',
-		icon: `url::${multirotor}`,
-		poster: p_coming_soon,
-		contact: [
-			{
-				name: 'Sahil Brahme',
-				phone: '9552269716'
-			},
-			{
-				name: 'Parth Tirmare',
-				phone: '9028606866'
-			}
-		],
-		is_active: true,
-		whatsapp_link: 'https://chat.whatsapp.com/HA17R0Jp55cAe6rq6agUfz'
-	}
+	// {
+	// 	id: 'aeromodelling-workshop',
+	// 	mode: 'offline',
+	// 	category: 'workshops',
+	// 	name: 'Multirotor Workshop',
+	// 	description:
+	// 		"Learn about the exciting world of unmanned aerial vehicles (UAVs) with the Multirotor Workshop at Government College of Engineering in Nagpur. This two-day workshop covers the basics of multi-rotors and offers hands-on experience in assembling and configuring a UAV. Led by experienced instructors, it's perfect for beginners and experts alike. Register now to gain practical knowledge and take the first step towards becoming a UAV expert.",
+	// 	amount: [2400_00],
+	// 	team_members: [1],
+	// 	start_date: new Date('9 Mar 2023'),
+	// 	end_date: new Date('9 Mar 2023'),
+	// 	small_image: 'https://placeimg.com/360/360/tech',
+	// 	icon: `url::${multirotor}`,
+	// 	poster: p_coming_soon,
+	// 	contact: [
+	// 		{
+	// 			name: 'Sahil Brahme',
+	// 			phone: '9552269716'
+	// 		},
+	// 		{
+	// 			name: 'Parth Tirmare',
+	// 			phone: '9028606866'
+	// 		}
+	// 	],
+	// 	is_active: true,
+	// 	whatsapp_link: 'https://chat.whatsapp.com/HA17R0Jp55cAe6rq6agUfz'
+	// }
 ];
