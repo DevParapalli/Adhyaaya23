@@ -600,7 +600,7 @@ export const EVENTS: AdhyaayaEvent[] = [
 		mode: 'offline',
 		category: 'workshops',
 		name: 'Stock Market Workshop',
-		description: 'blah blah blah',
+		description: 'Unleash the Power of the Stock Market: Join us for an exciting offline workshop where you\'ll learn the fundamentals of investing, develop your own trading strategies, and gain valuable insights from industry experts. Discover how to navigate the twists and turns of the market and make informed decisions that can lead to financial success. Whether you\'re a beginner or an experienced trader, this workshop is your opportunity to level up your stock market game and achieve your investment goals.',
 		amount: [100_00],
 		team_members: [1],
 		start_date: new Date('9 Mar 2023'),
