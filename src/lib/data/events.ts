@@ -101,7 +101,7 @@ export const EVENTS: AdhyaayaEvent[] = [
 		name: 'Respawn Valorant',
 		description:
 			'Respawn is an e-sports event featuring popular games like COD, VALORANT and CHESS, available on Mobile and PC platforms. Open to all ages, COD and VALORANT have a team entry fee, with teams of 4 and 5 players respectively. CHESS has a solo entry fee. Matches in COD and VALORANT last for a maximum of 40 minutes and cheating will result in a ban. Joining information will be provided through a WhatsApp group.',
-		amount: [250_00],
+		amount: [249_00],
 		team_members: [5],
 		start_date: new Date('9 Mar 2023'),
 		end_date: new Date('9 Mar 2023'),
@@ -128,7 +128,7 @@ export const EVENTS: AdhyaayaEvent[] = [
 		name: 'Respawn Chess',
 		description:
 			'Respawn is an e-sports event featuring popular games like COD, VALORANT and CHESS, available on Mobile and PC platforms. Open to all ages, COD and VALORANT have a team entry fee, with teams of 4 and 5 players respectively. CHESS has a solo entry fee. Matches in COD and VALORANT last for a maximum of 40 minutes and cheating will result in a ban. Joining information will be provided through a WhatsApp group.',
-		amount: [50_00],
+		amount: [49_00],
 		team_members: [1],
 		start_date: new Date('9 Mar 2023'),
 		end_date: new Date('9 Mar 2023'),
@@ -294,7 +294,7 @@ export const EVENTS: AdhyaayaEvent[] = [
 		name: 'Virtual Placement',
 		description:
 			"Attention all students! Are you ready to take the first step towards your dream job? Adhyaaya'23 Virtual Placement is here to help you prepare and excel in your upcoming placements. With an entry fee of only 70/- and a price pool of up to 7k, this is an opportunity you cannot miss! You will be tested on your mental ability, communication skills, stress-handling, and confidence. Don't wait, register now and get ready to impress your future employers!",
-		amount: [80_00],
+		amount: [79_00],
 		team_members: [1],
 		start_date: new Date('9 Mar 2023'),
 		end_date: new Date('9 Mar 2023'),
@@ -322,7 +322,7 @@ export const EVENTS: AdhyaayaEvent[] = [
 		name: 'CodeVenture',
 		description:
 			'CodeVenture is a coding competition that tests your debugging and coding skills. Showcase your expertise in mathematics, data structures, algorithms and more. Compete solo using any programming language on a PC with a good internet connection. Join us for a thrilling coding experience!',
-		amount: [50_00],
+		amount: [0],
 		team_members: [1],
 		start_date: new Date('9 Mar 2023'),
 		end_date: new Date('9 Mar 2023'),
@@ -349,7 +349,7 @@ export const EVENTS: AdhyaayaEvent[] = [
 		name: 'Bridge-O-Craft',
 		description:
 			'Bridge-O-Craft by Adhyaaya offers a chance to test your engineering skills with a Treasure Hunt, Bridge Making and Load Bearing Test. Compete for cash prizes, runner up awards and certificates for all participants. Join now!',
-		amount: [250_00, 250_00, 250_00, 250_00, 250_00],
+		amount: [249_00, 249_00, 249_00, 249_00, 249_00],
 		team_members: [1, 2, 3, 4, 5],
 		start_date: new Date('9 Mar 2023'),
 		end_date: new Date('9 Mar 2023'),
@@ -375,8 +375,8 @@ export const EVENTS: AdhyaayaEvent[] = [
 		name: 'RoboRace',
 		description:
 			"Are you ready to test your driving skills in a high-octane race against the clock? Join us for RoboRace, where you'll have the opportunity to navigate a challenging race track using a bot provided by DROID DEVS. Whether you're a seasoned pro or a first-time racer, this event is open to all students, so grab your friends and sign up for a chance to win big prizes! With an easier track to start and a final round with even more challenging obstacles, the competition will be fierce, but only the fastest will come out on top. So what are you waiting for? Join us for an unforgettable event that's sure to be a highlight of the year!",
-		amount: [100_00], //TODO: Confirm the details for this event
-		team_members: [4],
+		amount: [69_00], //TODO: Confirm the details for this event
+		team_members: [1],
 		start_date: new Date('9 Mar 2023'),
 		end_date: new Date('9 Mar 2023'),
 		small_image: 'https://placeimg.com/360/360/tech',
@@ -401,7 +401,7 @@ export const EVENTS: AdhyaayaEvent[] = [
 		name: 'Vaad Vivad',
 		description:
 			'VAAD-VIVAAD is a public speaking event with two rounds: an elocution competition and an extempore round. Participants will be given topics related to social issues and will have 2 and 4 minutes to express their ideas respectively. Register now by paying the entry fee of 50/- (solo) and boost your public speaking skills',
-		amount: [50_00],
+		amount: [49_00],
 		team_members: [1],
 		start_date: new Date('9 Mar 2023'),
 		end_date: new Date('9 Mar 2023'),
@@ -459,7 +459,7 @@ export const EVENTS: AdhyaayaEvent[] = [
 		name: 'Food-O-Holic',
 		description:
 			'"Food-o-Holic" is an exciting competition for teams of 4 members with an entry fee of 240. The competition consists of 3 rounds: "Lord of Buns," "Khao to Jane," and "Desert Dash." In each round, teams compete in food-related challenges and quizzes, from collecting buns with tied hands to finishing a dessert without using their hands. The winning team is decided by points or speed. Register now for a fun and thrilling culinary adventure.',
-		amount: [240_00],
+		amount: [299_00],
 		team_members: [4],
 		start_date: new Date('9 Mar 2023'),
 		end_date: new Date('9 Mar 2023'),
@@ -559,7 +559,7 @@ export const EVENTS: AdhyaayaEvent[] = [
 		name: 'Stargaze',
 		description:
 			"Explore the depths of the universe at Adhyaaya'23! Join the Astronomy Club at GCOEN for expert guest lectures, hands-on exploration sessions, and more. Come and STARGAZE with us!",
-		amount: [40_00],
+		amount: [59_00],
 		team_members: [1],
 		start_date: new Date('9 Mar 2023'),
 		end_date: new Date('9 Mar 2023'),
@@ -601,7 +601,7 @@ export const EVENTS: AdhyaayaEvent[] = [
 		category: 'workshops',
 		name: 'Stock Market Workshop',
 		description: 'Unleash the Power of the Stock Market: Join us for an exciting offline workshop where you\'ll learn the fundamentals of investing, develop your own trading strategies, and gain valuable insights from industry experts. Discover how to navigate the twists and turns of the market and make informed decisions that can lead to financial success. Whether you\'re a beginner or an experienced trader, this workshop is your opportunity to level up your stock market game and achieve your investment goals.',
-		amount: [100_00],
+		amount: [49_00],
 		team_members: [1],
 		start_date: new Date('9 Mar 2023'),
 		end_date: new Date('9 Mar 2023'),
