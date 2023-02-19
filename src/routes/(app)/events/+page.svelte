@@ -72,10 +72,10 @@
 	<div
 		bind:this={blob}
 		id="blob"
-		class="fixed h-[30vh] w-[40vh] bg-gradient-to-tr from-red-500  via-purple-500 to-blue-500 animate-spin duration-[20000ms]"
+		class="fixed opacity-80 h-[30vh] w-[40vh] bg-gradient-to-tr from-red-500  via-purple-500 to-blue-500 animate-spin duration-[20000ms]"
 	/>
 </div>
-<div id="bg-filter" class="fixed h-screen w-screen -z-40 backdrop-blur-[150px]" />
+<div id="bg-filter" class="fixed h-screen w-screen -z-40 backdrop-blur-[100px]" />
 <div
 	bind:clientHeight={height}
 	class="events-container grid grid-cols-1 justify-items-stretch pt-28 min-h-[50vh] scroll-smooth"

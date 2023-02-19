@@ -534,7 +534,7 @@ export const EVENTS: AdhyaayaEvent[] = [
 		mode: 'offline',
 		category: 'workshops',
 		name: 'Jigyasa',
-		description: 'blah blah blah',
+		description: 'Join us for an exclusive interview with a military or defense personnel as part of Adhyaaya. In this podcast-style interview, we\'ll be discussing their experience, expertise, and insights on the challenges and opportunities facing the military and defense forces. This event offers a unique opportunity to gain a deeper understanding of the life of a military or defense personnel, their motivations, and their experiences. Don\'t miss out on this exciting event!		',
 		amount: [0],
 		team_members: [1],
 		start_date: new Date('9 Mar 2023'),
