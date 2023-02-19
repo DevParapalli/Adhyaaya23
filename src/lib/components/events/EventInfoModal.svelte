@@ -76,9 +76,9 @@
 </script>
 
 {#if isOpen}
-	<div class="modal-wrapper relative h-full w-full z-[210] bg-black/50">
+	<div class="modal-wrapper relative xl:h-full w-full z-[210] bg-black/50">
 		<button
-			class="h-10 w-10 md:h-12 md:w-12 rounded-full border border-white right-10 top-8 absolute transition-all duration-500 ease-in-out hover:scale-105 active:scale-95 z-50 mix-blend-difference"
+			class="h-12 w-12 p-2 backdrop-blur-2xl md:h-12 md:w-12 rounded-full border-2 font-bold border-white right-10 top-8 absolute transition-all duration-500 ease-in-out hover:scale-105 active:scale-95 z-50 mix-blend-difference"
 		>
 			<div
 				class="absolute w-[18px] h-[2px] origin-center bg-white transition-all ease-in-out duration-500"
@@ -92,12 +92,12 @@
 		<div
 			use:clickOutside
 			on:click_outside={closeModal}
-			class="modal-container container flex justify-between flex-col lg:flex-row rounded-lg"
+			class="modal-container container flex justify-between flex-col xl:flex-row rounded-lg"
 		>
 			<div class="image-container">
 				<img src={event.poster} alt="{event.name} poster" class="rounded-lg lg:rounded-r-none" />
 			</div>
-			<div class="content-container flex flex-col items-baseline lg:w-2/3 px-6 pt-6 bg-purple-900">
+			<div class="content-container flex flex-col items-baseline xl:w-2/3 px-6 pt-6 bg-purple-900">
 				<h2 class="event-name text-4xl">{event.name}</h2>
 				<p class="date py-2">{display_date}</p>
 				<p class="event-description py-2 nunu">{event.description}</p>
