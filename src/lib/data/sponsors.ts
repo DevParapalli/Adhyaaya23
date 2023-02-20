@@ -18,6 +18,7 @@ import pythonacademy from '$lib/assets/sponsors/pythonacademy.png?url';
 import unisoft from '$lib/assets/sponsors/unisoft.png?url';
 import paarangat from '$lib/assets/sponsors/parangat.png?url';
 import frostandfeather from '$lib/assets/sponsors/frostandfeather.png?url';
+import foodisland from '$lib/assets/sponsors/foodisland.png?url';
 
 export const SPONSORS: AdhyaayaSponsor[] = [
 	{
@@ -31,35 +32,42 @@ export const SPONSORS: AdhyaayaSponsor[] = [
 		name: 'Orange Bits',
 		image: orangebits,
 		link: 'https://orangebitsindia.com/',
-		title: 'Sponsor',
+		title: 'Tech Sponsor',
 		category: SponsorCategory.GOLD
 	},
 	{
 		name: 'Python Academy',
 		image: pythonacademy,
 		link: 'https://www.pythonacademy.in/',
-		title: 'Sponsor',
+		title: 'Tech Sponsor',
 		category: SponsorCategory.GOLD
 	},
 	{
 		name: 'Unisoft Technologies',
 		image: unisoft,
 		link: 'http://www.unisoftindia.org/',
-		title: 'Sponsor',
+		title: 'Tech Sponsor',
 		category: SponsorCategory.GOLD
 	},
 	{
 		name: 'Paarangat Edu.',
 		image: paarangat,
 		link: 'https://paarangatedu.com/',
-		title: 'Sponsor',
+		title: 'Tech Sponsor',
 		category: SponsorCategory.GOLD
 	},
 	{
 		name: 'Frost & Feather',
 		image: frostandfeather,
 		link: 'https://www.google.com',
-		title: 'Sponsor',
+		title: 'F&B Sponsor',
+		category: SponsorCategory.GOLD
+	},
+	{
+		name: 'Food Island',
+		image: foodisland,
+		link: 'https://www.google.com',
+		title: 'F&B Sponsor',
 		category: SponsorCategory.GOLD
 	}
 ];
