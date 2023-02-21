@@ -66,7 +66,7 @@ export const SPONSORS: AdhyaayaSponsor[] = [
 	{
 		name: 'Food Island',
 		image: foodisland,
-		link: 'https://www.google.com',
+		link: 'https://www.instagram.com/foodislandnagpur/',
 		title: 'F&B Sponsor',
 		category: SponsorCategory.GOLD
 	}
