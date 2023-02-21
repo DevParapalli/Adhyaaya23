@@ -59,7 +59,7 @@ export const SPONSORS: AdhyaayaSponsor[] = [
 	{
 		name: 'Frost & Feather',
 		image: frostandfeather,
-		link: 'https://www.google.com',
+		link: 'https://www.instagram.com/frostandfeatherngp/',
 		title: 'F&B Sponsor',
 		category: SponsorCategory.GOLD
 	},
