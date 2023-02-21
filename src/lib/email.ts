@@ -66,8 +66,7 @@ export async function sendEmail(registration_id: string) {
 		ec: event?.contact.map((e) => `${e.name}<br />${e.phone}<br />`).join('') ?? 'Pending',
 		contact: '+919876543210',
 		qr: registration.id ?? 'Pending',
-		// TODO: change link to prod
-		receipt: `${dev ? 'http://localhost:5173' : 'https://adhyaaya.devparapalli.in'}/pg/${
+		receipt: `${dev ? 'http://localhost:5173' : 'https://www.adhyaaya.org'}/pg/${
 			registration.id
 		}/success`
 	});
@@ -108,8 +107,7 @@ export async function sendAPIEmail(registration_id: string) {
 		ec: event?.contact.map((e) => `${e.name}<br />${e.phone}<br />`).join('') ?? 'Pending',
 		contact: '+919876543210',
 		qr: registration.id ?? 'Pending',
-		// TODO: change link to prod
-		receipt: `${dev ? 'http://localhost:5173' : 'https://adhyaaya.devparapalli.in'}/pg/${
+		receipt: `${dev ? 'http://localhost:5173' : 'https://www.adhyaaya.org'}/pg/${
 			registration.id
 		}/success`
 	});

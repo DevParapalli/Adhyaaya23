@@ -366,7 +366,7 @@ export const EVENTS: AdhyaayaEvent[] = [
 		name: 'RoboRace',
 		description:
 			"Are you ready to test your driving skills in a high-octane race against the clock? Join us for RoboRace, where you'll have the opportunity to navigate a challenging race track using a bot provided by DROID DEVS. Whether you're a seasoned pro or a first-time racer, this event is open to all students, so grab your friends and sign up for a chance to win big prizes! With an easier track to start and a final round with even more challenging obstacles, the competition will be fierce, but only the fastest will come out on top. So what are you waiting for? Join us for an unforgettable event that's sure to be a highlight of the year!",
-		amount: [69_00], //TODO: Confirm the details for this event
+		amount: [69_00],
 		team_members: [1],
 		start_date: new Date('9 Mar 2023'),
 		end_date: new Date('9 Mar 2023'),
@@ -493,7 +493,6 @@ export const EVENTS: AdhyaayaEvent[] = [
 		is_active: true,
 		whatsapp_link: 'https://chat.whatsapp.com/ETCp1yUYn5U8BEDSp5VtBH'
 	},
-	// TODO: Finalize the data for these...
 	{
 		id: 'cad-o-shop',
 		mode: 'offline',
@@ -539,7 +538,6 @@ export const EVENTS: AdhyaayaEvent[] = [
 				phone: '9607773343'
 			}
 		],
-		// TODO: Fix this
 		is_active: true,
 		whatsapp_link: 'https://chat.whatsapp.com/GwpSrB9MEcL4sW54WL1Hto'
 	},
