@@ -2,7 +2,7 @@
 	import type { PageData } from './$types';
 
 	export let data: PageData;
-	import { openModal } from 'svelte-modals';
+	import { openModal, modals } from 'svelte-modals';
 	import EventInfoModal from '$lib/components/events/EventInfoModal.svelte';
 	import { EVENTS } from '$lib/data/events';
 	let technical = data.events.filter((event) => event.category === 'technical');
@@ -37,7 +37,18 @@
 	// 	}
 	// })
 
-	onMount(() => {});
+
+	afterNavigate(() => {
+		if (data.view != 'list' && $modals.length == 0) {
+			openModal(EventInfoModal, { event: EVENTS.find((e) => e.id == data.view) || EVENTS[0] });
+		}
+	});
+
+	onMount(() => {
+		// if (data.view != 'list') {
+		// 	openModal(EventInfoModal, { event: EVENTS.find((e) => e.id == data.view) || EVENTS[0] });
+		// }
+	});
 
 	function convertRange(value: number, r1: number[], r2: number[]) {
 		return ((value - r1[0]) * (r2[1] - r2[0])) / (r1[1] - r1[0]) + r2[0];
@@ -49,6 +60,7 @@
 	import ntech from '$lib/assets/icons/nontech.png';
 	import wksp from '$lib/assets/icons/workshops.png';
 	import { dev } from '$app/environment';
+	import { afterNavigate } from '$app/navigation';
 </script>
 
 <svelte:head>
