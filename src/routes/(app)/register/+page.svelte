@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { afterUpdate, onMount } from 'svelte';
-	import bg from '$lib/assets/backgrounds/register-1.jpg';
+	import bg from '$lib/assets/backgrounds/register-3.jpg';
 	import { enhance } from '$app/forms';
 	import autoanimate from '@formkit/auto-animate';
 	import 'iconify-icon';
@@ -87,7 +87,7 @@
 	<title>Registration Form | Adhyaaya'23</title>
 </svelte:head>
 
-<div class="bg w-full pt-20 object-cover pb-10 min-h-screen" style="--bg:url({bg});--opacity:0.75">
+<div class="bg w-full pt-20 object-contain pb-10 min-h-screen" style="--bg:url({bg});--opacity: 0.4">
 	<div class="header mx-auto text-4xl text-center mb-8 text-white font-bold uppercase font-mono">
 		Registration Form
 	</div>
@@ -388,6 +388,7 @@
 		background: linear-gradient(0deg, rgba(0, 0, 0, var(--opacity)), rgba(0, 0, 0, var(--opacity)))
 				center fixed no-repeat,
 			var(--bg) center fixed no-repeat;
+		background-size: cover;
 	}
 
 	ol {

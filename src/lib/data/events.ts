@@ -381,6 +381,10 @@ export const EVENTS: AdhyaayaEvent[] = [
 			{
 				name: 'Madhur Manekar',
 				phone: '9373560404'
+			},
+			{
+				name: 'Rushikesh Pawade',
+				phone: '9921152443'
 			}
 		],
 		is_active: true
