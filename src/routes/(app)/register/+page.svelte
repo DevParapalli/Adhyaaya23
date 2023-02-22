@@ -152,14 +152,14 @@
 					type="text"
 					name="first_name"
 					id="first_name"
-					class="nunu block py-2.5 px-0 w-full text-sm text-white bg-transparent border-0 border-b-2 border-gray-300 appearance-none text-white dark:border-gray-400 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+					class="nunu block py-2.5 px-0 w-full text-sm bg-transparent border-0 border-b-2  appearance-none  border-gray-400  focus:outline-none focus:ring-0 focus:border-blue-600 peer"
 					placeholder=" "
 					required
 					value={form?.data?.first_name ?? ''}
 				/>
 				<label
 					for="first_name"
-					class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-200 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+					class="peer-focus:font-medium absolute text-sm text-gray-200 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
 					>First name</label
 				>
 			</div>
@@ -168,14 +168,14 @@
 					type="text"
 					name="last_name"
 					id="last_name"
-					class="nunu block py-2.5 px-0 w-full text-sm text-white bg-transparent border-0 border-b-2 border-gray-300 appearance-none text-white dark:border-gray-400 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+					class="nunu block py-2.5 px-0 w-full text-sm bg-transparent border-0 border-b-2  appearance-none text-white border-gray-400  focus:outline-none focus:ring-0 focus:border-blue-600 peer"
 					placeholder=" "
 					required
 					value={form?.data?.last_name ?? ''}
 				/>
 				<label
 					for="last_name"
-					class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-200 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+					class="peer-focus:font-medium absolute text-sm text-gray-200 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
 					>Last name</label
 				>
 			</div>
@@ -188,14 +188,14 @@
 					maxlength="10"
 					name="phone"
 					id="phone"
-					class="nunu block py-2.5 px-0 w-full text-sm text-white bg-transparent border-0 border-b-2 border-gray-300 appearance-none text-white dark:border-gray-400 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+					class="nunu block py-2.5 px-0 w-full text-sm bg-transparent border-0 border-b-2  appearance-none text-white border-gray-400  focus:outline-none focus:ring-0 focus:border-blue-600 peer"
 					placeholder=" "
 					required
 					value={form?.data?.phone ?? ''}
 				/>
 				<label
 					for="phone"
-					class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-200 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+					class="peer-focus:font-medium absolute text-sm text-gray-200 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
 					>Phone number (10-digits)</label
 				>
 			</div>
@@ -204,14 +204,14 @@
 					type="email"
 					name="email"
 					id="email"
-					class="nunu block py-2.5 px-0 w-full text-sm text-white bg-transparent border-0 border-b-2 border-gray-300 appearance-none text-white dark:border-gray-400 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+					class="nunu block py-2.5 px-0 w-full text-sm bg-transparent border-0 border-b-2  appearance-none text-white border-gray-400  focus:outline-none focus:ring-0 focus:border-blue-600 peer"
 					placeholder=" "
 					required
 					value={form?.data?.email ?? ''}
 				/>
 				<label
 					for="email"
-					class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-200 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+					class="peer-focus:font-medium absolute text-sm text-gray-200 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
 					>Email address</label
 				>
 			</div>
@@ -222,14 +222,14 @@
 					type="text"
 					name="institute"
 					id="institute"
-					class="nunu block py-2.5 px-0 w-full text-sm text-white bg-transparent border-0 border-b-2 border-gray-300 appearance-none text-white dark:border-gray-400 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+					class="nunu block py-2.5 px-0 w-full text-sm bg-transparent border-0 border-b-2  appearance-none text-white border-gray-400  focus:outline-none focus:ring-0 focus:border-blue-600 peer"
 					placeholder=" "
 					required
 					value={form?.data?.institute ?? ''}
 				/>
 				<label
 					for="institute"
-					class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-200 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+					class="peer-focus:font-medium absolute text-sm text-gray-200 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
 					>College/School</label
 				>
 			</div>
@@ -238,14 +238,14 @@
 					type="text"
 					name="year_grade"
 					id="year_grade"
-					class="nunu block py-2.5 px-0 w-full text-sm text-white bg-transparent border-0 border-b-2 border-gray-300 appearance-none text-white dark:border-gray-400 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+					class="nunu block py-2.5 px-0 w-full text-sm bg-transparent border-0 border-b-2  appearance-none text-white border-gray-400  focus:outline-none focus:ring-0 focus:border-blue-600 peer"
 					placeholder=" "
 					required
 					value={form?.data?.year_grade ?? ''}
 				/>
 				<label
 					for="year_grade"
-					class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-200 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+					class="peer-focus:font-medium absolute text-sm text-gray-200 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
 					>Year/Grade</label
 				>
 			</div>
@@ -254,20 +254,20 @@
 					type="text"
 					name="branch_specialization"
 					id="branch_specialization"
-					class="nunu block py-2.5 px-0 w-full text-sm text-white bg-transparent border-0 border-b-2 border-gray-300 appearance-none text-white dark:border-gray-400 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+					class="nunu block py-2.5 px-0 w-full text-sm bg-transparent border-0 border-b-2  appearance-none text-white border-gray-400  focus:outline-none focus:ring-0 focus:border-blue-600 peer"
 					placeholder=" "
 					value={form?.data?.branch_specialization ?? ''}
 				/>
 				<label
 					for="branch_specialization"
-					class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-200 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+					class="peer-focus:font-medium absolute text-sm text-gray-200 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
 					>Branch</label
 				>
 			</div>
 		</div>
 
 		{#if data.event.team_members.length > 1 || !data.event.team_members.includes(1)}
-			<h3 class="mb-6 text-base font-medium text-white dark:text-gray-200">
+			<h3 class="mb-6 text-base font-medium  text-gray-200">
 				How many additional members are in your team? (ie. excluding you)
 			</h3>
 
@@ -286,7 +286,7 @@
 							/>
 							<label
 								for="additional-{item - 1}"
-								class="inline-flex justify-center items-center p-2 w-full text-gray-500 bg-white rounded-lg border border-gray-200 cursor-pointer dark:hover:text-gray-300 dark:border-gray-700 dark:peer-checked:text-blue-500 peer-checked:border-blue-600 peer-checked:text-blue-600 hover:text-gray-600 hover:bg-gray-100 dark:text-gray-200 dark:bg-gray-800 dark:hover:bg-gray-700"
+								class="inline-flex justify-center items-center p-2 w-full rounded-lg border  cursor-pointer hover:text-gray-300 border-gray-700  peer-checked:border-blue-600 peer-checked:text-blue-600  text-gray-200 bg-gray-800 hover:bg-gray-700"
 							>
 								<div class="block">
 									<div class="w-full text-sm font-bold">{item - 1}</div>
@@ -299,7 +299,7 @@
 		{/if}
 
 		{#if teamMemberSelected > 0}
-			<h4 class="mb-2 text-base font-medium text-white dark:text-gray-200">
+			<h4 class="mb-2 text-base font-medium text-white ">
 				Please enter their details below.
 			</h4>
 			{#each Array.from(Array(teamMemberSelected).keys(), (_, index) => index + 1) as item}
@@ -309,14 +309,14 @@
 							type="text"
 							name="member-{item}-name"
 							id="member-{item}-name"
-							class="nunu block py-2.5 px-0 w-full text-sm bg-transparent border-0 border-b-2 border-gray-300 appearance-none text-white dark:border-gray-400 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+							class="nunu block py-2.5 px-0 w-full text-sm bg-transparent border-0 border-b-2  appearance-none text-white border-gray-400  focus:outline-none focus:ring-0 focus:border-blue-600 peer"
 							placeholder=" "
 							required
 							value={form?.data?.[`member-${item}-name`] ?? ''}
 						/>
 						<label
 							for="member-{item}-name"
-							class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-200 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+							class="peer-focus:font-medium absolute text-sm text-gray-200 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
 							>Member {item} Name</label
 						>
 					</div>
@@ -325,14 +325,14 @@
 							type="email"
 							name="member-{item}-email"
 							id="member-{item}-email"
-							class="nunu block py-2.5 px-0 w-full text-sm bg-transparent border-0 border-b-2 border-gray-300 appearance-none text-white dark:border-gray-400 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+							class="nunu block py-2.5 px-0 w-full text-sm bg-transparent border-0 border-b-2  appearance-none text-white border-gray-400  focus:outline-none focus:ring-0 focus:border-blue-600 peer"
 							placeholder=" "
 							required
 							value={form?.data?.[`member-${item}-email`] ?? ''}
 						/>
 						<label
 							for="member-{item}-email"
-							class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-200 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+							class="peer-focus:font-medium absolute text-sm text-gray-200 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
 							>Member {item} Email</label
 						>
 					</div>
@@ -343,14 +343,14 @@
 							maxlength="10"
 							name="member-{item}-phone"
 							id="member-{item}-phone"
-							class="nunu block py-2.5 px-0 w-full text-sm bg-transparent border-0 border-b-2 border-gray-300 appearance-none text-white dark:border-gray-400 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+							class="nunu block py-2.5 px-0 w-full text-sm bg-transparent border-0 border-b-2  appearance-none text-white border-gray-400  focus:outline-none focus:ring-0 focus:border-blue-600 peer"
 							placeholder=" "
 							required
 							value={form?.data?.[`member-${item}-phone`] ?? ''}
 						/>
 						<label
 							for="member-{item}-phone"
-							class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-200 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+							class="peer-focus:font-medium absolute text-sm text-gray-200 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
 							>Member {item} Phone</label
 						>
 					</div>
@@ -360,7 +360,7 @@
 		{#if teamMemberSelected > -1}
 			<button
 				type="submit"
-				class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg uppercase w-full px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 {loading
+				class="text-white   focus:ring-4 focus:outline-none  font-medium rounded-lg uppercase w-full px-5 py-2.5 text-center bg-blue-600 hover:bg-blue-700 focus:ring-blue-800 {loading
 					? 'opacity-50 cursor-not-allowed'
 					: ''}}"
 				>Register (₹{data.event.amount[
@@ -383,7 +383,7 @@
 	</form>
 </div>
 
-<style>
+<style lang="postcss">
 	.bg {
 		background: linear-gradient(0deg, rgba(0, 0, 0, var(--opacity)), rgba(0, 0, 0, var(--opacity)))
 				center fixed no-repeat,

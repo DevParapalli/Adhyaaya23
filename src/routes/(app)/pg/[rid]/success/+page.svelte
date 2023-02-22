@@ -98,7 +98,7 @@
 		<div class="right-half bg-white mx-auto py-0 md:py-10 md:px-0 md:pr-10  w-full md:w-2/5">
 			<div class="bg-black md:h-full px-8 md:pl-6 py-8 overflow-y-scroll no-scroll-bar">
 				<span class="instructions-header text-2xl text-white mb-2 nunu">Instructions</span>
-				<ul class="space-y-1 max-w-md list-disc list-inside text-gray-500 dark:text-gray-400">
+				<ul class="space-y-1 max-w-md list-disc list-inside text-gray-400">
 					<li class={EVENT?.whatsapp_link ? '' : 'hidden'}>
 						Join the <a href={EVENT?.whatsapp_link} class="text-white underline">WhatsApp group</a>
 						for updates. ({EVENT?.whatsapp_link})
