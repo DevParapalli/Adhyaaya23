@@ -152,7 +152,7 @@
 					type="text"
 					name="first_name"
 					id="first_name"
-					class="nunu block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-400 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+					class="nunu block py-2.5 px-0 w-full text-sm text-white bg-transparent border-0 border-b-2 border-gray-300 appearance-none text-white dark:border-gray-400 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
 					placeholder=" "
 					required
 					value={form?.data?.first_name ?? ''}
@@ -168,7 +168,7 @@
 					type="text"
 					name="last_name"
 					id="last_name"
-					class="nunu block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-400 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+					class="nunu block py-2.5 px-0 w-full text-sm text-white bg-transparent border-0 border-b-2 border-gray-300 appearance-none text-white dark:border-gray-400 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
 					placeholder=" "
 					required
 					value={form?.data?.last_name ?? ''}
@@ -188,7 +188,7 @@
 					maxlength="10"
 					name="phone"
 					id="phone"
-					class="nunu block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-400 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+					class="nunu block py-2.5 px-0 w-full text-sm text-white bg-transparent border-0 border-b-2 border-gray-300 appearance-none text-white dark:border-gray-400 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
 					placeholder=" "
 					required
 					value={form?.data?.phone ?? ''}
@@ -204,7 +204,7 @@
 					type="email"
 					name="email"
 					id="email"
-					class="nunu block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-400 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+					class="nunu block py-2.5 px-0 w-full text-sm text-white bg-transparent border-0 border-b-2 border-gray-300 appearance-none text-white dark:border-gray-400 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
 					placeholder=" "
 					required
 					value={form?.data?.email ?? ''}
@@ -222,7 +222,7 @@
 					type="text"
 					name="institute"
 					id="institute"
-					class="nunu block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-400 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+					class="nunu block py-2.5 px-0 w-full text-sm text-white bg-transparent border-0 border-b-2 border-gray-300 appearance-none text-white dark:border-gray-400 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
 					placeholder=" "
 					required
 					value={form?.data?.institute ?? ''}
@@ -238,7 +238,7 @@
 					type="text"
 					name="year_grade"
 					id="year_grade"
-					class="nunu block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-400 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+					class="nunu block py-2.5 px-0 w-full text-sm text-white bg-transparent border-0 border-b-2 border-gray-300 appearance-none text-white dark:border-gray-400 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
 					placeholder=" "
 					required
 					value={form?.data?.year_grade ?? ''}
@@ -254,7 +254,7 @@
 					type="text"
 					name="branch_specialization"
 					id="branch_specialization"
-					class="nunu block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-400 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+					class="nunu block py-2.5 px-0 w-full text-sm text-white bg-transparent border-0 border-b-2 border-gray-300 appearance-none text-white dark:border-gray-400 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
 					placeholder=" "
 					value={form?.data?.branch_specialization ?? ''}
 				/>
@@ -267,7 +267,7 @@
 		</div>
 
 		{#if data.event.team_members.length > 1 || !data.event.team_members.includes(1)}
-			<h3 class="mb-6 text-base font-medium text-gray-900 dark:text-gray-200">
+			<h3 class="mb-6 text-base font-medium text-white dark:text-gray-200">
 				How many additional members are in your team? (ie. excluding you)
 			</h3>
 
@@ -299,7 +299,7 @@
 		{/if}
 
 		{#if teamMemberSelected > 0}
-			<h4 class="mb-2 text-base font-medium text-gray-900 dark:text-gray-200">
+			<h4 class="mb-2 text-base font-medium text-white dark:text-gray-200">
 				Please enter their details below.
 			</h4>
 			{#each Array.from(Array(teamMemberSelected).keys(), (_, index) => index + 1) as item}
@@ -309,7 +309,7 @@
 							type="text"
 							name="member-{item}-name"
 							id="member-{item}-name"
-							class="nunu block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-400 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+							class="nunu block py-2.5 px-0 w-full text-sm bg-transparent border-0 border-b-2 border-gray-300 appearance-none text-white dark:border-gray-400 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
 							placeholder=" "
 							required
 							value={form?.data?.[`member-${item}-name`] ?? ''}
@@ -325,7 +325,7 @@
 							type="email"
 							name="member-{item}-email"
 							id="member-{item}-email"
-							class="nunu block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-400 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+							class="nunu block py-2.5 px-0 w-full text-sm bg-transparent border-0 border-b-2 border-gray-300 appearance-none text-white dark:border-gray-400 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
 							placeholder=" "
 							required
 							value={form?.data?.[`member-${item}-email`] ?? ''}
@@ -343,7 +343,7 @@
 							maxlength="10"
 							name="member-{item}-phone"
 							id="member-{item}-phone"
-							class="nunu block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-400 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+							class="nunu block py-2.5 px-0 w-full text-sm bg-transparent border-0 border-b-2 border-gray-300 appearance-none text-white dark:border-gray-400 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
 							placeholder=" "
 							required
 							value={form?.data?.[`member-${item}-phone`] ?? ''}
