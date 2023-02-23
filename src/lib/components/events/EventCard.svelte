@@ -2,6 +2,7 @@
 	import type { AdhyaayaEvent } from '$lib/data/events';
 	import { openModal } from 'svelte-modals';
 	import EventInfoModal from '$lib/components/events/EventInfoModal.svelte';
+	import { preloadData } from '$app/navigation';
 
 	export let data: AdhyaayaEvent;
 
@@ -12,6 +13,24 @@
 </script>
 
 <button
+	on:mouseover={() => {
+		if (document.getElementById(`${data.id}-preload`)) return;
+		const link = document.createElement('link');
+		link.id = `${data.id}-preload`
+		link.rel = 'preload';
+		link.href = data.poster;
+		document.head.appendChild(link);
+		fetch(data.poster);
+	}}
+	on:focus={() => {
+		if (document.getElementById(`${data.id}-preload`)) return;
+		const link = document.createElement('link');
+		link.id = `${data.id}-preload`
+		link.rel = 'preload';
+		link.href = data.poster;
+		document.head.appendChild(link);
+		fetch(data.poster);
+	}}
 	on:click={() => {
 		openModal(EventInfoModal, { event: data });
 	}}
