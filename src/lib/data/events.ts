@@ -48,12 +48,12 @@ import gdsc from '$lib/assets/icons/gdsc.png?url';
 // import multirotor from '$lib/assets/icons/multirotor.png?url';
 
 import p_coming_soon from '$lib/assets/posters/coming-soon.png?url';
-import p_avishkar from '$lib/assets/posters/AVISHKAR.jpg?url';
-import p_bridge_o_craft from '$lib/assets/posters/BRIDGE-O-CRAFT.jpg?url';
-import p_caddiction from '$lib/assets/posters/CADDICTION.jpg?url';
-import p_codeventure from '$lib/assets/posters/CODEVENTURE.jpg?url';
-import p_respawn from '$lib/assets/posters/RESPAWN.jpg?url';
-import p_virtual_placement from '$lib/assets/posters/VIRTUAL-PLACEMENT.jpg?url';
+import p_avishkar from '$lib/assets/posters/avishkar.jpg?url';
+import p_bridge_o_craft from '$lib/assets/posters/bridge-o-craft.jpg?url';
+import p_caddiction from '$lib/assets/posters/caddiction.jpg?url';
+import p_codeventure from '$lib/assets/posters/codeventure.jpg?url';
+import p_respawn from '$lib/assets/posters/respawn.jpg?url';
+import p_virtual_placement from '$lib/assets/posters/virtual-placement.jpg?url';
 
 
 export const EVENTS: AdhyaayaEvent[] = [
@@ -300,7 +300,7 @@ export const EVENTS: AdhyaayaEvent[] = [
 		small_image: 'https://placeimg.com/360/360/tech',
 		icon: `url::${virtual_placement_icon}`,
 		// icon: 'healthicons:group-discussion-meetingx3-negative',
-		poster: p_virtual_placement,
+		poster: p_coming_soon,
 		contact: [
 			{
 				name: 'Spandan Ghate',
