@@ -25,8 +25,7 @@
 </script>
 
 {#each EVENTS as event}
-	<div class="flex items-center justify-center">
-		{#if event.id == $page.params.id}
+	<div class="flex items-center justify-center gap-8">
 			<div class="h-150 w-150 border border-white mt-64">
 				{#if event.icon.includes('url::')}
 					<img
@@ -40,7 +39,6 @@
 					<iconify-icon icon={event.icon} class="text-[10rem]" />
 				{/if}
 			</div>
-		{/if}
 	</div>
 {/each}
 
