@@ -8,20 +8,38 @@
 		// Day 1
 		[
 			{ time: '10:00AM to 12:00PM', name: 'Inauguration', mode: Mode.OFFLINE },
-			{ time: '12:00PM onwards', name: 'Bridge-O-Craft (M_Gymkhana)', mode: Mode.OFFLINE },
-			{ time: '1:00PM onwards', name: 'Bornpsycos (Campus)', mode: Mode.OFFLINE },
-			{ time: '1:00PM onwards', name: 'Virtual Placement Round 1', mode: Mode.OFFLINE },
+			{ time: '12:30PM onwards', name: 'Crickbash', mode: Mode.OFFLINE },
+			{ time: '1:00PM onwards', name: 'Food-O-Holics', mode: Mode.OFFLINE },
+			{ time: '1:00PM onwards', name: 'Avishkar', mode: Mode.OFFLINE },
+			{ time: '1:00PM onwards', name: 'Stock Market Workshop', mode: Mode.OFFLINE },
+			{ time: '3:00PM onwards', name: 'Jigyasa', mode: Mode.OFFLINE },
+			{ time: '12:30PM onwards', name: 'Virtual Placement Round 1', mode: Mode.OFFLINE },
 			{ time: '3:00PM onwards', name: 'Virtual Placement Round 2', mode: Mode.OFFLINE },
-			{ time: '1:15PM onwards', name: 'Vaad Vivad Round 1', mode: Mode.OFFLINE },
-			{ time: '3:15PM onwards', name: 'Vaad Vivad Round 2', mode: Mode.OFFLINE },
-			{ time: '2:00PM onwards', name: 'Cad-O-Shop', mode: Mode.ONLINE },
-			{ time: '2:00PM onwards', name: 'Stargaze (M218)', mode: Mode.ONLINE },
-			{ time: '2:00PM onwards', name: 'Stargaze (M218)', mode: Mode.ONLINE }
+			{ time: '6:00PM onwards', name: 'COD and Chess', mode: Mode.ONLINE }
 		],
 		// Day 2
-		[],
+		[
+			{ time: '11:00AM to 12:30PM', name: 'Vaad-vivaad Round 1', mode: Mode.OFFLINE },
+			{ time: '1:30PM to 3:30PM', name: 'Vaad-vivaad Round 2', mode: Mode.OFFLINE },
+			{ time: '4:30PM onwards', name: 'Vaad-vivaad Round 3', mode: Mode.OFFLINE },
+			{ time: '11:00AM onwards', name: 'Virtual Placement Round 3', mode: Mode.OFFLINE },
+			{ time: '11:00AM onwards', name: 'Food-O-Holics', mode: Mode.OFFLINE },
+			{ time: '9:30AM onwards', name: 'Crickbash', mode: Mode.OFFLINE },
+			{ time: '4:00PM onwards', name: 'Workshop on Stargaze', mode: Mode.OFFLINE },
+			{ time: '6:30PM onwards', name: 'Stargazing', mode: Mode.OFFLINE },
+			{ time: '11:00AM onwards', name: 'Cad-O-Shop', mode: Mode.ONLINE },
+			{ time: '11:00AM onwards', name: 'Roborace', mode: Mode.OFFLINE }
+		],
 		// Day 3
-		[]
+		[
+			{ time: '11:00AM onwards', name: 'Codeventure', mode: Mode.OFFLINE },
+			{ time: '11:00AM onwards', name: 'GDSC Workshop', mode: Mode.OFFLINE },
+			{ time: '10:00AM onwards', name: 'Born Psychos', mode: Mode.OFFLINE },
+			{ time: '11:00AM onwards', name: 'Bridge-O-Craft', mode: Mode.OFFLINE },
+			{ time: '12:00PM onwards', name: 'Caddiction', mode: Mode.OFFLINE },
+			{ time: '4:00PM onwards', name: 'Valedictory', mode: Mode.OFFLINE },
+			{ time: '6:00PM onwards', name: 'DJ Night', mode: MOde.OFFLINE }
+		]
 	];
 </script>
 
