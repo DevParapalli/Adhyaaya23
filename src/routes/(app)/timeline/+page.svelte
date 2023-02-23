@@ -38,7 +38,7 @@
 			{ time: '11:00AM onwards', name: 'Bridge-O-Craft', mode: Mode.OFFLINE },
 			{ time: '12:00PM onwards', name: 'Caddiction', mode: Mode.OFFLINE },
 			{ time: '4:00PM onwards', name: 'Valedictory', mode: Mode.OFFLINE },
-			{ time: '6:00PM onwards', name: 'DJ Night', mode: MOde.OFFLINE }
+			{ time: '6:00PM onwards', name: 'DJ Night', mode: Mode.OFFLINE }
 		]
 	];
 </script>
