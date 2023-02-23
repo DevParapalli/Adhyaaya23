@@ -24,24 +24,25 @@
     // onMount(capture)
 </script>
 
-{#each EVENTS as event}
-	<div class="flex items-center justify-center gap-8">
-			<div class="h-150 w-150 border border-white mt-64">
-				{#if event.icon.includes('url::')}
-					<img
-						height="150"
-						width="150"
-						src={event.icon.replace('url::', '')}
-						alt=""
-						class="min-h-[150px] object-contain"
-					/>
-				{:else}
-					<iconify-icon icon={event.icon} class="text-[10rem]" />
-				{/if}
-			</div>
-	</div>
-{/each}
 
+<div class="flex flex-col items-center justify-center gap-8 pt-64">
 {#each EVENTS.filter(e => e.is_active) as event}
-    <span class="text-white">https://www.adhyaaya.org/events?view={event.id}</span><br>
+			<div class="flex flex-col gap-4 items-center">
+                <div class="!h-150 !w-150 border border-white">
+                    {#if event.icon.includes('url::')}
+                        <img
+                            height="150"
+                            width="150"
+                            src={event.icon.replace('url::', '')}
+                            alt=""
+                            class="min-h-[150px] object-contain"
+                        />
+                    {:else}
+                        <iconify-icon icon={event.icon} class="text-[10rem]" />
+                    {/if}
+                </div>
+                <span class="text-white">https://www.adhyaaya.org/events?view={event.id}</span><br>
+            </div>
 {/each}
+</div>
+
