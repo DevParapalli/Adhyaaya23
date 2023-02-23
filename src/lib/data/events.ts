@@ -53,7 +53,7 @@ import p_bridge_o_craft from '$lib/assets/posters/bridge-o-craft.jpg?url';
 import p_caddiction from '$lib/assets/posters/caddiction.jpg?url';
 import p_codeventure from '$lib/assets/posters/codeventure.jpg?url';
 import p_respawn from '$lib/assets/posters/respawn.jpg?url';
-import p_virtual_placement from '$lib/assets/posters/virtual-placement.jpg?url';
+import p_virtual_placement from '$lib/assets/posters/vp.jpg?url';
 
 
 export const EVENTS: AdhyaayaEvent[] = [
