@@ -45,9 +45,16 @@ import cadoshit from '$lib/assets/icons/cadoshop.png?url';
 import jigyasa from '$lib/assets/icons/jigyasa.png?url';
 import stargaze from '$lib/assets/icons/stargaze.png?url';
 import gdsc from '$lib/assets/icons/gdsc.png?url';
-import multirotor from '$lib/assets/icons/multirotor.png?url';
+// import multirotor from '$lib/assets/icons/multirotor.png?url';
 
 import p_coming_soon from '$lib/assets/posters/coming-soon.png?url';
+import p_avishkar from '$lib/assets/posters/AVISHKAR.jpg?url';
+import p_bridge_o_craft from '$lib/assets/posters/BRIDGE-O-CRAFT.jpg?url';
+import p_caddiction from '$lib/assets/posters/CADDICTION.jpg?url';
+import p_codeventure from '$lib/assets/posters/CODEVENTURE.jpg?url';
+import p_respawn from '$lib/assets/posters/RESPAWN.jpg?url';
+import p_virtual_placement from '$lib/assets/posters/VIRTUAL-PLACEMENT.jpg?url';
+
 
 export const EVENTS: AdhyaayaEvent[] = [
 	{
@@ -64,7 +71,7 @@ export const EVENTS: AdhyaayaEvent[] = [
 		end_date: new Date('9 Mar 2023'),
 		small_image: 'https://placeimg.com/360/360/tech',
 		icon: `url::${respawn}`,
-		poster: p_coming_soon,
+		poster: p_respawn,
 		contact: [
 			{
 				name: 'Rohit Bhoge',
@@ -98,7 +105,7 @@ export const EVENTS: AdhyaayaEvent[] = [
 		end_date: new Date('9 Mar 2023'),
 		small_image: 'https://placeimg.com/360/360/tech',
 		icon: `url::${respawn}`,
-		poster: p_coming_soon,
+		poster: p_respawn,
 		contact: [
 			{
 				name: 'Rohit Bhoge',
@@ -125,7 +132,7 @@ export const EVENTS: AdhyaayaEvent[] = [
 		end_date: new Date('9 Mar 2023'),
 		small_image: 'https://placeimg.com/360/360/tech',
 		icon: `url::${respawn}`,
-		poster: p_coming_soon,
+		poster: p_respawn,
 		contact: [
 			{
 				name: 'Rohit Bhoge',
@@ -151,7 +158,7 @@ export const EVENTS: AdhyaayaEvent[] = [
 		end_date: new Date('9 Mar 2023'),
 		small_image: 'https://placeimg.com/360/360/tech',
 		icon: `url::${respawn}`,
-		poster: p_coming_soon,
+		poster: p_respawn,
 		contact: [
 			{
 				name: 'Rohit Bhoge',
@@ -177,7 +184,7 @@ export const EVENTS: AdhyaayaEvent[] = [
 		end_date: new Date('9 Mar 2023'),
 		small_image: 'https://placeimg.com/360/360/tech',
 		icon: 'flat-color-icons:idea',
-		poster: p_coming_soon,
+		poster: p_avishkar,
 		contact: [
 			{
 				name: 'Vikas Yadav',
@@ -211,7 +218,7 @@ export const EVENTS: AdhyaayaEvent[] = [
 		end_date: new Date('9 Mar 2023'),
 		small_image: 'https://placeimg.com/360/360/tech',
 		icon: 'flat-color-icons:idea',
-		poster: p_coming_soon,
+		poster: p_avishkar,
 		contact: [
 			{
 				name: 'Vikas Yadav',
@@ -238,7 +245,7 @@ export const EVENTS: AdhyaayaEvent[] = [
 		end_date: new Date('9 Mar 2023'),
 		small_image: 'https://placeimg.com/360/360/tech',
 		icon: 'flat-color-icons:idea',
-		poster: p_coming_soon,
+		poster: p_avishkar,
 		contact: [
 			{
 				name: 'Vikas Yadav',
@@ -265,7 +272,7 @@ export const EVENTS: AdhyaayaEvent[] = [
 		end_date: new Date('9 Mar 2023'),
 		small_image: 'https://placeimg.com/360/360/tech',
 		icon: 'carbon:cad',
-		poster: p_coming_soon,
+		poster: p_caddiction,
 		contact: [
 			{
 				name: 'Vedant Udapure',
@@ -293,7 +300,7 @@ export const EVENTS: AdhyaayaEvent[] = [
 		small_image: 'https://placeimg.com/360/360/tech',
 		icon: `url::${virtual_placement_icon}`,
 		// icon: 'healthicons:group-discussion-meetingx3-negative',
-		poster: p_coming_soon,
+		poster: p_virtual_placement,
 		contact: [
 			{
 				name: 'Spandan Ghate',
@@ -320,7 +327,7 @@ export const EVENTS: AdhyaayaEvent[] = [
 		end_date: new Date('9 Mar 2023'),
 		small_image: 'https://placeimg.com/360/360/tech',
 		icon: 'carbon:code',
-		poster: p_coming_soon,
+		poster: p_codeventure,
 		contact: [
 			{
 				name: 'Sahil Kuhikar',
@@ -348,7 +355,7 @@ export const EVENTS: AdhyaayaEvent[] = [
 		end_date: new Date('9 Mar 2023'),
 		small_image: 'https://placeimg.com/360/360/tech',
 		icon: 'noto:bridge-at-night',
-		poster: p_coming_soon,
+		poster: p_bridge_o_craft,
 		contact: [
 			
 			{
