@@ -300,7 +300,7 @@ export const EVENTS: AdhyaayaEvent[] = [
 		small_image: 'https://placeimg.com/360/360/tech',
 		icon: `url::${virtual_placement_icon}`,
 		// icon: 'healthicons:group-discussion-meetingx3-negative',
-		poster: p_coming_soon,
+		poster: p_virtual_placement,
 		contact: [
 			{
 				name: 'Spandan Ghate',
