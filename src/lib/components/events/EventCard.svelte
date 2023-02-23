@@ -2,12 +2,12 @@
 	import type { AdhyaayaEvent } from '$lib/data/events';
 	import { openModal } from 'svelte-modals';
 	import EventInfoModal from '$lib/components/events/EventInfoModal.svelte';
-	import { preloadData } from '$app/navigation';
+	// import { preloadData } from '$app/navigation';
 
 	export let data: AdhyaayaEvent;
 
 	function randomInt(min: number, max: number) {
-		return Math.floor(Math.random() * (max - min + 1)) + min;
+		return Math.round(Math.random() * (max - min + 1)) + min;
 	}
 
 </script>
@@ -34,7 +34,7 @@
 	on:click={() => {
 		openModal(EventInfoModal, { event: data });
 	}}
-	style:--tw-rotate='{randomInt(-2, 2)}deg'
+	style:--tw-rotate='{randomInt(-3, 3)}deg'
 	class="p-6 border border-white rounded-lg text-white bg-white/10 hover:bg-white/20 bg-blur-xl flex flex-col items-center justify-evenly gap-4 w-52 h-64 hover:scale-110 transition-all duration-300 hover:transform"
 >
 	{#if data.icon.includes('url::')}
