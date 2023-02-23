@@ -423,8 +423,8 @@ export const EVENTS: AdhyaayaEvent[] = [
 		name: 'Born-Psychos',
 		description:
 			'Born Psychos is an adrenaline-fueled event that tests your aptitude skills through exciting rounds and challenges. Hone your critical thinking, leadership, and teamwork abilities while solving riddles and participating in elimination-style games. Join with a team of 2 or 4 for a fee of 80/- or 160/- respectively. Embrace your inner psychos and register today for a thrilling experience!',
-		amount: [99_00, 199_00],
-		team_members: [2, 4],
+		amount: [199_00],
+		team_members: [4],
 		start_date: new Date('9 Mar 2023'),
 		end_date: new Date('9 Mar 2023'),
 		small_image: 'https://placeimg.com/360/360/tech',
