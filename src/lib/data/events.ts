@@ -268,13 +268,14 @@ export const EVENTS: AdhyaayaEvent[] = [
 		poster: p_coming_soon,
 		contact: [
 			{
+				name: 'Vedant Udapure',
+				phone: '7507602580'
+			},
+			{
 				name: 'Aishwarya Dharme',
 				phone: '8530676156'
 			},
-			{
-				name: 'Vedant Udapure',
-				phone: '7507602580'
-			}
+			
 		],
 		is_active: true
 	},
@@ -322,13 +323,14 @@ export const EVENTS: AdhyaayaEvent[] = [
 		poster: p_coming_soon,
 		contact: [
 			{
+				name: 'Sahil Kuhikar',
+				phone: '8668556596'
+			},
+			{
 				name: 'Rushikesh Ghawghawe',
 				phone: '9607773343'
 			},
-			{
-				name: 'Sahil Kuhikar',
-				phone: '8668556596'
-			}
+			
 		],
 		is_active: true,
 		whatsapp_link: 'https://chat.whatsapp.com/BcAeNWFxTmBJyR8FwaQNIW'
@@ -348,14 +350,15 @@ export const EVENTS: AdhyaayaEvent[] = [
 		icon: 'noto:bridge-at-night',
 		poster: p_coming_soon,
 		contact: [
+			
+			{
+				name: 'Kalpana Rathod',
+				phone: '8010961439'
+			},
 			{
 				name: 'Pratham Chandankhede',
 				phone: '7558281643'
 			},
-			{
-				name: 'Kalpana Rathod',
-				phone: '8010961439'
-			}
 		],
 		is_active: true
 	},
@@ -375,17 +378,17 @@ export const EVENTS: AdhyaayaEvent[] = [
 		poster: p_coming_soon,
 		contact: [
 			{
-				name: 'Vishal Kesharwani',
-				phone: '8788707898'
-			},
-			{
 				name: 'Madhur Manekar',
 				phone: '9373560404'
 			},
 			{
 				name: 'Rushikesh Pawade',
 				phone: '9921152443'
-			}
+			},
+			{
+				name: 'Vishal Kesharwani',
+				phone: '8788707898'
+			},
 		],
 		is_active: true
 	},
@@ -513,13 +516,14 @@ export const EVENTS: AdhyaayaEvent[] = [
 		poster: p_coming_soon,
 		contact: [
 			{
+				name: 'Vedant Udapure',
+				phone: '7507602580'
+			},
+			{
 				name: 'Aishwarya Dharme',
 				phone: '8530676156'
 			},
-			{
-				name: 'Vedant Udapure',
-				phone: '7507602580'
-			}
+			
 		],
 		is_active: true
 	},
