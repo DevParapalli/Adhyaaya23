@@ -82,7 +82,7 @@ export const SPONSORS: AdhyaayaSponsor[] = [
 	{
 		name: 'Barcode',
 		image: barcode,
-		link: 'https://www.instagram.com/barcode_empire/',
+		link: '/',
 		title: 'Gaming Sponsor',
 		category: SponsorCategory.GOLD
 	}
