@@ -294,7 +294,8 @@ export const EVENTS: AdhyaayaEvent[] = [
 			},
 			
 		],
-		is_active: true
+		is_active: true,
+		whatsapp_link: 'https://chat.whatsapp.com/BIEeiqLyfQg41ZKZBT06WG'
 	},
 	{
 		id: 'virtual-placement',
@@ -377,7 +378,8 @@ export const EVENTS: AdhyaayaEvent[] = [
 				phone: '7558281643'
 			},
 		],
-		is_active: true
+		is_active: true,
+		whatsapp_link: 'https://chat.whatsapp.com/EV0HsCXDKrvC3xcf6hl1YM'
 	},
 	{
 		id: 'roborace',
@@ -407,7 +409,8 @@ export const EVENTS: AdhyaayaEvent[] = [
 				phone: '8788707898'
 			},
 		],
-		is_active: true
+		is_active: true,
+		whatsapp_link: 'https://chat.whatsapp.com/KXtte17v1QuBEgTSesPT2q'
 	},
 	{
 		id: 'vaad-vivad',
@@ -542,7 +545,8 @@ export const EVENTS: AdhyaayaEvent[] = [
 			},
 			
 		],
-		is_active: true
+		is_active: true,
+		whatsapp_link: 'https://chat.whatsapp.com/BIEeiqLyfQg41ZKZBT06WG'
 	},
 	{
 		id: 'jigyasa',
