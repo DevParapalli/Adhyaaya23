@@ -13,14 +13,14 @@ export interface AdhyaayaSponsor {
 	category?: SponsorCategory; // SILVER, GOLD, PLATINUM, DIAMOND, TITLE
 }
 
-import orangebits from '$lib/assets/sponsors/orangebits.png?url';
-import pythonacademy from '$lib/assets/sponsors/pythonacademy.png?url';
-import unisoft from '$lib/assets/sponsors/unisoft.png?url';
-import paarangat from '$lib/assets/sponsors/parangat.png?url';
-import frostandfeather from '$lib/assets/sponsors/frostandfeather.png?url';
-import foodisland from '$lib/assets/sponsors/foodisland.png?url';
-import siuk from '$lib/assets/sponsors/siuk.png?url'
-import barcode from '$lib/assets/sponsors/barcode.png?url'
+import orangebits from '$lib/assets/sponsors/orangebits.webp?url';
+import pythonacademy from '$lib/assets/sponsors/pythonacademy.webp?url';
+import unisoft from '$lib/assets/sponsors/unisoft.webp?url';
+import paarangat from '$lib/assets/sponsors/parangat.webp?url';
+import frostandfeather from '$lib/assets/sponsors/frostandfeather.webp?url';
+import foodisland from '$lib/assets/sponsors/foodisland.webp?url';
+import siuk from '$lib/assets/sponsors/siuk.webp?url'
+import barcode from '$lib/assets/sponsors/barcode.webp?url'
 
 export const SPONSORS: AdhyaayaSponsor[] = [
 	{

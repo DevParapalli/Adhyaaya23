@@ -515,6 +515,10 @@ export const EVENTS: AdhyaayaEvent[] = [
 			{
 				name: 'Pranav Patle',
 				phone: '7620117921'
+			},
+			{
+				name: 'Vedant Nimgade',
+				phone: '7387246212'
 			}
 		],
 		is_active: true,
@@ -617,7 +621,7 @@ export const EVENTS: AdhyaayaEvent[] = [
 		id: 'stock-market-workshop',
 		mode: 'offline',
 		category: 'workshops',
-		name: 'Stock Market Workshop',
+		name: 'Stock OG',
 		description: 'Unleash the Power of the Stock Market: Join us for an exciting offline workshop where you\'ll learn the fundamentals of investing, develop your own trading strategies, and gain valuable insights from industry experts. Discover how to navigate the twists and turns of the market and make informed decisions that can lead to financial success. Whether you\'re a beginner or an experienced trader, this workshop is your opportunity to level up your stock market game and achieve your investment goals.',
 		amount: [49_00],
 		team_members: [1],
