@@ -19,7 +19,7 @@
 	function setBackgroundPosition(x = bgX, y = bgY) {
 		bgX = x;
 		bgY = y;
-		dev ? console.log(bgX, bgY) : null;
+		// dev ? console.log(bgX, bgY) : null;
 	}
 
 	import { page } from '$app/stores';
@@ -79,7 +79,7 @@
 >
 	{#if isMenuOpen}
 		<div class="{isMenuOpen} header h-16 md:h-24 lg:h-36 w-full" />
-		<div class=" {isMenuOpen} menu flex flex-col w-full h-full">
+		<div class="{isMenuOpen} menu flex flex-col w-full">
 			<div
 				class="menu-items w-fit flex flex-col justify-evenly h-full z-[150] scale-90 md:scale-100"
 			>
@@ -103,7 +103,7 @@
 					}}
 					class="menu-item">Events</a
 				>
-				<!-- <a
+				<a
 					href="/timeline"
 					on:focus={() => {
 						setBackgroundPosition(bgX, -50);
@@ -112,6 +112,16 @@
 						setBackgroundPosition(bgX, -50);
 					}}
 					class="menu-item">Timeline</a
+				>
+				<!-- <a
+					href="/guide"
+					on:focus={() => {
+						setBackgroundPosition(bgX, -50);
+					}}
+					on:mouseover={() => {
+						setBackgroundPosition(bgX, -50);
+					}}
+					class="menu-item">Guidelines</a
 				> -->
 				<a
 					data-sveltekit-reload
@@ -152,7 +162,7 @@
 					on:mouseover={() => {
 						setBackgroundPosition(bgX, -150);
 					}}
-					class="menu-item-container flex flex-col md:flex-row gap-4 md:gap-16 h-1/2 pt-10"
+					class="menu-item-container flex flex-col md:flex-row gap-2 md:gap-14  md:pt-10"
 				>
 					<a
 						href="/legal/privacy_policy"
@@ -221,7 +231,7 @@
 		@apply w-0;
 	}
 	* {
-		@apply overflow-hidden;
+		@apply overflow-clip;
 	}
 
 	.menu {
@@ -245,7 +255,7 @@
 	}
 
 	.menu-item {
-		@apply text-4xl xl:text-5xl 2xl:text-6xl 3xl:text-7xl py-4 pl-[10vw] lg:pl-[15vw] opacity-100 transition-all duration-500 ease-in-out whitespace-nowrap line-clamp-1 xl:leading-4 w-fit;
+		@apply text-4xl xl:text-5xl 2xl:text-6xl 3xl:text-7xl py-3 pl-[10vw] lg:pl-[15vw] opacity-100 transition-all duration-500 ease-in-out whitespace-nowrap line-clamp-1 xl:leading-4 w-fit;
 	}
 
 	.menu-item:hover {

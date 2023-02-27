@@ -28,7 +28,7 @@
 			>
 		</div>
 		<div
-			class="us w-full xl:w-1/2 flex flex-col items-center justify-evenly h-auto text-justify bg-black/40 backdrop-blur-sm rounded-lg border-l border-white lg:rounded-l-none p-6 gap-2"
+			class="us w-full xl:w-1/2 flex flex-col items-center justify-evenly h-auto text-justify bg-black/40 backdrop-blur-sm rounded-lg lg:border-l  border-white lg:rounded-l-none p-6 gap-2"
 		>
 			<img loading="lazy" src={logo} class="h-28" height="112" width="202" alt="" />
 			<p class="max-w-lg md:text-lg nunu">

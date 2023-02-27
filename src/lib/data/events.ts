@@ -47,13 +47,23 @@ import stargaze from '$lib/assets/icons/stargaze.png?url';
 import gdsc from '$lib/assets/icons/gdsc.png?url';
 // import multirotor from '$lib/assets/icons/multirotor.png?url';
 
-import p_coming_soon from '$lib/assets/posters/coming-soon.png?url';
+// import p_coming_soon from '$lib/assets/posters/coming-soon.png?url';
 import p_avishkar from '$lib/assets/posters/avishkar.jpg?url';
 import p_bridge_o_craft from '$lib/assets/posters/bridge-o-craft.jpg?url';
 import p_caddiction from '$lib/assets/posters/caddiction.jpg?url';
 import p_codeventure from '$lib/assets/posters/codeventure.jpg?url';
 import p_respawn from '$lib/assets/posters/respawn.jpg?url';
 import p_virtual_placement from '$lib/assets/posters/vp.jpg?url';
+import p_bornpsycos from '$lib/assets/posters/bornpsycos.jpg?url'
+import p_cadoshit from '$lib/assets/posters/cad-o-shop.jpg?url'
+import p_cricbash from '$lib/assets/posters/cricbash.jpg?url'
+import p_foodoholics from '$lib/assets/posters/food-o-holics.jpg?url'
+import p_gsdc from '$lib/assets/posters/gsdc.jpg?url'
+import p_jigyasa from '$lib/assets/posters/jigyasa.jpg?url'
+import p_roborace from '$lib/assets/posters/roborace.jpg?url'
+import p_stargaze from '$lib/assets/posters/stargaze.jpg?url'
+import p_stock from '$lib/assets/posters/stock.jpg?url'
+import p_vaadvivad from '$lib/assets/posters/vaadvivad.jpg?url'
 
 
 export const EVENTS: AdhyaayaEvent[] = [
@@ -382,7 +392,7 @@ export const EVENTS: AdhyaayaEvent[] = [
 		end_date: new Date('10 Mar 2023'),
 		small_image: 'https://placeimg.com/360/360/tech',
 		icon: 'vscode-icons:file-type-robots',
-		poster: p_coming_soon,
+		poster: p_roborace,
 		contact: [
 			{
 				name: 'Madhur Manekar',
@@ -412,7 +422,7 @@ export const EVENTS: AdhyaayaEvent[] = [
 		end_date: new Date('10 Mar 2023'),
 		small_image: 'https://placeimg.com/360/360/tech',
 		icon: `url::${vaad_vivad}`,
-		poster: p_coming_soon,
+		poster: p_vaadvivad,
 		contact: [
 			{
 				name: 'Nikita',
@@ -439,7 +449,7 @@ export const EVENTS: AdhyaayaEvent[] = [
 		end_date: new Date('11 Mar 2023'),
 		small_image: 'https://placeimg.com/360/360/tech',
 		icon: 'ri:treasure-map-line',
-		poster: p_coming_soon,
+		poster: p_bornpsycos,
 		contact: [
 			{
 				name: 'Reshal Bhati',
@@ -470,7 +480,7 @@ export const EVENTS: AdhyaayaEvent[] = [
 		end_date: new Date('9 Mar 2023'),
 		small_image: 'https://placeimg.com/360/360/tech',
 		icon: `url::${foodoshit}`,
-		poster: p_coming_soon,
+		poster: p_foodoholics,
 		contact: [
 			{
 				name: 'Riya Pashine',
@@ -497,7 +507,7 @@ export const EVENTS: AdhyaayaEvent[] = [
 		end_date: new Date('9 Mar 2023'),
 		small_image: 'https://placeimg.com/360/360/tech',
 		icon: `url::${cricbash}`,
-		poster: p_coming_soon,
+		poster: p_cricbash,
 		contact: [
 			{
 				name: 'Pranav Patle',
@@ -520,7 +530,7 @@ export const EVENTS: AdhyaayaEvent[] = [
 		end_date: new Date('10 Mar 2023'),
 		small_image: 'https://placeimg.com/360/360/tech',
 		icon: `url::${cadoshit}`,
-		poster: p_coming_soon,
+		poster: p_cadoshit,
 		contact: [
 			{
 				name: 'Vedant Udapure',
@@ -546,7 +556,7 @@ export const EVENTS: AdhyaayaEvent[] = [
 		end_date: new Date('9 Mar 2023'),
 		small_image: 'https://placeimg.com/360/360/tech',
 		icon: `url::${jigyasa}`,
-		poster: p_coming_soon,
+		poster: p_jigyasa,
 		contact: [
 			{
 				name: 'Rushikesh Ghawghawe',
@@ -569,7 +579,7 @@ export const EVENTS: AdhyaayaEvent[] = [
 		end_date: new Date('10 Mar 2023'),
 		small_image: 'https://placeimg.com/360/360/tech',
 		icon: `url::${stargaze}`,
-		poster: p_coming_soon,
+		poster: p_stargaze,
 		contact: [
 			{
 				name: 'Vedant Gotmare',
@@ -611,7 +621,7 @@ export const EVENTS: AdhyaayaEvent[] = [
 		end_date: new Date('9 Mar 2023'),
 		small_image: 'https://placeimg.com/360/360/tech',
 		icon: 'icon-park:stock-market',
-		poster: p_coming_soon,
+		poster: p_stock,
 		contact: [
 			{
 				name: 'Shlok Tajne',
@@ -636,7 +646,7 @@ export const EVENTS: AdhyaayaEvent[] = [
 		end_date: new Date('11 Mar 2023'),
 		small_image: 'https://placeimg.com/360/360/tech',
 		icon: `url::${gdsc}`,
-		poster: p_coming_soon,
+		poster: p_gsdc,
 		contact: [
 			{
 				name: 'Neha Malode',

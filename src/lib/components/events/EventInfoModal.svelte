@@ -61,7 +61,7 @@
 
 	let scrollPos: number;
 	function closeModal() {
-		window.scrollTo({ top: scrollPos, behavior: 'smooth' });
+		window.scrollTo({ top: scrollPos, behavior: 'auto' });
 		_closeModal();
 		closeAllModals();
 	}
@@ -78,7 +78,7 @@
 {#if isOpen}
 	<div class="modal-wrapper relative xl:h-full w-full z-[210] bg-black/50">
 		<button
-			class="h-12 w-12 p-2 backdrop-blur-2xl md:h-12 md:w-12 rounded-full border-2 font-bold border-white right-10 top-8 absolute transition-all duration-500 ease-in-out hover:scale-105 active:scale-95 z-50 mix-blend-difference"
+			class="h-12 w-12 p-2 backdrop-blur-2xl md:h-12 md:w-12 rounded-full border-2 font-bold border-white right-2 top-2 lg:right-10 lg:top-8 absolute transition-all duration-500 ease-in-out hover:scale-105 active:scale-95 z-50 mix-blend-difference"
 		>
 			<div
 				class="absolute w-[18px] h-[2px] origin-center bg-white transition-all ease-in-out duration-500"
@@ -95,9 +95,9 @@
 			class="modal-container container flex justify-between flex-col xl:flex-row rounded-lg"
 		>
 			<div class="image-container">
-				<img src={event.poster} alt="{event.name} poster" class="rounded-lg lg:rounded-r-none" />
+				<img src={event.poster} alt="{event.name} poster" class="rounded-t-lg lg:rounded-l-lg" />
 			</div>
-			<div class="content-container flex flex-col items-baseline xl:w-2/3 px-6 pt-6 bg-purple-900">
+			<div class="content-container flex flex-col items-baseline xl:w-2/3 px-6 pt-6 bg-purple-900 rounded-b-lg lg:rounded-r-lg">
 				<h2 class="event-name text-4xl">{event.name}</h2>
 				<p class="date py-2">{display_date}</p>
 				<p class="event-description py-2 nunu">{event.description}</p>

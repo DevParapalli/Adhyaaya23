@@ -28,6 +28,7 @@
 			>
 			<a href="/register?select=true" class="btn btn-sm  btn-ghost text-lg hover:text-white">Register</a>
 			<!-- <a href="/timeline" class="btn btn-sm  btn-ghost text-lg hover:text-white">Timeline</a> -->
+			<!-- <a href="/guide" class="btn btn-sm  btn-ghost text-lg hover:text-white">Guidelines</a> -->
 		</div>
 		<div class="flex flex-col items-stretch justify-evenly p-4 pt-0">
 			<div
