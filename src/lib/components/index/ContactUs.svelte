@@ -107,7 +107,7 @@
 				</div>
 			</div>
 			<!-- <div class="text-6xl mx-auto">OR</div> -->
-			<div class="card card-compact mx-auto bg-black/50 shadow-xl">
+			<div class="card card-compact mx-auto bg-white/50 shadow-xl">
 				<div class="card-body nunu">
 					<h2 class="card-title nunu">For Other/General Queries,</h2>
 					<p class="nunu">Shlok Suraj Tajne</p>
