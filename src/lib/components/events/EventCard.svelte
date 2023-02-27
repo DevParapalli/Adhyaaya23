@@ -48,5 +48,5 @@
 	{:else}
 		<iconify-icon icon={data.icon} class="text-[10rem]" />
 	{/if}
-	<span class="text-xl lg:text-2xl">{data.name}</span>
+	<span class="text-xl lg:text-2xl nunu">{data.name}</span>
 </button>
