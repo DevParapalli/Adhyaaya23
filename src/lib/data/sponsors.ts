@@ -19,6 +19,7 @@ import unisoft from '$lib/assets/sponsors/unisoft.png?url';
 import paarangat from '$lib/assets/sponsors/parangat.png?url';
 import frostandfeather from '$lib/assets/sponsors/frostandfeather.png?url';
 import foodisland from '$lib/assets/sponsors/foodisland.png?url';
+import siuk from '$lib/assets/sponsors/siuk.png?url'
 
 export const SPONSORS: AdhyaayaSponsor[] = [
 	{
@@ -68,6 +69,13 @@ export const SPONSORS: AdhyaayaSponsor[] = [
 		image: foodisland,
 		link: 'https://www.instagram.com/foodislandnagpur/',
 		title: 'F&B Sponsor',
+		category: SponsorCategory.GOLD
+	},
+	{
+		name: 'SIUK',
+		image: siuk,
+		link: 'https://www.studyin-uk.in/',
+		title: 'Edu. Sponsor',
 		category: SponsorCategory.GOLD
 	}
 ];
