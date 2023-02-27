@@ -84,11 +84,11 @@ export const EVENTS: AdhyaayaEvent[] = [
 		poster: p_respawn,
 		contact: [
 			{
-				name: 'Rohit Bhoge',
+				name: 'Rohit Bhoge (Valo & COD)',
 				phone: '7972520981'
 			},
 			{
-				name: 'Shiwang Pandey',
+				name: 'Shiwang Pandey (Chess)',
 				phone: '8459795840'
 			}
 		],
@@ -428,12 +428,12 @@ export const EVENTS: AdhyaayaEvent[] = [
 		poster: p_vaadvivad,
 		contact: [
 			{
-				name: 'Nikita',
-				phone: '8806986949'
-			},
-			{
 				name: 'Aditya Damble',
 				phone: '8378847784'
+			},
+			{
+				name: 'Nikita Rahangdale',
+				phone: '8806986949'
 			}
 		],
 		is_active: true,

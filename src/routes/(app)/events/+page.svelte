@@ -129,7 +129,7 @@
 	</div>
 
 	<div class="flex flex-col items-center justify-center pt-16">
-		<h1 class="text-2xl font-bold text-center text-white ">Technical Events</h1>
+		<h1 class="text-4xl font-bold text-center text-white ">Technical Events</h1>
 	</div>
 	<div
 		id="technical"
@@ -140,7 +140,7 @@
 		{/each}
 	</div>
 	<div class="flex flex-col items-center justify-center pt-16">
-		<h1 class="text-2xl font-bold text-center text-white ">Non-Tech Events</h1>
+		<h1 class="text-4xl font-bold text-center text-white ">Non-Tech Events</h1>
 	</div>
 	<div
 		id="non-technical"
@@ -151,7 +151,7 @@
 		{/each}
 	</div>
 	<div class="flex flex-col items-center justify-center pt-16">
-		<h1 class="text-2xl font-bold text-center text-white ">Workshops</h1>
+		<h1 class="text-4xl font-bold text-center text-white ">Workshops</h1>
 	</div>
 	<div
 		id="workshops"
