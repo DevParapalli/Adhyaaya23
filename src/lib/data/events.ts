@@ -642,7 +642,7 @@ export const EVENTS: AdhyaayaEvent[] = [
 		id: 'gdsc-lecture',
 		mode: 'offline',
 		category: 'workshops',
-		name: 'GDSC Guest Lecture',
+		name: 'Blockchain 101',
 		description: 'Adhyaaya in collaboration with GSDC GCOEN and Lumos Labs is bringing the future to your doorstep with their Into the Web3 Metaverse initiative! Join us on March 11th for an exciting 3-hour session where we\'ll introduce you to the world of Web3, Blockchain 101, and explore the vast career opportunities available in this exciting new space. Hear from industry experts and learn about  exciting opportunities to elevate your Web3 journey. Don\'t miss this chance to connect with a vibrant community of 60K developers and explore your future in the Web3 ecosystem!',
 		amount: [0],
 		team_members: [1],
