@@ -27,7 +27,7 @@
 					class="flex flex-col items-center justify-center h-full text-xl"
 				>
 					{#if event.icon.includes('url::')}
-						<img class="h-9 w-9" src={event.icon.replace('url::', '')} alt="" />
+						<img class="h-9 lg:h-12 w-9 lg:w-12 object-contain" src={event.icon.replace('url::', '')} alt="" />
 					{:else}
 						<iconify-icon class="text-4xl" icon={event.icon} />
 					{/if}
