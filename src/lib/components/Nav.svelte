@@ -27,7 +27,7 @@
 
 {#if !$page.url.pathname.includes('asdfghbjnkml.swderft')}
 	<div
-		class="fixed top-0 w-full min-h-16 bg-transparent z-[200] pointer-events-none flex flex-row px-4 md:px-10  items-center pt-[4vh] print:hidden"
+		class="navbar fixed top-0 w-full min-h-16 bg-transparent z-[200] pointer-events-none flex flex-row px-4 md:px-10  items-center pt-[4vh] print:hidden"
 	>
 		<button
 			on:click={() => {
@@ -39,10 +39,57 @@
 		>
 			<img src={AdhyaayaLogoSolid} alt="" />
 		</button>
-
+		<a
+			href="/events"
+			class="events text-white backdrop-blur-3xl pointer-events-auto bg-transparent ml-auto md:mr-10 mr-4 py-1 px-2 md:py-2 md:px-4 rounded-full border {isMenuOpen
+				? 'border-white'
+				: 'border-white/60'} text-lg hover:scale-110 active:scale-90 cursor-pointer transition-all duration-250 ease-in-out"
+		>
+			Events
+		</a>
+		<a
+			href="/timeline"
+			class="timeline text-white backdrop-blur-3xl pointer-events-auto bg-transparent ml-2 md:mr-10 mr-4 py-1 px-2 md:py-2 md:px-4 rounded-full border {isMenuOpen
+				? 'border-white'
+				: 'border-white/60'} text-lg hover:scale-110 active:scale-90 cursor-pointer transition-all duration-250 ease-in-out"
+		>
+			Timeline
+		</a>
+		<a
+			href="/team"
+			class="team text-white backdrop-blur-3xl pointer-events-auto bg-transparent ml-2 md:mr-10 mr-4 py-1 px-2 md:py-2 md:px-4 rounded-full border {isMenuOpen
+				? 'border-white'
+				: 'border-white/60'} text-lg hover:scale-110 active:scale-90 cursor-pointer transition-all duration-250 ease-in-out"
+		>
+			Team
+		</a>
+		<a
+			href="/sponsors"
+			class="sponsors text-white backdrop-blur-3xl pointer-events-auto bg-transparent ml-2 md:mr-10 mr-4 py-1 px-2 md:py-2 md:px-4 rounded-full border {isMenuOpen
+				? 'border-white'
+				: 'border-white/60'} text-lg hover:scale-110 active:scale-90 cursor-pointer transition-all duration-250 ease-in-out"
+		>
+			Sponsors
+		</a>
+		<a
+			href="/gallery"
+			class="gallery text-white backdrop-blur-3xl pointer-events-auto bg-transparent ml-2 md:mr-10 mr-4 py-1 px-2 md:py-2 md:px-4 rounded-full border {isMenuOpen
+				? 'border-white'
+				: 'border-white/60'} text-lg hover:scale-110 active:scale-90 cursor-pointer transition-all duration-250 ease-in-out"
+		>
+			Gallery
+		</a>
+		<a
+			href="/legal"
+			class="legal text-white backdrop-blur-3xl pointer-events-auto bg-transparent ml-2 md:mr-10 mr-4 py-1 px-2 md:py-2 md:px-4 rounded-full border {isMenuOpen
+				? 'border-white'
+				: 'border-white/60'} text-lg hover:scale-110 active:scale-90 cursor-pointer transition-all duration-250 ease-in-out"
+		>
+			Legal
+		</a>
 		<a
 			href="/register?select=true"
-			class="register text-white pointer-events-auto bg-transparent ml-auto md:mr-10 mr-4 py-1 px-2 md:py-2 md:px-4 rounded-full border {isMenuOpen
+			class="register text-white backdrop-blur-3xl pointer-events-auto bg-transparent ml-2 md:mr-10 mr-4 py-1 px-2 md:py-2 md:px-4 rounded-full border {isMenuOpen
 				? 'border-white'
 				: 'border-white/60'} text-lg hover:scale-110 active:scale-90 cursor-pointer transition-all duration-250 ease-in-out"
 		>
@@ -74,8 +121,9 @@
 		>
 	</div>
 {/if}
+<!-- flex -->
 <div
-	class="menu-container {isMenuOpen} h-full bg-[#190829] rounded-none z-[120] fixed right-0 top-0 flex flex-col print:hidden"
+	class="menu-container {isMenuOpen} h-full bg-[#190829] rounded-none z-[120] fixed right-0 top-0  flex-col print:hidden" 
 >
 	{#if isMenuOpen}
 		<div class="{isMenuOpen} header h-16 md:h-24 lg:h-36 w-full" />
@@ -219,6 +267,17 @@
 </div>
 
 <style lang="postcss">
+	.navbar>a {
+		@apply hidden lg:block
+	}
+	.navbar>.register {
+		@apply block;
+	}
+	
+	.menu-icon {
+		@apply block lg:hidden
+	}
+	
 	.menu-container {
 		@apply w-0 transition-all duration-500 ease-in-out;
 	}
