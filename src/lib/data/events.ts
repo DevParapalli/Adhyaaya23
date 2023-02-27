@@ -57,13 +57,13 @@ import p_virtual_placement from '$lib/assets/posters/vp.jpg?url';
 import p_bornpsycos from '$lib/assets/posters/bornpsycos.jpg?url'
 import p_cadoshit from '$lib/assets/posters/cad-o-shop.jpg?url'
 import p_cricbash from '$lib/assets/posters/cricbash.jpg?url'
-import p_foodoholics from '$lib/assets/posters/food-o-holics.jpg?url'
+import p_foodoholics from '$lib/assets/posters/food-o-holic.jpg?url'
 import p_gsdc from '$lib/assets/posters/gsdc.jpg?url'
 import p_jigyasa from '$lib/assets/posters/jigyasa.jpg?url'
 import p_roborace from '$lib/assets/posters/roborace.jpg?url'
 import p_stargaze from '$lib/assets/posters/stargaze.jpg?url'
 import p_stock from '$lib/assets/posters/stock.jpg?url'
-import p_vaadvivad from '$lib/assets/posters/vaadvivad.jpg?url'
+import p_vaadvivad from '$lib/assets/posters/vaad-vivad.jpg?url'
 
 
 export const EVENTS: AdhyaayaEvent[] = [
