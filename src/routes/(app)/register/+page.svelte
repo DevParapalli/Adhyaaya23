@@ -103,7 +103,13 @@
 		</div>
 	{/if}
 	<form
-		use:enhance
+		use:enhance={({form, data, action, cancel}) => {
+			loading = true;
+			return async ({result, update}) => {
+				update();
+				loading = false;
+			}
+		}}
 		use:autoanimate
 		class="registration-form container max-w-3xl mx-auto px-10 py-10 bg-black/50 rounded-lg"
 		method="POST"
@@ -360,6 +366,7 @@
 		{#if teamMemberSelected > -1}
 			<button
 				type="submit"
+				disabled={loading}
 				class="text-white   focus:ring-4 focus:outline-none  font-medium rounded-lg uppercase w-full px-5 py-2.5 text-center bg-blue-600 hover:bg-blue-700 focus:ring-blue-800 {loading
 					? 'opacity-50 cursor-not-allowed'
 					: ''}}"
