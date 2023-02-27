@@ -20,6 +20,7 @@ import paarangat from '$lib/assets/sponsors/parangat.png?url';
 import frostandfeather from '$lib/assets/sponsors/frostandfeather.png?url';
 import foodisland from '$lib/assets/sponsors/foodisland.png?url';
 import siuk from '$lib/assets/sponsors/siuk.png?url'
+import barcode from '$lib/assets/sponsors/barcode.png?url'
 
 export const SPONSORS: AdhyaayaSponsor[] = [
 	{
@@ -76,6 +77,13 @@ export const SPONSORS: AdhyaayaSponsor[] = [
 		image: siuk,
 		link: 'https://www.studyin-uk.in/',
 		title: 'Edu. Sponsor',
+		category: SponsorCategory.GOLD
+	},
+	{
+		name: 'Barcode',
+		image: barcode,
+		link: 'https://www.instagram.com/barcode_empire/',
+		title: 'Gaming Sponsor',
 		category: SponsorCategory.GOLD
 	}
 ];
