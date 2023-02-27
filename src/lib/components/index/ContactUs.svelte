@@ -94,7 +94,7 @@
 	>
 		<h3 class="text-2xl lg:text-4xl xl:text-5xl 2xl:text-6xl pt-0 md:pt-10">Contact Us</h3>
 		<div class="contact-info px-4 md:px-10 pt-4 flex flex-col gap-4 md:gap-8 items-start">
-			<div class="card card-compact mx-auto bg-white/20 backdrop-blur-sm shadow-xl w-full">
+			<div class="card card-compact mx-auto bg-white/20 shadow-xl w-full">
 				<div class="card-body ">
 					<h2 class="card-title nunu">For Event-Related Queries,</h2>
 					<p class="nunu">Malhar Paradkar</p>
@@ -107,7 +107,7 @@
 				</div>
 			</div>
 			<!-- <div class="text-6xl mx-auto">OR</div> -->
-			<div class="card card-compact mx-auto bg-white/20 backdrop-blur-sm shadow-xl">
+			<div class="card card-compact mx-auto bg-white/20 shadow-xl">
 				<div class="card-body nunu">
 					<h2 class="card-title nunu">For Other/General Queries,</h2>
 					<p class="nunu">Shlok Suraj Tajne</p>
