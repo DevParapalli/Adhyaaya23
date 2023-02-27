@@ -43,23 +43,25 @@
 	];
 </script>
 
-<div class="pt-28">
-	<h2 class="text-3xl font-bold text-center">Timeline</h2>
-</div>
-<div class="flex flex-col md:flex-row">
-	{#each TIMELINE as DAY, i}
-		<div class="w-full md:w-1/3 p-4">
-			<div class="text-center font-bold text-xl">Day {i + 1}</div>
-			<div class="flex flex-col">
-				{#each DAY as item, i}
-					<div class="w-full p-2 border border-gray-400">
-						<div class="text-center font-bold nunu">{i + 1}</div>
-						<div class="text-center nunu">{item.time}</div>
-						<div class="text-center nunu">{item.name}</div>
-						<div class="text-center nunu">{item.mode}</div>
-					</div>
-				{/each}
+<div class="bg-gradient-to-tr from-gray-900 to-[#0d0028] via-purple-900/50">
+	<div class="pt-28">
+		<h2 class="text-3xl font-bold text-center">Timeline</h2>
+	</div>
+	<div class="flex flex-col md:flex-row">
+		{#each TIMELINE as DAY, i}
+			<div class="w-full md:w-1/3 p-4">
+				<div class="text-center font-bold text-xl">Day {i + 1}</div>
+				<div class="flex flex-col">
+					{#each DAY as item, i}
+						<div class="w-full p-2 border border-gray-400">
+							<div class="text-center font-bold nunu">{i + 1}</div>
+							<div class="text-center nunu">{item.time}</div>
+							<div class="text-center nunu">{item.name}</div>
+							<div class="text-center nunu">{item.mode}</div>
+						</div>
+					{/each}
+				</div>
 			</div>
-		</div>
-	{/each}
+		{/each}
+	</div>
 </div>
