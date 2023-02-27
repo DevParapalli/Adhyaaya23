@@ -79,9 +79,9 @@
 							><iconify-icon icon="mdi:whatsapp" /> 8793150182</a
 						>
 						<a
-							href="mailto:parapallidev@gmail.com"
+							href="mailto:dsparapalli@gcoen.ac.in"
 							class="nunu inline-flex items-center gap-2 overflow-clip text-ellipsis"
-							><iconify-icon icon="mdi:email-outline" />parapallidev@gmail.com</a
+							><iconify-icon icon="mdi:email-outline" />dsparapalli@gcoen.ac.in</a
 						>
 					</div>
 				</div>
@@ -101,8 +101,8 @@
 					<a href="tel:+919096831236" class="inline-flex items-center gap-2 nunu"
 						><iconify-icon icon="mdi:phone-outline" /> 9096831236</a
 					>
-					<a href="mailto:mcparadkar2003@gmail.com" class="inline-flex items-center gap-2 nunu"
-						><iconify-icon icon="mdi:email-outline" />mcparadkar2003@gmail.com</a
+					<a href="mailto:mcparadkar@gcoen.ac.in" class="inline-flex items-center gap-2 nunu"
+						><iconify-icon icon="mdi:email-outline" />mcparadkar@gcoen.ac.in</a
 					>
 				</div>
 			</div>
@@ -114,8 +114,8 @@
 					<a href="tel:+918237050035" class="inline-flex items-center gap-2 nunu"
 						><iconify-icon icon="mdi:phone-outline" /> 8237050035</a
 					>
-					<a href="mailto:shloktajne944@gmail.com" class="inline-flex items-center gap-2 nunu"
-						><iconify-icon icon="mdi:email-outline" />shloktajne944@gmail.com</a
+					<a href="mailto:sstajne@gcoen.ac.in" class="inline-flex items-center gap-2 nunu"
+						><iconify-icon icon="mdi:email-outline" />sstajne@gcoen.ac.in</a
 					>
 				</div>
 			</div>

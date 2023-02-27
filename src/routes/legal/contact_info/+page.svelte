@@ -13,7 +13,7 @@
 			Registered Address: Government College of Engineering, Sector-27, Mihan Rehabilitation Colony,
 			Khapri, Nagpur - 441108<br />
 			Telephone No: 8793150182<br />
-			E-Mail ID: adhyaaya.gcoen@gmail.com
+			E-Mail ID: adhyaaya@gcoen.ac.in
 		</p>
 
 		<ul class="content-list nunu">

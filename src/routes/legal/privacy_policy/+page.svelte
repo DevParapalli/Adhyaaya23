@@ -25,7 +25,7 @@
 	<div class="content-container prose nunu">
 		<p class="content-head">Privacy Policy</p>
 		<div class="content-seprater" />
-		<p class="updated-date">Last updated on Oct 31st 2022</p>
+		<p class="updated-date">Last updated on 27th Feb 2023</p>
 		<p class="content-text">
 			This privacy policy sets out how Adhyaaya'23 uses and protects any information that you give
 			Adhyaaya'23 when you use this website.
@@ -132,7 +132,7 @@
 				<p class="content-text list-text">
 					if you have previously agreed to us using your personal information for direct marketing
 					purposes, you may change your mind at any time by writing to or emailing us at
-					adhyaaya.gcoen@gmail.com
+					adhyaaya@gcoen.ac.in
 				</p>
 			</li>
 		</ul>
