@@ -29,8 +29,9 @@
 <svelte:window bind:scrollY />
 
 {#if !$page.url.pathname.includes('asdfghbjnkml.swderft')}
-	<div
-		class="fixed top-0 w-full min-h-16 z-[200] pointer-events-none flex flex-row px-4 md:px-10 py-4 {scrollY > 35 ? 'bg-[#0d0028]/50 backdrop-blur-sm':'bg-transparent'}  items-center print:hidden transition-colors duration-700"
+	<!-- bg-[#0d0028]/50 -->
+<div
+		class="fixed top-0 w-full min-h-16 z-[200] pointer-events-none flex flex-row px-4 md:px-10 py-4 bg-transparent {scrollY > 35 ? 'backdrop-blur-md':''}  items-center print:hidden transition-all duration-700"
 	>
 		<button
 			on:click={() => {
