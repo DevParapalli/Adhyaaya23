@@ -45,7 +45,7 @@ export const actions: Actions = {
 		const number_of_additional_members = Number(String(data['members']).split('-')[1]) ?? 0;
 		const team = [];
 		for (let i = 1; i <= number_of_additional_members; i++) {
-			if (!validator.isAlpha(String(data[`member-${i}-name`]))) {
+			if (String(data[`member-${i}-name`]).length < 3) {
 				errors.push(`member-${i}-name`);
 				continue;
 			}
