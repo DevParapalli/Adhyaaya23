@@ -21,6 +21,10 @@ import frostandfeather from '$lib/assets/sponsors/frostandfeather.webp?url';
 import foodisland from '$lib/assets/sponsors/foodisland.webp?url';
 import siuk from '$lib/assets/sponsors/siuk.webp?url'
 import barcode from '$lib/assets/sponsors/barcode.webp?url'
+import oraipl from '$lib/assets/sponsors/oraipl.jpg?url'
+import hackerearth from '$lib/assets/sponsors/hackerearth.jpg?url'
+import ie from '$lib/assets/sponsors/ie.png?url'
+import droiddevs from '$lib/assets/sponsors/droiddevs.jpg?url'
 
 export const SPONSORS: AdhyaayaSponsor[] = [
 	{
@@ -82,8 +86,36 @@ export const SPONSORS: AdhyaayaSponsor[] = [
 	{
 		name: 'Barcode',
 		image: barcode,
-		link: '/',
+		link: 'https://www.instagram.com/barcode_esports/',
 		title: 'Gaming Sponsor',
+		category: SponsorCategory.GOLD
+	},
+	{
+		name: 'ORAIPL',
+		image: oraipl,
+		link: 'https://www.oraipl.com/',
+		title: 'Tech. Sponsor',
+		category: SponsorCategory.GOLD
+	},
+	{
+		name: 'Droid Devs',
+		image: droiddevs,
+		link: 'https://www.instagram.com/droid_devs/',
+		title: 'Tech. Sponsor',
+		category: SponsorCategory.GOLD
+	},
+	{
+		name: 'HackerEarth',
+		image: hackerearth,
+		link: 'https://www.hackerearth.com/',
+		title: 'Tech. Sponsor',
+		category: SponsorCategory.GOLD
+	},
+	{
+		name: 'Institution of Engineers',
+		image: ie,
+		link: 'https://www.ieindia.org/',
+		title: 'Tech. Sponsor',
 		category: SponsorCategory.GOLD
 	}
 ];
