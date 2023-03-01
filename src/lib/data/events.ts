@@ -104,7 +104,7 @@ export const EVENTS: AdhyaayaEvent[] = [
 	},
 	{
 		id: 'respawn-valorant',
-		mode: 'offline',
+		mode: 'online',
 		category: 'non-technical',
 		name: 'Respawn Valorant',
 		description:
@@ -131,7 +131,7 @@ export const EVENTS: AdhyaayaEvent[] = [
 	},
 	{
 		id: 'respawn-chess',
-		mode: 'offline',
+		mode: 'online',
 		category: 'non-technical',
 		name: 'Respawn Chess',
 		description:
@@ -157,7 +157,7 @@ export const EVENTS: AdhyaayaEvent[] = [
 	},
 	{
 		id: 'respawn-cod',
-		mode: 'offline',
+		mode: 'online',
 		category: 'non-technical',
 		name: 'Respawn COD',
 		description:
@@ -418,7 +418,7 @@ export const EVENTS: AdhyaayaEvent[] = [
 		category: 'non-technical',
 		name: 'Vaad Vivad',
 		description:
-			'VAAD-VIVAAD is a public speaking event with two rounds: an elocution competition and an extempore round. Participants will be given topics related to social issues and will have 2 and 4 minutes to express their ideas respectively. Register now by paying the entry fee of 50/- (solo) and boost your public speaking skills',
+			'VAAD-VIVAAD is a public speaking event with three rounds. Participants will be given topics related to social issues and will have 2 and 4 minutes to express their ideas respectively. Register now by paying the entry fee of 49/- (solo) and boost your public speaking skills',
 		amount: [49_00],
 		team_members: [1],
 		start_date: new Date('10 Mar 2023 11:00'),
@@ -428,7 +428,7 @@ export const EVENTS: AdhyaayaEvent[] = [
 		poster: p_vaadvivad,
 		contact: [
 			{
-				name: 'Aditya Damble',
+				name: 'Aditya Damle',
 				phone: '8378847784'
 			},
 			{
