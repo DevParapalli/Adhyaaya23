@@ -197,8 +197,8 @@ export const EVENTS: AdhyaayaEvent[] = [
 		poster: p_avishkar,
 		contact: [
 			{
-				name: 'Vikas Yadav',
-				phone: '8767666388'
+				name: 'Pawan Vishwakarma',
+				phone: '7499365703'
 			},
 			{
 				name: 'Anmol Moray',
@@ -231,8 +231,8 @@ export const EVENTS: AdhyaayaEvent[] = [
 		poster: p_avishkar,
 		contact: [
 			{
-				name: 'Vikas Yadav',
-				phone: '8767666388'
+				name: 'Pawan Vishwakarma',
+				phone: '7499365703'
 			},
 			{
 				name: 'Anmol Moray',
@@ -258,8 +258,8 @@ export const EVENTS: AdhyaayaEvent[] = [
 		poster: p_avishkar,
 		contact: [
 			{
-				name: 'Vikas Yadav',
-				phone: '8767666388'
+				name: 'Pawan Vishwakarma',
+				phone: '7499365703'
 			},
 			{
 				name: 'Anmol Moray',
