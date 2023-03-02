@@ -43,10 +43,10 @@
 		>
 			<img src={AdhyaayaLogoSolid} alt="" />
 		</button>
-
+		<div class="p-4 rounded-lg border border-white mx-auto bg-black/50 hidden lg:block"><span>Out-station participants participating in offline events are entitled to compensation. Please contact Shlok Tajne (+91 8237050035)</span></div>
 		<a
 			href="/register?select=true"
-			class="register text-white pointer-events-auto bg-transparent ml-auto md:mr-10 mr-4 py-1 px-2 md:py-2 md:px-4 rounded-full border {isMenuOpen
+			class="register text-white pointer-events-auto bg-transparent md:mr-10 mr-4 py-1 px-2 md:py-2 md:px-4 rounded-full border {isMenuOpen
 				? 'border-white'
 				: 'border-white/60'} text-lg hover:scale-110 active:scale-90 cursor-pointer transition-all duration-250 ease-in-out"
 		>

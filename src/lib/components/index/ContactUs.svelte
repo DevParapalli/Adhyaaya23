@@ -17,7 +17,9 @@
 			use:enhance
 			action="/forms/contact_us"
 		>
+		<div class="p-4 rounded-lg border border-white mx-auto bg-black/50"><span>Out-station participants participating in offline events are entitled to compensation. Please contact Shlok Tajne (+91 8237050035)</span></div>
 			<div class="relative z-0 mb-3 w-full group">
+
 				<input
 					type="text"
 					name="name"
@@ -85,6 +87,7 @@
 						>
 					</div>
 				</div>
+
 			</div>
 		</form>
 	</div>
