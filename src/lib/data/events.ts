@@ -567,8 +567,16 @@ export const EVENTS: AdhyaayaEvent[] = [
 		poster: p_jigyasa,
 		contact: [
 			{
-				name: 'Rushikesh Ghawghawe',
-				phone: '9607773343'
+				name: 'Dovesh Aglawe',
+				phone: '7385417432'
+			},
+			{
+				name: 'Kunal Rahangdale',
+				phone: '9657837613'
+			},
+			{
+				name: 'Rohini Shambharkar',
+				phone: '8862065056'
 			}
 		],
 		is_active: true,
@@ -656,6 +664,10 @@ export const EVENTS: AdhyaayaEvent[] = [
 		icon: `url::${gdsc}`,
 		poster: p_gsdc,
 		contact: [
+			{
+				name: 'Adarsh Jena',
+				phone: '7620426119'
+			},
 			{
 				name: 'Neha Malode',
 				phone: '7058441799'
