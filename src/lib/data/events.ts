@@ -328,7 +328,7 @@ export const EVENTS: AdhyaayaEvent[] = [
 	},
 	{
 		id: 'codeventure',
-		mode: 'offline',
+		mode: 'online',
 		category: 'technical',
 		name: 'CodeVenture',
 		description:
