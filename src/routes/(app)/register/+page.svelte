@@ -107,7 +107,9 @@
 			loading = true;
 			return async ({result, update}) => {
 				update();
-				loading = false;
+				setTimeout(() => {
+					loading = false;
+				}, 1000);
 			}
 		}}
 		use:autoanimate
@@ -368,7 +370,7 @@
 				type="submit"
 				disabled={loading}
 				class="text-white   focus:ring-4 focus:outline-none  font-medium rounded-lg uppercase w-full px-5 py-2.5 text-center bg-blue-600 hover:bg-blue-700 focus:ring-blue-800 {loading
-					? 'opacity-50 cursor-not-allowed'
+					? 'opacity-50 cursor-not-allowed btn-disabled loading'
 					: ''}}"
 				>Register (₹{data.event.amount[
 					data.event.team_members.find((e) => {
