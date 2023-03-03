@@ -34,6 +34,7 @@ export interface AdhyaayaEvent {
 	is_active: boolean; // set this to false to hide the event from the list
 	// Set values in this for custom props to take.
 	custom_properties?: AdhyaayaCustomProperty[];
+	is_open: boolean;
 }
 
 import virtual_placement_icon from '$lib/assets/icons/virtual-placement.png?url';
@@ -54,17 +55,16 @@ import p_caddiction from '$lib/assets/posters/caddiction.jpg?url';
 import p_codeventure from '$lib/assets/posters/codeventure.jpg?url';
 import p_respawn from '$lib/assets/posters/respawn.jpg?url';
 import p_virtual_placement from '$lib/assets/posters/vp.jpg?url';
-import p_bornpsycos from '$lib/assets/posters/bornpsycos.jpg?url'
-import p_cadoshit from '$lib/assets/posters/cad-o-shop.jpg?url'
-import p_cricbash from '$lib/assets/posters/cricbash.jpg?url'
-import p_foodoholics from '$lib/assets/posters/food-o-holic.jpg?url'
-import p_gsdc from '$lib/assets/posters/gsdc.jpg?url'
-import p_jigyasa from '$lib/assets/posters/jigyasa.jpg?url'
-import p_roborace from '$lib/assets/posters/roborace.jpg?url'
-import p_stargaze from '$lib/assets/posters/stargaze.jpg?url'
-import p_stock from '$lib/assets/posters/stock.jpg?url'
-import p_vaadvivad from '$lib/assets/posters/vaad-vivad.jpg?url'
-
+import p_bornpsycos from '$lib/assets/posters/bornpsycos.jpg?url';
+import p_cadoshit from '$lib/assets/posters/cad-o-shop.jpg?url';
+import p_cricbash from '$lib/assets/posters/cricbash.jpg?url';
+import p_foodoholics from '$lib/assets/posters/food-o-holic.jpg?url';
+import p_gsdc from '$lib/assets/posters/gsdc.jpg?url';
+import p_jigyasa from '$lib/assets/posters/jigyasa.jpg?url';
+import p_roborace from '$lib/assets/posters/roborace.jpg?url';
+import p_stargaze from '$lib/assets/posters/stargaze.jpg?url';
+import p_stock from '$lib/assets/posters/stock.jpg?url';
+import p_vaadvivad from '$lib/assets/posters/vaad-vivad.jpg?url';
 
 export const EVENTS: AdhyaayaEvent[] = [
 	{
@@ -93,6 +93,7 @@ export const EVENTS: AdhyaayaEvent[] = [
 			}
 		],
 		is_active: true,
+		is_open: true,
 		custom_properties: [
 			{
 				type: 'select',
@@ -127,6 +128,7 @@ export const EVENTS: AdhyaayaEvent[] = [
 			}
 		],
 		is_active: false,
+		is_open: true,
 		whatsapp_link: 'https://chat.whatsapp.com/HrCxXF4JBjLLoGQmqe89Rr'
 	},
 	{
@@ -154,7 +156,8 @@ export const EVENTS: AdhyaayaEvent[] = [
 			}
 		],
 		is_active: false,
-		whatsapp_link: "https://chat.whatsapp.com/HV4NPnppeRQBZ9Oiv5wcJc",
+		is_open: true,
+		whatsapp_link: 'https://chat.whatsapp.com/HV4NPnppeRQBZ9Oiv5wcJc'
 	},
 	{
 		id: 'respawn-cod',
@@ -181,7 +184,8 @@ export const EVENTS: AdhyaayaEvent[] = [
 			}
 		],
 		is_active: false,
-		whatsapp_link: "https://chat.whatsapp.com/KXRX7DJTXR8HGTk1pE4GUw"
+		is_open: true,
+		whatsapp_link: 'https://chat.whatsapp.com/KXRX7DJTXR8HGTk1pE4GUw'
 	},
 	{
 		id: '::avishkar',
@@ -208,6 +212,7 @@ export const EVENTS: AdhyaayaEvent[] = [
 			}
 		],
 		is_active: true,
+		is_open: true,
 		custom_properties: [
 			{
 				type: 'select',
@@ -242,6 +247,7 @@ export const EVENTS: AdhyaayaEvent[] = [
 			}
 		],
 		is_active: false,
+		is_open: true,
 		whatsapp_link: 'https://chat.whatsapp.com/BPDlJw6eH90LKUv0AGcvAg'
 	},
 	{
@@ -269,6 +275,7 @@ export const EVENTS: AdhyaayaEvent[] = [
 			}
 		],
 		is_active: false,
+		is_open: true,
 		whatsapp_link: 'https://chat.whatsapp.com/BPDlJw6eH90LKUv0AGcvAg'
 	},
 	{
@@ -293,10 +300,10 @@ export const EVENTS: AdhyaayaEvent[] = [
 			{
 				name: 'Aishwarya Dharme',
 				phone: '8530676156'
-			},
-			
+			}
 		],
 		is_active: true,
+		is_open: true,
 		whatsapp_link: 'https://chat.whatsapp.com/BIEeiqLyfQg41ZKZBT06WG'
 	},
 	{
@@ -325,6 +332,7 @@ export const EVENTS: AdhyaayaEvent[] = [
 			}
 		],
 		is_active: true,
+		is_open: true,
 		whatsapp_link: 'https://chat.whatsapp.com/Bb6BOwMLprsGoz0sggxGaz'
 	},
 	{
@@ -349,10 +357,10 @@ export const EVENTS: AdhyaayaEvent[] = [
 			{
 				name: 'Rushikesh Ghawghawe',
 				phone: '9607773343'
-			},
-			
+			}
 		],
 		is_active: true,
+		is_open: true,
 		whatsapp_link: 'https://chat.whatsapp.com/BcAeNWFxTmBJyR8FwaQNIW'
 	},
 	{
@@ -370,7 +378,6 @@ export const EVENTS: AdhyaayaEvent[] = [
 		icon: 'noto:bridge-at-night',
 		poster: p_bridge_o_craft,
 		contact: [
-			
 			{
 				name: 'Kalpana Rathod',
 				phone: '8010961439'
@@ -378,9 +385,10 @@ export const EVENTS: AdhyaayaEvent[] = [
 			{
 				name: 'Pratham Chandankhede',
 				phone: '7558281643'
-			},
+			}
 		],
 		is_active: true,
+		is_open: false,
 		whatsapp_link: 'https://chat.whatsapp.com/EV0HsCXDKrvC3xcf6hl1YM'
 	},
 	{
@@ -409,9 +417,10 @@ export const EVENTS: AdhyaayaEvent[] = [
 			{
 				name: 'Vishal Kesharwani',
 				phone: '8788707898'
-			},
+			}
 		],
 		is_active: true,
+		is_open: true,
 		whatsapp_link: 'https://chat.whatsapp.com/KXtte17v1QuBEgTSesPT2q'
 	},
 	{
@@ -439,6 +448,7 @@ export const EVENTS: AdhyaayaEvent[] = [
 			}
 		],
 		is_active: true,
+		is_open: true,
 		whatsapp_link: 'https://chat.whatsapp.com/Fihx9B1pCwCEmE6yyJRIs7'
 	},
 	{
@@ -470,6 +480,7 @@ export const EVENTS: AdhyaayaEvent[] = [
 			}
 		],
 		is_active: true,
+		is_open: true,
 		whatsapp_link: 'https://chat.whatsapp.com/ErzzKroyiw6IoL5pAWzHC5'
 	},
 	{
@@ -497,6 +508,7 @@ export const EVENTS: AdhyaayaEvent[] = [
 			}
 		],
 		is_active: true,
+		is_open: true,
 		whatsapp_link: 'https://chat.whatsapp.com/KoKTPhgXNZxEof5xHUBLCh'
 	},
 	{
@@ -524,6 +536,7 @@ export const EVENTS: AdhyaayaEvent[] = [
 			}
 		],
 		is_active: true,
+		is_open: true,
 		whatsapp_link: 'https://chat.whatsapp.com/ETCp1yUYn5U8BEDSp5VtBH'
 	},
 	{
@@ -548,10 +561,10 @@ export const EVENTS: AdhyaayaEvent[] = [
 			{
 				name: 'Sahil Brahme',
 				phone: '9552269716'
-			},
-			
+			}
 		],
 		is_active: true,
+		is_open: true,
 		whatsapp_link: 'https://chat.whatsapp.com/BIEeiqLyfQg41ZKZBT06WG'
 	},
 	{
@@ -559,7 +572,8 @@ export const EVENTS: AdhyaayaEvent[] = [
 		mode: 'offline',
 		category: 'workshops',
 		name: 'Jigyasa',
-		description: 'Join us for an exclusive interview with a military or defense personnel as part of Adhyaaya. In this podcast-style interview, we\'ll be discussing their experience, expertise, and insights on the challenges and opportunities facing the military and defense forces. This event offers a unique opportunity to gain a deeper understanding of the life of a military or defense personnel, their motivations, and their experiences. Don\'t miss out on this exciting event!		',
+		description:
+			"Join us for an exclusive interview with a military or defense personnel as part of Adhyaaya. In this podcast-style interview, we'll be discussing their experience, expertise, and insights on the challenges and opportunities facing the military and defense forces. This event offers a unique opportunity to gain a deeper understanding of the life of a military or defense personnel, their motivations, and their experiences. Don't miss out on this exciting event!		",
 		amount: [0],
 		team_members: [1],
 		start_date: new Date('9 Mar 2023 15:00'),
@@ -582,6 +596,7 @@ export const EVENTS: AdhyaayaEvent[] = [
 			}
 		],
 		is_active: true,
+		is_open: true,
 		whatsapp_link: 'https://chat.whatsapp.com/GwpSrB9MEcL4sW54WL1Hto'
 	},
 	{
@@ -605,6 +620,7 @@ export const EVENTS: AdhyaayaEvent[] = [
 			}
 		],
 		is_active: true,
+		is_open: true,
 		whatsapp_link: 'https://chat.whatsapp.com/Kh6yyGQAQRhDOtQ4tUDJFG'
 	},
 	// {
@@ -633,7 +649,8 @@ export const EVENTS: AdhyaayaEvent[] = [
 		mode: 'offline',
 		category: 'workshops',
 		name: 'Stock OG',
-		description: 'Unleash the Power of the Stock Market: Join us for an exciting offline workshop where you\'ll learn the fundamentals of investing, develop your own trading strategies, and gain valuable insights from industry experts. Discover how to navigate the twists and turns of the market and make informed decisions that can lead to financial success. Whether you\'re a beginner or an experienced trader, this workshop is your opportunity to level up your stock market game and achieve your investment goals.',
+		description:
+			"Unleash the Power of the Stock Market: Join us for an exciting offline workshop where you'll learn the fundamentals of investing, develop your own trading strategies, and gain valuable insights from industry experts. Discover how to navigate the twists and turns of the market and make informed decisions that can lead to financial success. Whether you're a beginner or an experienced trader, this workshop is your opportunity to level up your stock market game and achieve your investment goals.",
 		amount: [49_00],
 		team_members: [1],
 		start_date: new Date('9 Mar 2023 13:00'),
@@ -652,6 +669,7 @@ export const EVENTS: AdhyaayaEvent[] = [
 			}
 		],
 		is_active: true,
+		is_open: true,
 		whatsapp_link: 'https://chat.whatsapp.com/HhguujUB4Hk4cMsLyw6nRJ'
 	},
 	{
@@ -659,7 +677,8 @@ export const EVENTS: AdhyaayaEvent[] = [
 		mode: 'offline',
 		category: 'workshops',
 		name: 'Blockchain 101',
-		description: 'Adhyaaya in collaboration with GSDC GCOEN and Lumos Labs is bringing the future to your doorstep with their Into the Web3 Metaverse initiative! Join us on March 11th for an exciting 3-hour session where we\'ll introduce you to the world of Web3, Blockchain 101, and explore the vast career opportunities available in this exciting new space. Hear from industry experts and learn about  exciting opportunities to elevate your Web3 journey. Don\'t miss this chance to connect with a vibrant community of 60K developers and explore your future in the Web3 ecosystem!',
+		description:
+			"Adhyaaya in collaboration with GSDC GCOEN and Lumos Labs is bringing the future to your doorstep with their Into the Web3 Metaverse initiative! Join us on March 11th for an exciting 3-hour session where we'll introduce you to the world of Web3, Blockchain 101, and explore the vast career opportunities available in this exciting new space. Hear from industry experts and learn about  exciting opportunities to elevate your Web3 journey. Don't miss this chance to connect with a vibrant community of 60K developers and explore your future in the Web3 ecosystem!",
 		amount: [0],
 		team_members: [1],
 		start_date: new Date('11 Mar 2023 11:00'),
@@ -678,8 +697,9 @@ export const EVENTS: AdhyaayaEvent[] = [
 			}
 		],
 		is_active: true,
+		is_open: true,
 		whatsapp_link: 'https://chat.whatsapp.com/BD6gqwlO5FC5qL4I4WEKAy'
-	},
+	}
 	// {
 	// 	id: 'ev-workshop',
 	// 	mode: 'offline',
@@ -726,6 +746,7 @@ export const EVENTS: AdhyaayaEvent[] = [
 	// 		}
 	// 	],
 	// 	is_active: true,
+	// is_open: true,
 	// 	whatsapp_link: 'https://chat.whatsapp.com/HA17R0Jp55cAe6rq6agUfz'
 	// }
 ];
