@@ -2,7 +2,7 @@
 	import type { AdhyaaayaTeamMember } from '$lib/data/team';
 	import type { DBRegistrationTeam } from '$lib/types';
 	import Grid from 'gridjs-svelte';
-	import type { PageData } from '../$types';
+	import type { PageData } from './$types';
 	let columns = [
 		'id',
 		'event_id',
@@ -47,7 +47,10 @@
     <div class="py-8 px-3 text-center">
         <span>Paid : {data.count_paid}</span><br />
         <span>Unpaid : {data.count_unpaid}</span><br />
-        <span>Total : {data.data.length}</span>
+        <span>Total : {data.data.length}</span> <br />
+        <button class="btn btn-outline" on:click={()=>{
+            navigator.clipboard.writeText(window.location.href + '/_query');
+        }}>Copy Query Link</button>
     </div>
 	<Grid {columns} sort search fixedHeader pagination={{limit: 25}} data={data.data} />
 </div>
