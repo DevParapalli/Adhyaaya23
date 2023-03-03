@@ -180,7 +180,8 @@ export const EVENTS: AdhyaayaEvent[] = [
 				phone: '8459795840'
 			}
 		],
-		is_active: false
+		is_active: false,
+		whatsapp_link: "https://chat.whatsapp.com/KXRX7DJTXR8HGTk1pE4GUw"
 	},
 	{
 		id: '::avishkar',
@@ -545,8 +546,8 @@ export const EVENTS: AdhyaayaEvent[] = [
 				phone: '7507602580'
 			},
 			{
-				name: 'Aishwarya Dharme',
-				phone: '8530676156'
+				name: 'Sahil Brahme',
+				phone: '9552269716'
 			},
 			
 		],
