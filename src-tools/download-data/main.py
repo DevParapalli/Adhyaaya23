@@ -1,5 +1,6 @@
 import os 
 from supabase import create_client, Client
+import razorpay
 import pathlib as pl
 import dotenv
 import json
@@ -11,24 +12,84 @@ current_file_path = pl.Path(__file__).parent.absolute()
 root_path = pl.Path(current_file_path).parent.parent.absolute()
 #check if .env file exists in current directory
 
-ENV = ".env"
-
-if len(list(current_file_path.glob("*"+ENV))) > 0:
-    with open(current_file_path / ENV, "r") as f:
-        dotenv.load_dotenv(stream=f)
-elif (len(list(root_path.glob("*"+ENV))) > 0):
-    with open(root_path / ENV, "r") as f:
-        dotenv.load_dotenv(stream=f)
-    
-url: str = os.environ.get("PUBLIC_SUPABASE_URL")
-key: str = os.environ.get("SUPABASE_SECRET")
+PUBLIC_SUPABASE_URL="https://yqcjrqdwtipoxygooqlu.supabase.co"
+PUBLIC_SUPABASE_ANON_KEY="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InlxY2pycWR3dGlwb3h5Z29vcWx1Iiwicm9sZSI6ImFub24iLCJpYXQiOjE2NzYyOTgxODMsImV4cCI6MTk5MTg3NDE4M30.KYI9qdp1ML0a9KC1fYTXYT7JbvET-8BiY7Dzr9o5H70"
+SUPABASE_SECRET="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InlxY2pycWR3dGlwb3h5Z29vcWx1Iiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTY3NjI5ODE4MywiZXhwIjoxOTkxODc0MTgzfQ.1IWMqTv6B_rz_ytwiXjmg-knMnIPHESzT7a7FE93pls"
+RZP_SECRET="kDPeAN8jKDsYi3uv8wsgPp17"
+PUBLIC_RZP_KEY="rzp_live_H1WKmkIihs8OsQ"
+SMTP_USER="noreply.adhyaaya.gcoen@gmail.com"
+SMTP_PASS="igkjyaxyjrbefqkf"
+SG_KEY="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"
 
 
 
-supabase:Client = create_client(url, key)
+
+
+supabase:Client = create_client(PUBLIC_SUPABASE_URL, SUPABASE_SECRET)
 
 timestamp = datetime.datetime.now().strftime("%Y-%m-%d-%H-%M-%S")
 r = supabase.table("registrations").select("*").execute()
+
+# check razorpay for payments 
+rzp_client = razorpay.Client(auth=(PUBLIC_RZP_KEY, RZP_SECRET))
+rzp_orders = (rzp_client.order.all({"count": 100})['items'])
+
+
+DB_ORDERS = [] 
+# This order is of my own testing, so including as to not create any errors
+DB_ORDERS.append('order_LGgSbHdlqaCens')
+
+
+# check list of orders, if they are in system
+for data in r.data:
+    if data["rzp_oid"] not in DB_ORDERS:
+        DB_ORDERS.append(data["rzp_oid"])
+
+
+for rzp_order in rzp_orders:
+    if rzp_order['id'] in DB_ORDERS:
+        continue
+    else:
+        # Check if the order is paid
+        if rzp_order['amount_paid'] == rzp_order['amount']:
+            # order is paid, but not in DB
+            print(F"Orphaned order: {rzp_order['id']} ; Trying to add to DB")
+            # get order details
+            rzp_payment = rzp_client.order.payments(rzp_order['id'])
+            # get payment details
+            if rzp_payment['count'] != 0:
+                # The order has a payment
+                for payment in rzp_payment['items']:
+                    if payment['status'] in ('captured', 'paid', 'accepted', 'settled'):
+                        desc = payment['description']
+                        name = desc.split('Payment by')[1].split('for')[0].strip()
+                        event_id = desc.split('for')[1].split(',')[0].strip()
+                        data_to_db = {
+                            "name": name,
+                            "phone": payment['contact'].replace('+91', ""),
+                            "email": payment['email'],
+                            "edu_institute": "Added Manually",
+                            "edu_year": "Added Manually",
+                            "edu_spl": "Added Manually",
+                            "team": [],
+                            "event_id": event_id,
+                            "amount": rzp_order['amount'],
+                            "used": False,
+                            "status": True,
+                            "rzp_oid": rzp_order['id'],
+                            "rzp_pid": payment['id'],
+                            "rzp_sig": "Added Manually",
+                            "rzp_status":"PAID",
+                            "custom": {}
+                        }
+                        r2 = supabase.table('registrations').insert([data_to_db]).execute()
+                        print(r2)
+                
+            
+        else: 
+            continue
+
+
 
 DATA = {}
 
