@@ -1,7 +1,16 @@
 <script lang="ts">
 	import type { PageData } from "./$types";
-
-
+    import type {DBRegistrationTeam} from '$lib/types'
+    function get_team_string(team_obj: DBRegistrationTeam[]) {
+        let team_string = ""
+        for (let i = 0; i < team_obj.length; i++) {
+            team_string += team_obj[i].name
+            if (i != team_obj.length - 1) {
+                team_string += " | "
+            }
+        }
+        return team_string
+    }
     export let data: PageData
 </script>
 
@@ -31,7 +40,7 @@
                 <td>{registration.name}</td>
                 <td>{registration.phone}</td>
                 <td>{registration.email}</td>
-                <td>{registration.team}</td>
+                <td>{get_team_string(registration.team)}</td>
                 <td>{registration.edu_institute}</td>
                 <td>{registration.amount}</td>
                 <td>{registration.rzp_oid}</td>
