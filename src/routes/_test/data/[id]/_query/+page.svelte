@@ -47,7 +47,23 @@
                 <td>{registration.rzp_pid}</td>
                 <td>{registration.rzp_status}</td>
             </tr>
+        {:else}
+        <tr>
+            <td>~No Data~</td>
+            <td>~No Data~</td>
+            <td>~No Data~</td>
+            <td>~No Data~</td>
+            <td>~No Data~</td>
+            <td>~No Data~</td>
+            <td>~No Data~</td>
+            <td>~No Data~</td>
+            <td>~No Data~</td>
+            <td>~No Data~</td>
+            <td>~No Data~</td>
+            <td>~No Data~</td>
+        </tr>
         {/each}
+
     </tbody>
 </table>
 
