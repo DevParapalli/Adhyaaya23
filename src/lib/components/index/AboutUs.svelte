@@ -1,6 +1,11 @@
 <script>
 	import logo from '$lib/assets/logo/solid-resize.webp';
 	import gcoen from '$lib/assets/logo/gcoen-knockout-resize.webp';
+	import { onMount } from 'svelte';
+	onMount(() => {
+		import('lite-youtube-embed');
+		import('lite-youtube-embed/src/lite-yt-embed.css');
+	});
 </script>
 
 <div
@@ -46,13 +51,17 @@
 			>
 		</div>
 	</div>
+	<div class="flex flex-col items-center justify-center pt-10">
+		<!-- <lite-youtube-embed videoId="DeRLoZuCKfs" /> -->
+		<lite-youtube videoid="DeRLoZuCKfs" playlabel="Adhyaaya'20 Aftermovie" class="w-[80vw] lg:w-[50vw] rounded-lg" />
+	</div>
 	<div class="gallery-button flex flex-col items-center justify-evenly text-justify pt-8">
 		<a
 			data-sveltekit-reload
 			href="/gallery"
 			class="gallery-button uppercase relative bg-gradient-to-bl from-rose-400 via-fuchsia-500 to-indigo-500 text-white text-xl py-5 px-8 rounded-lg inline-flex items-center gap-2 hover:scale-110 active:scale-90 active:opacity-90 transition-all duration-300 ease-in-out"
 		>
-			View our past <iconify-icon icon="mdi:arrow-right" />
+			Image Gallery <iconify-icon icon="mdi:arrow-right" />
 		</a>
 	</div>
 </div>
