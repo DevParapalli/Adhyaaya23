@@ -20,7 +20,7 @@ import paarangat from '$lib/assets/sponsors/parangat.webp?url';
 import frostandfeather from '$lib/assets/sponsors/frostandfeather.webp?url';
 import foodisland from '$lib/assets/sponsors/foodisland.webp?url';
 import siuk from '$lib/assets/sponsors/siuk.webp?url'
-import barcode from '$lib/assets/sponsors/barcode.webp?url'
+import niobm from '$lib/assets/sponsors/niobm.png?url'
 import oraipl from '$lib/assets/sponsors/oraipl.jpg?url'
 import hackerearth from '$lib/assets/sponsors/hackerearth.jpg?url'
 import ie from '$lib/assets/sponsors/ie.png?url'
@@ -83,13 +83,13 @@ export const SPONSORS: AdhyaayaSponsor[] = [
 		title: 'Edu. Sponsor',
 		category: SponsorCategory.GOLD
 	},
-	// {
-	// 	name: 'Barcode',
-	// 	image: barcode,
-	// 	link: 'https://www.instagram.com/barcode_esports/',
-	// 	title: 'Gaming Sponsor',
-	// 	category: SponsorCategory.GOLD
-	// },
+	{
+		name: 'Niobm',
+		image: niobm,
+		link: 'https://www.instagram.com/niobmesports/',
+		title: 'Gaming Sponsor',
+		category: SponsorCategory.GOLD
+	},
 	{
 		name: 'ORAIPL',
 		image: oraipl,
