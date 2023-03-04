@@ -257,8 +257,8 @@ export const EVENTS: AdhyaayaEvent[] = [
 		name: 'Avishkar',
 		description:
 			'Avishkar is a project competition for engineering students to showcase their innovative ideas. Teams can have up to 5 members and projects can be in hardware or software categories. Competition consists of two rounds: elimination and questionnaire. Register today!',
-		amount: [159_00, 159_00],
-		team_members: [2, 4],
+		amount: [159_00, 159_00, 159_00, 159_00],
+		team_members: [1, 2, 3, 4],
 		start_date: new Date('9 Mar 2023 13:00'),
 		end_date: new Date('9 Mar 2023'),
 		small_image: 'https://placeimg.com/360/360/tech',
