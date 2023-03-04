@@ -17,8 +17,8 @@
 	let bgX = 0,
 		bgY = 0;
 	function setBackgroundPosition(x = bgX, y = bgY) {
-		bgX = x;
-		bgY = y;
+		// bgX = x;
+		// bgY = y;
 		// dev ? console.log(bgX, bgY) : null;
 	}
 
@@ -79,7 +79,7 @@
 	</div>
 {/if}
 <div
-	class="menu-container {isMenuOpen} h-full bg-[#190829] rounded-none z-[120] fixed right-0 top-0 flex flex-col print:hidden"
+	class="menu-container {isMenuOpen} h-full bg-[#0d0028]/95 rounded-none z-[120] fixed right-0 top-0 flex flex-col print:hidden"
 >
 	{#if isMenuOpen}
 		<div class="{isMenuOpen} header h-16 md:h-24 lg:h-36 w-full" />
@@ -269,7 +269,7 @@
 	.menu-background-pattern {
 		height: 100vh;
 		width: 100vw;
-
+		display: none;
 		background-image: radial-gradient(rgba(255, 255, 255, 0.25) 9%, transparent 9%);
 		background-position: var(--bgX, 0%) var(--bgY, 0%);
 		background-size: 12vmin 12vmin;
