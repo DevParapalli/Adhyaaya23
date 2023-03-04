@@ -211,8 +211,8 @@ export const EVENTS: AdhyaayaEvent[] = [
 				phone: '8956886685'
 			}
 		],
-		is_active: true,
-		is_open: true,
+		is_active: false,
+		is_open: false,
 		custom_properties: [
 			{
 				type: 'select',
@@ -247,14 +247,14 @@ export const EVENTS: AdhyaayaEvent[] = [
 			}
 		],
 		is_active: false,
-		is_open: true,
+		is_open: false,
 		whatsapp_link: 'https://chat.whatsapp.com/BPDlJw6eH90LKUv0AGcvAg'
 	},
 	{
 		id: 'avishkar-offline',
 		mode: 'offline',
 		category: 'technical',
-		name: 'Avishkar - Offline',
+		name: 'Avishkar',
 		description:
 			'Avishkar is a project competition for engineering students to showcase their innovative ideas. Teams can have up to 5 members and projects can be in hardware or software categories. Competition consists of two rounds: elimination and questionnaire. Register today!',
 		amount: [159_00, 159_00],
@@ -266,15 +266,15 @@ export const EVENTS: AdhyaayaEvent[] = [
 		poster: p_avishkar,
 		contact: [
 			{
-				name: 'Pawan Vishwakarma',
-				phone: '7499365703'
-			},
-			{
 				name: 'Anmol Moray',
 				phone: '8956886685'
+			},
+			{
+				name: 'Pawan Vishwakarma',
+				phone: '7499365703'
 			}
 		],
-		is_active: false,
+		is_active: true,
 		is_open: true,
 		whatsapp_link: 'https://chat.whatsapp.com/BPDlJw6eH90LKUv0AGcvAg'
 	},
