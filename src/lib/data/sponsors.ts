@@ -83,13 +83,13 @@ export const SPONSORS: AdhyaayaSponsor[] = [
 		title: 'Edu. Sponsor',
 		category: SponsorCategory.GOLD
 	},
-	{
-		name: 'Barcode',
-		image: barcode,
-		link: 'https://www.instagram.com/barcode_esports/',
-		title: 'Gaming Sponsor',
-		category: SponsorCategory.GOLD
-	},
+	// {
+	// 	name: 'Barcode',
+	// 	image: barcode,
+	// 	link: 'https://www.instagram.com/barcode_esports/',
+	// 	title: 'Gaming Sponsor',
+	// 	category: SponsorCategory.GOLD
+	// },
 	{
 		name: 'ORAIPL',
 		image: oraipl,
