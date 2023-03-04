@@ -25,6 +25,9 @@ import oraipl from '$lib/assets/sponsors/oraipl.jpg?url'
 import hackerearth from '$lib/assets/sponsors/hackerearth.jpg?url'
 import ie from '$lib/assets/sponsors/ie.png?url'
 import droiddevs from '$lib/assets/sponsors/droiddevs.jpg?url'
+import ets from '$lib/assets/sponsors/everythingsweet.png?url'
+import caad from '$lib/assets/sponsors/caad.png?url'
+import stock from '$lib/assets/sponsors/stock.png?url'
 
 export const SPONSORS: AdhyaayaSponsor[] = [
 	{
@@ -38,28 +41,28 @@ export const SPONSORS: AdhyaayaSponsor[] = [
 		name: 'Orange Bits',
 		image: orangebits,
 		link: 'https://orangebitsindia.com/',
-		title: 'Tech Sponsor',
+		title: 'Tech. Sponsor',
 		category: SponsorCategory.GOLD
 	},
 	{
 		name: 'Python Academy',
 		image: pythonacademy,
 		link: 'https://www.pythonacademy.in/',
-		title: 'Tech Sponsor',
+		title: 'Tech. Sponsor',
 		category: SponsorCategory.GOLD
 	},
 	{
 		name: 'Unisoft Technologies',
 		image: unisoft,
 		link: 'http://www.unisoftindia.org/',
-		title: 'Tech Sponsor',
+		title: 'Tech. Sponsor',
 		category: SponsorCategory.GOLD
 	},
 	{
 		name: 'Paarangat Edu.',
 		image: paarangat,
 		link: 'https://paarangatedu.com/',
-		title: 'Tech Sponsor',
+		title: 'Tech. Sponsor',
 		category: SponsorCategory.GOLD
 	},
 	{
@@ -80,7 +83,7 @@ export const SPONSORS: AdhyaayaSponsor[] = [
 		name: 'SIUK',
 		image: siuk,
 		link: 'https://www.studyin-uk.in/',
-		title: 'Edu. Sponsor',
+		title: 'Education Sponsor',
 		category: SponsorCategory.GOLD
 	},
 	{
@@ -116,6 +119,27 @@ export const SPONSORS: AdhyaayaSponsor[] = [
 		image: ie,
 		link: 'https://www.ieindia.org/',
 		title: 'Tech. Sponsor',
+		category: SponsorCategory.GOLD
+	},
+	{
+		name: 'Every Thing Sweet',
+		image: ets,
+		link: 'https://www.instagram.com/ets_everythingsweet/',
+		title: 'Food Sponsor',
+		category: SponsorCategory.GOLD
+	},
+	// {
+	// 	name: 'CAAD Center',
+	// 	image: caad,
+	// 	link: 'https://caddcentre.com/',
+	// 	title: 'Education Sponsor',
+	// 	category: SponsorCategory.GOLD
+	// },
+	{
+		name: 'Stock OG',
+		image: stock,
+		link: 'https://www.instagram.com/_stockog/',
+		title: 'Education Sponsor',
 		category: SponsorCategory.GOLD
 	}
 ];
