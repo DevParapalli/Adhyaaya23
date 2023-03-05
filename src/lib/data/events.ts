@@ -489,7 +489,7 @@ export const EVENTS: AdhyaayaEvent[] = [
 		category: 'non-technical',
 		name: 'Food-O-Holic',
 		description:
-			'"Food-o-Holic" is an exciting competition for teams of 4 members with an entry fee of 240. The competition consists of 3 rounds: "Screaming Baloons," "Meri Foodie Kismat," and "Desert Dash." In each round, teams compete in food-related challenges and quizzes, from collecting buns with tied hands to finishing a dessert without using their hands. The winning team is decided by points or speed. Register now for a fun and thrilling culinary adventure.',
+			'"Food-o-Holic" is an exciting competition for teams of 4 members with an entry fee of 299. The competition consists of 3 rounds: "Screaming Baloons," "Meri Foodie Kismat," and "Desert Dash." In each round, teams compete in food-related challenges and quizzes, from collecting buns with tied hands to finishing a dessert without using their hands. The winning team is decided by points or speed. Register now for a fun and thrilling culinary adventure.',
 		amount: [299_00],
 		team_members: [4],
 		start_date: new Date('9 Mar 2023 13:00'),

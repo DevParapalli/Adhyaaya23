@@ -94,6 +94,19 @@ for rzp_order in rzp_orders:
 DATA = {}
 
 for data in r.data:
+    if data['rzp_status'] != 'PAID':
+        # Check the status of the order
+        print(F"Checking order: {data['rzp_oid']}")
+        rzp_order = rzp_client.order.fetch(data['rzp_oid'])
+        if len(rzp_order) == 1:
+            if rzp_order['items'][0]['amount_paid'] == rzp_order['items'][0]['amount']:
+                data['rzp_status'] = 'PAID'
+                data['rzp_pid'] = rzp_order['items'][0]['payments'][0]['id']
+                data['rzp_sig'] = "Added Manually"
+                print(f"Order {data['rzp_oid']} is PAID, updating DB")
+            else:
+                print(f"Order {data['rzp_oid']} is not PAID, skipping")
+    
     if data["event_id"] not in DATA:
         DATA[data["event_id"]] = [data]
     else:
