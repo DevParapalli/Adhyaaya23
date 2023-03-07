@@ -573,7 +573,7 @@ export const EVENTS: AdhyaayaEvent[] = [
 		category: 'workshops',
 		name: 'Jigyasa',
 		description:
-			"Join us for an exclusive interview with a military or defense personnel as part of Adhyaaya. In this podcast-style interview, we'll be discussing their experience, expertise, and insights on the challenges and opportunities facing the military and defense forces. This event offers a unique opportunity to gain a deeper understanding of the life of a military or defense personnel, their motivations, and their experiences. Don't miss out on this exciting event!		",
+			"Are you passionate about serving your country technically? Want to gain insights and knowledge from esteemed personalities of Defense services/civil services? Join Trishakti Cell in collaboration with Adhyaaya for JIGYASA- an exclusive live interview with Air Vice Marshal Suryakant Chintaman Chafekar (AVSM,SC) Retd. Discover, Diagnose, and Demystify the ways to achieve your goals through this insightful event. Don't miss out on this opportunity to hear from a seasoned expert in the field! Register now, it's free of cost and open to all!",
 		amount: [0],
 		team_members: [1],
 		start_date: new Date('9 Mar 2023 15:00'),
