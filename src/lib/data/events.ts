@@ -388,7 +388,7 @@ export const EVENTS: AdhyaayaEvent[] = [
 			}
 		],
 		is_active: true,
-		is_open: false,
+		is_open: true,
 		whatsapp_link: 'https://chat.whatsapp.com/EV0HsCXDKrvC3xcf6hl1YM'
 	},
 	{
