@@ -93,7 +93,7 @@ export const EVENTS: AdhyaayaEvent[] = [
 			}
 		],
 		is_active: true,
-		is_open: true,
+		is_open: false,
 		custom_properties: [
 			{
 				type: 'select',
@@ -128,7 +128,7 @@ export const EVENTS: AdhyaayaEvent[] = [
 			}
 		],
 		is_active: false,
-		is_open: true,
+		is_open: false,
 		whatsapp_link: 'https://chat.whatsapp.com/HrCxXF4JBjLLoGQmqe89Rr'
 	},
 	{
@@ -156,7 +156,7 @@ export const EVENTS: AdhyaayaEvent[] = [
 			}
 		],
 		is_active: false,
-		is_open: true,
+		is_open: false,
 		whatsapp_link: 'https://chat.whatsapp.com/HV4NPnppeRQBZ9Oiv5wcJc'
 	},
 	{
@@ -184,7 +184,7 @@ export const EVENTS: AdhyaayaEvent[] = [
 			}
 		],
 		is_active: false,
-		is_open: true,
+		is_open: false,
 		whatsapp_link: 'https://chat.whatsapp.com/KXRX7DJTXR8HGTk1pE4GUw'
 	},
 	{
@@ -275,7 +275,7 @@ export const EVENTS: AdhyaayaEvent[] = [
 			}
 		],
 		is_active: true,
-		is_open: true,
+		is_open: false,
 		whatsapp_link: 'https://chat.whatsapp.com/BPDlJw6eH90LKUv0AGcvAg'
 	},
 	{
@@ -303,7 +303,7 @@ export const EVENTS: AdhyaayaEvent[] = [
 			}
 		],
 		is_active: true,
-		is_open: true,
+		is_open: false,
 		whatsapp_link: 'https://chat.whatsapp.com/BIEeiqLyfQg41ZKZBT06WG'
 	},
 	{
@@ -332,7 +332,7 @@ export const EVENTS: AdhyaayaEvent[] = [
 			}
 		],
 		is_active: true,
-		is_open: true,
+		is_open: false,
 		whatsapp_link: 'https://chat.whatsapp.com/Bb6BOwMLprsGoz0sggxGaz'
 	},
 	{
@@ -360,7 +360,7 @@ export const EVENTS: AdhyaayaEvent[] = [
 			}
 		],
 		is_active: true,
-		is_open: true,
+		is_open: false,
 		whatsapp_link: 'https://chat.whatsapp.com/BcAeNWFxTmBJyR8FwaQNIW'
 	},
 	{
@@ -388,7 +388,7 @@ export const EVENTS: AdhyaayaEvent[] = [
 			}
 		],
 		is_active: true,
-		is_open: true,
+		is_open: false,
 		whatsapp_link: 'https://chat.whatsapp.com/EV0HsCXDKrvC3xcf6hl1YM'
 	},
 	{
@@ -420,7 +420,7 @@ export const EVENTS: AdhyaayaEvent[] = [
 			}
 		],
 		is_active: true,
-		is_open: true,
+		is_open: false,
 		whatsapp_link: 'https://chat.whatsapp.com/KXtte17v1QuBEgTSesPT2q'
 	},
 	{
@@ -448,7 +448,7 @@ export const EVENTS: AdhyaayaEvent[] = [
 			}
 		],
 		is_active: true,
-		is_open: true,
+		is_open: false,
 		whatsapp_link: 'https://chat.whatsapp.com/Fihx9B1pCwCEmE6yyJRIs7'
 	},
 	{
@@ -480,7 +480,7 @@ export const EVENTS: AdhyaayaEvent[] = [
 			}
 		],
 		is_active: true,
-		is_open: true,
+		is_open: false,
 		whatsapp_link: 'https://chat.whatsapp.com/ErzzKroyiw6IoL5pAWzHC5'
 	},
 	{
@@ -508,7 +508,7 @@ export const EVENTS: AdhyaayaEvent[] = [
 			}
 		],
 		is_active: true,
-		is_open: true,
+		is_open: false,
 		whatsapp_link: 'https://chat.whatsapp.com/KoKTPhgXNZxEof5xHUBLCh'
 	},
 	{
@@ -536,7 +536,7 @@ export const EVENTS: AdhyaayaEvent[] = [
 			}
 		],
 		is_active: true,
-		is_open: true,
+		is_open: false,
 		whatsapp_link: 'https://chat.whatsapp.com/ETCp1yUYn5U8BEDSp5VtBH'
 	},
 	{
@@ -564,7 +564,7 @@ export const EVENTS: AdhyaayaEvent[] = [
 			}
 		],
 		is_active: true,
-		is_open: true,
+		is_open: false,
 		whatsapp_link: 'https://chat.whatsapp.com/BIEeiqLyfQg41ZKZBT06WG'
 	},
 	{
@@ -596,7 +596,7 @@ export const EVENTS: AdhyaayaEvent[] = [
 			}
 		],
 		is_active: true,
-		is_open: true,
+		is_open: false,
 		whatsapp_link: 'https://chat.whatsapp.com/GwpSrB9MEcL4sW54WL1Hto'
 	},
 	{
@@ -620,7 +620,7 @@ export const EVENTS: AdhyaayaEvent[] = [
 			}
 		],
 		is_active: true,
-		is_open: true,
+		is_open: false,
 		whatsapp_link: 'https://chat.whatsapp.com/Kh6yyGQAQRhDOtQ4tUDJFG'
 	},
 	// {
@@ -669,7 +669,7 @@ export const EVENTS: AdhyaayaEvent[] = [
 			}
 		],
 		is_active: true,
-		is_open: true,
+		is_open: false,
 		whatsapp_link: 'https://chat.whatsapp.com/HhguujUB4Hk4cMsLyw6nRJ'
 	},
 	{
@@ -697,7 +697,7 @@ export const EVENTS: AdhyaayaEvent[] = [
 			}
 		],
 		is_active: true,
-		is_open: true,
+		is_open: false,
 		whatsapp_link: 'https://chat.whatsapp.com/BD6gqwlO5FC5qL4I4WEKAy'
 	}
 	// {
@@ -746,7 +746,7 @@ export const EVENTS: AdhyaayaEvent[] = [
 	// 		}
 	// 	],
 	// 	is_active: true,
-	// is_open: true,
+	// is_open: false,
 	// 	whatsapp_link: 'https://chat.whatsapp.com/HA17R0Jp55cAe6rq6agUfz'
 	// }
 ];

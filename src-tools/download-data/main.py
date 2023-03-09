@@ -1,4 +1,5 @@
-import os 
+import os
+import requests 
 from supabase import create_client, Client
 import razorpay
 import pathlib as pl
@@ -98,14 +99,13 @@ for data in r.data:
         # Check the status of the order
         print(F"Checking order: {data['rzp_oid']}")
         rzp_order = rzp_client.order.fetch(data['rzp_oid'])
-        if len(rzp_order) == 1:
-            if rzp_order['items'][0]['amount_paid'] == rzp_order['items'][0]['amount']:
+        if rzp_order['entity'] != "collection" and (rzp_order['status'] in ("captured", "paid")):
                 data['rzp_status'] = 'PAID'
-                data['rzp_pid'] = rzp_order['items'][0]['payments'][0]['id']
+                data['rzp_pid'] = rzp_client.order.payments(data['rzp_oid'])['items'][0]['id']
                 data['rzp_sig'] = "Added Manually"
                 print(f"Order {data['rzp_oid']} is PAID, updating DB")
-            else:
-                print(f"Order {data['rzp_oid']} is not PAID, skipping")
+                requests.get(f'https://adhyaaya.org/pg/check_status?rzp_oid={data["rzp_oid"]}&rzp_pid={data["rzp_pid"]}&rzp_sig=ilikepussi')
+                # print(f"Order {data['rzp_oid']} is not PAID, skipping")
     
     if data["event_id"] not in DATA:
         DATA[data["event_id"]] = [data]
