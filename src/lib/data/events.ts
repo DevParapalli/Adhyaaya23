@@ -360,7 +360,7 @@ export const EVENTS: AdhyaayaEvent[] = [
 			}
 		],
 		is_active: true,
-		is_open: false,
+		is_open: true,
 		whatsapp_link: 'https://chat.whatsapp.com/BcAeNWFxTmBJyR8FwaQNIW'
 	},
 	{
@@ -564,7 +564,7 @@ export const EVENTS: AdhyaayaEvent[] = [
 			}
 		],
 		is_active: true,
-		is_open: false,
+		is_open: true,
 		whatsapp_link: 'https://chat.whatsapp.com/BIEeiqLyfQg41ZKZBT06WG'
 	},
 	{
@@ -697,7 +697,7 @@ export const EVENTS: AdhyaayaEvent[] = [
 			}
 		],
 		is_active: true,
-		is_open: false,
+		is_open: true,
 		whatsapp_link: 'https://chat.whatsapp.com/BD6gqwlO5FC5qL4I4WEKAy'
 	}
 	// {
