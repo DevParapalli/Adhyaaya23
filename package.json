@@ -66,7 +66,7 @@
 		"tslib": "^2.5.0",
 		"typescript": "^4.9.5",
 		"validator": "^13.9.0",
-		"vite": "^4.1.1",
+		"vite": "^4.1.5",
 		"vite-plugin-imagemin": "^0.6.1",
 		"vitest": "^0.25.8",
 		"zoomwall.js": "^2.1.1"
